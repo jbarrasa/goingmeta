@@ -1,0 +1,125 @@
+
+## How do I search for a book with ISBN 9780729412261?
+
+### Cypher
+[source, python]
+----
+match (b:Book { isbn13 : "9780729412261"})
+return b.uri, b.bnb, b.title 
+----
+
+### SPARQL
+[source,sparql]
+----
+PREFIX bibo: <http://purl.org/ontology/bibo/>
+PREFIX blt: <http://www.bl.uk/schemas/bibliographic/blterms#>
+PREFIX dct: <http://purl.org/dc/terms/>
+prefix sch: <http://schema.org/>
+
+SELECT ?book ?bnb ?title WHERE {
+   ?book a sch:Book ; 
+      bibo:isbn13 "9780729412261";
+      blt:bnb ?bnb;
+      dct:title ?title.
+}
+----
+
+## Which titles by detective writer Ian Rankin appear in the BNB?
+
+### Cypher
+[source, python]
+----
+match (:Person { name : "Ian Rankin"})<-[:creator]-(b:Book) 
+return distinct b.title as t order by t desc
+----
+
+### SPARQL
+[source,sparql]
+----
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+prefix sch: <http://schema.org/>
+
+SELECT distinct ?title WHERE {
+   ?ian a sch:Person ; 
+      foaf:name "Ian Rankin" ;
+      ^dct:creator [ a sch:Book ; 
+                     dct:title ?title ] .
+} order by desc(?title)
+----
+
+## Search with incomplete information. What if I have only the surname of the author?
+
+### Cypher
+[source, python]
+----
+match (p:Person)<-[:creator]-(b:Book) 
+where p.name contains "Rankin" 
+return distinct p.name as name, b.title as title order by name, title  desc
+----
+
+### SPARQL
+[source,sparql]
+----
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+prefix sch: <http://schema.org/>
+
+SELECT distinct ?name ?title WHERE {
+   ?ian a sch:Person ; 
+      foaf:name ?name ;
+      ^dct:creator [ a sch:Book ; 
+                     dct:title ?title ] .
+   filter(regex(?name,"Rankin"))
+} order by desc(?title)
+----
+
+## Which are the most prolific authors in the subject of Crystallography and what are the titles of their works?
+
+### Cypher
+[source,python]
+----
+match (:Concept {label: "Crystallography"})<-[:subject]-(cb:Book)-[:creator]->(auth:Person) 
+return auth.label as auth, count(distinct cb.title) as bookcount , collect(distinct cb.title) as booklist
+order by bookcount desc 
+----
+
+### SPARQL
+[source,sparql]
+----
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX dct: <http://purl.org/dc/terms/>
+prefix sch: <http://schema.org/>
+
+
+SELECT ?author 
+       (count(distinct ?title) as ?count) 
+       (group_concat( distinct ?title; SEPARATOR=", ") as ?booklist ) 
+WHERE {
+   
+ ?crys a skos:Concept;
+     rdfs:label "Crystallography" .
+
+ ?book dct:subject ?crys ;
+      dct:title ?title ;
+      dct:creator [ a sch:Person; 
+                    rdfs:label ?author ] .
+
+} order by desc(?count) 
+----
+
+
+## How can I find categories that are similar or close to Crystallography?
+
+If we define similarity or proximity between categories (Concepts) in the catalog as those that have books tagged as both, we can easily 
+produce a list of categories with the a count of the number of books that share these related categories AND Crystallography. Here's how:
+
+### Cypher
+[source,python]
+----
+match (:Concept { label: "Crystallography"})-[:subject]-(b:Book)-[:subject]-(related:Concept:TopicLCSH)
+return related.label as relatedconcept, count(b) as coocurence order by coocurence desc
+----
+
+
