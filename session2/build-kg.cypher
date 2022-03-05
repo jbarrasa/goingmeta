@@ -39,8 +39,7 @@ YIELD batches, total, timeTaken, committedOperations
 RETURN batches, total, timeTaken, committedOperations;
 
 
-add another organising principle (this time an ontology)
-CALL n10s.onto.preview.fetch("http://www.nsmntx.org/2020/08/swStacks","Turtle");
+# import another ontology (software stack onto)
 
 CALL n10s.onto.import.fetch("http://www.nsmntx.org/2020/08/swStacks","Turtle");
 
