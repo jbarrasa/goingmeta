@@ -1,15 +1,16 @@
 :params key => ("<insert-key-here>")
 
-
-LOAD CSV WITH HEADERS FROM 'file:///articles-devto.csv' AS row
+// Load articles from CSV file
+LOAD CSV WITH HEADERS FROM 'https://raw.githubusercontent.com/jbarrasa/goingmeta/main/session2/devto-articles.csv' AS row
 CREATE (a:Article { uri: row.uri})
 SET a.title = row.title, a.body = row.body, a.datetime = datetime(row.date);
 
+// Load the concept scheme using n10s
 CREATE CONSTRAINT n10s_unique_uri ON (r:Resource) ASSERT r.uri IS UNIQUE;
 
 call n10s.graphconfig.init({ handleVocabUris: "IGNORE", classLabel: "Concept", subClassOfRel: "broader"});
 
-call n10s.skos.import.fetch("file:///Users/jb/Downloads/goingmeta.skos","RDF/XML");
+call n10s.skos.import.fetch("https://raw.githubusercontent.com/jbarrasa/goingmeta/main/session2/goingmeta-skos.ttl","Turtle");
 
 match (s:Concept)-[shortcut:broader]->(:Concept)<-[:broader*2..]-(s)
 delete shortcut;
