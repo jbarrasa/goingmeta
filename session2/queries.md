@@ -18,7 +18,14 @@ match (c:Concept {prefLabel: "NoSQL database management system"})
 call n10s.inference.nodesInCategory(c, { inCatRel: "refers_to"}) yield node as article
 return article.title as result
 ```
-  * _"Read next"_ type of queries. Recommendation/personalisation
+  * Articles on _RDBMSs_ and _Document DBs_
+```
+MATCH path = (a:Concept)<-[:broader*0..]-()<-[:refers_to]-(art:Article)-[:refers_to]->()-[:broader*0..]->(b:Concept)
+WHERE a.prefLabel = "document-oriented database" and 
+b.prefLabel = "relational database management system"
+return art.title
+```
+  * _"Read next"_ type of queries. Recommendation/personalisation. Use this query to create a search phrase in Bloom and visually explore recommendation paths.
 ```
 match simpath = (a:Article)-[:refers_to]->(cat)-[:broader*0..1]->()<-[:broader*0..1]-()<-[:refers_to]-(other)
 where a.uri = "https://dev.to/qainsights/performance-testing-neo4j-database-using-bolt-protocol-in-apache-jmeter-1oa9"
