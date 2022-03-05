@@ -5,7 +5,7 @@
 
 Or you can do it manually following the [instructions in the manual](https://neo4j.com/labs/neosemantics/4.0/install/)
 
-1. Build the KG with the script in [build-kg.cypher](https://neo4j.com/labs/neosemantics/4.0/install/)
+1. Build the KG with the script in [build-kg.cypher](https://github.com/jbarrasa/goingmeta/blob/main/session2/build-kg.cypher)
 2. Semantic search on the KG
   * Articles on _"NoSQL database management system"_: Directly or indirectly connected to that category.
 ```
@@ -18,9 +18,9 @@ match (c:Concept {prefLabel: "NoSQL database management system"})
 call n10s.inference.nodesInCategory(c, { inCatRel: "refers_to"}) yield node as article
 return article.title as result
 ```
-  * _"Read next"_ type of queries
+  * _"Read next"_ type of queries. Recommendation/personalisation
 ```
-match simpath = (a:Article)-[:refers_to]->(cat)-[:broader*3]-()<-[:refers_to]-(other)
+match simpath = (a:Article)-[:refers_to]->(cat)-[:broader*0..1]->()<-[:broader*0..1]-()<-[:refers_to]-(other)
 where a.uri = "https://dev.to/qainsights/performance-testing-neo4j-database-using-bolt-protocol-in-apache-jmeter-1oa9"
-return other.title, [x in nodes(simpath) where x:Concept | coalesce(x.prefLabel,"") + coalesce(x.label,"") ]
+return other.title, [x in nodes(simpath) where x:Concept | coalesce(x.prefLabel,x.label) ]
 ```
