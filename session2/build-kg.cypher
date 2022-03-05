@@ -13,6 +13,7 @@ call n10s.graphconfig.init({ handleVocabUris: "IGNORE", classLabel: "Concept", s
 
 call n10s.skos.import.fetch("https://raw.githubusercontent.com/jbarrasa/goingmeta/main/session2/resources/goingmeta-skos.ttl","Turtle");
 
+// Remove redundant 'broader' relationships (from Wikidata extract)
 match (s:Concept)-[shortcut:broader]->(:Concept)<-[:broader*2..]-(s)
 delete shortcut;
 
@@ -37,10 +38,6 @@ CALL apoc.periodic.iterate(
 YIELD batches, total, timeTaken, committedOperations
 RETURN batches, total, timeTaken, committedOperations;
 
-
-
-#Articles are now linked
-match (a:Article) where not ((a)--()) return a ;
 
 add another organising principle (this time an ontology)
 CALL n10s.onto.preview.fetch("http://www.nsmntx.org/2020/08/swStacks","Turtle");
