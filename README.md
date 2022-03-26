@@ -14,4 +14,6 @@ We will use this repo to share the code from the sessions in the Going Meta seri
 
 ## coming up
 
-* Session3 [Apr 5, 2022]: TBD.
+* Session3 [Apr 5, 2022]: Controlling the shape of your graph with SHACL.
+   * [video of the session]()
+   * [code and resources]()
