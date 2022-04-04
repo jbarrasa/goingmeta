@@ -5,16 +5,16 @@
       {
         "id": "n0",
         "position": {
-          "x": 178.91235170942645,
-          "y": 230.3171927930977
+          "x": 245.74363316545526,
+          "y": 254.75851472772507
         },
         "caption": "Product"
       },
       {
         "id": "n1",
         "position": {
-          "x": -198.93499203238588,
-          "y": 230.3171927930977
+          "x": -255.99294415340546,
+          "y": 313.42878889704974
         },
         "caption": "Category"
       },
@@ -29,16 +29,16 @@
       {
         "id": "n3",
         "position": {
-          "x": 213.22657598328203,
-          "y": 624.0824805316073
+          "x": 194.65906738771977,
+          "y": 643.0591446936454
         },
         "caption": "Customer"
       },
       {
         "id": "n4",
         "position": {
-          "x": 435.48726633091053,
-          "y": 427.1998366623525
+          "x": 554.4872663309105,
+          "y": 480.90882971068527
         },
         "caption": "Order"
       }
@@ -450,7 +450,7 @@
           "properties": [
             {
               "property": "productID",
-              "type": "string",
+              "type": "integer",
               "identifier": "de513959-df93-49de-816d-1308523772b4"
             },
             {
@@ -460,22 +460,22 @@
             },
             {
               "property": "unitPrice",
-              "type": "string",
+              "type": "float",
               "identifier": "8fc6562c-7151-4d7c-82b0-ff0aac1a9bab"
             },
             {
               "property": "unitsInStock",
-              "type": "string",
+              "type": "integer",
               "identifier": "1a03e426-f9c8-49c2-bb7d-a9981b7cc647"
             },
             {
               "property": "reorderLevel",
-              "type": "string",
+              "type": "integer",
               "identifier": "881d580f-00bf-4e49-b95f-82aa378ee76b"
             },
             {
               "property": "discontinued",
-              "type": "string",
+              "type": "boolean",
               "identifier": "77307828-4049-44b1-857d-3a273fe220d6"
             }
           ],
@@ -493,7 +493,7 @@
           "properties": [
             {
               "property": "categoryID",
-              "type": "string",
+              "type": "integer",
               "identifier": "cdfe3a24-7578-4047-b60c-2a86279c5d3d"
             },
             {
@@ -521,7 +521,7 @@
           "properties": [
             {
               "property": "supplierID",
-              "type": "string",
+              "type": "integer",
               "identifier": "bf26c2ff-ffd7-4ce3-a600-07e382b8f850"
             },
             {
