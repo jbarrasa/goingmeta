@@ -1,0 +1,926 @@
+{
+  "version": "0.1.1-beta.0",
+  "graph": {
+    "nodes": [
+      {
+        "id": "n0",
+        "position": {
+          "x": 178.91235170942645,
+          "y": 230.3171927930977
+        },
+        "caption": "Product"
+      },
+      {
+        "id": "n1",
+        "position": {
+          "x": -198.93499203238588,
+          "y": 230.3171927930977
+        },
+        "caption": "Category"
+      },
+      {
+        "id": "n2",
+        "position": {
+          "x": -156,
+          "y": 561
+        },
+        "caption": "Supplier"
+      },
+      {
+        "id": "n3",
+        "position": {
+          "x": 213.22657598328203,
+          "y": 624.0824805316073
+        },
+        "caption": "Customer"
+      },
+      {
+        "id": "n4",
+        "position": {
+          "x": 435.48726633091053,
+          "y": 427.1998366623525
+        },
+        "caption": "Order"
+      }
+    ],
+    "relationships": [
+      {
+        "id": "n0",
+        "type": "in_cat",
+        "fromId": "n0",
+        "toId": "n1"
+      },
+      {
+        "id": "n1",
+        "type": "supplied_by",
+        "fromId": "n0",
+        "toId": "n2"
+      },
+      {
+        "id": "n2",
+        "type": "places",
+        "fromId": "n3",
+        "toId": "n4"
+      },
+      {
+        "id": "n3",
+        "type": "contains",
+        "fromId": "n4",
+        "toId": "n0"
+      }
+    ]
+  },
+  "dataModel": {
+    "fileModel": {
+      "fileSchemas": {
+        "order-details.csv": {
+          "expanded": true,
+          "fields": [
+            {
+              "name": "orderID",
+              "type": "string",
+              "sample": "10248",
+              "include": true
+            },
+            {
+              "name": "productID",
+              "type": "string",
+              "sample": "11",
+              "include": true
+            },
+            {
+              "name": "unitPrice",
+              "type": "string",
+              "sample": "14.00",
+              "include": true
+            },
+            {
+              "name": "quantity",
+              "type": "string",
+              "sample": "12",
+              "include": true
+            },
+            {
+              "name": "discount",
+              "type": "string",
+              "sample": "0",
+              "include": true
+            }
+          ]
+        },
+        "products.csv": {
+          "expanded": true,
+          "fields": [
+            {
+              "name": "productID",
+              "type": "string",
+              "sample": "1",
+              "include": true
+            },
+            {
+              "name": "productName",
+              "type": "string",
+              "sample": "Chai",
+              "include": true
+            },
+            {
+              "name": "supplierID",
+              "type": "string",
+              "sample": "1",
+              "include": true
+            },
+            {
+              "name": "categoryID",
+              "type": "string",
+              "sample": "1",
+              "include": true
+            },
+            {
+              "name": "quantityPerUnit",
+              "type": "string",
+              "sample": "10 boxes x 20 bags",
+              "include": true
+            },
+            {
+              "name": "unitPrice",
+              "type": "string",
+              "sample": "18.00",
+              "include": true
+            },
+            {
+              "name": "unitsInStock",
+              "type": "string",
+              "sample": "39",
+              "include": true
+            },
+            {
+              "name": "unitsOnOrder",
+              "type": "string",
+              "sample": "0",
+              "include": true
+            },
+            {
+              "name": "reorderLevel",
+              "type": "string",
+              "sample": "10",
+              "include": true
+            },
+            {
+              "name": "discontinued",
+              "type": "string",
+              "sample": "0",
+              "include": true
+            }
+          ]
+        },
+        "orders.csv": {
+          "expanded": true,
+          "fields": [
+            {
+              "name": "orderID",
+              "type": "string",
+              "sample": "10248",
+              "include": true
+            },
+            {
+              "name": "customerID",
+              "type": "string",
+              "sample": "VINET",
+              "include": true
+            },
+            {
+              "name": "employeeID",
+              "type": "string",
+              "sample": "5",
+              "include": true
+            },
+            {
+              "name": "orderDate",
+              "type": "string",
+              "sample": "1996-07-04 00:00:00.000",
+              "include": true
+            },
+            {
+              "name": "requiredDate",
+              "type": "string",
+              "sample": "1996-08-01 00:00:00.000",
+              "include": true
+            },
+            {
+              "name": "shippedDate",
+              "type": "string",
+              "sample": "1996-07-16 00:00:00.000",
+              "include": true
+            },
+            {
+              "name": "shipVia",
+              "type": "string",
+              "sample": "3",
+              "include": true
+            },
+            {
+              "name": "freight",
+              "type": "string",
+              "sample": "32.38",
+              "include": true
+            },
+            {
+              "name": "shipName",
+              "type": "string",
+              "sample": "Vins et alcools Chevalier",
+              "include": true
+            },
+            {
+              "name": "shipAddress",
+              "type": "string",
+              "sample": "59 rue de l'Abbaye",
+              "include": true
+            },
+            {
+              "name": "shipCity",
+              "type": "string",
+              "sample": "Reims",
+              "include": true
+            },
+            {
+              "name": "shipRegion",
+              "type": "string",
+              "sample": "NULL",
+              "include": true
+            },
+            {
+              "name": "shipPostalCode",
+              "type": "string",
+              "sample": "51100",
+              "include": true
+            },
+            {
+              "name": "shipCountry",
+              "type": "string",
+              "sample": "France",
+              "include": true
+            }
+          ]
+        },
+        "customers.csv": {
+          "expanded": true,
+          "fields": [
+            {
+              "name": "customerID",
+              "type": "string",
+              "sample": "ALFKI",
+              "include": true
+            },
+            {
+              "name": "companyName",
+              "type": "string",
+              "sample": "Alfreds Futterkiste",
+              "include": true
+            },
+            {
+              "name": "contactName",
+              "type": "string",
+              "sample": "Maria Anders",
+              "include": true
+            },
+            {
+              "name": "contactTitle",
+              "type": "string",
+              "sample": "Sales Representative",
+              "include": true
+            },
+            {
+              "name": "address",
+              "type": "string",
+              "sample": "Obere Str. 57",
+              "include": true
+            },
+            {
+              "name": "city",
+              "type": "string",
+              "sample": "Berlin",
+              "include": true
+            },
+            {
+              "name": "region",
+              "type": "string",
+              "sample": "NULL",
+              "include": true
+            },
+            {
+              "name": "postalCode",
+              "type": "string",
+              "sample": "12209",
+              "include": true
+            },
+            {
+              "name": "country",
+              "type": "string",
+              "sample": "Germany",
+              "include": true
+            },
+            {
+              "name": "phone",
+              "type": "string",
+              "sample": "030-0074321",
+              "include": true
+            },
+            {
+              "name": "fax",
+              "type": "string",
+              "sample": "030-0076545",
+              "include": true
+            }
+          ]
+        },
+        "categories.csv": {
+          "expanded": true,
+          "fields": [
+            {
+              "name": "categoryID",
+              "type": "string",
+              "sample": "1",
+              "include": true
+            },
+            {
+              "name": "categoryName",
+              "type": "string",
+              "sample": "Beverages",
+              "include": true
+            },
+            {
+              "name": "description",
+              "type": "string",
+              "sample": "Soft drinks, coffees, teas, beers, and ales",
+              "include": true
+            },
+            {
+              "name": "picture",
+              "type": "string",
+              "sample": "0x151C2F00020000000D000E0014002100FFFFFFFF4269746D617020496D616765005061696E742E5069637475726500010500000200000007000000504272757368000000000000000000A0290000424D98290000000000005600000028000000AC00000078000000010004000000000000000000880B0000880B0000080000",
+              "include": true
+            }
+          ]
+        },
+        "suppliers.csv": {
+          "expanded": true,
+          "fields": [
+            {
+              "name": "supplierID",
+              "type": "string",
+              "sample": "1",
+              "include": true
+            },
+            {
+              "name": "companyName",
+              "type": "string",
+              "sample": "Exotic Liquids",
+              "include": true
+            },
+            {
+              "name": "contactName",
+              "type": "string",
+              "sample": "Charlotte Cooper",
+              "include": true
+            },
+            {
+              "name": "contactTitle",
+              "type": "string",
+              "sample": "Purchasing Manager",
+              "include": true
+            },
+            {
+              "name": "address",
+              "type": "string",
+              "sample": "49 Gilbert St.",
+              "include": true
+            },
+            {
+              "name": "city",
+              "type": "string",
+              "sample": "London",
+              "include": true
+            },
+            {
+              "name": "region",
+              "type": "string",
+              "sample": "NULL",
+              "include": true
+            },
+            {
+              "name": "postalCode",
+              "type": "string",
+              "sample": "EC1 4SD",
+              "include": true
+            },
+            {
+              "name": "country",
+              "type": "string",
+              "sample": "UK",
+              "include": true
+            },
+            {
+              "name": "phone",
+              "type": "string",
+              "sample": "(171) 555-2222",
+              "include": true
+            },
+            {
+              "name": "fax",
+              "type": "string",
+              "sample": "NULL",
+              "include": true
+            },
+            {
+              "name": "homePage",
+              "type": "string",
+              "sample": "NULL",
+              "include": true
+            }
+          ]
+        }
+      }
+    },
+    "graphModel": {
+      "nodeSchemas": {
+        "n0": {
+          "label": "Product",
+          "additionLabels": [],
+          "labelProperties": [],
+          "properties": [
+            {
+              "property": "productID",
+              "type": "string",
+              "identifier": "de513959-df93-49de-816d-1308523772b4"
+            },
+            {
+              "property": "productName",
+              "type": "string",
+              "identifier": "d1d8a880-05af-4f24-8bd4-f31bccdbe98b"
+            },
+            {
+              "property": "unitPrice",
+              "type": "string",
+              "identifier": "8fc6562c-7151-4d7c-82b0-ff0aac1a9bab"
+            },
+            {
+              "property": "unitsInStock",
+              "type": "string",
+              "identifier": "1a03e426-f9c8-49c2-bb7d-a9981b7cc647"
+            },
+            {
+              "property": "reorderLevel",
+              "type": "string",
+              "identifier": "881d580f-00bf-4e49-b95f-82aa378ee76b"
+            },
+            {
+              "property": "discontinued",
+              "type": "string",
+              "identifier": "77307828-4049-44b1-857d-3a273fe220d6"
+            }
+          ],
+          "key": {
+            "properties": [
+              "de513959-df93-49de-816d-1308523772b4"
+            ],
+            "name": ""
+          }
+        },
+        "n1": {
+          "label": "Category",
+          "additionLabels": [],
+          "labelProperties": [],
+          "properties": [
+            {
+              "property": "categoryID",
+              "type": "string",
+              "identifier": "cdfe3a24-7578-4047-b60c-2a86279c5d3d"
+            },
+            {
+              "property": "categoryName",
+              "type": "string",
+              "identifier": "ea0acb8b-a589-459d-a189-6595da9e99af"
+            },
+            {
+              "property": "description",
+              "type": "string",
+              "identifier": "099d1eef-5afc-4824-8c9a-e5500ce79e54"
+            }
+          ],
+          "key": {
+            "properties": [
+              "cdfe3a24-7578-4047-b60c-2a86279c5d3d"
+            ],
+            "name": ""
+          }
+        },
+        "n2": {
+          "label": "Supplier",
+          "additionLabels": [],
+          "labelProperties": [],
+          "properties": [
+            {
+              "property": "supplierID",
+              "type": "string",
+              "identifier": "bf26c2ff-ffd7-4ce3-a600-07e382b8f850"
+            },
+            {
+              "property": "companyName",
+              "type": "string",
+              "identifier": "d971867a-032d-4d38-987a-3789c4f4029f"
+            },
+            {
+              "property": "address",
+              "type": "string",
+              "identifier": "6e8091bf-ed6b-4b63-a08c-5f87166a2da8"
+            },
+            {
+              "property": "city",
+              "type": "string",
+              "identifier": "eaa27ac5-3fee-4a87-8cde-e3348b627f17"
+            },
+            {
+              "property": "region",
+              "type": "string",
+              "identifier": "d6d7a5a7-8066-4aab-a499-e3ecfb1bade0"
+            },
+            {
+              "property": "postalCode",
+              "type": "string",
+              "identifier": "7eb6b4c4-b19e-4eec-9a6a-e2eab7e14908"
+            },
+            {
+              "property": "country",
+              "type": "string",
+              "identifier": "ed658d7f-60c6-4644-9dce-574b53c7df19"
+            },
+            {
+              "property": "phone",
+              "type": "string",
+              "identifier": "6bd677df-3ae9-4fc7-9759-19d8ec486a50"
+            }
+          ],
+          "key": {
+            "properties": [
+              "bf26c2ff-ffd7-4ce3-a600-07e382b8f850"
+            ],
+            "name": ""
+          }
+        },
+        "n3": {
+          "label": "Customer",
+          "additionLabels": [],
+          "labelProperties": [],
+          "properties": [
+            {
+              "property": "customerID",
+              "type": "string",
+              "identifier": "de71b557-9c31-4944-85e7-8d12f13fe797"
+            },
+            {
+              "property": "companyName",
+              "type": "string",
+              "identifier": "0c4d9bbe-18bf-43d6-bb78-bd8c67829341"
+            },
+            {
+              "property": "contactName",
+              "type": "string",
+              "identifier": "e4108756-51e3-466b-bd3d-3336bb16c4cf"
+            },
+            {
+              "property": "contactTitle",
+              "type": "string",
+              "identifier": "47ba7839-67f9-4516-9731-22e2730dbd80"
+            },
+            {
+              "property": "address",
+              "type": "string",
+              "identifier": "993029d2-a91e-45d7-bd59-34ce6e026ae3"
+            },
+            {
+              "property": "city",
+              "type": "string",
+              "identifier": "2fbfe841-1605-457b-b754-b9805e14589a"
+            },
+            {
+              "property": "region",
+              "type": "string",
+              "identifier": "aac0ef55-6924-4bbd-abba-7d8cad4af5d1"
+            },
+            {
+              "property": "postalCode",
+              "type": "string",
+              "identifier": "b64d2bc6-afcd-4bbd-ab58-66062906c638"
+            },
+            {
+              "property": "country",
+              "type": "string",
+              "identifier": "33fecfed-3830-4bb5-9944-861aa03d4c94"
+            },
+            {
+              "property": "phone",
+              "type": "string",
+              "identifier": "5eca7762-f8d0-480f-9ab8-997f10a67feb"
+            },
+            {
+              "property": "fax",
+              "type": "string",
+              "identifier": "3cf8f5a3-aa41-44f6-a8e6-79f6d029b969"
+            }
+          ],
+          "key": {
+            "properties": [
+              "de71b557-9c31-4944-85e7-8d12f13fe797"
+            ],
+            "name": ""
+          }
+        },
+        "n4": {
+          "label": "Order",
+          "additionLabels": [],
+          "labelProperties": [],
+          "properties": [
+            {
+              "property": "orderID",
+              "type": "string",
+              "identifier": "c964db84-743c-4d84-9b14-f435560b8e43"
+            },
+            {
+              "property": "orderDate",
+              "type": "string",
+              "identifier": "f5a154f6-e29b-498f-aaf3-85327f67d453"
+            },
+            {
+              "property": "requiredDate",
+              "type": "string",
+              "identifier": "297337ab-89db-49f4-a337-9a4d3e39da6c"
+            },
+            {
+              "property": "shippedDate",
+              "type": "string",
+              "identifier": "e72a41d2-7212-4145-b914-e19493f0dbf1"
+            },
+            {
+              "property": "shipVia",
+              "type": "string",
+              "identifier": "ebb6eaa8-90c6-4ae1-bd39-3d2b2db027ab"
+            }
+          ],
+          "key": {
+            "properties": [
+              "c964db84-743c-4d84-9b14-f435560b8e43"
+            ],
+            "name": ""
+          }
+        }
+      },
+      "relationshipSchemas": {
+        "n0": {
+          "type": "in_cat",
+          "sourceNodeSchema": "n0",
+          "targetNodeSchema": "n1",
+          "properties": []
+        },
+        "n1": {
+          "type": "supplied_by",
+          "sourceNodeSchema": "n0",
+          "targetNodeSchema": "n2",
+          "properties": []
+        },
+        "n2": {
+          "type": "places",
+          "sourceNodeSchema": "n3",
+          "targetNodeSchema": "n4",
+          "properties": []
+        },
+        "n3": {
+          "type": "contains",
+          "sourceNodeSchema": "n4",
+          "targetNodeSchema": "n0",
+          "properties": [
+            {
+              "property": "unitPrice",
+              "type": "string",
+              "identifier": "12f32cfc-a8de-47dc-b7cf-dc83481b63d2"
+            },
+            {
+              "property": "quantity",
+              "type": "string",
+              "identifier": "df58c67f-f069-4ec8-a495-cda6ccda764b"
+            },
+            {
+              "property": "discount",
+              "type": "string",
+              "identifier": "b861ab50-bd7b-43b5-9b7d-499d216b52f5"
+            }
+          ]
+        }
+      }
+    },
+    "mappingModel": {
+      "nodeMappings": {
+        "n0": {
+          "nodeSchema": "n0",
+          "fileSchema": "products.csv",
+          "mappings": [
+            {
+              "field": "productID"
+            },
+            {
+              "field": "productName"
+            },
+            {
+              "field": "unitPrice"
+            },
+            {
+              "field": "unitsInStock"
+            },
+            {
+              "field": "reorderLevel"
+            },
+            {
+              "field": "discontinued"
+            }
+          ]
+        },
+        "n1": {
+          "nodeSchema": "n1",
+          "fileSchema": "categories.csv",
+          "mappings": [
+            {
+              "field": "categoryID"
+            },
+            {
+              "field": "categoryName"
+            },
+            {
+              "field": "description"
+            }
+          ]
+        },
+        "n2": {
+          "nodeSchema": "n2",
+          "fileSchema": "suppliers.csv",
+          "mappings": [
+            {
+              "field": "supplierID"
+            },
+            {
+              "field": "companyName"
+            },
+            {
+              "field": "address"
+            },
+            {
+              "field": "city"
+            },
+            {
+              "field": "region"
+            },
+            {
+              "field": "postalCode"
+            },
+            {
+              "field": "country"
+            },
+            {
+              "field": "phone"
+            }
+          ]
+        },
+        "n3": {
+          "nodeSchema": "n3",
+          "fileSchema": "customers.csv",
+          "mappings": [
+            {
+              "field": "customerID"
+            },
+            {
+              "field": "companyName"
+            },
+            {
+              "field": "contactName"
+            },
+            {
+              "field": "contactTitle"
+            },
+            {
+              "field": "address"
+            },
+            {
+              "field": "city"
+            },
+            {
+              "field": "region"
+            },
+            {
+              "field": "postalCode"
+            },
+            {
+              "field": "country"
+            },
+            {
+              "field": "phone"
+            },
+            {
+              "field": "fax"
+            }
+          ]
+        },
+        "n4": {
+          "nodeSchema": "n4",
+          "fileSchema": "orders.csv",
+          "mappings": [
+            {
+              "field": "orderID"
+            },
+            {
+              "field": "orderDate"
+            },
+            {
+              "field": "requiredDate"
+            },
+            {
+              "field": "shippedDate"
+            },
+            {
+              "field": "shipVia"
+            }
+          ]
+        }
+      },
+      "relationshipMappings": {
+        "n0": {
+          "relationshipSchema": "n0",
+          "mappings": [],
+          "sourceMappings": [
+            {
+              "field": "productID"
+            }
+          ],
+          "targetMappings": [
+            {
+              "field": "categoryID"
+            }
+          ],
+          "fileSchema": "products.csv"
+        },
+        "n1": {
+          "relationshipSchema": "n1",
+          "mappings": [],
+          "sourceMappings": [
+            {
+              "field": "productID"
+            }
+          ],
+          "targetMappings": [
+            {
+              "field": "supplierID"
+            }
+          ],
+          "fileSchema": "products.csv"
+        },
+        "n2": {
+          "relationshipSchema": "n2",
+          "mappings": [],
+          "sourceMappings": [
+            {
+              "field": "customerID"
+            }
+          ],
+          "targetMappings": [
+            {
+              "field": "orderID"
+            }
+          ],
+          "fileSchema": "orders.csv"
+        },
+        "n3": {
+          "relationshipSchema": "n3",
+          "mappings": [
+            {
+              "field": "unitPrice"
+            },
+            {
+              "field": "quantity"
+            },
+            {
+              "field": "discount"
+            }
+          ],
+          "sourceMappings": [
+            {
+              "field": "orderID"
+            }
+          ],
+          "targetMappings": [
+            {
+              "field": "productID"
+            }
+          ],
+          "fileSchema": "order-details.csv"
+        }
+      }
+    }
+  }
+}
