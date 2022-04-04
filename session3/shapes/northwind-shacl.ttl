@@ -14,7 +14,7 @@ ex:SupplierShape a sh:NodeShape ;
   ];
   sh:property [
     sh:path neo4j:country ;
-    sh:in ( "UK" "USA" "Japan" "Spain" "Australia" "Sweden" "Brazil" "Germany" "Italy" "Norway" "France", "Denmark", "Netherlands", "Finland", "Canada" ) ;
+    sh:in ( "UK" "USA" "Japan" "Spain" "Australia" "Sweden" "Brazil" "Germany" "Italy" "Norway" "France" "Denmark" "Netherlands" "Finland" "Canada" ) ;
     sh:minCount 1 ;
     sh:maxCount 1 ;
     sh:datatype xsd:string ;
