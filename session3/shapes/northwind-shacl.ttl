@@ -1,0 +1,50 @@
+@prefix ex: <http://example.neo4j.com/graphvalidation#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix neo4j: <neo4j://graph.schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:SupplierShape a sh:NodeShape ;
+  sh:targetClass neo4j:Supplier ;
+  sh:property [
+    sh:path neo4j:companyName ;
+    sh:pattern "^\\w[\\s\\w\\.]*$" ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;        
+    sh:datatype xsd:string ;
+  ];
+  sh:property [
+    sh:path neo4j:country ;
+    sh:in ( "UK" "USA" "Japan" "Spain" "Australia" "Sweden" "Brazil" "Germany" "Italy" "Norway" "France", "Denmark", "Netherlands", "Finland", "Canada" ) ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:datatype xsd:string ;
+  ];
+  sh:property [
+    sh:path [ sh:inversePath neo4j:supplied_by ];
+    sh:class neo4j:Producto ;
+    sh:minCount 1 ;
+    sh:maxCount 4 ; 
+  ] 
+.
+
+
+ex:ProdShape a sh:NodeShape ;
+  sh:targetClass neo4j:Product ;
+  sh:property [
+    sh:path neo4j:productName ;
+    sh:pattern "^\\w[\\s\\w\\.]*$" ;
+    sh:maxCount 1 ;
+    sh:datatype xsd:string ;
+  ];
+  sh:property [
+    sh:path neo4j:unitPrice ;
+    sh:minExclusive 10 ;
+    sh:maxInclusive 100 ;
+    sh:maxCount 1 ;
+  ];
+  sh:property [
+    sh:path [ sh:inversePath neo4j:contains ] ;
+    sh:class neo4j:Order ;
+    sh:minCount 1 ;
+  ] 
+.
