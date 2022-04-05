@@ -16,7 +16,8 @@ ex:SupplierShape a sh:NodeShape ;
     sh:in ( "UK" "USA" "Japan" "Spain" "Australia" "Sweden" "Brazil" "Germany" "Italy" "Norway" "France" "Denmark" "Netherlands" "Finland" "Canada" ) ;
     sh:datatype xsd:string ;
   ];
-
+  sh:closed true ;
+  sh:ignoredProperties (neo4j:phone neo4j:supplierID neo4j:city neo4j:postalCode neo4j:address neo4j:region) ;
 .
 
 
