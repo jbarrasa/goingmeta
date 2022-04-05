@@ -79,3 +79,10 @@ return focusNode, nodeType, shapeId, propertyShape, offendingValue, resultPath, 
 ----
 call n10s.validation.shacl.import.fetch("https://raw.githubusercontent.com/jbarrasa/goingmeta/main/session3/shapes/northwind-custom-sev-shacl.ttl","Turtle")
 ----
+
+### Run the validation and aggregate by severity
+[source, python]
+----
+call n10s.validation.shacl.validate()  yield focusNode, nodeType, shapeId, propertyShape, offendingValue, resultPath, severity, resultMessage
+return n10s.rdf.getIRILocalName(severity), count(*)
+----
