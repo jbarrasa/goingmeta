@@ -73,3 +73,9 @@ where focusNode = 20
 return focusNode, nodeType, shapeId, propertyShape, offendingValue, resultPath, severity, resultMessage
 ----
 
+
+### Use the severity of a shape to define property based status
+[source, python]
+----
+call n10s.validation.shacl.import.fetch("https://raw.githubusercontent.com/jbarrasa/goingmeta/main/session3/shapes/northwind-custom-sev-shacl.ttl","Turtle")
+----
