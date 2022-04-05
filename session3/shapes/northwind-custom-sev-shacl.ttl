@@ -1,0 +1,20 @@
+@prefix ex: <http://example.neo4j.com/graphvalidation#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix neo4j: <neo4j://graph.schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:ProdShape a sh:NodeShape ;
+  sh:targetClass neo4j:Product ;
+  
+  sh:property [
+    sh:path neo4j:unitPrice ;           
+    sh:maxInclusive 100 ;
+    sh:severity neo4j:OverpricedProduct ;
+  ];
+  sh:property [
+    sh:path neo4j:supplied_by ;
+    sh:class neo4j:Supplier ;
+    sh:minCount 2 ;
+    sh:severity neo4j:supplyRiskProduct ;
+  ];
+.
