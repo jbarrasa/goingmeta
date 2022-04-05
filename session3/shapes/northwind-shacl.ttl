@@ -36,6 +36,7 @@ ex:ProdShape a sh:NodeShape ;
   ];
   sh:property [
     sh:path neo4j:supplied_by ;
+    sh:class neo4j:Supplier ;
     sh:minCount 2 ;
   ];
 .
