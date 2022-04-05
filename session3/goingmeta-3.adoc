@@ -1,0 +1,31 @@
+## Going Meta #3
+
+### Load the SHACL shapes
+[source, python]
+----
+call n10s.validation.shacl.import.fetch("https://raw.githubusercontent.com/jbarrasa/goingmeta/main/session3/shapes/northwind-shacl.ttl","Turtle")
+----
+
+### list the shapes that are active for a given node type (`Supplier`)
+[source,python]
+----
+call n10s.validation.shacl.listShapes() yield target, propertyOrRelationshipPath, param, value
+where target = 'Supplier'
+return target, propertyOrRelationshipPath, param, value
+----
+
+### Run the validation
+[source, python]
+----
+call n10s.validation.shacl.validate() 
+----
+
+
+### Run the validation and filter results
+[source, python]
+----
+call n10s.validation.shacl.validate() yield focusNode, nodeType, shapeId, propertyShape, offendingValue, resultPath, severity, resultMessage
+where focusNode = 20
+return focusNode, nodeType, shapeId, propertyShape, offendingValue, resultPath, severity, resultMessage
+----
+
