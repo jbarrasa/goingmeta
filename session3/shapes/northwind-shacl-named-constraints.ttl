@@ -8,8 +8,7 @@ ex:SupplierShape a sh:NodeShape ;
   sh:property ex:compNameConstraint ;
   sh:property ex:countryConstraint ;
   sh:closed true ;
-  sh:ignoredProperties (neo4j:phone neo4j:supplierID neo4j:city neo4j:postalCode neo4j:address neo4j:region) ;
-.
+  sh:ignoredProperties (neo4j:phone neo4j:supplierID neo4j:city neo4j:postalCode neo4j:address neo4j:region) .
 
 ex:compNameConstraint 
   sh:path neo4j:companyName ;
