@@ -15,18 +15,9 @@
       "title": "High Level Overview",
       "reports": [
         {
-          "title": "Raw SHACL/RDF",
-          "query": "```\n@prefix ex: <http://example.neo4j.com/graphvalidation#> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix neo4j: <neo4j://graph.schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\nex:CustShape a sh:NodeShape ;\n  sh:targetClass neo4j:Customer ;\n  sh:property [\n    sh:path neo4j:companyName ;\n    sh:pattern \"^\\\\w[\\\\s\\\\w\\\\.]*$\" ;\n    sh:maxCount 1 ;\n    sh:datatype xsd:string ;\n  ];\n  sh:property [\n    sh:path neo4j:PURCHASED ;\n    sh:class neo4j:Order ;\n    sh:nodeKind sh:IRI ;\n    sh:minCount 10 ;\n  ] .\n\n\nex:ProdShape a sh:NodeShape ;\n  sh:targetClass neo4j:Product ;\n  sh:property [\n    sh:path neo4j:productName ;\n    sh:pattern \"^\\\\w[\\\\s\\\\w\\\\.]*$\" ;\n    sh:maxCount 1 ;\n    sh:datatype xsd:string ;\n  ];\n  sh:property [\n    sh:path neo4j:unitPrice ;\n    sh:maxInclusive 20 ;\n    sh:maxCount 1 ;\n  ];\n  sh:property [\n    sh:path [ sh:inversePath neo4j:ORDERS ] ;\n    sh:class neo4j:Order ;\n    sh:minCount 1 ;\n    sh:nodeKind sh:IRI ;\n  ] ;\n.\n```",
-          "width": "4",
-          "type": "text",
-          "height": "3",
-          "selection": {},
-          "settings": {}
-        },
-        {
           "title": "Active Constraints (Shapes)",
           "query": "\ncall n10s.validation.shacl.listShapes()\n\n",
-          "width": "4",
+          "width": "6",
           "type": "table",
           "height": "3",
           "selection": {},
@@ -37,7 +28,7 @@
         {
           "title": "Violations by Shape Type",
           "query": "call n10s.validation.shacl.validate() yield focusNode, nodeType, shapeId, propertyShape, offendingValue, resultPath, severity, resultMessage\nreturn  n10s.rdf.getIRILocalName(propertyShape) as violationType, count(focusNode) as count\n\n\n",
-          "width": "4",
+          "width": "6",
           "type": "pie",
           "height": "3",
           "selection": {
@@ -51,7 +42,7 @@
           }
         },
         {
-          "title": "Selection",
+          "title": "Selection graph view",
           "query": "match (n) \nwhere id(n) = toInteger($neodash_nid)\noptional match p = (n)--()\nreturn n, p limit 100\n",
           "width": "3",
           "type": "graph",
