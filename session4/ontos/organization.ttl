@@ -47,7 +47,7 @@ tr-org:hasLEI
   rdfs:isDefinedBy tr-org: ;
   rdfs:label "Has LEI"@en ;
   rdfs:range xsd:string ;
-  rdfs:subPropertyOf tr-common:hasIdentifier ;
+  rdfs:subPropertyOf tr-common:hasIdentifier .
 
 tr-org:hasOfficialName
   rdf:type owl:DatatypeProperty ;
@@ -58,8 +58,6 @@ tr-org:hasOfficialName
   rdfs:range xsd:string ;
   rdfs:subPropertyOf <http://www.w3.org/2006/vcard/ns#organization-name> .
 
-
-
 tr-org:hasPrimaryIndustryGroup
   rdf:type owl:ObjectProperty ;
   rdfs:comment "The organization is primarily engaged in business or other activities that fall within the specified industry group."@en ;
@@ -67,8 +65,7 @@ tr-org:hasPrimaryIndustryGroup
   rdfs:label "Has primary industry group"@en ;
   rdfs:subPropertyOf tr-org:hasIndustryGroup ;
   rdfs:domain tr-org:Organization ;
-  rdfs:range trbc:IndustryGroup ;
-.
+  rdfs:range tr-org:IndustryGroup .
 
 tr-org:isDomiciledIn
   rdf:type owl:ObjectProperty ;
@@ -76,5 +73,8 @@ tr-org:isDomiciledIn
   rdfs:domain tr-org:Organization ;
   rdfs:range tr-common:Country ;
   rdfs:isDefinedBy tr-org: ;
-  rdfs:label "Is domiciled in"@en ;
-.
+  rdfs:label "Is domiciled in"@en .
+
+tr-org:IndustryGroup
+  rdf:type owl:Class ;
+  rdfs:label "Industry group"@en .
