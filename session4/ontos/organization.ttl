@@ -1,1 +1,80 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix tr-common: <http://permid.org/ontology/common/> .
+@prefix tr-org: <http://permid.org/ontology/organization/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+tr-org:
+  rdf:type owl:Ontology ;
+  cc:attributionName "Subset of Perm ID for demo purposes"^^xsd:string ;
+  cc:attributionURL tr-org: ;
+  cc:license <http://creativecommons.org/licenses/by/4.0/> ;
+  rdfs:label "Subset of the Perm ID organization ontology"@en .
+
+tr-org:Organization
+  rdf:type owl:Class ;
+  rdfs:comment "Corporate, government, or private business entity engaged in the operation, administration, exchange, supply, regulation or advisory of a specific purpose."@en ;
+  rdfs:isDefinedBy tr-org: ;
+  rdfs:label "Organization"@en .
+
+tr-org:hasActivityStatus
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain tr-org:Organization ;
+  rdfs:isDefinedBy tr-org: ;
+  rdfs:label "Has activity status"@en ;
+  rdfs:range xsd:string .
+
+tr-org:hasDateOfIncorporation
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain tr-org:Organization ;
+  rdfs:isDefinedBy tr-org: ;
+  rdfs:label "Has incorporation date"@en ;
+  rdfs:range xsd:date .
+
+tr-org:hasHeadquartersAddress
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain tr-org:Organization ;
+  rdfs:isDefinedBy tr-org: ;
+  rdfs:label "Has headquarters address"@en ;
+  rdfs:range xsd:string ;
+  rdfs:subPropertyOf <http://www.w3.org/2006/vcard/ns#hasAddress> .
+
+tr-org:hasLEI
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain tr-org:Organization ;
+  rdfs:isDefinedBy tr-org: ;
+  rdfs:label "Has LEI"@en ;
+  rdfs:range xsd:string ;
+  rdfs:subPropertyOf tr-common:hasIdentifier ;
+
+tr-org:hasOfficialName
+  rdf:type owl:DatatypeProperty ;
+  rdfs:comment "The name typically used in legal documents, and in the organization's legal registration, if any."@en ;
+  rdfs:domain tr-org:Organization ;
+  rdfs:isDefinedBy tr-org: ;
+  rdfs:label "Has official name"@en ;
+  rdfs:range xsd:string ;
+  rdfs:subPropertyOf <http://www.w3.org/2006/vcard/ns#organization-name> .
+
+
+
+tr-org:hasPrimaryIndustryGroup
+  rdf:type owl:ObjectProperty ;
+  rdfs:comment "The organization is primarily engaged in business or other activities that fall within the specified industry group."@en ;
+  rdfs:isDefinedBy tr-org: ;
+  rdfs:label "Has primary industry group"@en ;
+  rdfs:subPropertyOf tr-org:hasIndustryGroup ;
+  rdfs:domain tr-org:Organization ;
+  rdfs:range trbc:IndustryGroup ;
+.
+
+tr-org:isDomiciledIn
+  rdf:type owl:ObjectProperty ;
+  rdfs:comment "The country in which an organization has its headquarters."@en ;
+  rdfs:domain tr-org:Organization ;
+  rdfs:range tr-common:Country ;
+  rdfs:isDefinedBy tr-org: ;
+  rdfs:label "Is domiciled in"@en ;
+.
