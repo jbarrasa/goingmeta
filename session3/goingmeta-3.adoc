@@ -27,7 +27,7 @@ ex:SupplierShape a sh:NodeShape ;
 ### Validate the graph
 [source,python]
 ----
-call n10s.validation.shacl.listShapes() 
+call n10s.validation.shacl.validate() 
 ----
 
 ### Modify the graph manually
@@ -41,7 +41,7 @@ return s
 ### And validate again to see the impact
 [source,python]
 ----
-call n10s.validation.shacl.listShapes() 
+call n10s.validation.shacl.validate() 
 ----
 
 ### Load the complete set of SHACL shapes
