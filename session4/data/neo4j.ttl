@@ -1,1 +1,56 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix trbc: <http://permid.org/ontology/trbc/> .
+@prefix mdaas: <http://permid.org/ontology/mdaas/> .
+@prefix tr-fin: <http://permid.org/ontology/financial/> .
+@prefix tr-common: <http://permid.org/ontology/common/> .
+@prefix fibo-be-le-cb: <http://www.omg.org/spec/EDMC-FIBO/BE/LegalEntities/CorporateBodies/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix tr-org: <http://permid.org/ontology/organization/> .
+@prefix geo:  <http://sws.geonames.org/> .
+
+<https://permid.org/1-5058598204>
+        a  tr-org:Organization ;
+        tr-common:hasPermId "5058598204"^^xsd:string ;
+        mdaas:HeadquartersAddress "111 E. 5Th Avenue\\n\\n\\nSAN MATEO\\nCALIFORNIA\\n94401\\nUnited States\\n"^^xsd:string ;
+        mdaas:RegisteredAddress   "850 New Burton Rd Ste 201\\n\\n\\nDOVER\\nDELAWARE\\n19904-5451\\nUnited States\\n"^^xsd:string ;
+        tr-org:hasHeadquartersPhoneNumber
+                "18556364532"^^xsd:string ;
+        tr-org:hasLatestOrganizationFoundedDate
+                "2011-07-07T00:00:00Z"^^xsd:dateTime ;
+        tr-org:hasPrimaryEconomicSector                
+            <https://permid.org/1-4294952723> ;
+        tr-org:hasPrimaryIndustryGroup  
+             <https://permid.org/1-4294952829> ;
+        tr-org:isIncorporatedIn         
+             <http://sws.geonames.org/6252001/> ;
+        fibo-be-le-cb:isDomiciledIn     
+             <http://sws.geonames.org/6252001/> ;
+        vcard:hasURL "https://neo4j.com/" ;
+        vcard:organization-name "Neo4j Inc"^^xsd:string .
+
+
+        
+<https://permid.org/1-4294952723>
+        a  trbc:EconomicSector , trbc:BusinessClassification ;
+        rdfs:comment   "Manufacturers of semiconductors, communications equipment, computer hardware and technology related office equipment, providers of consulting, IT services & financial technology (Fintech) services and infrastructure. Owners and operators of fixed line and wireless telecommunication networks providing voice and data services."^^xsd:string ;
+        tr-common:hasPermId  "4294952723"^^xsd:string ;
+        trbc:BusinessClassificationCode  "57"^^xsd:string ;
+        skos:prefLabel "Technology" .
+
+
+<https://permid.org/1-4294952829>
+        a   trbc:IndustryGroup , trbc:BusinessClassification ;
+        rdfs:comment   "Developers and marketers of generic system and application software, as well as providers of consulting and IT services."^^xsd:string ;
+        tr-common:hasPermId  "4294952829"^^xsd:string ;
+        trbc:BusinessClassificationCode   "572010"^^xsd:string ;
+        skos:prefLabel       "Software & IT Services" .
+
+
+<http://sws.geonames.org/6252001/> a geo:Country ;
+                        rdfs:label "United States" ;
+                        geo:iso3166_alpha2 "US" ;
+                        geo:iso3166_alpha3 "USA" .
+
 
