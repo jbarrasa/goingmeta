@@ -1,0 +1,37 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix mov: <http://myvocabularies.com/Movies#> .
+
+mov:Actor a owl:Class;
+  rdfs:label "Actor" .
+
+mov:Director a owl:Class;
+  rdfs:label "Director" .
+
+mov:Artist a owl:Class;
+  rdfs:label "Artist" .
+
+mov:Actor rdfs:subClassOf mov:Artist .
+
+mov:Director rdfs:subClassOf mov:Artist .
+
+mov:Critic a owl:Class;
+  rdfs:label "Critic" .
+
+mov:Movie a owl:Class;
+  rdfs:label "Movie" .
+
+mov:DIRECTED a owl:ObjectProperty;
+  rdfs:range mov:Movie;
+  rdfs:label "WROTE";
+  rdfs:domain mov:Director .
+
+mov:ACTED_IN a owl:ObjectProperty;
+  rdfs:label "ACTED_IN";
+  rdfs:domain mov:Actor ;
+  rdfs:range mov:Movie .
+
+mov:REVIEWED a owl:ObjectProperty;
+  rdfs:range mov:Movie;
+  rdfs:label "REVIEWED";
+  rdfs:domain mov:Critic .
