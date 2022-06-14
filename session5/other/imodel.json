@@ -1,0 +1,160 @@
+{
+  "dataModel" : {
+    "graphModel" : {
+      "relationshipSchemas" : {
+        "http://onto.neo4j.com/rail#Stationhttp://onto.neo4j.com/rail#linkhttp://onto.neo4j.com/rail#Station" : {
+          "sourceNodeSchema" : "http://onto.neo4j.com/rail#Station",
+          "targetNodeSchema" : "http://onto.neo4j.com/rail#Station",
+          "type" : "link",
+          "properties" : [ ]
+        },
+        "http://onto.neo4j.com/rail#Eventhttp://onto.neo4j.com/rail#affectshttp://onto.neo4j.com/rail#Station" : {
+          "sourceNodeSchema" : "http://onto.neo4j.com/rail#Event",
+          "targetNodeSchema" : "http://onto.neo4j.com/rail#Station",
+          "type" : "affects",
+          "properties" : [ ]
+        }
+      },
+      "nodeSchemas" : {
+        "http://onto.neo4j.com/rail#Station" : {
+          "labelProperties" : [ ],
+          "label" : "Station",
+          "additionLabels" : [ ],
+          "properties" : [ {
+            "identifier" : "neo4j://graph.schema#uri",
+            "property" : "uri",
+            "type" : "string"
+          }, {
+            "identifier" : "http://onto.neo4j.com/rail#stationName",
+            "property" : "stationName",
+            "type" : "string"
+          }, {
+            "identifier" : "http://onto.neo4j.com/rail#long",
+            "property" : "long",
+            "type" : "float"
+          }, {
+            "identifier" : "http://onto.neo4j.com/rail#stationCode",
+            "property" : "stationCode",
+            "type" : "string"
+          }, {
+            "identifier" : "http://www.w3.org/2000/01/rdf-schema#comment",
+            "property" : "comment",
+            "type" : "string"
+          }, {
+            "identifier" : "http://onto.neo4j.com/rail#lat",
+            "property" : "lat",
+            "type" : "float"
+          }, {
+            "identifier" : "http://www.w3.org/2000/01/rdf-schema#label",
+            "property" : "label",
+            "type" : "string"
+          }, {
+            "identifier" : "http://onto.neo4j.com/rail#stationAddress",
+            "property" : "stationAddress",
+            "type" : "string"
+          } ],
+          "key" : {
+            "name" : "",
+            "properties" : [ ]
+          }
+        },
+        "http://onto.neo4j.com/rail#Event" : {
+          "labelProperties" : [ ],
+          "label" : "Event",
+          "additionLabels" : [ ],
+          "properties" : [ {
+            "identifier" : "http://onto.neo4j.com/rail#eventId",
+            "property" : "eventId",
+            "type" : "string"
+          }, {
+            "identifier" : "http://onto.neo4j.com/rail#eventType",
+            "property" : "eventType",
+            "type" : "string"
+          }, {
+            "identifier" : "neo4j://graph.schema#uri",
+            "property" : "uri",
+            "type" : "string"
+          }, {
+            "identifier" : "http://www.w3.org/2000/01/rdf-schema#comment",
+            "property" : "comment",
+            "type" : "string"
+          }, {
+            "identifier" : "http://www.w3.org/2000/01/rdf-schema#label",
+            "property" : "label",
+            "type" : "string"
+          }, {
+            "identifier" : "http://onto.neo4j.com/rail#timestamp",
+            "property" : "timestamp",
+            "type" : "string"
+          }, {
+            "identifier" : "http://onto.neo4j.com/rail#eventDescription",
+            "property" : "eventDescription",
+            "type" : "string"
+          } ],
+          "key" : {
+            "name" : "",
+            "properties" : [ ]
+          }
+        }
+      }
+    },
+    "mappingModel" : {
+      "relationshipMappings" : {
+        "http://onto.neo4j.com/rail#Stationhttp://onto.neo4j.com/rail#linkhttp://onto.neo4j.com/rail#Station" : {
+          "sourceMappings" : [ ],
+          "mappings" : [ ],
+          "targetMappings" : [ ],
+          "relationshipSchema" : "http://onto.neo4j.com/rail#Stationhttp://onto.neo4j.com/rail#linkhttp://onto.neo4j.com/rail#Station"
+        },
+        "http://onto.neo4j.com/rail#Eventhttp://onto.neo4j.com/rail#affectshttp://onto.neo4j.com/rail#Station" : {
+          "sourceMappings" : [ ],
+          "mappings" : [ ],
+          "targetMappings" : [ ],
+          "relationshipSchema" : "http://onto.neo4j.com/rail#Eventhttp://onto.neo4j.com/rail#affectshttp://onto.neo4j.com/rail#Station"
+        }
+      },
+      "nodeMappings" : {
+        "http://onto.neo4j.com/rail#Station" : {
+          "mappings" : [ ],
+          "nodeSchema" : "http://onto.neo4j.com/rail#Station"
+        },
+        "http://onto.neo4j.com/rail#Event" : {
+          "mappings" : [ ],
+          "nodeSchema" : "http://onto.neo4j.com/rail#Event"
+        }
+      }
+    },
+    "fileModel" : {
+      "fileSchemas" : { }
+    }
+  },
+  "version" : "0.1.1-beta.0",
+  "graph" : {
+    "relationships" : [ {
+      "toId" : "http://onto.neo4j.com/rail#Station",
+      "id" : "http://onto.neo4j.com/rail#Stationhttp://onto.neo4j.com/rail#linkhttp://onto.neo4j.com/rail#Station",
+      "type" : "link",
+      "fromId" : "http://onto.neo4j.com/rail#Station"
+    }, {
+      "toId" : "http://onto.neo4j.com/rail#Station",
+      "id" : "http://onto.neo4j.com/rail#Eventhttp://onto.neo4j.com/rail#affectshttp://onto.neo4j.com/rail#Station",
+      "type" : "affects",
+      "fromId" : "http://onto.neo4j.com/rail#Event"
+    } ],
+    "nodes" : [ {
+      "caption" : "Station",
+      "id" : "http://onto.neo4j.com/rail#Station",
+      "position" : {
+        "x" : -400,
+        "y" : 600
+      }
+    }, {
+      "caption" : "Event",
+      "id" : "http://onto.neo4j.com/rail#Event",
+      "position" : {
+        "x" : 800,
+        "y" : 600
+      }
+    } ]
+  }
+}
