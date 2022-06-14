@@ -20,8 +20,13 @@ We will use this repo to share the code from the sessions in the Going Meta seri
    * [video of the session](https://www.youtube.com/watch?v=XX7Ppc5T0GE)
    * [code and resources](https://github.com/jbarrasa/goingmeta/tree/main/session4)
 
+* Session 5 [June 13, 2022]: Ontology-driven Knowledge Graph construction
+   * [video of the session](https://www.youtube.com/watch?v=05Wkg1p34ek)
+   * [code and resources](https://github.com/jbarrasa/goingmeta/tree/main/session5)
+
+
 ## coming up
 
-* Session 5 [June 13, 2022]: Ontology-driven Knowledge Graph construction
+* Session 6 [July 5, 2022]: TBD
    * [video of the session](#)
    * [code and resources](#)
