@@ -1,0 +1,595 @@
+{
+  "dataModel" : {
+    "graphModel" : {
+      "relationshipSchemas" : {
+        "https://schema.org/Personhttps://schema.org/parentshttps://schema.org/Person" : {
+          "sourceNodeSchema" : "https://schema.org/Person",
+          "targetNodeSchema" : "https://schema.org/Person",
+          "type" : "parents",
+          "properties" : [ ]
+        },
+        "https://schema.org/Personhttps://schema.org/relatedTohttps://schema.org/Person" : {
+          "sourceNodeSchema" : "https://schema.org/Person",
+          "targetNodeSchema" : "https://schema.org/Person",
+          "type" : "relatedTo",
+          "properties" : [ ]
+        },
+        "https://schema.org/Personhttps://schema.org/knowshttps://schema.org/Person" : {
+          "sourceNodeSchema" : "https://schema.org/Person",
+          "targetNodeSchema" : "https://schema.org/Person",
+          "type" : "knows",
+          "properties" : [ ]
+        },
+        "https://schema.org/Personhttps://schema.org/siblingshttps://schema.org/Person" : {
+          "sourceNodeSchema" : "https://schema.org/Person",
+          "targetNodeSchema" : "https://schema.org/Person",
+          "type" : "siblings",
+          "properties" : [ ]
+        },
+        "https://schema.org/Personhttps://schema.org/followshttps://schema.org/Person" : {
+          "sourceNodeSchema" : "https://schema.org/Person",
+          "targetNodeSchema" : "https://schema.org/Person",
+          "type" : "follows",
+          "properties" : [ ]
+        },
+        "https://schema.org/Personhttps://schema.org/colleaguehttps://schema.org/Person" : {
+          "sourceNodeSchema" : "https://schema.org/Person",
+          "targetNodeSchema" : "https://schema.org/Person",
+          "type" : "colleague",
+          "properties" : [ ]
+        },
+        "https://schema.org/Personhttps://schema.org/colleagueshttps://schema.org/Person" : {
+          "sourceNodeSchema" : "https://schema.org/Person",
+          "targetNodeSchema" : "https://schema.org/Person",
+          "type" : "colleagues",
+          "properties" : [ ]
+        },
+        "https://schema.org/Personhttps://schema.org/sponsorhttps://schema.org/Person" : {
+          "sourceNodeSchema" : "https://schema.org/Person",
+          "targetNodeSchema" : "https://schema.org/Person",
+          "type" : "sponsor",
+          "properties" : [ ]
+        },
+        "https://schema.org/Personhttps://schema.org/knowsAbouthttps://schema.org/Person" : {
+          "sourceNodeSchema" : "https://schema.org/Person",
+          "targetNodeSchema" : "https://schema.org/Person",
+          "type" : "knowsAbout",
+          "properties" : [ ]
+        },
+        "https://schema.org/Personhttps://schema.org/spousehttps://schema.org/Person" : {
+          "sourceNodeSchema" : "https://schema.org/Person",
+          "targetNodeSchema" : "https://schema.org/Person",
+          "type" : "spouse",
+          "properties" : [ ]
+        },
+        "https://schema.org/Personhttps://schema.org/siblinghttps://schema.org/Person" : {
+          "sourceNodeSchema" : "https://schema.org/Person",
+          "targetNodeSchema" : "https://schema.org/Person",
+          "type" : "sibling",
+          "properties" : [ ]
+        },
+        "https://schema.org/Personhttps://schema.org/funderhttps://schema.org/Person" : {
+          "sourceNodeSchema" : "https://schema.org/Person",
+          "targetNodeSchema" : "https://schema.org/Person",
+          "type" : "funder",
+          "properties" : [ ]
+        },
+        "https://schema.org/Personhttps://schema.org/childrenhttps://schema.org/Person" : {
+          "sourceNodeSchema" : "https://schema.org/Person",
+          "targetNodeSchema" : "https://schema.org/Person",
+          "type" : "children",
+          "properties" : [ ]
+        },
+        "https://schema.org/Personhttps://schema.org/parenthttps://schema.org/Person" : {
+          "sourceNodeSchema" : "https://schema.org/Person",
+          "targetNodeSchema" : "https://schema.org/Person",
+          "type" : "parent",
+          "properties" : [ ]
+        }
+      },
+      "nodeSchemas" : {
+        "https://schema.org/Person" : {
+          "labelProperties" : [ ],
+          "label" : "Person",
+          "additionLabels" : [ ],
+          "properties" : [ {
+            "identifier" : "https://schema.org/awards",
+            "property" : "awards",
+            "type" : "Text"
+          }, {
+            "identifier" : "https://schema.org/sameAs",
+            "property" : "sameAs",
+            "type" : "string"
+          }, {
+            "identifier" : "https://schema.org/height",
+            "property" : "height",
+            "type" : "string"
+          }, {
+            "identifier" : "https://schema.org/affiliation",
+            "property" : "affiliation",
+            "type" : "string"
+          }, {
+            "identifier" : "https://schema.org/spouse",
+            "property" : "spouse",
+            "type" : "string"
+          }, {
+            "identifier" : "https://schema.org/seeks",
+            "property" : "seeks",
+            "type" : "string"
+          }, {
+            "identifier" : "https://schema.org/callSign",
+            "property" : "callSign",
+            "type" : "Text"
+          }, {
+            "identifier" : "https://schema.org/alternateName",
+            "property" : "alternateName",
+            "type" : "Text"
+          }, {
+            "identifier" : "https://schema.org/children",
+            "property" : "children",
+            "type" : "string"
+          }, {
+            "identifier" : "https://schema.org/mainEntityOfPage",
+            "property" : "mainEntityOfPage",
+            "type" : "string"
+          }, {
+            "identifier" : "https://schema.org/potentialAction",
+            "property" : "potentialAction",
+            "type" : "string"
+          }, {
+            "identifier" : "https://schema.org/birthPlace",
+            "property" : "birthPlace",
+            "type" : "string"
+          }, {
+            "identifier" : "https://schema.org/makesOffer",
+            "property" : "makesOffer",
+            "type" : "string"
+          }, {
+            "identifier" : "https://schema.org/jobTitle",
+            "property" : "jobTitle",
+            "type" : "Text"
+          }, {
+            "identifier" : "https://schema.org/sibling",
+            "property" : "sibling",
+            "type" : "string"
+          }, {
+            "identifier" : "https://schema.org/name",
+            "property" : "name",
+            "type" : "Text"
+          }, {
+            "identifier" : "https://schema.org/parent",
+            "property" : "parent",
+            "type" : "string"
+          }, {
+            "identifier" : "https://schema.org/url",
+            "property" : "url",
+            "type" : "string"
+          }, {
+            "identifier" : "https://schema.org/funder",
+            "property" : "funder",
+            "type" : "string"
+          }, {
+            "identifier" : "https://schema.org/alumniOf",
+            "property" : "alumniOf",
+            "type" : "string"
+          }, {
+            "identifier" : "https://schema.org/follows",
+            "property" : "follows",
+            "type" : "string"
+          }, {
+            "identifier" : "https://schema.org/relatedTo",
+            "property" : "relatedTo",
+            "type" : "string"
+          }, {
+            "identifier" : "https://schema.org/duns",
+            "property" : "duns",
+            "type" : "Text"
+          }, {
+            "identifier" : "https://schema.org/honorificPrefix",
+            "property" : "honorificPrefix",
+            "type" : "Text"
+          }, {
+            "identifier" : "https://schema.org/workLocation",
+            "property" : "workLocation",
+            "type" : "string"
+          }, {
+            "identifier" : "https://schema.org/funding",
+            "property" : "funding",
+            "type" : "string"
+          }, {
+            "identifier" : "neo4j://graph.schema#uri",
+            "property" : "uri",
+            "type" : "string"
+          }, {
+            "identifier" : "https://schema.org/address",
+            "property" : "address",
+            "type" : "Text"
+          }, {
+            "identifier" : "https://schema.org/knowsAbout",
+            "property" : "knowsAbout",
+            "type" : "Text"
+          }, {
+            "identifier" : "https://schema.org/additionalType",
+            "property" : "additionalType",
+            "type" : "string"
+          }, {
+            "identifier" : "https://schema.org/brand",
+            "property" : "brand",
+            "type" : "string"
+          }, {
+            "identifier" : "https://schema.org/owns",
+            "property" : "owns",
+            "type" : "string"
+          }, {
+            "identifier" : "https://schema.org/contactPoint",
+            "property" : "contactPoint",
+            "type" : "string"
+          }, {
+            "identifier" : "https://schema.org/givenName",
+            "property" : "givenName",
+            "type" : "Text"
+          }, {
+            "identifier" : "https://schema.org/taxID",
+            "property" : "taxID",
+            "type" : "Text"
+          }, {
+            "identifier" : "https://schema.org/telephone",
+            "property" : "telephone",
+            "type" : "Text"
+          }, {
+            "identifier" : "https://schema.org/description",
+            "property" : "description",
+            "type" : "Text"
+          }, {
+            "identifier" : "https://schema.org/familyName",
+            "property" : "familyName",
+            "type" : "Text"
+          }, {
+            "identifier" : "https://schema.org/sponsor",
+            "property" : "sponsor",
+            "type" : "string"
+          }, {
+            "identifier" : "https://schema.org/isicV4",
+            "property" : "isicV4",
+            "type" : "Text"
+          }, {
+            "identifier" : "https://schema.org/gender",
+            "property" : "gender",
+            "type" : "Text"
+          }, {
+            "identifier" : "https://schema.org/worksFor",
+            "property" : "worksFor",
+            "type" : "string"
+          }, {
+            "identifier" : "https://schema.org/performerIn",
+            "property" : "performerIn",
+            "type" : "string"
+          }, {
+            "identifier" : "https://schema.org/deathDate",
+            "property" : "deathDate",
+            "type" : "string"
+          }, {
+            "identifier" : "https://schema.org/weight",
+            "property" : "weight",
+            "type" : "string"
+          }, {
+            "identifier" : "https://schema.org/naics",
+            "property" : "naics",
+            "type" : "Text"
+          }, {
+            "identifier" : "https://schema.org/award",
+            "property" : "award",
+            "type" : "Text"
+          }, {
+            "identifier" : "https://schema.org/deathPlace",
+            "property" : "deathPlace",
+            "type" : "string"
+          }, {
+            "identifier" : "https://schema.org/interactionStatistic",
+            "property" : "interactionStatistic",
+            "type" : "string"
+          }, {
+            "identifier" : "http://www.w3.org/2000/01/rdf-schema#comment",
+            "property" : "comment",
+            "type" : "string"
+          }, {
+            "identifier" : "https://schema.org/vatID",
+            "property" : "vatID",
+            "type" : "Text"
+          }, {
+            "identifier" : "https://schema.org/hasOccupation",
+            "property" : "hasOccupation",
+            "type" : "string"
+          }, {
+            "identifier" : "https://schema.org/subjectOf",
+            "property" : "subjectOf",
+            "type" : "string"
+          }, {
+            "identifier" : "https://schema.org/knowsLanguage",
+            "property" : "knowsLanguage",
+            "type" : "Text"
+          }, {
+            "identifier" : "https://schema.org/globalLocationNumber",
+            "property" : "globalLocationNumber",
+            "type" : "Text"
+          }, {
+            "identifier" : "https://schema.org/hasPOS",
+            "property" : "hasPOS",
+            "type" : "string"
+          }, {
+            "identifier" : "https://schema.org/image",
+            "property" : "image",
+            "type" : "string"
+          }, {
+            "identifier" : "https://schema.org/netWorth",
+            "property" : "netWorth",
+            "type" : "string"
+          }, {
+            "identifier" : "https://schema.org/disambiguatingDescription",
+            "property" : "disambiguatingDescription",
+            "type" : "Text"
+          }, {
+            "identifier" : "https://schema.org/homeLocation",
+            "property" : "homeLocation",
+            "type" : "string"
+          }, {
+            "identifier" : "https://schema.org/honorificSuffix",
+            "property" : "honorificSuffix",
+            "type" : "Text"
+          }, {
+            "identifier" : "https://schema.org/faxNumber",
+            "property" : "faxNumber",
+            "type" : "Text"
+          }, {
+            "identifier" : "https://schema.org/hasCredential",
+            "property" : "hasCredential",
+            "type" : "string"
+          }, {
+            "identifier" : "https://schema.org/email",
+            "property" : "email",
+            "type" : "Text"
+          }, {
+            "identifier" : "https://schema.org/parents",
+            "property" : "parents",
+            "type" : "string"
+          }, {
+            "identifier" : "https://schema.org/knows",
+            "property" : "knows",
+            "type" : "string"
+          }, {
+            "identifier" : "https://schema.org/contactPoints",
+            "property" : "contactPoints",
+            "type" : "string"
+          }, {
+            "identifier" : "https://schema.org/hasOfferCatalog",
+            "property" : "hasOfferCatalog",
+            "type" : "string"
+          }, {
+            "identifier" : "https://schema.org/siblings",
+            "property" : "siblings",
+            "type" : "string"
+          }, {
+            "identifier" : "https://schema.org/nationality",
+            "property" : "nationality",
+            "type" : "string"
+          }, {
+            "identifier" : "https://schema.org/publishingPrinciples",
+            "property" : "publishingPrinciples",
+            "type" : "string"
+          }, {
+            "identifier" : "https://schema.org/memberOf",
+            "property" : "memberOf",
+            "type" : "string"
+          }, {
+            "identifier" : "https://schema.org/additionalName",
+            "property" : "additionalName",
+            "type" : "Text"
+          }, {
+            "identifier" : "http://www.w3.org/2000/01/rdf-schema#label",
+            "property" : "label",
+            "type" : "string"
+          }, {
+            "identifier" : "https://schema.org/identifier",
+            "property" : "identifier",
+            "type" : "Text"
+          }, {
+            "identifier" : "https://schema.org/colleagues",
+            "property" : "colleagues",
+            "type" : "string"
+          }, {
+            "identifier" : "https://schema.org/birthDate",
+            "property" : "birthDate",
+            "type" : "string"
+          }, {
+            "identifier" : "https://schema.org/colleague",
+            "property" : "colleague",
+            "type" : "string"
+          } ],
+          "key" : {
+            "name" : "",
+            "properties" : [ ]
+          }
+        }
+      }
+    },
+    "mappingModel" : {
+      "relationshipMappings" : {
+        "https://schema.org/Personhttps://schema.org/parentshttps://schema.org/Person" : {
+          "sourceMappings" : [ ],
+          "mappings" : [ ],
+          "targetMappings" : [ ],
+          "relationshipSchema" : "https://schema.org/Personhttps://schema.org/parentshttps://schema.org/Person"
+        },
+        "https://schema.org/Personhttps://schema.org/relatedTohttps://schema.org/Person" : {
+          "sourceMappings" : [ ],
+          "mappings" : [ ],
+          "targetMappings" : [ ],
+          "relationshipSchema" : "https://schema.org/Personhttps://schema.org/relatedTohttps://schema.org/Person"
+        },
+        "https://schema.org/Personhttps://schema.org/knowshttps://schema.org/Person" : {
+          "sourceMappings" : [ ],
+          "mappings" : [ ],
+          "targetMappings" : [ ],
+          "relationshipSchema" : "https://schema.org/Personhttps://schema.org/knowshttps://schema.org/Person"
+        },
+        "https://schema.org/Personhttps://schema.org/siblingshttps://schema.org/Person" : {
+          "sourceMappings" : [ ],
+          "mappings" : [ ],
+          "targetMappings" : [ ],
+          "relationshipSchema" : "https://schema.org/Personhttps://schema.org/siblingshttps://schema.org/Person"
+        },
+        "https://schema.org/Personhttps://schema.org/followshttps://schema.org/Person" : {
+          "sourceMappings" : [ ],
+          "mappings" : [ ],
+          "targetMappings" : [ ],
+          "relationshipSchema" : "https://schema.org/Personhttps://schema.org/followshttps://schema.org/Person"
+        },
+        "https://schema.org/Personhttps://schema.org/colleaguehttps://schema.org/Person" : {
+          "sourceMappings" : [ ],
+          "mappings" : [ ],
+          "targetMappings" : [ ],
+          "relationshipSchema" : "https://schema.org/Personhttps://schema.org/colleaguehttps://schema.org/Person"
+        },
+        "https://schema.org/Personhttps://schema.org/colleagueshttps://schema.org/Person" : {
+          "sourceMappings" : [ ],
+          "mappings" : [ ],
+          "targetMappings" : [ ],
+          "relationshipSchema" : "https://schema.org/Personhttps://schema.org/colleagueshttps://schema.org/Person"
+        },
+        "https://schema.org/Personhttps://schema.org/sponsorhttps://schema.org/Person" : {
+          "sourceMappings" : [ ],
+          "mappings" : [ ],
+          "targetMappings" : [ ],
+          "relationshipSchema" : "https://schema.org/Personhttps://schema.org/sponsorhttps://schema.org/Person"
+        },
+        "https://schema.org/Personhttps://schema.org/knowsAbouthttps://schema.org/Person" : {
+          "sourceMappings" : [ ],
+          "mappings" : [ ],
+          "targetMappings" : [ ],
+          "relationshipSchema" : "https://schema.org/Personhttps://schema.org/knowsAbouthttps://schema.org/Person"
+        },
+        "https://schema.org/Personhttps://schema.org/spousehttps://schema.org/Person" : {
+          "sourceMappings" : [ ],
+          "mappings" : [ ],
+          "targetMappings" : [ ],
+          "relationshipSchema" : "https://schema.org/Personhttps://schema.org/spousehttps://schema.org/Person"
+        },
+        "https://schema.org/Personhttps://schema.org/siblinghttps://schema.org/Person" : {
+          "sourceMappings" : [ ],
+          "mappings" : [ ],
+          "targetMappings" : [ ],
+          "relationshipSchema" : "https://schema.org/Personhttps://schema.org/siblinghttps://schema.org/Person"
+        },
+        "https://schema.org/Personhttps://schema.org/funderhttps://schema.org/Person" : {
+          "sourceMappings" : [ ],
+          "mappings" : [ ],
+          "targetMappings" : [ ],
+          "relationshipSchema" : "https://schema.org/Personhttps://schema.org/funderhttps://schema.org/Person"
+        },
+        "https://schema.org/Personhttps://schema.org/childrenhttps://schema.org/Person" : {
+          "sourceMappings" : [ ],
+          "mappings" : [ ],
+          "targetMappings" : [ ],
+          "relationshipSchema" : "https://schema.org/Personhttps://schema.org/childrenhttps://schema.org/Person"
+        },
+        "https://schema.org/Personhttps://schema.org/parenthttps://schema.org/Person" : {
+          "sourceMappings" : [ ],
+          "mappings" : [ ],
+          "targetMappings" : [ ],
+          "relationshipSchema" : "https://schema.org/Personhttps://schema.org/parenthttps://schema.org/Person"
+        }
+      },
+      "nodeMappings" : {
+        "https://schema.org/Person" : {
+          "mappings" : [ ],
+          "nodeSchema" : "https://schema.org/Person"
+        }
+      }
+    },
+    "fileModel" : {
+      "fileSchemas" : { }
+    }
+  },
+  "version" : "0.1.1-beta.0",
+  "graph" : {
+    "relationships" : [ {
+      "toId" : "https://schema.org/Person",
+      "id" : "https://schema.org/Personhttps://schema.org/sponsorhttps://schema.org/Person",
+      "type" : "sponsor",
+      "fromId" : "https://schema.org/Person"
+    }, {
+      "toId" : "https://schema.org/Person",
+      "id" : "https://schema.org/Personhttps://schema.org/spousehttps://schema.org/Person",
+      "type" : "spouse",
+      "fromId" : "https://schema.org/Person"
+    }, {
+      "toId" : "https://schema.org/Person",
+      "id" : "https://schema.org/Personhttps://schema.org/knowsAbouthttps://schema.org/Person",
+      "type" : "knowsAbout",
+      "fromId" : "https://schema.org/Person"
+    }, {
+      "toId" : "https://schema.org/Person",
+      "id" : "https://schema.org/Personhttps://schema.org/childrenhttps://schema.org/Person",
+      "type" : "children",
+      "fromId" : "https://schema.org/Person"
+    }, {
+      "toId" : "https://schema.org/Person",
+      "id" : "https://schema.org/Personhttps://schema.org/parentshttps://schema.org/Person",
+      "type" : "parents",
+      "fromId" : "https://schema.org/Person"
+    }, {
+      "toId" : "https://schema.org/Person",
+      "id" : "https://schema.org/Personhttps://schema.org/knowshttps://schema.org/Person",
+      "type" : "knows",
+      "fromId" : "https://schema.org/Person"
+    }, {
+      "toId" : "https://schema.org/Person",
+      "id" : "https://schema.org/Personhttps://schema.org/siblinghttps://schema.org/Person",
+      "type" : "sibling",
+      "fromId" : "https://schema.org/Person"
+    }, {
+      "toId" : "https://schema.org/Person",
+      "id" : "https://schema.org/Personhttps://schema.org/parenthttps://schema.org/Person",
+      "type" : "parent",
+      "fromId" : "https://schema.org/Person"
+    }, {
+      "toId" : "https://schema.org/Person",
+      "id" : "https://schema.org/Personhttps://schema.org/funderhttps://schema.org/Person",
+      "type" : "funder",
+      "fromId" : "https://schema.org/Person"
+    }, {
+      "toId" : "https://schema.org/Person",
+      "id" : "https://schema.org/Personhttps://schema.org/siblingshttps://schema.org/Person",
+      "type" : "siblings",
+      "fromId" : "https://schema.org/Person"
+    }, {
+      "toId" : "https://schema.org/Person",
+      "id" : "https://schema.org/Personhttps://schema.org/followshttps://schema.org/Person",
+      "type" : "follows",
+      "fromId" : "https://schema.org/Person"
+    }, {
+      "toId" : "https://schema.org/Person",
+      "id" : "https://schema.org/Personhttps://schema.org/colleagueshttps://schema.org/Person",
+      "type" : "colleagues",
+      "fromId" : "https://schema.org/Person"
+    }, {
+      "toId" : "https://schema.org/Person",
+      "id" : "https://schema.org/Personhttps://schema.org/relatedTohttps://schema.org/Person",
+      "type" : "relatedTo",
+      "fromId" : "https://schema.org/Person"
+    }, {
+      "toId" : "https://schema.org/Person",
+      "id" : "https://schema.org/Personhttps://schema.org/colleaguehttps://schema.org/Person",
+      "type" : "colleague",
+      "fromId" : "https://schema.org/Person"
+    } ],
+    "nodes" : [ {
+      "caption" : "Person",
+      "id" : "https://schema.org/Person",
+      "position" : {
+        "x" : -400,
+        "y" : 600
+      }
+    } ]
+  }
+}
