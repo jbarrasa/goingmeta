@@ -24,9 +24,13 @@ We will use this repo to share the code from the sessions in the Going Meta seri
    * [video of the session](https://www.youtube.com/watch?v=05Wkg1p34ek)
    * [code and resources](https://github.com/jbarrasa/goingmeta/tree/main/session5)
 
+* Session 6 [July 5, 2022]: **Ontology learning from tagged data**
+   * [video of the session](https://www.youtube.com/watch?v=fpt-OsGOzmo&t=1060s)
+   * [code and resources](https://github.com/jbarrasa/goingmeta/tree/main/session6)
+
 
 ## coming up
 
-* Session 6 [July 5, 2022]: **TBD ??**
+* Session 7 [August 2, 2022]: **TBD ??**
    * [video of the session](#)
    * [code and resources](#)
