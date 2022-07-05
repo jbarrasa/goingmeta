@@ -24,7 +24,7 @@ We will use this repo to share the code from the sessions in the Going Meta seri
    * [video of the session](https://www.youtube.com/watch?v=05Wkg1p34ek)
    * [code and resources](https://github.com/jbarrasa/goingmeta/tree/main/session5)
 
-* Session 6 [July 5, 2022]: **Ontology learning from tagged data**
+* Session 6 [July 5, 2022]: **Ontology learning from graph data**
    * [video of the session](https://www.youtube.com/watch?v=fpt-OsGOzmo&t=1060s)
    * [code and resources](https://github.com/jbarrasa/goingmeta/tree/main/session6)
 
