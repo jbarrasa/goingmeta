@@ -1,0 +1,40 @@
+call {
+match (n) where id(n) = $node_id
+// set param (node id and style)
+
+:params {node_id : , speech_style: "default"}
+
+
+// natural language generator 
+
+match (cn:Class)<-[:domain]-(op:DatatypeProperty)
+where op.label[0] in keys(n)
+      and (exists(op.direct))
+      and  [x in labels(n) where x <> "Resource"][0] in cn.label
+with n[cn.name[0]] as subj ,
+     n10s.rdf.getLangValue($speech_style, op.direct) as pred ,
+     n[op.label[0]] as obj
+with  case when pred contains '$' then '' else subj end as subj,
+        case when pred contains '$' then replace(pred,'$',toString(subj)) else pred end  as pred,
+        obj
+return subj + " " + pred + " " + obj  as sentence
+
+union
+
+match (n)-[r]-(o) where id(n) = $node_id
+match (cn:Class)<-[:domain|range*1]-(op:ObjectProperty)-[:domain|range*1]->(co:Class)
+where type(r) in op.label
+      and (exists(op.direct) or exists(op.inverse))
+and  [x in labels(n) where x <> "Resource"][0] in cn.label
+and [x in labels(o) where x <> "Resource"][0] in co.label
+with n[cn.name[0]] as subj ,
+n10s.rdf.getLangValue($speech_style ,op[case when startNode(r) = n then "direct" else "inverse" end]) as pred ,
+o[co.name[0]] as obj
+with  subj ,
+case when pred contains '$' then replace(pred,'$',toString(obj)) else pred end  as pred,
+substring(reduce(r="",x in collect(case when pred contains '$' then '' else toString(obj) end)| r + ", " + x),2) as obj
+return subj + " " + pred + " " + obj  as sentence
+}
+return distinct sentence
+
+
