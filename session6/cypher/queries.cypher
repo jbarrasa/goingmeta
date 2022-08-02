@@ -39,7 +39,7 @@ CALL gds.graph.project(
 
 
 // run algo
-CALL gds.nodeSimilarity.stream('bookSimGraph')
+CALL gds.nodeSimilarity.stream('genreSimGraph')
 YIELD node1, node2, similarity
 RETURN gds.util.asNode(node1).name AS Genre1, gds.util.asNode(node2).name AS Genre2, similarity
 ORDER BY similarity DESCENDING, Genre1, Genre2
