@@ -26,7 +26,7 @@ call {
 union
 
       match (n)-[r]-(o) where id(n) = $node_id
-      match (cn:Class)<-[:domain|range*1]-(op:ObjectProperty)-[:domain|range*1]->(co:Class)
+      match (cn:Class)<-[:domain|range]-(op:ObjectProperty)-[:domain|range]->(co:Class)
       where type(r) in op.label
             and (exists(op.direct) or exists(op.inverse))
             and  [x in labels(n) where x <> "Resource"][0] in cn.label
