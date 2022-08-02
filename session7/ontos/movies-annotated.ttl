@@ -92,13 +92,13 @@ mv:tagline rdf:type owl:DatatypeProperty ;
 
 ###  neo4j://www.neo4j.org/sch/movies#Movie
 mv:Movie rdf:type owl:Class ;
-         talk:name "$title" ;
+         talk:name "title" ;
          rdfs:label "Movie" .
 
 
 ###  neo4j://www.neo4j.org/sch/movies#Person
 mv:Person rdf:type owl:Class ;
-          talk:name "$name" ;
+          talk:name "name" ;
           rdfs:label "Person" .
 
 
