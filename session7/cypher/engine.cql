@@ -1,5 +1,3 @@
-call {
-match (n) where id(n) = $node_id
 // set param (node id and style)
 
 :params {node_id : , speech_style: "default"}
