@@ -23,6 +23,7 @@ call {
 
 union
 
+
       match (n)-[r]-(o) where id(n) = $node_id
       match (cn:Class)<-[:domain|range]-(op:ObjectProperty)-[:domain|range]->(co:Class)
       where type(r) in op.label
@@ -31,12 +32,13 @@ union
             and [x in labels(o) where x <> "Resource"][0] in co.label
       with n[cn.name[0]] as subj ,
            n10s.rdf.getLangValue($speech_style ,op[case when startNode(r) = n then "direct" else "inverse" end]) as pred ,
-           o[co.name[0]] as obj
+           substring(reduce(result="", x in collect(o[co.name[0]]) | result+","+x),1) as obj
       // some formatting     
       with  subj ,
-            case when pred contains '$' then replace(pred,'$',toString(obj)) else pred end  as pred,
+            case when pred contains '$' then replace(pred,'$',obj) else pred end  as pred,
             substring(reduce(r="",x in collect(case when pred contains '$' then '' else toString(obj) end)| r + ", " + x),2) as obj
       return subj + " " + pred + " " + obj  as sentence
+
 }
 
 return distinct sentence
