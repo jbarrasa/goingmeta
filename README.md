@@ -28,9 +28,12 @@ We will use this repo to share the code from the sessions in the Going Meta seri
    * [video of the session](https://www.youtube.com/watch?v=fpt-OsGOzmo&t=1060s)
    * [code and resources](https://github.com/jbarrasa/goingmeta/tree/main/session6)
 
+* Session 7 [August 2, 2022]: **Generating natural language from your Knowledge Graph by annotating ontologies**
+   * [video of the session](https://youtu.be/Y_IygO4MOqc?t=445)
+   * [code and resources](https://github.com/jbarrasa/goingmeta/tree/main/session7)
 
 ## coming up
 
-* Session 7 [August 2, 2022]: **TBD ??**
+* Session 8 [Sept 6, 2022]: **TBD ??**
    * [video of the session](#)
    * [code and resources](#)
