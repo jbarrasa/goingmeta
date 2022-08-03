@@ -1,0 +1,27 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix talk: <http://www.neo4j.org/2022/07/talkable#> .
+@prefix mv: <http://www.neo4j.org/sch/movies#> .
+
+
+mv:Movie rdf:type owl:Class ;
+     talk:name "title" ;
+     rdfs:label "Movie" .
+
+
+mv:Person rdf:type owl:Class ;
+      talk:name "name" ;
+      rdfs:label "Person" .
+
+
+mv:ACTED_IN rdf:type owl:ObjectProperty ;
+      rdfs:domain mv:Person ;
+      rdfs:range mv:Movie ;
+      talk:direct "acted in"@default ,
+                  "is in"@short ,
+                  "is in the cast of"@long ;
+      talk:inverse "has in it"@default ,
+                   "includes"@short ,
+                   "includes in the cast"@long ;
+      rdfs:label "ACTED_IN" .
