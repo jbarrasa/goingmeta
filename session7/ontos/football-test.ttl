@@ -1,0 +1,136 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.w3.org/2002/07/owl#> .
+
+[ rdf:type owl:Ontology
+ ] .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.neo4j.org/2022/07/talkable#direct
+<http://www.neo4j.org/2022/07/talkable#direct> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.neo4j.org/2022/07/talkable#name
+<http://www.neo4j.org/2022/07/talkable#name> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  neo4j://graph.schema#COACH_FOR
+<neo4j://graph.schema#COACH_FOR> rdf:type owl:ObjectProperty ;
+                                 rdfs:domain <neo4j://graph.schema#Person> ;
+                                 rdfs:range <neo4j://graph.schema#Squad> ;
+                                 rdfs:label "COACH_FOR" .
+
+
+###  neo4j://graph.schema#FOR
+<neo4j://graph.schema#FOR> rdf:type owl:ObjectProperty ;
+                           rdfs:domain <neo4j://graph.schema#Squad> ;
+                           rdfs:range <neo4j://graph.schema#Tournament> ;
+                           rdfs:label "FOR" .
+
+
+###  neo4j://graph.schema#IN_SQUAD
+<neo4j://graph.schema#IN_SQUAD> rdf:type owl:ObjectProperty ;
+                                rdfs:domain <neo4j://graph.schema#Person> ;
+                                rdfs:range <neo4j://graph.schema#Squad> ;
+                                <http://www.neo4j.org/2022/07/talkable#direct> "played for"@default ;
+                                rdfs:label "IN_SQUAD" .
+
+
+###  neo4j://graph.schema#IN_TOURNAMENT
+<neo4j://graph.schema#IN_TOURNAMENT> rdf:type owl:ObjectProperty ;
+                                     rdfs:domain <neo4j://graph.schema#Match> ;
+                                     rdfs:range <neo4j://graph.schema#Tournament> ;
+                                     rdfs:label "IN_TOURNAMENT" .
+
+
+###  neo4j://graph.schema#NAMED
+<neo4j://graph.schema#NAMED> rdf:type owl:ObjectProperty ;
+                             rdfs:domain <neo4j://graph.schema#Team> ;
+                             rdfs:range <neo4j://graph.schema#Squad> ;
+                             rdfs:label "NAMED" .
+
+
+###  neo4j://graph.schema#PARTICIPATED_IN
+<neo4j://graph.schema#PARTICIPATED_IN> rdf:type owl:ObjectProperty ;
+                                       rdfs:domain <neo4j://graph.schema#Team> ;
+                                       rdfs:range <neo4j://graph.schema#Tournament> ;
+                                       rdfs:label "PARTICIPATED_IN" .
+
+
+###  neo4j://graph.schema#PLAYED_IN
+<neo4j://graph.schema#PLAYED_IN> rdf:type owl:ObjectProperty ;
+                                 rdfs:domain <neo4j://graph.schema#Person> ,
+                                             <neo4j://graph.schema#Team> ;
+                                 rdfs:range <neo4j://graph.schema#Match> ;
+                                 rdfs:label "PLAYED_IN" .
+
+
+###  neo4j://graph.schema#REPRESENTS
+<neo4j://graph.schema#REPRESENTS> rdf:type owl:ObjectProperty ;
+                                  rdfs:domain <neo4j://graph.schema#Person> ;
+                                  rdfs:range <neo4j://graph.schema#Team> ;
+                                  <http://www.neo4j.org/2022/07/talkable#direct> "has represented the national team of"@default ;
+                                  rdfs:label "REPRESENTS" .
+
+
+###  neo4j://graph.schema#SCORED_GOAL
+<neo4j://graph.schema#SCORED_GOAL> rdf:type owl:ObjectProperty ;
+                                   rdfs:domain <neo4j://graph.schema#Person> ;
+                                   rdfs:range <neo4j://graph.schema#Match> ;
+                                   rdfs:label "SCORED_GOAL" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.neo4j.org/2022/07/talkable#dob
+<http://www.neo4j.org/2022/07/talkable#dob> rdf:type owl:DatatypeProperty ;
+                                            rdfs:domain <neo4j://graph.schema#Person> ;
+                                            <http://www.neo4j.org/2022/07/talkable#direct> "was bor on"@default ;
+                                            rdfs:label "dob" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  neo4j://graph.schema#Match
+<neo4j://graph.schema#Match> rdf:type owl:Class ;
+                             rdfs:label "Match" .
+
+
+###  neo4j://graph.schema#Person
+<neo4j://graph.schema#Person> rdf:type owl:Class ;
+                              <http://www.neo4j.org/2022/07/talkable#name> "name" ;
+                              rdfs:label "Person" .
+
+
+###  neo4j://graph.schema#Squad
+<neo4j://graph.schema#Squad> rdf:type owl:Class ;
+                             <http://www.neo4j.org/2022/07/talkable#name> "id" ;
+                             rdfs:label "Squad" .
+
+
+###  neo4j://graph.schema#Team
+<neo4j://graph.schema#Team> rdf:type owl:Class ;
+                            <http://www.neo4j.org/2022/07/talkable#name> "name" ;
+                            rdfs:label "Team" .
+
+
+###  neo4j://graph.schema#Tournament
+<neo4j://graph.schema#Tournament> rdf:type owl:Class ;
+                                  rdfs:label "Tournament" .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
