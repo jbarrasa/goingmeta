@@ -1,0 +1,119 @@
+## Going Meta #7
+
+### Extract onto from the graph DB
+[source, python]
+----
+:GET /rdf/<your_DB>/onto
+----
+
+### Edit the ontology manually or with ontology editor (Protégé) to annotate entities
+
+####  Pick a namespace
+[source, python]
+----
+@prefix talk: <http://www.neo4j.org/2022/07/talkable#> .
+----
+
+#### ...and give classes a talk:name
+
+[source, python]
+----
+mv:Movie a owl:Class;
+  rdfs:label "Movie" ;
+  talk:name "title" .
+----  
+
+#### ...relationships a talk:direct and talk:inverse (also use language tags to indicate style)
+
+[source, python]
+----
+mv:ACTED_IN rdf:type owl:ObjectProperty ;
+        rdfs:domain <neo4j://graph.schema#Person> ;
+        rdfs:range <neo4j://graph.schema#Movie> ;
+        talk:direct "acted in"@default ,
+                    "is in"@short ,
+                    "is in the cast of"@long ;
+        talk:inverse "has in it"@default ,
+                     "includes"@short ,
+                     "includes in the cast"@long ;
+        rdfs:label "ACTED_IN" .
+----
+
+#### ... properties a talk:direct 
+
+
+### The onto is now ready to be loaded into Neo4j using n10s
+
+#### The usual config to import RDF 
+[source, python]
+----
+CREATE CONSTRAINT n10s_unique_uri FOR (r:Resource) REQUIRE r.uri IS UNIQUE;
+----
+
+[source, python]
+----
+call n10s.graphconfig.init({ handleVocabUris: "IGNORE" , keepLangTag: true , handleMultival: "ARRAY"});
+----
+
+#### Import the annotated ontology (fetch or inline)
+
+[source, python]
+----
+call n10s.rdf.import.inline('','Turtle');
+----
+
+### Let's have a look at the onto and see how patterns are stored with their speech style tag
+
+[source, python]
+----
+match onto = (:Class)--()
+return onto
+----                            
+                            
+### Finally, let's query onto and data to generate NL (this is how we'll build the generator in the other file)
+
+#### Step 1: select rel direction
+
+[source, python]
+----
+match (n)-[r]-(o) where id(n) = 17
+match (cn:Class)<-[:domain|range]-(op:ObjectProperty)-[:domain|range]->(co:Class)
+where type(r) in op.label  // a relationship definition
+      and (exists(op.direct) or exists(op.inverse))   // annotated
+      and  cn.label[0] in labels(n)
+      and co.label[0] in labels(o)
+return n[cn.name[0]] as subj ,
+     op[case when startNode(r) = n then "direct" else "inverse" end] as pred ,
+     o[co.name[0]] as obj
+----
+
+#### Step 2: add selection of speech style
+
+[source, python]
+----
+match (n)-[r]-(o) where id(n) = 17
+match (cn:Class)<-[:domain|range]-(op:ObjectProperty)-[:domain|range]->(co:Class)
+where type(r) in op.label  // a relationship definition
+      and (exists(op.direct) or exists(op.inverse))   // annotated
+      and  cn.label[0] in labels(n)
+      and co.label[0] in labels(o)
+return n[cn.name[0]] as subj ,
+     n10s.rdf.getLangValue("default" ,op[case when startNode(r) = n then "direct" else "inverse" end]) as pred ,
+     o[co.name[0]] as obj
+----
+
+#### Step 3: aggregate multiple values for the same predicate and concatenate to form sentences
+
+[source, python]
+----
+match (n)-[r]-(o) where id(n) = 63
+match (cn:Class)<-[:domain|range]-(op:ObjectProperty)-[:domain|range]->(co:Class)
+where type(r) in op.label  // a relationship definition
+      and (exists(op.direct) or exists(op.inverse))   // annotated
+      and  cn.label[0] in labels(n)
+      and co.label[0] in labels(o)
+with n[cn.name[0]] as subj ,
+     n10s.rdf.getLangValue("default" ,op[case when startNode(r) = n then "direct" else "inverse" end]) as pred ,
+     collect(o[co.name[0]]) as obj
+return subj + " " + pred + " " + substring(reduce(r="", x in obj | r+","+x),1)
+----
