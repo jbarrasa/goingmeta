@@ -32,8 +32,16 @@ We will use this repo to share the code from the sessions in the Going Meta seri
    * [video of the session](https://youtu.be/Y_IygO4MOqc?t=445)
    * [code and resources](https://github.com/jbarrasa/goingmeta/tree/main/session7)
 
+* Session 8 [Sept 6, 2022]: **Common RDF integration patterns**
+   * [video of the session](https://www.youtube.com/watch?v=iCrdR86AorU)
+   * [code and resources](https://github.com/jbarrasa/goingmeta/tree/main/session8)
+
+* Session 9 [Oct 4, 2022]: **Unsupervised KG construction. Graph Observability**
+   * [video of the session](https://www.youtube.com/watch?v=YVaj2LEqDn0)
+   * [code and resources](https://github.com/jbarrasa/goingmeta/tree/main/session9)
+
 ## coming up
 
-* Session 8 [Sept 6, 2022]: **TBD ??**
+* Session 10 [Nov 1, 2022]: **TBD ??**
    * [video of the session](#)
    * [code and resources](#)
