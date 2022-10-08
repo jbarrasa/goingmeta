@@ -9,7 +9,7 @@ We'll use the simplest and easiest access dataset, the movie DB. On your browser
 :play movies
 ----
 
-Visually explore the data in bloom?
+===Visually explore the data in bloom?
 
 Search for a person named Clint Eastwood that directed something... then expand
 other relationships for Clint, then for the movie Unforgiven... expand the relationships
@@ -55,16 +55,17 @@ but it's not as ROBUST and as FLEXIBLE and DYNAMIC as we would like.
 -> Also we would need a procedure, a script per bit of logic implemented.
 If I want to retrieve actors, or critics... that would require hardcoded logic for each of them.
 
-
-how about we GO META and write a generic method that would work on any model.
-sounds exciting, right?
-I'd like to give it a description of my data and the meta-procedure would do the rest.
+== Go Meta, make semantics explicit!
+Let's try to write a generic method that would work on ANY model. Sounds exciting, right?
+I'd like to give it a description of my data and the method, let's call it the "meta-procedure" would do the rest.
 
 
 Let's try it:
 
 First let's describe our data: We describe our data in terms of nodes and rels.
 And we can agree that the meaning of from and to is as follows...
+
+image::https://github.com/jbarrasa/goingmeta/raw/main/session4/img/onto-1.gif[]
 
 Directors are connected to movies through 'directed' relationships. Or in other words
 if something is related to something else through a 'directed' relationship then
@@ -90,6 +91,8 @@ return x ,  " is a " + from.name, y, " is a " + to.name
 That is interesting... because if we extend our model description with a definition of
 what an actor is...
 
+image::https://github.com/jbarrasa/goingmeta/raw/main/session4/img/onto-2.gif[]
+
 [source, python]
 ----
 merge (from:_Category { name: "Actor"})
@@ -100,8 +103,9 @@ merge (from)<-[:_from]-(r:_Relationship { name: "ACTED_IN"})-[:_to]->(to)
 Our procedure picks up both! and applies the logic to both actors and directors
 that's quite powerful!
 
+== And let's create an micro-inferencing engine
 
-And now we can write a generic script that reads our definitions, and enriches our graph
+Now we can write a generic script that reads our definitions, and enriches our graph
 with some extra types.
 
 [source, python]
@@ -114,9 +118,10 @@ call apoc.create.addLabels(y,[to.name]) yield node as ys
 return count(xs) + count(ys) + " nodes updated"
 ----
 
-What's happened? We've created an ontology!!
-A formal, explicit, description of a consensuated domain model
+You may or may not have noticed, but we've created an ontology (!!)
+A formal, explicit, description of some consensuated understanding of a domain.
 
+=== We can fully automate the inferencing step...
 Let's build this into a trigger so that every time we write to the graph this
 generic logic is executed:
 
@@ -131,8 +136,8 @@ rel in $createdRelationships
 Remember that Neo4j is a transactional store and can execute this logic in the
 context of a transaction so that it all works or it all fails, but does not
 leave you in an inconsistent state.
-I say this as if it was nothing and it's a crucial characteristic of a DB
-but I guess it's out of scope for today's session.
+__I say this as if it was nothing and it's a crucial characteristic of a DB
+but I guess it's out of scope for today's session.__
 
 [source, python]
 ----
@@ -148,11 +153,10 @@ return count(xs) + count(ys) + " nodes updated"
 ', {phase:'before'})
 ----
 
-In order to do that you need to enable the use of triggers by adding
-apoc.trigger.enabled=true
-to your neo4j.cof config. I've done it already.
+Note: In order to do that you need to enable the use of triggers by adding
+`apoc.trigger.enabled=true` to your `neo4j.cof config`. I've done it already.
 
-Let's test this. This should be the most fun part:
+And finally let's test this. This should be the most fun part:
 
 [source, python]
 ----
@@ -162,10 +166,13 @@ merge (gm:Movie { title: "Going Meta!"})
 merge (alex)-[:DIRECTED]->(gm)<-[:ACTED_IN]-(jb)
 ----
 
-What have we created?
+Quick query on the data we just created...
 
+[source, python]
+----
 match  path = shortestPath((:Person { name : "Alex Erdl"})-[*..2]-(:Person { name : "Jesús Barrasa"}))
 return path
+----
 
 Magic!!
 
@@ -174,33 +181,30 @@ ontology there will be no inference. So entirely data driven because our ontolog
 is explicit and part of our data, as it lives in the graph.
 
 
-Conclusions:
+== Conclusions
 
-Semantics means meaning. I told you we were going meta :)
-Meaning can be implicit in the head of the developers or we can try to make bits of it
+Semantics means "meaning". Meaning can be implicit in the head of the developers or we can try to make bits of it
 explicit and use it both programmatically for inference but also for describing our data
 and if we get to aggree with a community of users... (at the department or at
-the enterprise level...) to facilitate interoperability by creating canonical models.
-Let's talk the same language!
-That's what schema.org does for example or what your enterprise ontology does.
+the enterprise level...) to facilitate interoperability by creating canonical models. Data contracts.
+
 
 An ontology is a formal description of a domain.
 It's also a graph and can live in the same database as the data.
 It's described in terms of a set of primitives (categories, relationships, properties,
-hierarchies... but it can have more sophisticated constructs like simmetry, transitiveness, etc)
+hierarchies... but it can have more sophisticated constructs like symmetry, transitiveness, etc)
 Good idea? Up to you to decide.
+
 We like hierarchies for recommendation, for semantic similarity. We see clear value out of them
-beyond that... you'll have to figure out if the effort is worth the value.
-In any case, never create an ontology just for the sake of it, do it to solve a problem.
+but beyond that... you'll have to figure out if the value is worth the effort.
 
-
-Inference is deriving new information based on the explicit semantics of the ontology.
+*Inference* is deriving new information based on the explicit semantics of the ontology.
 Inferencing engines work on data and metadata (ontology and instance data...) and do
 different kinds of things. Today we got a hint at inferencing...
-But think of model validation: SHACL watch last weeks session in our youtube channel.
+But think of model validation: SHACL (watch previous GoingMeta session).
 
 
-
+== Q&A
 
 Question: I've created my onto in OWL, can I use it?
 Yes! Actually, let's do it.
