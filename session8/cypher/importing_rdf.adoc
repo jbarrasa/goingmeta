@@ -1,0 +1,50 @@
+= Going Meta - Session 8 - RDF Integration patterns 
+
+== Importing RDF embedded in HTML pages
+
+[source, python]
+----
+call apoc.load.html("https://www.theguardian.com/technology/2022/sep/01/twitter-to-allow-users-to-edit-tweets-after-posting", { jsonld: 'head script[type="application/ld+json"]'}) YIELD value
+with value.jsonld[0].data as rdf
+call n10s.rdf.preview.inline(rdf,"JSON-LD") yield nodes, relationships
+return nodes, relationships
+----
+
+== Importing data from a SPARQL endpoint (DBPedia)
+
+Let's initialise our Neo4j DB with the movies graph.
+
+[source, python]
+----
+:play movies
+----
+
+SPARQL query returning an actor's date and place of birth (Harrison Ford in this case)
+
+[source, python]
+----
+SELECT *
+WHERE {
+[] rdfs:label "Harrison Ford"@en ;
+   dbp:birthDate ?birthDate ;
+   dbp:birthPlace ?birthPlace .
+}
+----
+
+Iterate over the actors in our DB and issue an HTTP request to the DBPedia SPARQL endpoint with the previous query conveniently parameterised with the actor's name.
+
+[source, python]
+----
+with 'https://dbpedia.org/sparql/?default-graph-uri=http%3A%2F%2Fdbpedia.org&format=text%2Fcsv&query=' as endpoint,
+'SELECT *
+WHERE {
+[] rdfs:label "<<name>>"@en ;
+   dbp:birthDate ?birthDate ;
+   dbp:birthPlace ?birthPlace .
+}' as query
+
+match (a:Person) where (a)-[:ACTED_IN]->()
+
+load csv with headers from endpoint + apoc.text.urlencode(replace(query,"<<name>>", a.name)) as row
+return a, row
+----

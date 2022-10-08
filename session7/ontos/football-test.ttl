@@ -42,7 +42,8 @@
 <neo4j://graph.schema#IN_SQUAD> rdf:type owl:ObjectProperty ;
                                 rdfs:domain <neo4j://graph.schema#Person> ;
                                 rdfs:range <neo4j://graph.schema#Squad> ;
-                                <http://www.neo4j.org/2022/07/talkable#direct> "played for"@default ;
+                                <http://www.neo4j.org/2022/07/talkable#direct> "played for"@default ,
+                                                                               "plays in squad"@long ;
                                 rdfs:label "IN_SQUAD" .
 
 
