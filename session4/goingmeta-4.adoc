@@ -1,0 +1,293 @@
+= Going Meta - Session 4 - Ontology-based reasoning
+
+== Populate and explore the graph
+
+We'll use the simplest and easiest access dataset, the movie DB. On your browser, type and click away...
+
+[source, python]
+----
+:play movies
+----
+
+Visually explore the data in bloom?
+
+Search for a person named Clint Eastwood that directed something... then expand
+other relationships for Clint, then for the movie Unforgiven... expand the relationships
+for Gene Hackman...
+
+image::https://github.com/jbarrasa/goingmeta/raw/main/session4/img/bloom.gif[]
+
+== Queries to surface entities: Find me all directors
+
+The concept of a director is present in my database but it's *__implicit__*.
+I can surface it with a query because...
+1) I can understand English and the schema and the data in the db are in English
+2) I know that a director is someone who directs a movie
+
+Here's what a cypher expression would look like...
+
+[source, python]
+----
+match (x)-[:DIRECTED]->(:Movie)
+return distinct x.name as director
+----
+
+Or we can transform the query into a script to *enrich* the graph
+(regularly in batch mode or a a trigger every time new data is added):
+
+[source, python]
+----
+match (x)-[:DIRECTED]->(:Movie)
+set x:Director
+----
+
+But where are the semantics in all this?
+
+Well, the understanding of what a director is is in my brain and i've somehow
+encoded it in the cypher query.
+
+
+That is fine-ish
+BUT this would work on this database and if the model changes the script would need to be rewritten
+This is a common approach. This could go in a stored procedures/user defined functions.
+We bring logic close to the data BUT it's a black box. It returns the right results
+but it's not as ROBUST and as FLEXIBLE and DYNAMIC as we would like.
+-> Also we would need a procedure, a script per bit of logic implemented.
+If I want to retrieve actors, or critics... that would require hardcoded logic for each of them.
+
+
+how about we GO META and write a generic method that would work on any model.
+sounds exciting, right?
+I'd like to give it a description of my data and the meta-procedure would do the rest.
+
+
+Let's try it:
+
+First let's describe our data: We describe our data in terms of nodes and rels.
+And we can agree that the meaning of from and to is as follows...
+
+Directors are connected to movies through 'directed' relationships. Or in other words
+if something is related to something else through a 'directed' relationship then
+one is a director and the other is a movie.
+
+[source, python]
+----
+merge (from:_Category { name: "Director"})
+merge (to:_Category { name: "Movie"})
+merge (from)<-[:_from]-(r:_Relationship { name: "DIRECTED"})-[:_to]->(to)
+----
+
+that we can connect with the data in a META query...
+
+[source, python]
+----
+match (from:_Category)<-[:_from]-(r:_Relationship)-[:_to]->(to:_Category)
+match (x)-[rel]->(y)
+where type(rel) = r.name
+return x ,  " is a " + from.name, y, " is a " + to.name
+----
+
+That is interesting... because if we extend our model description with a definition of
+what an actor is...
+
+[source, python]
+----
+merge (from:_Category { name: "Actor"})
+merge (to:_Category { name: "Movie"})
+merge (from)<-[:_from]-(r:_Relationship { name: "ACTED_IN"})-[:_to]->(to)
+----
+
+Our procedure picks up both! and applies the logic to both actors and directors
+that's quite powerful!
+
+
+And now we can write a generic script that reads our definitions, and enriches our graph
+with some extra types.
+
+[source, python]
+----
+match (from:_Category)<-[:_from]-(r:_Relationship)-[:_to]->(to:_Category)
+match (x)-[rel]->(y)
+where type(rel) = r.name
+call apoc.create.addLabels(x,[from.name]) yield node as xs
+call apoc.create.addLabels(y,[to.name]) yield node as ys
+return count(xs) + count(ys) + " nodes updated"
+----
+
+What's happened? We've created an ontology!!
+A formal, explicit, description of a consensuated domain model
+
+Let's build this into a trigger so that every time we write to the graph this
+generic logic is executed:
+
+I only need to add a fragment so that the logic is only executed on newly created
+rels
+
+[source, python]
+----
+rel in $createdRelationships
+----
+
+Remember that Neo4j is a transactional store and can execute this logic in the
+context of a transaction so that it all works or it all fails, but does not
+leave you in an inconsistent state.
+I say this as if it was nothing and it's a crucial characteristic of a DB
+but I guess it's out of scope for today's session.
+
+[source, python]
+----
+CALL apoc.trigger.add('microinferencer',
+'
+match (from:_Category)<-[:_from]-(r:_Relationship)-[:_to]->(to:_Category)
+match (x)-[rel]->(y)
+where rel in $createdRelationships and type(rel) = r.name
+call apoc.create.addLabels(x,[from.name]) yield node as xs
+call apoc.create.addLabels(y,[to.name]) yield node as ys
+return count(xs) + count(ys) + " nodes updated"
+
+', {phase:'before'})
+----
+
+In order to do that you need to enable the use of triggers by adding
+apoc.trigger.enabled=true
+to your neo4j.cof config. I've done it already.
+
+Let's test this. This should be the most fun part:
+
+[source, python]
+----
+merge (alex:Person { name : "Alex Erdl"})
+merge (jb:Person { name : "Jesús Barrasa"})
+merge (gm:Movie { title: "Going Meta!"})
+merge (alex)-[:DIRECTED]->(gm)<-[:ACTED_IN]-(jb)
+----
+
+What have we created?
+
+match  path = shortestPath((:Person { name : "Alex Erdl"})-[*..2]-(:Person { name : "Jesús Barrasa"}))
+return path
+
+Magic!!
+
+Note that the logic of this will entirely depend on our ontology. If there's no
+ontology there will be no inference. So entirely data driven because our ontology
+is explicit and part of our data, as it lives in the graph.
+
+
+Conclusions:
+
+Semantics means meaning. I told you we were going meta :)
+Meaning can be implicit in the head of the developers or we can try to make bits of it
+explicit and use it both programmatically for inference but also for describing our data
+and if we get to aggree with a community of users... (at the department or at
+the enterprise level...) to facilitate interoperability by creating canonical models.
+Let's talk the same language!
+That's what schema.org does for example or what your enterprise ontology does.
+
+An ontology is a formal description of a domain.
+It's also a graph and can live in the same database as the data.
+It's described in terms of a set of primitives (categories, relationships, properties,
+hierarchies... but it can have more sophisticated constructs like simmetry, transitiveness, etc)
+Good idea? Up to you to decide.
+We like hierarchies for recommendation, for semantic similarity. We see clear value out of them
+beyond that... you'll have to figure out if the effort is worth the value.
+In any case, never create an ontology just for the sake of it, do it to solve a problem.
+
+
+Inference is deriving new information based on the explicit semantics of the ontology.
+Inferencing engines work on data and metadata (ontology and instance data...) and do
+different kinds of things. Today we got a hint at inferencing...
+But think of model validation: SHACL watch last weeks session in our youtube channel.
+
+
+
+
+Question: I've created my onto in OWL, can I use it?
+Yes! Actually, let's do it.
+
+[source, turtle]
+----
+CREATE CONSTRAINT n10s_unique_uri FOR (r:Resource) REQUIRE r.uri IS UNIQUE;
+
+
+call n10s.graphconfig.init({ handleVocabUris: "IGNORE",
+classLabel: "_Category", objectPropertyLabel: "_Relationship",
+domainRel : "_from", rangeRel: "_to" , force: true});
+----
+
+[source, turtle]
+----
+call n10s.onto.preview.inline('
+
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix mov: <http://myvocabularies.com/Movies#> .
+
+mov:Actor a owl:Class;
+  rdfs:label "Actor" .
+
+mov:Director a owl:Class;
+  rdfs:label "Director" .
+
+mov:Artist a owl:Class;
+  rdfs:label "Artist" .
+
+mov:Actor rdfs:subClassOf mov:Artist .
+
+mov:Director rdfs:subClassOf mov:Artist .
+
+mov:Critic a owl:Class;
+  rdfs:label "Critic" .
+
+mov:Movie a owl:Class;
+  rdfs:label "Movie" .
+
+mov:DIRECTED a owl:ObjectProperty;
+  rdfs:range mov:Movie;
+  rdfs:label "WROTE";
+  rdfs:domain mov:Director .
+
+mov:ACTED_IN a owl:ObjectProperty;
+  rdfs:label "ACTED_IN";
+  rdfs:domain mov:Actor ;
+  rdfs:range mov:Movie .
+
+mov:REVIEWED a owl:ObjectProperty;
+  rdfs:range mov:Movie;
+  rdfs:label "REVIEWED";
+  rdfs:domain mov:Critic .
+
+','Turtle')
+----
+
+Let's test this too:
+
+[source, python]
+----
+merge (mh:Person { name : "Michael Hunger"})
+merge (gm:Movie { title: "Going Meta!"})
+merge (mh)-[:REVIEWED]->(gm)
+----
+
+Question: My ontology is quite dynamic and I don't want to materialise with a trigger the result of an inference.
+I want it computed on the fly
+
+We got you covered :) In the session I've used the simplest approach for this introductory session but in many cases that's what we want to do.
+Look at the procedures in n10s for taxonomies of properties and relationships
+
+[source, python]
+----
+// Give me all Artists:
+call n10s.inference.nodesLabelled("Artist")
+----
+
+check that none has the Artist label explicitly
+
+
+[source, python]
+----
+// and we can be more precise:
+call n10s.inference.nodesLabelled("Artist") yield node
+where node:Actor
+return count(node)
+----
