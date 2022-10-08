@@ -1,4 +1,4 @@
-= Going Meta - Session 8 - RDF Integration patterns 
+= Going Meta - Session 8 - RDF Integration patterns
 
 == Importing RDF embedded in HTML pages
 
@@ -17,6 +17,13 @@ Let's initialise our Neo4j DB with the movies graph.
 [source, python]
 ----
 :play movies
+----
+
+Set the config for the RDF importer
+
+[source, python]
+----
+call n10s.graphconfig.init({handleVocabUris: "IGNORE"})
 ----
 
 SPARQL query returning an actor's date and place of birth (Harrison Ford in this case)
