@@ -1,0 +1,9 @@
+select (?company as ?uri) (?name as ?companyname)
+where {
+  # match company by ticker
+  ?company a dbo:Company ;
+        dbp:symbol "FB"@en ;
+        rdfs:label ?name .
+
+  filter(lang(?name) = "en")
+}
