@@ -90,11 +90,13 @@ optional {
   }
 }
 
-' as sparql
+' as sparql,
+'http://dbpedia.org/sparql?format=text/plain&query=' as endpoint
+
 match (o:Organization) where o.ticker is not null
 
 CALL n10s.rdf.import.fetch(
-  'http://dbpedia.org/sparql?format=text/plain&query=' + apoc.text.urlencode(replace(sparql,"<<ticker>>", o.ticker)),
+  endpoint + apoc.text.urlencode(replace(sparql,"<<ticker>>", o.ticker)),
   'Turtle'
 ) yield terminationStatus, triplesLoaded, triplesParsed, namespaces, extraInfo
 return o.ticker, terminationStatus, triplesLoaded, triplesParsed, namespaces, extraInfo
