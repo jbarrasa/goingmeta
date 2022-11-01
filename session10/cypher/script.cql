@@ -13,7 +13,7 @@ MERGE (n:Organization { ticker:"DUOL" });
 
 //get some additional info for companies using DBPedia SPARQL endpoing
 // and consume as you would consume any other csv file
-with 'https://dbpedia.org/sparql/?default-graph-uri=http%3A%2F%2Fdbpedia.org&format=text%2Fcsv&query=' as endpoint,
+with 'https://dbpedia.org/sparql/?format=text%2Fcsv&query=' as endpoint,
 'select (?company as ?uri) (?name as ?companyname)
 where {
   # match company by ticker
@@ -54,6 +54,7 @@ SET o:Resource , o.uri = row.uri
 
 //get all
 
+WITH '
 construct {
     ?company a dbo:Company ;  ?cpred ?cobj ; ?relToPerson ?person ; ?relToPlace ?place .
     ?person a dbo:Person ; rdfs:label ?pobj ; ?relToPersonInv ?company .
@@ -61,7 +62,7 @@ construct {
 }
 where {
   # match company by ticker
-  ?company a dbo:Company ; dbp:symbol "FB"@en .
+  ?company a dbo:Company ; dbp:symbol "<<ticker>>"@en .
 
   ?company ?cpred ?cobj .
       filter(isLiteral(?cobj) && (lang(?cobj)="en" || lang(?cobj)="") && (strStarts(str(?cpred), "http://dbpedia.org/ontology/") || strStarts(str(?cpred), "http://www.w3.org/2000/01/rdf-schema#label") ))
@@ -88,3 +89,12 @@ optional {
 
   }
 }
+
+' as sparql
+match (o:Organization) where o.ticker is not null
+
+CALL n10s.rdf.import.fetch(
+  'http://dbpedia.org/sparql?format=text/plain&query=' + apoc.text.urlencode(replace(sparql,"<<ticker>>", o.ticker)),
+  'Turtle'
+) yield terminationStatus, triplesLoaded, triplesParsed, namespaces, extraInfo
+return o.ticker, terminationStatus, triplesLoaded, triplesParsed, namespaces, extraInfo
