@@ -40,7 +40,7 @@ We will use this repo to share the code from the sessions in the Going Meta seri
    * [video of the session](https://www.youtube.com/watch?v=YVaj2LEqDn0)
    * [code and resources](https://github.com/jbarrasa/goingmeta/tree/main/session9)
 
-* Session 10 [Nov 1, 2022]: **SPARQL based integration**
+* Session 10 [Nov 1, 2022]: **SPARQL based integrations... and managing graph expectations**
    * [video of the session](https://www.youtube.com/watch?v=nG62SzxOBJc)
    * [code and resources](https://github.com/jbarrasa/goingmeta/tree/main/session10)
 
