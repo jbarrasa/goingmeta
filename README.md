@@ -1,51 +1,26 @@
-# goingmeta
+# GoingMeta
 
-We will use this repo to share the code from the sessions in the Going Meta series. Give it a try and give us your feedback!
+We run the live streams on the **first Tuesday of each month**.
+(4pm BST, 11am ET, 8am PT, 3pm CEST, 8:30pm IST) 
+Streaming on Twitch and Youtube Live.
 
-## past sessions
+We will use this repo to share all resources used in the sessions. Give them a try and give us your feedback!
 
-* Session 1 [Feb 1, 2022]: **Cypher and SPARQL on the British Library catalog**
-    * [video of the session](https://www.youtube.com/watch?v=NQqWBnyQlS4)
-    * [code and resources](https://github.com/jbarrasa/goingmeta/tree/main/session1)
+## 2022 sessions
 
-* Session 2 [Mar 1, 2022]: **Semantic search. A worked example**
-    * [video of the session](https://www.youtube.com/watch?v=y6eCKIRsA64)
-    * [code and resources](https://github.com/jbarrasa/goingmeta/tree/main/session2)
+| #  | broadcast | title |tags| recording  | code |
+|---:|:-----:| -----:|:---------:|:--------------------------:|:---:|
+| 1  | Feb 1 | Cypher and SPARQL on the British Library catalog |`Cypher` `SPARQL`| [📺](https://www.youtube.com/watch?v=NQqWBnyQlS4) | [💻](https://github.com/jbarrasa/goingmeta/tree/main/session1) |
+| 2  | Mar 1 | Semantic search. A worked example |`n10s` `Cypher` `Wikidata`| [📺](https://www.youtube.com/watch?v=y6eCKIRsA64) | [💻](https://github.com/jbarrasa/goingmeta/tree/main/session2) |
+| 3  | Apr 5 | Controlling the shape of your graph with SHACL |`data quality` `SHACL` `n10s`| [📺](https://youtu.be/Zkgu7YauOfs?t=693) | [💻](https://github.com/jbarrasa/goingmeta/tree/main/session3) |
+| 4  | May 3 | Ontology based reasoning 101 |`Ontologies` `Inference` `Cypher`| [📺](https://www.youtube.com/watch?v=XX7Ppc5T0GE) | [💻](https://github.com/jbarrasa/goingmeta/tree/main/session4) |
+| 5  | Jun 13 | Ontology-driven Knowledge Graph construction |`Ontologies` `Python` `ETL`| [📺](https://www.youtube.com/watch?v=05Wkg1p34ek) | [💻](https://github.com/jbarrasa/goingmeta/tree/main/session5) |
+| 6  | Jul 5 | Ontology learning from graph data |`Graph Algos` `ML` `Ontologies`| [📺](https://www.youtube.com/watch?v=fpt-OsGOzmo&t=1060s) | [💻](https://github.com/jbarrasa/goingmeta/tree/main/session6) |
+| 7  | Aug 2 | Generating natural language from your KG by annotating ontologies |`NL` `Ontologies` `Cypher`| [📺](https://youtu.be/Y_IygO4MOqc?t=445) | [💻](https://github.com/jbarrasa/goingmeta/tree/main/session7) |
+| 8  | Sep 6 | Common RDF integration patterns |`Cypher` `JSON-LD` `SPARQL`| [📺](https://www.youtube.com/watch?v=iCrdR86AorU) | [💻](https://github.com/jbarrasa/goingmeta/tree/main/session8) |
+| 9  | Oct 4 | Unsupervised KG construction. Graph Observability |`Orchestration` `Prefect` `Wikidata`| [📺](https://www.youtube.com/watch?v=YVaj2LEqDn0) | [💻](https://github.com/jbarrasa/goingmeta/tree/main/session9) |
+| 10  | Nov 1 | SPARQL based integrations... and managing graph expectations |`DBPedia` `Cypher` `SPARQL`| [📺](https://www.youtube.com/watch?v=nG62SzxOBJc) | [💻](https://github.com/jbarrasa/goingmeta/tree/main/session10) |
+| *11*  | *Dec 6* | *coming up...* |`Python`| [📺](#) | [💻](#) |
 
-* Session 3 [Apr 5, 2022]: **Controlling the shape of your graph with SHACL**
-   * [video of the session](https://youtu.be/Zkgu7YauOfs?t=693)
-   * [code and resources](https://github.com/jbarrasa/goingmeta/tree/main/session3)
 
-* Session 4 [May 3, 2022]: **Ontology based reasoning 101**
-   * [video of the session](https://www.youtube.com/watch?v=XX7Ppc5T0GE)
-   * [code and resources](https://github.com/jbarrasa/goingmeta/tree/main/session4)
 
-* Session 5 [June 13, 2022]: **Ontology-driven Knowledge Graph construction**
-   * [video of the session](https://www.youtube.com/watch?v=05Wkg1p34ek)
-   * [code and resources](https://github.com/jbarrasa/goingmeta/tree/main/session5)
-
-* Session 6 [July 5, 2022]: **Ontology learning from graph data**
-   * [video of the session](https://www.youtube.com/watch?v=fpt-OsGOzmo&t=1060s)
-   * [code and resources](https://github.com/jbarrasa/goingmeta/tree/main/session6)
-
-* Session 7 [August 2, 2022]: **Generating natural language from your Knowledge Graph by annotating ontologies**
-   * [video of the session](https://youtu.be/Y_IygO4MOqc?t=445)
-   * [code and resources](https://github.com/jbarrasa/goingmeta/tree/main/session7)
-
-* Session 8 [Sept 6, 2022]: **Common RDF integration patterns**
-   * [video of the session](https://www.youtube.com/watch?v=iCrdR86AorU)
-   * [code and resources](https://github.com/jbarrasa/goingmeta/tree/main/session8)
-
-* Session 9 [Oct 4, 2022]: **Unsupervised KG construction. Graph Observability**
-   * [video of the session](https://www.youtube.com/watch?v=YVaj2LEqDn0)
-   * [code and resources](https://github.com/jbarrasa/goingmeta/tree/main/session9)
-
-* Session 10 [Nov 1, 2022]: **SPARQL based integrations... and managing graph expectations**
-   * [video of the session](https://www.youtube.com/watch?v=nG62SzxOBJc)
-   * [code and resources](https://github.com/jbarrasa/goingmeta/tree/main/session10)
-
-## coming up
-
-* Session 10 [Dec 6, 2022]: **TBD ??**
-   * [video of the session](#)
-   * [code and resources](#)
