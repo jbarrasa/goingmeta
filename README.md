@@ -20,7 +20,7 @@ We will use this repo to share all resources used in the sessions. Give them a t
 | 8  | Sep 6 | Common RDF integration patterns |`Cypher` `JSON-LD` `SPARQL`| [📺](https://www.youtube.com/watch?v=iCrdR86AorU) | [💻](https://github.com/jbarrasa/goingmeta/tree/main/session8) |
 | 9  | Oct 4 | Unsupervised KG construction. Graph Observability |`Orchestration` `Prefect` `Wikidata`| [📺](https://www.youtube.com/watch?v=YVaj2LEqDn0) | [💻](https://github.com/jbarrasa/goingmeta/tree/main/session9) |
 | 10  | Nov 1 | SPARQL based integrations |`DBPedia` `Cypher` `SPARQL`| [📺](https://www.youtube.com/watch?v=nG62SzxOBJc) | [💻](https://github.com/jbarrasa/goingmeta/tree/main/session10) |
-| 11  | Dec 6 | Graph data quality with graph expectations |`Python``Data Quality``SHACL`| [📺](https://www.youtube.com/watch?v=JrBOvdVkjU4) | [💻](#) |
+| 11  | Dec 6 | Graph data quality with graph expectations |`Python` `Data Quality` `SHACL`| [📺](https://www.youtube.com/watch?v=JrBOvdVkjU4) | [💻](#) |
 
 
 
