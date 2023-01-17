@@ -21,6 +21,7 @@ We will use this repo to share all resources used in the sessions. Give them a t
 | 9  | Oct 4 | Unsupervised KG construction. Graph Observability |`Orchestration` `Prefect` `Wikidata`| [📺](https://www.youtube.com/watch?v=YVaj2LEqDn0) | [💻](https://github.com/jbarrasa/goingmeta/tree/main/session9) |
 | 10  | Nov 1 | SPARQL based integrations |`DBPedia` `Cypher` `SPARQL`| [📺](https://www.youtube.com/watch?v=nG62SzxOBJc) | [💻](https://github.com/jbarrasa/goingmeta/tree/main/session10) |
 | 11  | Dec 6 | Graph data quality with graph expectations |`Python` `Data Quality` `SHACL`| [📺](https://www.youtube.com/watch?v=JrBOvdVkjU4) | [💻](https://github.com/jbarrasa/goingmeta/tree/main/session11) |
+| 12  | Jan 16 | Importing RDF data into AuraDB with Python and RDFLib |`Python` `RDFLib` `AuraDB`| [📺](https://youtu.be/DWINSvRxIbw?t=927) | [💻](https://github.com/jbarrasa/goingmeta/tree/main/session11) |
 
 
 
