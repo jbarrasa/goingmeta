@@ -27,6 +27,7 @@ We will use this repo to share all resources used in the sessions. Give them a t
 | #  | broadcast | title |tags| recording  | code |
 |---:|:-----:| -----:|:---------:|:--------------------------:|:---:|
 | 12  | Jan 16 | Importing RDF data into AuraDB with Python and RDFLib |`Python` `RDFLib` `AuraDB`| [📺](https://youtu.be/DWINSvRxIbw?t=927) | [💻](https://github.com/jbarrasa/goingmeta/tree/main/session12) |
+| 13  | Feb 9 | Creating (and RDF-izing) virtual graphs over external data |`SQL` `APOC` `RDF` `Python`| [📺](https://www.youtube.com/watch?v=FoHAyBhcH4s) | [💻](https://github.com/jbarrasa/goingmeta/tree/main/session13) |
 
 
 
