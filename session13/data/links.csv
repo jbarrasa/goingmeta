@@ -1,4 +1,4 @@
-﻿a.neId,b.neId,l.linkId,l.capacity
+from,to,linkId,capacity
 N01,N02,s1_124/ob,10752
 N01,N04,s1_125/ob,9600
 N01,N09,s1_128/ob,11520
