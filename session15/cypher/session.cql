@@ -28,7 +28,7 @@ call db.schema.visualization();
 call n10s.graphconfig.init({ handleVocabUris: "IGNORE"})
 
 // Now let's import it
-call n10s.onto.import.fetch("https://raw.githubusercontent.com/jbarrasa/goingmeta/main/session15/complete-movies-goingmeta.ttl","Turtle")
+call n10s.onto.import.fetch("https://raw.githubusercontent.com/jbarrasa/goingmeta/main/session15/onto/complete-movies-goingmeta.ttl","Turtle", { languageFilter: "en"})
 
 //The semantic layer (the ontology) drives the exploration of the graph from the app
 run the following in your python environment and explore in the browser
