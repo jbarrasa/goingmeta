@@ -30,6 +30,7 @@ We will use this repo to share all resources used in the sessions. Give them a t
 | 13  | Feb 9 | Creating (and RDF-izing) virtual graphs over external data |`SQL` `APOC` `RDF` `Python`| [📺](https://www.youtube.com/watch?v=FoHAyBhcH4s) | [💻](https://github.com/jbarrasa/goingmeta/tree/main/session13) |
 | 14  | Mar 7 | Taxonomy reconciliation |`RDF` `SPARQL` `Cypher`| [📺](https://www.youtube.com/watch?v=Aurp3eztRHM) | [💻](https://github.com/jbarrasa/goingmeta/tree/main/session14) |
 | 15  | Apr 5 | Building a Semantic Data App with Streamlit |`Python` `Ontology` `Streamlit` `Protege`| [📺](https://www.youtube.com/watch?v=m7kg33OsI_A) | [💻](https://github.com/jbarrasa/goingmeta/tree/main/session15) |
+| 16  | May 2 | Semantic Similarity Metrics in Taxonomies |`Python` `NLTK` `Semantics` `Taxonomy`| [📺](https://www.youtube.com/watch?v=WwTxlyjY35I) | [💻](https://github.com/jbarrasa/goingmeta/tree/main/session16) |
 
 
 
