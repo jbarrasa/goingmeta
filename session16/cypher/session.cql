@@ -1,3 +1,9 @@
+//Initialise graph for RDF import
+CREATE CONSTRAINT n10s_unique_uri FOR (r:Resource) REQUIRE r.uri IS UNIQUE;
+
+call n10s.graphconfig.init({ handleVocabUris: "IGNORE"});
+
+
 //Import a simple taxonomy (Ontology generated with Protégé)
 call n10s.onto.import.fetch("https://raw.githubusercontent.com/jbarrasa/goingmeta/main/session16/taxonomies/vw.ttl","Turtle")
 
