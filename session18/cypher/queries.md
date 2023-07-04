@@ -1,6 +1,6 @@
 # Stardog
 ## Run the first part of the notebook to populate the graph
-[notebook (see part 1 on Stardog)](session18/Easy_full_graph_migration_from_triple_stores.ipynb)
+[notebook (see part 1 on Stardog)](../Easy_full_graph_migration_from_triple_stores.ipynb)
 ## Exploring the database with SPARQL
 
 Exploring Nirvana...
@@ -47,7 +47,7 @@ return subgraph
 # Ontotext
 
 ## Complete the migration from the notebook and check data on both sides is identical
-[notebook (see part 2 on Ontotext)](session18/Easy_full_graph_migration_from_triple_stores.ipynb)
+[notebook (see part 2 on Ontotext)](../Easy_full_graph_migration_from_triple_stores.ipynb)
 
 ## SPARQL: Triples with sto:StandardOrganization as subject
 Test on [Ontotext SPARQL endpoint](https://i40kg.ontotext.com/graphdb/sparql)
