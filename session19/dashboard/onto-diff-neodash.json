@@ -1,0 +1,111 @@
+{
+  "title": "Ontology Diff",
+  "version": "2.3",
+  "settings": {
+    "pagenumber": 0,
+    "editable": true,
+    "fullscreenEnabled": false,
+    "parameters": {
+      "neodash_version_a": "v0",
+      "neodash_version_b": "v1"
+    }
+  },
+  "pages": [
+    {
+      "title": "Ontology Analysis",
+      "reports": [
+        {
+          "id": "753ad534-8fb2-4434-9c7d-c8801c5dc6e1",
+          "title": "Added Classes",
+          "query": "CALL {\n    USE graph.byName(\"ontos.\" + $neodash_version_b)\n    MATCH (c1:owl__Class)\n    return collect(c1.uri) as c1class_uris\n} with c1class_uris\nCALL {\n    USE graph.byName(\"ontos.\" + $neodash_version_a)\n    MATCH (c0:owl__Class) \n    return collect(c0.uri) as c0class_uris\n}\nunwind [x in c1class_uris where not x in c0class_uris] as new_class_uris\nreturn new_class_uris",
+          "width": 4,
+          "height": 2,
+          "x": 3,
+          "y": 0,
+          "type": "table",
+          "selection": {},
+          "settings": {},
+          "schema": []
+        },
+        {
+          "id": "7848b837-39b9-454d-8f24-fb1dd5ed723e",
+          "title": "Deleted Classes",
+          "query": "CALL {\n    USE graph.byName(\"ontos.\" + $neodash_version_a)\n    MATCH (c0:owl__Class) \n    return collect(c0.uri) as c0class_uris\n} with c0class_uris\nCALL {\n    USE graph.byName(\"ontos.\" + $neodash_version_b)\n    MATCH (c1:owl__Class)\n    return collect(c1.uri) as c1class_uris\n}\nunwind [x in c0class_uris where not x in c1class_uris] as deleted_class_uris\nreturn deleted_class_uris\n\n",
+          "width": 5,
+          "height": 2,
+          "x": 7,
+          "y": 0,
+          "type": "table",
+          "selection": {},
+          "settings": {},
+          "schema": []
+        },
+        {
+          "id": "e16ccf3b-17c6-4bee-ab11-a82476974ba8",
+          "title": "Select version to compare",
+          "query": "RETURN true;",
+          "width": 3,
+          "height": 1,
+          "x": 0,
+          "y": 0,
+          "type": "select",
+          "selection": {},
+          "settings": {
+            "type": "Free Text",
+            "entityType": "version_a",
+            "parameterName": "neodash_version_a"
+          },
+          "schema": []
+        },
+        {
+          "id": "c4fafd75-5caa-4c70-87df-609c5ecd43b3",
+          "title": "Select version to compare",
+          "query": "RETURN true;",
+          "width": 3,
+          "height": 1,
+          "x": 0,
+          "y": 1,
+          "type": "select",
+          "selection": {},
+          "settings": {
+            "type": "Free Text",
+            "entityType": "version_b",
+            "parameterName": "neodash_version_b"
+          },
+          "schema": []
+        },
+        {
+          "id": "955c1817-c96e-4956-bb5d-3f7fb1fbf53c",
+          "title": "Added Relationships",
+          "query": "CALL {\n    USE graph.byName(\"ontos.\" + $neodash_version_b)\n    MATCH (c1:owl__ObjectProperty)\n    return collect(c1.uri) as c1rel_uris\n} with c1rel_uris\nCALL {\n    USE graph.byName(\"ontos.\" + $neodash_version_a)\n    MATCH (c0:owl__ObjectProperty) \n    return collect(c0.uri) as c0rel_uris\n}\nunwind [x in c1rel_uris where not x in c0rel_uris] as new_rel_uri\nreturn new_rel_uri",
+          "width": 4,
+          "height": 2,
+          "x": 3,
+          "y": 2,
+          "type": "table",
+          "selection": {},
+          "settings": {},
+          "schema": []
+        },
+        {
+          "id": "0aa5ac6f-ae7b-487b-b3d7-e485cc550ec4",
+          "title": "Deleted Relationships",
+          "query": "CALL {\n    USE graph.byName(\"ontos.\" + $neodash_version_a)\n    MATCH (c1:owl__ObjectProperty)\n    return collect(c1.uri) as c1rel_uris\n} with c1rel_uris\nCALL {\n    USE graph.byName(\"ontos.\" + $neodash_version_b)\n    MATCH (c0:owl__ObjectProperty) \n    return collect(c0.uri) as c0rel_uris\n}\nunwind [x in c1rel_uris where not x in c0rel_uris] as new_rel_uri\nreturn new_rel_uri",
+          "width": 4,
+          "height": 2,
+          "x": 7,
+          "y": 3,
+          "type": "table",
+          "selection": {},
+          "settings": {},
+          "schema": []
+        }
+      ]
+    }
+  ],
+  "parameters": {},
+  "extensions": {
+    "active": true,
+    "activeReducers": []
+  }
+}
