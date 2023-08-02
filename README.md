@@ -33,3 +33,4 @@ We will use this repo to share all resources used in the sessions. Give them a t
 | 16  | May 2 | Semantic Similarity Metrics in Taxonomies |`Python` `NLTK` `Semantics` `Taxonomy`| [📺](https://www.youtube.com/watch?v=WwTxlyjY35I) | [💻](https://github.com/jbarrasa/goingmeta/tree/main/session16) |
 | 17  | June 1 | RDF-ing between OpenAI and Neo4j |`OpenAI` `Generative AI` `APOC` `RDF`| [📺](https://www.youtube.com/watch?v=w-PwMyzokSw) | [💻](https://github.com/jbarrasa/goingmeta/tree/main/session17) |
 | 18  | July 4 | Easy Full-Graph Migrations from Triple Stores to Neo4j |`Python` `RDF` `Migration` `Triple Store`| [📺](https://www.youtube.com/watch?v=9DDdFKVvZQc) | [💻](https://github.com/jbarrasa/goingmeta/tree/main/session18) |
+| 19  | Aug 1 | Ontology Versioning in Neo4j |`Python` `Ontologies` `Protege`| [📺](https://www.youtube.com/watch?v=xK_07cqKwMk) | [💻](https://github.com/jbarrasa/goingmeta/tree/main/session19) |
