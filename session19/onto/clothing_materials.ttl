@@ -1,0 +1,131 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix clmat: <http://www.nsmntx.org/2019/10/clothingMaterials#> .
+
+<http://www.nsmntx.org/2019/10/clothingMaterials>
+  a owl:Ontology ;
+  rdfs:comment "This ontology describes a hierarchy of materials commonly used in clothing today"@en ,
+  "Cette ontologie decrit une hierarchie de matériaux utilisés par l'industrie du textile pour la fabrication des vêtements"@fr ,
+  "Esta ontologia describe una jerarquia de materiales utilizados por la industria textil para la fabricacion de prendas de vestir"@fr ;
+  owl:versionIRI <http://www.nsmntx.org/2019/10/clothingMaterials> ;
+  owl:versionInfo "$Date: 2019/10/31 13:37:46 $" ;
+  rdfs:label "Clothing Materials"@en, "Materiales para prendas de vestir"@es, "Matériaux pour vêtements"@fr .
+
+clmat:Acrylic
+  a owl:Class ;
+  rdfs:subClassOf clmat:SyntheticFibre ;
+  rdfs:label "Acrylic"@en, "Acrílico"@es, "Acrylique"@fr .
+
+clmat:BastFibre
+  a owl:Class ;
+  rdfs:subClassOf clmat:ClothingMaterial ;
+  rdfs:label "Bast fibre"@en, "Fibras del líber"@es, "Fibres libériennes"@fr .
+
+clmat:CellulosicFibre
+  a owl:Class ;
+  rdfs:subClassOf clmat:ClothingMaterial ;
+  rdfs:label "Cellulosic fibre"@en, "Fibra celulósica"@es, "Fibre cellulosique"@fr .
+
+clmat:ClothingMaterial
+  a owl:Class ;
+  rdfs:label "Clothing Material"@en, "Materiales pra prendas de vestir"@es, "Matériaux pour vêtements"@fr .
+
+clmat:Cotton
+  a owl:Class ;
+  rdfs:subClassOf clmat:ClothingMaterial ;
+  rdfs:label "Cotton"@en, "Algodoón"@es, "Coton"@fr .
+
+clmat:Elastane
+  a owl:Class ;
+  rdfs:subClassOf clmat:SyntheticFibre ;
+  rdfs:label "Elastane"@en, "Elastano"@es, "Élasthanne"@fr .
+
+clmat:ExperimentalFabric
+  a owl:Class ;
+  rdfs:subClassOf clmat:ClothingMaterial ;
+  rdfs:label "Experimental Fabric"@en, "Fibras experimentales"@es, "Tissus expérimentales"@fr .
+
+clmat:Leather
+  a owl:Class ;
+  rdfs:subClassOf clmat:ClothingMaterial ;
+  rdfs:label "Leather"@en, "Cuero"@es, "Cuir"@fr .
+
+clmat:Linen
+  a owl:Class ;
+  rdfs:subClassOf clmat:BastFibre ;
+  rdfs:label "Linen"@en, "Lino"@es, "Lin"@fr .
+
+clmat:Lycra
+  a owl:Class ;
+  rdfs:subClassOf clmat:Elastane ;
+  rdfs:label "Lycra"@en, "Lycra"@es, "Lycra"@fr .
+
+clmat:Merino
+  a owl:Class ;
+  rdfs:subClassOf clmat:Wool ;
+  rdfs:label "Merino"@en, "Lana de merino"@es, "Laine mérinos"@fr .
+
+clmat:Nubuck
+  a owl:Class ;
+  rdfs:subClassOf clmat:Leather ;
+  rdfs:label "Nubuck"@en, "Nubuck"@es, "Nubuc"@es, "Nobuck"@es, "Nubuck"@fr .
+
+clmat:Nylon
+  a owl:Class ;
+  rdfs:subClassOf clmat:SyntheticFibre ;
+  rdfs:label "Nylon"@en, "Nylon"@es, "Nylon"@fr .
+
+clmat:Piatex
+  a owl:Class ;
+  rdfs:subClassOf clmat:ExperimentalFabric ;
+  rdfs:label "Piñatex"@en, "Piñatex"@es, "Piñatex"@fr .
+
+clmat:Polyester
+  a owl:Class ;
+  rdfs:subClassOf clmat:SyntheticFibre ;
+  rdfs:label "Polyester"@en, "Polyester"@es, "Polyester"@fr .
+
+clmat:Polypropylene
+  a owl:Class ;
+  rdfs:subClassOf clmat:SyntheticFibre ;
+  rdfs:label "Polypropylene"@en, "Polypropylène"@fr, "Polipropileno"@es .
+
+clmat:Polyurethane
+  a owl:Class ;
+  rdfs:subClassOf clmat:ClothingMaterial ;
+  rdfs:label "Polyurethane"@en, "PU"@en, "Polyuretano"@es, "Polyuréthane"@fr .
+
+clmat:RecycledPolyester
+  a owl:Class ;
+  rdfs:subClassOf clmat:Polyester ;
+  rdfs:label "Recycled polyester"@en, "Polyester reciclado"@es, "Polyester recyclé"@fr .
+
+clmat:Rubber
+  a owl:Class ;
+  rdfs:subClassOf clmat:ClothingMaterial ;
+  rdfs:label "Rubber"@en, "Goma"@es, "Caucho"@es, "Caoutchouc"@fr .
+
+clmat:Silk
+  a owl:Class ;
+  rdfs:subClassOf clmat:ClothingMaterial ;
+  rdfs:label "Silk"@en, "Seda"@es, "Soie"@fr .
+
+clmat:Suede
+  a owl:Class ;
+  rdfs:subClassOf clmat:Leather ;
+  rdfs:label "Suede"@en, "Ante"@es, "Gamuza"@es, "Suède"@fr .
+
+clmat:SyntheticFibre
+  a owl:Class ;
+  rdfs:subClassOf clmat:ClothingMaterial ;
+  rdfs:label "Synthetic fibre"@en, "Fibra sintética"@es, "Fibres synthétiques"@fr .
+
+clmat:Viscose
+  a owl:Class ;
+  rdfs:subClassOf clmat:CellulosicFibre ;
+  rdfs:label "Viscose"@en, "Viscosa"@es, "Viscose"@fr .
+
+clmat:Wool
+  a owl:Class ;
+  rdfs:subClassOf clmat:ClothingMaterial ;
+  rdfs:label "Wool"@en, "Lana"@es, "Laine"@fr .
