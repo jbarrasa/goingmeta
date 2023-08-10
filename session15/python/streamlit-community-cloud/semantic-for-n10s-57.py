@@ -1,14 +1,15 @@
 import streamlit as st
 from graphdatascience import GraphDataScience
 
-neo = GraphDataScience("neo4j://localhost:7687", auth=("neo4j", "neoneoneo"), database="movies")
+def connect(url, user, pwd, dbname):
+    return GraphDataScience(url, auth=(user, password), database=dbname)
 
 def list_categories():
     return neo.run_cypher("call n10s.inference.labels()")
 
 def cat_details(cat_name):
     query = """
-    match (c:Class { name: $name}) RETURN c as category, 
+    match (c:Class { name: $name}) RETURN c as category,
      [rel in n10s.inference.class_incoming_rels(c) |  { rel: rel, others: n10s.inference.rel_source_classes(rel)}] as incoming,
      [rel in n10s.inference.class_outgoing_rels(c) |  { rel: rel, others: n10s.inference.rel_target_classes(rel)}] as outgoing,
      [rel in n10s.inference.class_props(c) |  { prop: rel, others: [(rel)-[:RANGE]->(r) | r.name ] }] as props
@@ -26,6 +27,13 @@ def cat_instances(cat_info):
     print(','.join(query_parts))
     return neo.run_cypher(','.join(query_parts), params={ "name": cat_info['category']['name'] })
 
+
+url = st.text_input('neo4j', 'neo4j://ip_address:7687')
+usr = st.text_input('user', 'your_user')
+pwd = st.text_input('password', 'your_password')
+dbname = st.text_input('database', 'database_name')
+
+neo = connect(url, usr, pwd, dbname)
 
 st.header('Semantic Explorer')
 cats = list_categories()
