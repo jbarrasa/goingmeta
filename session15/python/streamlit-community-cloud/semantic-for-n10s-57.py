@@ -2,7 +2,7 @@ import streamlit as st
 from graphdatascience import GraphDataScience
 
 def connect(url, user, pwd, dbname):
-    return GraphDataScience(url, auth=(user, password), database=dbname)
+    return GraphDataScience(url, auth=(user, pwd), database=dbname)
 
 def list_categories():
     return neo.run_cypher("call n10s.inference.labels()")
