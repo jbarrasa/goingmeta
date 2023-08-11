@@ -27,36 +27,40 @@ def cat_instances(cat_info):
     print(','.join(query_parts))
     return neo.run_cypher(','.join(query_parts), params={ "name": cat_info['category']['name'] })
 
-
-url = st.text_input('neo4j', 'neo4j://ip_address:7687')
-usr = st.text_input('user', 'your_user')
-pwd = st.text_input('password', 'your_password')
-dbname = st.text_input('database', 'database_name')
-
-neo = connect(url, usr, pwd, dbname)
+with st.expander("DB details"):
+    url = st.text_input('neo4j', 'neo4j://ip_address:7687')
+    usr = st.text_input('user', 'your_user')
+    pwd = st.text_input('password', 'your_password')
+    dbname = st.text_input('database', 'database_name')
 
 st.header('Semantic Explorer')
-cats = list_categories()
-if cats.empty:
-    st.error("No ontology found")
+
+if (url and usr and pwd and dbname):
+    neo = connect(url, usr, pwd, dbname)
+
+    cats = list_categories()
+    if cats.empty:
+        st.error("No ontology found")
+    else:
+        selected_class = st.radio(
+                "Categories defined in the semantic layer 👇",
+                [row['label'] for index, row in cats.iterrows()],
+                horizontal=True
+            )
+        if selected_class:
+            class_info = cat_details(selected_class)
+            with st.sidebar:
+                st.markdown("# **:blue[" + selected_class + "]** ")
+                st.markdown("_" + (class_info['category']['comment'] or "") + "_")
+                st.markdown("**Properties:**")
+                for prop in class_info['props']:
+                    st.markdown("**:blue[" +prop['prop']['name'] + "]** _(" + (prop['others'][0] or "-")+ ")_ : " + (prop['prop']['comment'] or "") )
+                st.markdown("**Relationships:**")
+                for outgoing in class_info['outgoing']:
+                    st.markdown("➡️ **:blue[" + outgoing['rel']['name'] + "]** _(connects " + selected_class + " to " + ",".join([x['name'] for x in outgoing['others']]) + ")_ : " + (outgoing['rel']['comment'] or "" ))
+                for incoming in class_info['incoming']:
+                    st.markdown("⬅️ **:blue[" + incoming['rel']['name'] + "]** _(connects " + ",".join([x['name'] for x in incoming['others']]) + " to " + selected_class+ ")_ : " + (incoming['rel']['comment'] or ""))
+            st.markdown("### Instances of **:blue[" + selected_class + "]**:")
+            st.dataframe(cat_instances(class_info))
 else:
-    selected_class = st.radio(
-            "Categories defined in the semantic layer 👇",
-            [row['label'] for index, row in cats.iterrows()],
-            horizontal=True
-        )
-    if selected_class:
-        class_info = cat_details(selected_class)
-        with st.sidebar:
-            st.markdown("# **:blue[" + selected_class + "]** ")
-            st.markdown("_" + (class_info['category']['comment'] or "") + "_")
-            st.markdown("**Properties:**")
-            for prop in class_info['props']:
-                st.markdown("**:blue[" +prop['prop']['name'] + "]** _(" + (prop['others'][0] or "-")+ ")_ : " + (prop['prop']['comment'] or "") )
-            st.markdown("**Relationships:**")
-            for outgoing in class_info['outgoing']:
-                st.markdown("➡️ **:blue[" + outgoing['rel']['name'] + "]** _(connects " + selected_class + " to " + ",".join([x['name'] for x in outgoing['others']]) + ")_ : " + (outgoing['rel']['comment'] or "" ))
-            for incoming in class_info['incoming']:
-                st.markdown("⬅️ **:blue[" + incoming['rel']['name'] + "]** _(connects " + ",".join([x['name'] for x in incoming['others']]) + " to " + selected_class+ ")_ : " + (incoming['rel']['comment'] or ""))
-        st.markdown("### Instances of **:blue[" + selected_class + "]**:")
-        st.dataframe(cat_instances(class_info))
+    st.error("No DB connection found!")
