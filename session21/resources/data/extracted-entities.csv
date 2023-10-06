@@ -1,0 +1,103 @@
+articleuri,concepturi,conceptname
+https://dev.to/lirantal/securing-a-nodejs--rethinkdb--tls-setup-on-docker-containers,http://www.wikidata.org/entity/Q82231,NoSQL database management system
+https://dev.to/lirantal/securing-a-nodejs--rethinkdb--tls-setup-on-docker-containers,http://www.wikidata.org/entity/Q20890659,RethinkDB
+https://dev.to/setevoy/neo4j-running-in-kubernetes-e4p,http://www.wikidata.org/entity/Q16834355,Cypher Query Language
+https://dev.to/setevoy/neo4j-running-in-kubernetes-e4p,http://www.wikidata.org/entity/Q1628290,Neo4j
+https://dev.to/divyanshutomar/introduction-to-redis-3m2a,http://www.wikidata.org/entity/Q2136322,Redis
+https://dev.to/divyanshutomar/introduction-to-redis-3m2a,http://www.wikidata.org/entity/Q2063,JSON
+https://dev.to/zaiste/15-git-commands-you-may-not-know-4a8j,http://www.wikidata.org/entity/Q186055,Git
+https://dev.to/alexjitbit/removing-files-from-mercurial-history-1b15,http://www.wikidata.org/entity/Q186055,Git
+https://dev.to/alexjitbit/removing-files-from-mercurial-history-1b15,http://www.wikidata.org/entity/Q476543,Mercurial
+https://dev.to/alexjitbit/removing-files-from-mercurial-history-1b15,http://www.wikidata.org/entity/Q46794,Subversion
+https://dev.to/michelemauro/atlassian-sunsetting-mercurial-support-in-bitbucket-2ga9,http://www.wikidata.org/entity/Q1186723,distributed revision control system
+https://dev.to/michelemauro/atlassian-sunsetting-mercurial-support-in-bitbucket-2ga9,http://www.wikidata.org/entity/Q1461054,OpenJDK
+https://dev.to/michelemauro/atlassian-sunsetting-mercurial-support-in-bitbucket-2ga9,http://www.wikidata.org/entity/Q186055,Git
+https://dev.to/michelemauro/atlassian-sunsetting-mercurial-support-in-bitbucket-2ga9,http://www.wikidata.org/entity/Q476543,Mercurial
+https://dev.to/shirou/back-up-prometheus-records-to-s3-via-kinesis-firehose-54l4,http://www.wikidata.org/entity/Q6108942,JSON-LD
+https://dev.to/shirou/back-up-prometheus-records-to-s3-via-kinesis-firehose-54l4,http://www.wikidata.org/entity/Q2063,JSON
+https://dev.to/ionic/farewell-phonegap-reflections-on-my-hybrid-app-development-journey-10dh,http://www.wikidata.org/entity/Q2005,JavaScript
+https://dev.to/ionic/farewell-phonegap-reflections-on-my-hybrid-app-development-journey-10dh,http://www.wikidata.org/entity/Q251,Java
+https://dev.to/rootsami/rancher-kubernetes-on-openstack-using-terraform-1ild,http://www.wikidata.org/entity/Q1470293,OpenStack
+https://dev.to/jignesh_simform/comparing-mongodb--mysql-bfa,http://www.wikidata.org/entity/Q47607,Structured Query Language
+https://dev.to/jignesh_simform/comparing-mongodb--mysql-bfa,http://www.wikidata.org/entity/Q850,MySQL
+https://dev.to/jignesh_simform/comparing-mongodb--mysql-bfa,http://www.wikidata.org/entity/Q2063,JSON
+https://dev.to/jignesh_simform/comparing-mongodb--mysql-bfa,http://www.wikidata.org/entity/Q1165204,MongoDB
+https://dev.to/nipeshkc7/dynamodb-the-basics-360g,http://www.wikidata.org/entity/Q82231,NoSQL database management system
+https://dev.to/nipeshkc7/dynamodb-the-basics-360g,http://www.wikidata.org/entity/Q15731832,Amazon DynamoDB
+https://dev.to/heroku/postgres-is-underrated-it-handles-more-than-you-think-4ff3,http://www.wikidata.org/entity/Q9143,programming language
+https://dev.to/heroku/postgres-is-underrated-it-handles-more-than-you-think-4ff3,http://www.wikidata.org/entity/Q2005,JavaScript
+https://dev.to/heroku/postgres-is-underrated-it-handles-more-than-you-think-4ff3,http://www.wikidata.org/entity/Q4046208,PL/Perl
+https://dev.to/heroku/postgres-is-underrated-it-handles-more-than-you-think-4ff3,http://www.wikidata.org/entity/Q2063,JSON
+https://dev.to/heroku/postgres-is-underrated-it-handles-more-than-you-think-4ff3,http://www.wikidata.org/entity/Q2136322,Redis
+https://dev.to/heroku/postgres-is-underrated-it-handles-more-than-you-think-4ff3,http://www.wikidata.org/entity/Q2044345,PL/pgSQL
+https://dev.to/heroku/postgres-is-underrated-it-handles-more-than-you-think-4ff3,http://www.wikidata.org/entity/Q2115,Extensible Markup Language
+https://dev.to/heroku/postgres-is-underrated-it-handles-more-than-you-think-4ff3,http://www.wikidata.org/entity/Q47607,Structured Query Language
+https://dev.to/heroku/postgres-is-underrated-it-handles-more-than-you-think-4ff3,http://www.wikidata.org/entity/Q28865,Python
+https://dev.to/heroku/postgres-is-underrated-it-handles-more-than-you-think-4ff3,http://www.wikidata.org/entity/Q192490,PostgreSQL
+https://dev.to/dmfay/the-ultimate-postgres-vs-mysql-blog-post-1l5f,http://www.wikidata.org/entity/Q2063,JSON
+https://dev.to/dmfay/the-ultimate-postgres-vs-mysql-blog-post-1l5f,http://www.wikidata.org/entity/Q935809,comma-separated values
+https://dev.to/dmfay/the-ultimate-postgres-vs-mysql-blog-post-1l5f,http://www.wikidata.org/entity/Q192490,PostgreSQL
+https://dev.to/dmfay/the-ultimate-postgres-vs-mysql-blog-post-1l5f,http://www.wikidata.org/entity/Q2115,Extensible Markup Language
+https://dev.to/dmfay/the-ultimate-postgres-vs-mysql-blog-post-1l5f,http://www.wikidata.org/entity/Q215819,Microsoft SQL Server
+https://dev.to/dmfay/the-ultimate-postgres-vs-mysql-blog-post-1l5f,http://www.wikidata.org/entity/Q28865,Python
+https://dev.to/dmfay/the-ultimate-postgres-vs-mysql-blog-post-1l5f,http://www.wikidata.org/entity/Q787177,MariaDB
+https://dev.to/dmfay/the-ultimate-postgres-vs-mysql-blog-post-1l5f,http://www.wikidata.org/entity/Q47607,Structured Query Language
+https://dev.to/dmfay/the-ultimate-postgres-vs-mysql-blog-post-1l5f,http://www.wikidata.org/entity/Q1165204,MongoDB
+https://dev.to/dmfay/the-ultimate-postgres-vs-mysql-blog-post-1l5f,http://www.wikidata.org/entity/Q82231,NoSQL database management system
+https://dev.to/dmfay/the-ultimate-postgres-vs-mysql-blog-post-1l5f,http://www.wikidata.org/entity/Q850,MySQL
+https://dev.to/dmfay/the-ultimate-postgres-vs-mysql-blog-post-1l5f,http://www.wikidata.org/entity/Q281876,YAML
+https://dev.to/dmfay/the-ultimate-postgres-vs-mysql-blog-post-1l5f,http://www.wikidata.org/entity/Q2005,JavaScript
+https://dev.to/kiwicopple/loading-json-into-postgres-2l28,http://www.wikidata.org/entity/Q192490,PostgreSQL
+https://dev.to/kiwicopple/loading-json-into-postgres-2l28,http://www.wikidata.org/entity/Q2063,JSON
+https://dev.to/condenastitaly/when-food-meets-ai-the-smart-recipe-project-b3g,http://www.wikidata.org/entity/Q54872,Resource Description Framework
+https://dev.to/condenastitaly/when-food-meets-ai-the-smart-recipe-project-b3g,http://www.wikidata.org/entity/Q54871,SPARQL
+https://dev.to/condenastitaly/when-food-meets-ai-the-smart-recipe-project-b3g,http://www.wikidata.org/entity/Q2063,JSON
+https://dev.to/adamcowley/building-a-modern-web-application-with-neo4j-and-nestjs-38ih,http://www.wikidata.org/entity/Q1628290,Neo4j
+https://dev.to/adamcowley/building-a-modern-web-application-with-neo4j-and-nestjs-38ih,http://www.wikidata.org/entity/Q2005,JavaScript
+https://dev.to/adamcowley/building-a-modern-web-application-with-neo4j-and-nestjs-38ih,http://www.wikidata.org/entity/Q978185,TypeScript
+https://dev.to/codaelux/running-dynamodb-offline-4k1b,http://www.wikidata.org/entity/Q82231,NoSQL database management system
+https://dev.to/codaelux/running-dynamodb-offline-4k1b,http://www.wikidata.org/entity/Q15731832,Amazon DynamoDB
+https://dev.to/arthurolga/newsql-an-implementation-with-google-spanner-2a86,http://www.wikidata.org/entity/Q2370,C#
+https://dev.to/arthurolga/newsql-an-implementation-with-google-spanner-2a86,http://www.wikidata.org/entity/Q756100,Node.js
+https://dev.to/arthurolga/newsql-an-implementation-with-google-spanner-2a86,http://www.wikidata.org/entity/Q7005136,NewSQL
+https://dev.to/arthurolga/newsql-an-implementation-with-google-spanner-2a86,http://www.wikidata.org/entity/Q82231,NoSQL database management system
+https://dev.to/arthurolga/newsql-an-implementation-with-google-spanner-2a86,http://www.wikidata.org/entity/Q47607,Structured Query Language
+https://dev.to/javinpaul/5-best-courses-to-learn-apache-kafka-in-2020-584h,http://www.wikidata.org/entity/Q275131,Scratch
+https://dev.to/javinpaul/5-best-courses-to-learn-apache-kafka-in-2020-584h,http://www.wikidata.org/entity/Q460584,Scala
+https://dev.to/javinpaul/5-best-courses-to-learn-apache-kafka-in-2020-584h,http://www.wikidata.org/entity/Q251,Java
+https://dev.to/javinpaul/5-best-courses-to-learn-apache-kafka-in-2020-584h,http://www.wikidata.org/entity/Q4778968,Apache ZooKeeper
+https://dev.to/subhransu/realtime-chat-app-using-kafka-springboot-reactjs-and-websockets-lc,http://www.wikidata.org/entity/Q251,Java
+https://dev.to/subhransu/realtime-chat-app-using-kafka-springboot-reactjs-and-websockets-lc,http://www.wikidata.org/entity/Q4778968,Apache ZooKeeper
+https://dev.to/offlineprogrammer/collect-analytics-data-for-your-app-using-aws-amplify-4ifp,http://www.wikidata.org/entity/Q251,Java
+https://dev.to/offlineprogrammer/collect-analytics-data-for-your-app-using-aws-amplify-4ifp,http://www.wikidata.org/entity/Q2005,JavaScript
+https://dev.to/guthakiran/building-a-cluster-using-elasticsearch-kibana-zookeeper-kafka-and-rsyslog-17ja,http://www.wikidata.org/entity/Q47607,Structured Query Language
+https://dev.to/guthakiran/building-a-cluster-using-elasticsearch-kibana-zookeeper-kafka-and-rsyslog-17ja,http://www.wikidata.org/entity/Q741303,Java Development Kit
+https://dev.to/guthakiran/building-a-cluster-using-elasticsearch-kibana-zookeeper-kafka-and-rsyslog-17ja,http://www.wikidata.org/entity/Q251,Java
+https://dev.to/guthakiran/building-a-cluster-using-elasticsearch-kibana-zookeeper-kafka-and-rsyslog-17ja,http://www.wikidata.org/entity/Q28865,Python
+https://dev.to/guthakiran/building-a-cluster-using-elasticsearch-kibana-zookeeper-kafka-and-rsyslog-17ja,http://www.wikidata.org/entity/Q4778968,Apache ZooKeeper
+https://dev.to/presto412/hyperledger-fabric-transitioning-from-development-to-production-4dch,http://www.wikidata.org/entity/Q4778968,Apache ZooKeeper
+https://dev.to/presto412/hyperledger-fabric-transitioning-from-development-to-production-4dch,http://www.wikidata.org/entity/Q281876,YAML
+https://dev.to/goaty92/designing-tinyurl-it-s-more-complicated-than-you-think-2a48,http://www.wikidata.org/entity/Q4778968,Apache ZooKeeper
+https://dev.to/dihfahsih1/9-best-python-frameworks-for-building-small-to-enterprise-applications-2jla,http://www.wikidata.org/entity/Q4041851,Jinja
+https://dev.to/dihfahsih1/9-best-python-frameworks-for-building-small-to-enterprise-applications-2jla,http://www.wikidata.org/entity/Q28865,Python
+https://dev.to/dihfahsih1/9-best-python-frameworks-for-building-small-to-enterprise-applications-2jla,http://www.wikidata.org/entity/Q161053,Ruby
+https://dev.to/dihfahsih1/9-best-python-frameworks-for-building-small-to-enterprise-applications-2jla,http://www.wikidata.org/entity/Q220399,Zope Object Database
+https://dev.to/sandipmavani/nodejs-vs-php-52g4,http://www.wikidata.org/entity/Q2063,JSON
+https://dev.to/sandipmavani/nodejs-vs-php-52g4,http://www.wikidata.org/entity/Q850,MySQL
+https://dev.to/sandipmavani/nodejs-vs-php-52g4,http://www.wikidata.org/entity/Q47607,Structured Query Language
+https://dev.to/sandipmavani/nodejs-vs-php-52g4,http://www.wikidata.org/entity/Q2005,JavaScript
+https://dev.to/sandipmavani/nodejs-vs-php-52g4,http://www.wikidata.org/entity/Q1165204,MongoDB
+https://dev.to/sandipmavani/nodejs-vs-php-52g4,http://www.wikidata.org/entity/Q756100,Node.js
+https://dev.to/sandipmavani/nodejs-vs-php-52g4,http://www.wikidata.org/entity/Q82231,NoSQL database management system
+https://dev.to/sandipmavani/nodejs-vs-php-52g4,http://www.wikidata.org/entity/Q59,PHP
+https://dev.to/sandipmavani/nodejs-vs-php-52g4,http://www.wikidata.org/entity/Q192490,PostgreSQL
+https://dev.to/josiehall/import-data-from-s3-to-redshift-in-minutes-using-dataform-55g2,http://www.wikidata.org/entity/Q17012109,Amazon Redshift
+https://dev.to/josiehall/import-data-from-s3-to-redshift-in-minutes-using-dataform-55g2,http://www.wikidata.org/entity/Q935809,comma-separated values
+https://dev.to/ahmetkucukoglu/couchbase-geosearch-with-asp-net-core-i04,http://www.wikidata.org/entity/Q10858568,Couchbase Server
+https://dev.to/angular/outputting-json-ld-with-angular-universal-4ia1,http://www.wikidata.org/entity/Q2063,JSON
+https://dev.to/angular/outputting-json-ld-with-angular-universal-4ia1,http://www.wikidata.org/entity/Q6108942,JSON-LD
+https://dev.to/leonardomso/a-beginners-guide-to-graphql-3kjj,http://www.wikidata.org/entity/Q25104949,GraphQL
+https://dev.to/leonardomso/a-beginners-guide-to-graphql-3kjj,http://www.wikidata.org/entity/Q2005,JavaScript
+https://dev.to/azure/learn-how-you-can-build-a-serverless-graphql-api-on-top-of-a-microservice-architecture-233g,http://www.wikidata.org/entity/Q25104949,GraphQL
+https://dev.to/azure/learn-how-you-can-build-a-serverless-graphql-api-on-top-of-a-microservice-architecture-233g,http://www.wikidata.org/entity/Q756100,Node.js
+https://dev.to/qainsights/performance-testing-neo4j-database-using-bolt-protocol-in-apache-jmeter-1oa9,http://www.wikidata.org/entity/Q1628290,Neo4j
