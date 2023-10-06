@@ -1,0 +1,113 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sws: <http://www.nsmntx.org/2020/08/swStacks#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://www.nsmntx.org/2020/08/swStacks>
+  a owl:Ontology ;
+  rdfs:comment "This ontology describes some popular Software stacks."@en .
+
+
+sws:SoftwareStack
+  a owl:Class ;
+  skos:prefLabel "Software Stack" .
+
+
+#### GRAND Stack ####
+
+sws:GRANDstack
+  a owl:Class ;
+  rdfs:subClassOf sws:SoftwareStack ;
+  skos:prefLabel "GRAND Stack" .
+
+wd:Q25104949
+  a owl:Class ;
+  rdfs:subClassOf sws:GRANDstack ;
+  skos:prefLabel "GraphQL" .
+
+wd:Q19399674
+  a owl:Class ; 
+  rdfs:subClassOf sws:GRANDstack ;
+  skos:prefLabel "React" .
+
+wd:Q1628290
+  a owl:Class ;
+  rdfs:subClassOf sws:GRANDstack ;
+  skos:prefLabel "Neo4j" .
+
+sws:Apollo
+  a owl:Class ;
+  rdfs:subClassOf sws:GRANDstack ;
+  skos:prefLabel "Apollo (Data Graph Platform)" . 
+
+
+#### MEAN Stack ####
+
+sws:MEANstack
+  a owl:Class ;
+  rdfs:subClassOf sws:SoftwareStack ;
+  skos:prefLabel "MEAN Stack" .
+
+wd:Q16878131
+  a owl:Class ;
+  rdfs:subClassOf sws:MEANstack ;
+  skos:prefLabel "Express.js" .  
+
+wd:Q1165204
+  a owl:Class ;
+  rdfs:subClassOf sws:MEANstack ;
+  skos:prefLabel "MongoDB" .  
+
+wd:Q2849803
+  a owl:Class ;
+  rdfs:subClassOf sws:MEANstack ;
+  skos:prefLabel "AngularJS" .    
+
+wd:Q756100
+  a owl:Class ;
+  rdfs:subClassOf sws:MEANstack ;
+  skos:prefLabel "Node.js" .    
+
+
+ #### LAMP Stack ####
+
+sws:LAMPstack
+  a owl:Class ;
+  rdfs:subClassOf sws:SoftwareStack ;
+  skos:prefLabel "LAMP Stack" .
+
+wd:Q388
+  a owl:Class ;
+  rdfs:subClassOf sws:LAMPstack ;
+  skos:prefLabel "Linux" .  
+
+wd:Q11354
+  a owl:Class ;
+  rdfs:subClassOf sws:LAMPstack ;
+  skos:prefLabel "Apache HTTP Server" .  
+
+wd:Q850
+  a owl:Class ;
+  rdfs:subClassOf sws:LAMPstack ;
+  skos:prefLabel "MySQL" .  
+
+ wd:Q787177
+  a owl:Class ;
+  rdfs:subClassOf sws:LAMPstack ;
+  skos:prefLabel "MariaDB" .   
+
+wd:Q42478
+  a owl:Class ;
+  rdfs:subClassOf sws:LAMPstack ;
+  skos:prefLabel "Perl" .  
+
+wd:Q59
+  a owl:Class ;
+  rdfs:subClassOf sws:LAMPstack ;
+  skos:prefLabel "PHP" .  
+
+ wd:Q28865
+  a owl:Class ;
+  rdfs:subClassOf sws:LAMPstack ;
+  skos:prefLabel "Python" .   
