@@ -3897,14 +3897,8 @@
 <http://www.wikidata.org/entity/Q9261809> a skos:Concept;
   skos:prefLabel "Fortran extended GRAph Algorithmic Language" .
 
-<http://www.wikidata.org/entity/Q218616> a skos:Concept;
-  skos:prefLabel "proprietary software" .
-
 <http://www.wikidata.org/entity/Q7936632> a skos:Concept;
   skos:prefLabel "visualization software" .
-
-<http://www.wikidata.org/entity/Q341> a skos:Concept;
-  skos:prefLabel "free software" .
 
 <http://www.wikidata.org/entity/Q11228655> a skos:Concept;
   skos:prefLabel "Kumofs" .
@@ -9466,7 +9460,7 @@
 <http://www.wikidata.org/entity/Q3105355> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
 <http://www.wikidata.org/entity/Q1025056> skos:broader <http://www.wikidata.org/entity/Q1049812>,
-    <http://www.wikidata.org/entity/Q341>, <http://www.wikidata.org/entity/Q1965787> .
+     <http://www.wikidata.org/entity/Q1965787> .
 
 <http://www.wikidata.org/entity/Q4052151> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
@@ -9498,7 +9492,7 @@
 <http://www.wikidata.org/entity/Q5514049> skos:broader <http://www.wikidata.org/entity/Q9143>,
     <http://www.wikidata.org/entity/Q28920098> .
 
-<http://www.wikidata.org/entity/Q3093294> skos:broader <http://www.wikidata.org/entity/Q341>,
+<http://www.wikidata.org/entity/Q3093294> skos:broader
     <http://www.wikidata.org/entity/Q14663>, <http://www.wikidata.org/entity/Q20825628>,
     <http://www.wikidata.org/entity/Q105273027> .
 
@@ -9515,8 +9509,7 @@
 
 <http://www.wikidata.org/entity/Q5116543> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
-<http://www.wikidata.org/entity/Q262824> skos:broader <http://www.wikidata.org/entity/Q14663>,
-    <http://www.wikidata.org/entity/Q341> .
+<http://www.wikidata.org/entity/Q262824> skos:broader <http://www.wikidata.org/entity/Q14663> .
 
 <http://www.wikidata.org/entity/Q28342104> skos:broader <http://www.wikidata.org/entity/Q215819> .
 
@@ -9545,7 +9538,7 @@
 
 <http://www.wikidata.org/entity/Q3026464> skos:broader <http://www.wikidata.org/entity/Q187432> .
 
-<http://www.wikidata.org/entity/Q634004> skos:broader <http://www.wikidata.org/entity/Q341>,
+<http://www.wikidata.org/entity/Q634004> skos:broader
     <http://www.wikidata.org/entity/Q469558> .
 
 <http://www.wikidata.org/entity/Q28404924> skos:broader <http://www.wikidata.org/entity/Q9143> .
@@ -9583,7 +9576,7 @@
     <http://www.wikidata.org/entity/Q4117406> .
 
 <http://www.wikidata.org/entity/Q5094657> skos:broader <http://www.wikidata.org/entity/Q9143>,
-    <http://www.wikidata.org/entity/Q47506>, <http://www.wikidata.org/entity/Q341> .
+    <http://www.wikidata.org/entity/Q47506> .
 
 <http://www.wikidata.org/entity/Q12032760> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
@@ -9615,7 +9608,7 @@
 
 <http://www.wikidata.org/entity/Q223679> skos:broader <http://www.wikidata.org/entity/Q20825628>,
     <http://www.wikidata.org/entity/Q28920142>, <http://www.wikidata.org/entity/Q1639024>,
-    <http://www.wikidata.org/entity/Q341>, <http://www.wikidata.org/entity/Q9143> .
+     <http://www.wikidata.org/entity/Q9143> .
 
 <http://www.wikidata.org/entity/Q42478> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
@@ -9640,12 +9633,11 @@
     <http://www.wikidata.org/entity/Q1077784> .
 
 <http://www.wikidata.org/entity/Q14346046> skos:broader <http://www.wikidata.org/entity/Q82231>,
-    <http://www.wikidata.org/entity/Q341>, <http://www.wikidata.org/entity/Q176165> .
+     <http://www.wikidata.org/entity/Q176165> .
 
 <http://www.wikidata.org/entity/Q7666857> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
-<http://www.wikidata.org/entity/Q20890659> skos:broader <http://www.wikidata.org/entity/Q4822779>,
-    <http://www.wikidata.org/entity/Q341> .
+<http://www.wikidata.org/entity/Q20890659> skos:broader <http://www.wikidata.org/entity/Q4822779> .
 
 <http://www.wikidata.org/entity/Q7191049> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
@@ -9680,7 +9672,7 @@
 <http://www.wikidata.org/entity/Q5227095> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
 <http://www.wikidata.org/entity/Q195929> skos:broader <http://www.wikidata.org/entity/Q9143>,
-    <http://www.wikidata.org/entity/Q341>, <http://www.wikidata.org/entity/Q47506>, <http://www.wikidata.org/entity/Q899523> .
+     <http://www.wikidata.org/entity/Q47506>, <http://www.wikidata.org/entity/Q899523> .
 
 <http://www.wikidata.org/entity/Q973966> skos:broader <http://www.wikidata.org/entity/Q176165> .
 
@@ -9698,7 +9690,7 @@
 
 <http://www.wikidata.org/entity/Q189248> skos:broader <http://www.wikidata.org/entity/Q9143>,
     <http://www.wikidata.org/entity/Q1368899>, <http://www.wikidata.org/entity/Q20825628>,
-    <http://www.wikidata.org/entity/Q341>, <http://www.wikidata.org/entity/Q18109> .
+     <http://www.wikidata.org/entity/Q18109> .
 
 <http://www.wikidata.org/entity/Q9326157> skos:broader <http://www.wikidata.org/entity/Q610140> .
 
@@ -9720,7 +9712,7 @@
     <http://www.wikidata.org/entity/Q20202982>, <http://www.wikidata.org/entity/Q9143>,
     <http://www.wikidata.org/entity/Q7397> .
 
-<http://www.wikidata.org/entity/Q16928009> skos:broader <http://www.wikidata.org/entity/Q341>,
+<http://www.wikidata.org/entity/Q16928009> skos:broader
     <http://www.wikidata.org/entity/Q3539533>, <http://www.wikidata.org/entity/Q17624049> .
 
 <http://www.wikidata.org/entity/Q3817722> skos:broader <http://www.wikidata.org/entity/Q595971>,
@@ -9746,7 +9738,7 @@
     <http://www.wikidata.org/entity/Q28922885>, <http://www.wikidata.org/entity/Q13741>,
     <http://www.wikidata.org/entity/Q9143> .
 
-<http://www.wikidata.org/entity/Q101111433> skos:broader <http://www.wikidata.org/entity/Q341>,
+<http://www.wikidata.org/entity/Q101111433> skos:broader
     <http://www.wikidata.org/entity/Q2164323>, <http://www.wikidata.org/entity/Q101111163>,
     <http://www.wikidata.org/entity/Q3839507> .
 
@@ -9799,7 +9791,7 @@
 
 <http://www.wikidata.org/entity/Q4441564> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
-<http://www.wikidata.org/entity/Q3954180> skos:broader <http://www.wikidata.org/entity/Q341>,
+<http://www.wikidata.org/entity/Q3954180> skos:broader
     <http://www.wikidata.org/entity/Q176165> .
 
 <http://www.wikidata.org/entity/Q1411875> skos:broader <http://www.wikidata.org/entity/Q9143> .
@@ -9883,7 +9875,7 @@
 
 <http://www.wikidata.org/entity/Q787227> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
-<http://www.wikidata.org/entity/Q9290964> skos:broader <http://www.wikidata.org/entity/Q341>,
+<http://www.wikidata.org/entity/Q9290964> skos:broader
     <http://www.wikidata.org/entity/Q176165> .
 
 <http://www.wikidata.org/entity/Q1813297> skos:broader <http://www.wikidata.org/entity/Q1186723>,
@@ -9893,7 +9885,7 @@
     <http://www.wikidata.org/entity/Q7397> .
 
 <http://www.wikidata.org/entity/Q11225883> skos:broader <http://www.wikidata.org/entity/Q51160764>,
-    <http://www.wikidata.org/entity/Q683111>, <http://www.wikidata.org/entity/Q341> .
+    <http://www.wikidata.org/entity/Q683111> .
 
 <http://www.wikidata.org/entity/Q1289116> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
@@ -9913,14 +9905,14 @@
 <http://www.wikidata.org/entity/Q1547213> skos:broader <http://www.wikidata.org/entity/Q9143>,
     <http://www.wikidata.org/entity/Q3496485> .
 
-<http://www.wikidata.org/entity/Q2642029> skos:broader <http://www.wikidata.org/entity/Q341>,
+<http://www.wikidata.org/entity/Q2642029> skos:broader
     <http://www.wikidata.org/entity/Q2293691>, <http://www.wikidata.org/entity/Q28937412>,
     <http://www.wikidata.org/entity/Q9143> .
 
 <http://www.wikidata.org/entity/Q98731903> skos:broader <http://www.wikidata.org/entity/Q176165>,
-    <http://www.wikidata.org/entity/Q341>, <http://www.wikidata.org/entity/Q56273712> .
+     <http://www.wikidata.org/entity/Q56273712> .
 
-<http://www.wikidata.org/entity/Q7907577> skos:broader <http://www.wikidata.org/entity/Q341>,
+<http://www.wikidata.org/entity/Q7907577> skos:broader
     <http://www.wikidata.org/entity/Q9143>, <http://www.wikidata.org/entity/Q13741>, <http://www.wikidata.org/entity/Q683111> .
 
 <http://www.wikidata.org/entity/Q2904843> skos:broader <http://www.wikidata.org/entity/Q9143>,
@@ -9972,7 +9964,7 @@
 
 <http://www.wikidata.org/entity/Q4117140> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
-<http://www.wikidata.org/entity/Q1924669> skos:broader <http://www.wikidata.org/entity/Q341>,
+<http://www.wikidata.org/entity/Q1924669> skos:broader
     <http://www.wikidata.org/entity/Q188860>, <http://www.wikidata.org/entity/Q176165> .
 
 <http://www.wikidata.org/entity/Q4363942> skos:broader <http://www.wikidata.org/entity/Q9143> .
@@ -10027,8 +10019,7 @@
 
 <http://www.wikidata.org/entity/Q2357193> skos:broader <http://www.wikidata.org/entity/Q24451526> .
 
-<http://www.wikidata.org/entity/Q192490> skos:broader <http://www.wikidata.org/entity/Q3932296>,
-    <http://www.wikidata.org/entity/Q341> .
+<http://www.wikidata.org/entity/Q192490> skos:broader <http://www.wikidata.org/entity/Q3932296> .
 
 <http://www.wikidata.org/entity/Q1396106> skos:broader <http://www.wikidata.org/entity/Q187432> .
 
@@ -10099,12 +10090,11 @@
 
 <http://www.wikidata.org/entity/Q3066076> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
-<http://www.wikidata.org/entity/Q17087084> skos:broader <http://www.wikidata.org/entity/Q341>,
-    <http://www.wikidata.org/entity/Q176165>, <http://www.wikidata.org/entity/Q1235236>,
-    <http://www.wikidata.org/entity/Q218616> .
+<http://www.wikidata.org/entity/Q17087084> skos:broader
+    <http://www.wikidata.org/entity/Q176165>, <http://www.wikidata.org/entity/Q1235236>.
 
 <http://www.wikidata.org/entity/Q1196014> skos:broader <http://www.wikidata.org/entity/Q193564>,
-    <http://www.wikidata.org/entity/Q11311509>, <http://www.wikidata.org/entity/Q341> .
+    <http://www.wikidata.org/entity/Q11311509> .
 
 <http://www.wikidata.org/entity/Q740158> skos:broader <http://www.wikidata.org/entity/Q9143>,
     <http://www.wikidata.org/entity/Q899523> .
@@ -10122,8 +10112,7 @@
 <http://www.wikidata.org/entity/Q10319536> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
 <http://www.wikidata.org/entity/Q1628290> skos:broader <http://www.wikidata.org/entity/Q99510066>,
-    <http://www.wikidata.org/entity/Q595971>, <http://www.wikidata.org/entity/Q218616>,
-    <http://www.wikidata.org/entity/Q341> .
+    <http://www.wikidata.org/entity/Q595971> .
 
 <http://www.wikidata.org/entity/Q32114479> skos:broader <http://www.wikidata.org/entity/Q7397>,
     <http://www.wikidata.org/entity/Q1204300> .
@@ -10162,11 +10151,11 @@
 
 <http://www.wikidata.org/entity/Q5225670> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
-<http://www.wikidata.org/entity/Q16688751> skos:broader <http://www.wikidata.org/entity/Q341>,
+<http://www.wikidata.org/entity/Q16688751> skos:broader
     <http://www.wikidata.org/entity/Q176165>, <http://www.wikidata.org/entity/Q3932296> .
 
 <http://www.wikidata.org/entity/Q848317> skos:broader <http://www.wikidata.org/entity/Q9143>,
-    <http://www.wikidata.org/entity/Q341>, <http://www.wikidata.org/entity/Q166142>, <http://www.wikidata.org/entity/Q1077784> .
+     <http://www.wikidata.org/entity/Q166142>, <http://www.wikidata.org/entity/Q1077784> .
 
 <http://www.wikidata.org/entity/Q6147158> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
@@ -10205,8 +10194,7 @@
 <http://www.wikidata.org/entity/Q1493683> skos:broader <http://www.wikidata.org/entity/Q28057052>,
     <http://www.wikidata.org/entity/Q3932296> .
 
-<http://www.wikidata.org/entity/Q306031> skos:broader <http://www.wikidata.org/entity/Q14663>,
-    <http://www.wikidata.org/entity/Q341> .
+<http://www.wikidata.org/entity/Q306031> skos:broader <http://www.wikidata.org/entity/Q14663> .
 
 <http://www.wikidata.org/entity/Q621618> skos:broader <http://www.wikidata.org/entity/Q1144882>,
     <http://www.wikidata.org/entity/Q56223375>, <http://www.wikidata.org/entity/Q9143>,
@@ -10293,7 +10281,7 @@
 <http://www.wikidata.org/entity/Q28942232> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
 <http://www.wikidata.org/entity/Q4041851> skos:broader <http://www.wikidata.org/entity/Q188860>,
-    <http://www.wikidata.org/entity/Q29642950>, <http://www.wikidata.org/entity/Q341>,
+    <http://www.wikidata.org/entity/Q29642950>,
     <http://www.wikidata.org/entity/Q29042678>, <http://www.wikidata.org/entity/Q351507> .
 
 <http://www.wikidata.org/entity/Q667812> skos:broader <http://www.wikidata.org/entity/Q9143> .
@@ -10312,7 +10300,7 @@
 
 <http://www.wikidata.org/entity/Q16884758> skos:broader <http://www.wikidata.org/entity/Q3932296> .
 
-<http://www.wikidata.org/entity/Q6933960> skos:broader <http://www.wikidata.org/entity/Q341>,
+<http://www.wikidata.org/entity/Q6933960> skos:broader
     <http://www.wikidata.org/entity/Q3539533> .
 
 <http://www.wikidata.org/entity/Q55680343> skos:broader <http://www.wikidata.org/entity/Q3257930> .
@@ -10354,7 +10342,7 @@
     <http://www.wikidata.org/entity/Q9143> .
 
 <http://www.wikidata.org/entity/Q5459952> skos:broader <http://www.wikidata.org/entity/Q595971>,
-    <http://www.wikidata.org/entity/Q341>, <http://www.wikidata.org/entity/Q176165> .
+     <http://www.wikidata.org/entity/Q176165> .
 
 <http://www.wikidata.org/entity/Q4654106> skos:broader <http://www.wikidata.org/entity/Q9143>,
     <http://www.wikidata.org/entity/Q1144882> .
@@ -10382,8 +10370,7 @@
 
 <http://www.wikidata.org/entity/Q11229880> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
-<http://www.wikidata.org/entity/Q1144911> skos:broader <http://www.wikidata.org/entity/Q14663>,
-    <http://www.wikidata.org/entity/Q341> .
+<http://www.wikidata.org/entity/Q1144911> skos:broader <http://www.wikidata.org/entity/Q14663> .
 
 <http://www.wikidata.org/entity/Q1385056> skos:broader <http://www.wikidata.org/entity/Q24451526> .
 
@@ -10421,7 +10408,7 @@
 <http://www.wikidata.org/entity/Q66124825> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
 <http://www.wikidata.org/entity/Q1537053> skos:broader <http://www.wikidata.org/entity/Q166142>,
-    <http://www.wikidata.org/entity/Q176165>, <http://www.wikidata.org/entity/Q341> .
+    <http://www.wikidata.org/entity/Q176165> .
 
 <http://www.wikidata.org/entity/Q8043897> skos:broader <http://www.wikidata.org/entity/Q4830453>,
     <http://www.wikidata.org/entity/Q3932296> .
@@ -10459,7 +10446,7 @@
 <http://www.wikidata.org/entity/Q1194352> skos:broader <http://www.wikidata.org/entity/Q13741>,
     <http://www.wikidata.org/entity/Q9143>, <http://www.wikidata.org/entity/Q47506> .
 
-<http://www.wikidata.org/entity/Q1049812> skos:broader <http://www.wikidata.org/entity/Q341>,
+<http://www.wikidata.org/entity/Q1049812> skos:broader
     <http://www.wikidata.org/entity/Q820854>, <http://www.wikidata.org/entity/Q176165>,
     <http://www.wikidata.org/entity/Q312466> .
 
@@ -10477,7 +10464,7 @@
 <http://www.wikidata.org/entity/Q17118377> skos:broader <http://www.wikidata.org/entity/Q21562092>,
     <http://www.wikidata.org/entity/Q9143>, <http://www.wikidata.org/entity/Q3839507>,
     <http://www.wikidata.org/entity/Q28923023>, <http://www.wikidata.org/entity/Q899523>,
-    <http://www.wikidata.org/entity/Q12772052>, <http://www.wikidata.org/entity/Q341> .
+    <http://www.wikidata.org/entity/Q12772052> .
 
 <http://www.wikidata.org/entity/Q34010> skos:broader <http://www.wikidata.org/entity/Q50843083>,
     <http://www.wikidata.org/entity/Q9143>, <http://www.wikidata.org/entity/Q573952>,
@@ -10523,7 +10510,7 @@
 <http://www.wikidata.org/entity/Q7935239> skos:broader <http://www.wikidata.org/entity/Q3932296>,
     <http://www.wikidata.org/entity/Q3539533>, <http://www.wikidata.org/entity/Q1130645> .
 
-<http://www.wikidata.org/entity/Q2822898> skos:broader <http://www.wikidata.org/entity/Q341>,
+<http://www.wikidata.org/entity/Q2822898> skos:broader
     <http://www.wikidata.org/entity/Q425567>, <http://www.wikidata.org/entity/Q176165> .
 
 <http://www.wikidata.org/entity/Q5854085> skos:broader <http://www.wikidata.org/entity/Q47607>,
@@ -10566,7 +10553,7 @@
 
 <http://www.wikidata.org/entity/Q2560076> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
-<http://www.wikidata.org/entity/Q60767426> skos:broader <http://www.wikidata.org/entity/Q341>,
+<http://www.wikidata.org/entity/Q60767426> skos:broader
     <http://www.wikidata.org/entity/Q39999225>, <http://www.wikidata.org/entity/Q235557>,
     <http://www.wikidata.org/entity/Q24451526> .
 
@@ -10648,7 +10635,7 @@
 <http://www.wikidata.org/entity/Q1156474> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
 <http://www.wikidata.org/entity/Q537288> skos:broader <http://www.wikidata.org/entity/Q9143>,
-    <http://www.wikidata.org/entity/Q271680>, <http://www.wikidata.org/entity/Q341>, <http://www.wikidata.org/entity/Q899523>,
+    <http://www.wikidata.org/entity/Q271680>,  <http://www.wikidata.org/entity/Q899523>,
     <http://www.wikidata.org/entity/Q188860> .
 
 <http://www.wikidata.org/entity/Q4048047> skos:broader <http://www.wikidata.org/entity/Q3932296> .
@@ -10708,7 +10695,7 @@
     <http://www.wikidata.org/entity/Q28920117>, <http://www.wikidata.org/entity/Q21562092>,
     <http://www.wikidata.org/entity/Q9143> .
 
-<http://www.wikidata.org/entity/Q487378> skos:broader <http://www.wikidata.org/entity/Q218616>,
+<http://www.wikidata.org/entity/Q487378> skos:broader
     <http://www.wikidata.org/entity/Q9143>, <http://www.wikidata.org/entity/Q13741> .
 
 <http://www.wikidata.org/entity/Q1146247> skos:broader <http://www.wikidata.org/entity/Q9143>,
@@ -10773,7 +10760,7 @@
 <http://www.wikidata.org/entity/Q8041660> skos:broader <http://www.wikidata.org/entity/Q6941595> .
 
 <http://www.wikidata.org/entity/Q97187861> skos:broader <http://www.wikidata.org/entity/Q82231>,
-    <http://www.wikidata.org/entity/Q341>, <http://www.wikidata.org/entity/Q3932296>,
+     <http://www.wikidata.org/entity/Q3932296>,
     <http://www.wikidata.org/entity/Q506883>, <http://www.wikidata.org/entity/Q56273712>,
     <http://www.wikidata.org/entity/Q7005136> .
 
@@ -10805,13 +10792,13 @@
     <http://www.wikidata.org/entity/Q863511>, <http://www.wikidata.org/entity/Q2661442> .
 
 <http://www.wikidata.org/entity/Q3353033> skos:broader <http://www.wikidata.org/entity/Q1330336>,
-    <http://www.wikidata.org/entity/Q341>, <http://www.wikidata.org/entity/Q9143> .
+     <http://www.wikidata.org/entity/Q9143> .
 
 <http://www.wikidata.org/entity/Q25379932> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
 <http://www.wikidata.org/entity/Q65056974> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
-<http://www.wikidata.org/entity/Q746261> skos:broader <http://www.wikidata.org/entity/Q218616>,
+<http://www.wikidata.org/entity/Q746261> skos:broader
     <http://www.wikidata.org/entity/Q683111>, <http://www.wikidata.org/entity/Q9143> .
 
 <http://www.wikidata.org/entity/Q2024920> skos:broader <http://www.wikidata.org/entity/Q9143> .
@@ -10840,10 +10827,10 @@
 <http://www.wikidata.org/entity/Q15620505> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
 <http://www.wikidata.org/entity/Q10858569> skos:broader <http://www.wikidata.org/entity/Q176165>,
-    <http://www.wikidata.org/entity/Q306661>, <http://www.wikidata.org/entity/Q341> .
+    <http://www.wikidata.org/entity/Q306661> .
 
-<http://www.wikidata.org/entity/Q10858568> skos:broader <http://www.wikidata.org/entity/Q341>,
-    <http://www.wikidata.org/entity/Q218616>, <http://www.wikidata.org/entity/Q176165>,
+<http://www.wikidata.org/entity/Q10858568> skos:broader
+     <http://www.wikidata.org/entity/Q176165>,
     <http://www.wikidata.org/entity/Q1235236> .
 
 <http://www.wikidata.org/entity/Q3841543> skos:broader <http://www.wikidata.org/entity/Q9143> .
@@ -10863,8 +10850,7 @@
 <http://www.wikidata.org/entity/Q5370400> skos:broader <http://www.wikidata.org/entity/Q9143>,
     <http://www.wikidata.org/entity/Q899523> .
 
-<http://www.wikidata.org/entity/Q88903913> skos:broader <http://www.wikidata.org/entity/Q595971>,
-    <http://www.wikidata.org/entity/Q341> .
+<http://www.wikidata.org/entity/Q88903913> skos:broader <http://www.wikidata.org/entity/Q595971> .
 
 <http://www.wikidata.org/entity/Q667290> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
@@ -10892,7 +10878,7 @@
 <http://www.wikidata.org/entity/Q28920810> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
 <http://www.wikidata.org/entity/Q102047554> skos:broader <http://www.wikidata.org/entity/Q29068718>,
-    <http://www.wikidata.org/entity/Q341>, <http://www.wikidata.org/entity/Q683111> .
+     <http://www.wikidata.org/entity/Q683111> .
 
 <http://www.wikidata.org/entity/Q797302> skos:broader <http://www.wikidata.org/entity/Q28922885>,
     <http://www.wikidata.org/entity/Q9143> .
@@ -10934,7 +10920,7 @@
 
 <http://www.wikidata.org/entity/Q11762407> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
-<http://www.wikidata.org/entity/Q5333005> skos:broader <http://www.wikidata.org/entity/Q341>,
+<http://www.wikidata.org/entity/Q5333005> skos:broader
     <http://www.wikidata.org/entity/Q3257930> .
 
 <http://www.wikidata.org/entity/Q29863318> skos:broader <http://www.wikidata.org/entity/Q55771109>,
@@ -10944,7 +10930,7 @@
     <http://www.wikidata.org/entity/Q899523> .
 
 <http://www.wikidata.org/entity/Q764898> skos:broader <http://www.wikidata.org/entity/Q9143>,
-    <http://www.wikidata.org/entity/Q183065>, <http://www.wikidata.org/entity/Q341> .
+    <http://www.wikidata.org/entity/Q183065> .
 
 <http://www.wikidata.org/entity/Q58756> skos:broader <http://www.wikidata.org/entity/Q176165> .
 
@@ -10953,7 +10939,7 @@
 <http://www.wikidata.org/entity/Q3362976> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
 <http://www.wikidata.org/entity/Q5519637> skos:broader <http://www.wikidata.org/entity/Q9143>,
-    <http://www.wikidata.org/entity/Q47506>, <http://www.wikidata.org/entity/Q341> .
+    <http://www.wikidata.org/entity/Q47506> .
 
 <http://www.wikidata.org/entity/Q5127798> skos:broader <http://www.wikidata.org/entity/Q9143>,
     <http://www.wikidata.org/entity/Q899523> .
@@ -11052,7 +11038,7 @@
 <http://www.wikidata.org/entity/Q17067973> skos:broader <http://www.wikidata.org/entity/Q683111>,
     <http://www.wikidata.org/entity/Q9143> .
 
-<http://www.wikidata.org/entity/Q1486208> skos:broader <http://www.wikidata.org/entity/Q341>,
+<http://www.wikidata.org/entity/Q1486208> skos:broader
     <http://www.wikidata.org/entity/Q20825628>, <http://www.wikidata.org/entity/Q9143> .
 
 <http://www.wikidata.org/entity/Q4042031> skos:broader <http://www.wikidata.org/entity/Q9143>,
@@ -11061,13 +11047,13 @@
 <http://www.wikidata.org/entity/Q1072356> skos:broader <http://www.wikidata.org/entity/Q51930650>,
     <http://www.wikidata.org/entity/Q28530564> .
 
-<http://www.wikidata.org/entity/Q878697> skos:broader <http://www.wikidata.org/entity/Q341>,
+<http://www.wikidata.org/entity/Q878697> skos:broader
     <http://www.wikidata.org/entity/Q1186723> .
 
 <http://www.wikidata.org/entity/Q6007730> skos:broader <http://www.wikidata.org/entity/Q51160764> .
 
 <http://www.wikidata.org/entity/Q80689> skos:broader <http://www.wikidata.org/entity/Q176165>,
-    <http://www.wikidata.org/entity/Q3932296>, <http://www.wikidata.org/entity/Q218616> .
+    <http://www.wikidata.org/entity/Q3932296> .
 
 <http://www.wikidata.org/entity/Q741303> skos:broader <http://www.wikidata.org/entity/Q467707>,
     <http://www.wikidata.org/entity/Q251> .
@@ -11116,7 +11102,7 @@
 
 <http://www.wikidata.org/entity/Q6546618> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
-<http://www.wikidata.org/entity/Q3267991> skos:broader <http://www.wikidata.org/entity/Q218616>,
+<http://www.wikidata.org/entity/Q3267991> skos:broader
     <http://www.wikidata.org/entity/Q9143> .
 
 <http://www.wikidata.org/entity/Q7139844> skos:broader <http://www.wikidata.org/entity/Q165436> .
@@ -11128,10 +11114,10 @@
 
 <http://www.wikidata.org/entity/Q5635739> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
-<http://www.wikidata.org/entity/Q3093138> skos:broader <http://www.wikidata.org/entity/Q341>,
+<http://www.wikidata.org/entity/Q3093138> skos:broader
     <http://www.wikidata.org/entity/Q1568118>, <http://www.wikidata.org/entity/Q176165> .
 
-<http://www.wikidata.org/entity/Q1645574> skos:broader <http://www.wikidata.org/entity/Q341>,
+<http://www.wikidata.org/entity/Q1645574> skos:broader
     <http://www.wikidata.org/entity/Q1044749>, <http://www.wikidata.org/entity/Q24451526> .
 
 <http://www.wikidata.org/entity/Q10352055> skos:broader <http://www.wikidata.org/entity/Q28920117>,
@@ -11153,7 +11139,7 @@
 <http://www.wikidata.org/entity/Q25277828> skos:broader <http://www.wikidata.org/entity/Q187432> .
 
 <http://www.wikidata.org/entity/Q5565944> skos:broader <http://www.wikidata.org/entity/Q176165>,
-    <http://www.wikidata.org/entity/Q188860>, <http://www.wikidata.org/entity/Q341> .
+    <http://www.wikidata.org/entity/Q188860> .
 
 <http://www.wikidata.org/entity/Q218170> skos:broader <http://www.wikidata.org/entity/Q4441564>,
     <http://www.wikidata.org/entity/Q9143>, <http://www.wikidata.org/entity/Q235557>,
@@ -11221,8 +11207,7 @@
 
 <http://www.wikidata.org/entity/Q648124> skos:broader <http://www.wikidata.org/entity/Q466981>,
     <http://www.wikidata.org/entity/Q28922885>, <http://www.wikidata.org/entity/Q9143>,
-    <http://www.wikidata.org/entity/Q13741>, <http://www.wikidata.org/entity/Q899523>,
-    <http://www.wikidata.org/entity/Q341> .
+    <http://www.wikidata.org/entity/Q13741>, <http://www.wikidata.org/entity/Q899523> .
 
 <http://www.wikidata.org/entity/Q1200182> skos:broader <http://www.wikidata.org/entity/Q4117406>,
     <http://www.wikidata.org/entity/Q28922858>, <http://www.wikidata.org/entity/Q187432>,
@@ -11251,8 +11236,7 @@
 <http://www.wikidata.org/entity/Q4652259> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
 <http://www.wikidata.org/entity/Q59641318> skos:broader <http://www.wikidata.org/entity/Q37045>,
-    <http://www.wikidata.org/entity/Q15614005>, <http://www.wikidata.org/entity/Q9143>,
-    <http://www.wikidata.org/entity/Q341> .
+    <http://www.wikidata.org/entity/Q15614005>, <http://www.wikidata.org/entity/Q9143> .
 
 <http://www.wikidata.org/entity/Q3539533> skos:broader <http://www.wikidata.org/entity/Q4485156>,
     <http://www.wikidata.org/entity/Q595971>, <http://www.wikidata.org/entity/Q7397> .
@@ -11307,8 +11291,7 @@
 
 <http://www.wikidata.org/entity/Q4043398> skos:broader <http://www.wikidata.org/entity/Q28919943> .
 
-<http://www.wikidata.org/entity/Q5012660> skos:broader <http://www.wikidata.org/entity/Q9143>,
-    <http://www.wikidata.org/entity/Q218616> .
+<http://www.wikidata.org/entity/Q5012660> skos:broader <http://www.wikidata.org/entity/Q9143>.
 
 <http://www.wikidata.org/entity/Q5014842> skos:broader <http://www.wikidata.org/entity/Q1077784>,
     <http://www.wikidata.org/entity/Q2164323>, <http://www.wikidata.org/entity/Q9143> .
@@ -11327,14 +11310,14 @@
     <http://www.wikidata.org/entity/Q176165> .
 
 <http://www.wikidata.org/entity/Q7836597> skos:broader <http://www.wikidata.org/entity/Q176165>,
-    <http://www.wikidata.org/entity/Q1130645>, <http://www.wikidata.org/entity/Q341> .
+    <http://www.wikidata.org/entity/Q1130645> .
 
 <http://www.wikidata.org/entity/Q77142970> skos:broader <http://www.wikidata.org/entity/Q2063>,
     <http://www.wikidata.org/entity/Q842397> .
 
 <http://www.wikidata.org/entity/Q3552975> skos:broader <http://www.wikidata.org/entity/Q132874> .
 
-<http://www.wikidata.org/entity/Q6024222> skos:broader <http://www.wikidata.org/entity/Q341>,
+<http://www.wikidata.org/entity/Q6024222> skos:broader
     <http://www.wikidata.org/entity/Q9143>, <http://www.wikidata.org/entity/Q20825628> .
 
 <http://www.wikidata.org/entity/Q114409> skos:broader <http://www.wikidata.org/entity/Q24451526>,
@@ -11424,7 +11407,7 @@
 <http://www.wikidata.org/entity/Q22981701> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
 <http://www.wikidata.org/entity/Q850> skos:broader <http://www.wikidata.org/entity/Q3932296>,
-    <http://www.wikidata.org/entity/Q341>, <http://www.wikidata.org/entity/Q1371279>,
+     <http://www.wikidata.org/entity/Q1371279>,
     <http://www.wikidata.org/entity/Q1130645> .
 
 <http://www.wikidata.org/entity/Q764453> skos:broader <http://www.wikidata.org/entity/Q55771109>,
@@ -11478,7 +11461,7 @@
 
 <http://www.wikidata.org/entity/Q3560677> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
-<http://www.wikidata.org/entity/Q6898824> skos:broader <http://www.wikidata.org/entity/Q341>,
+<http://www.wikidata.org/entity/Q6898824> skos:broader
     <http://www.wikidata.org/entity/Q9143> .
 
 <http://www.wikidata.org/entity/Q28942658> skos:broader <http://www.wikidata.org/entity/Q9143> .
@@ -11499,7 +11482,7 @@
 <http://www.wikidata.org/entity/Q1115899> skos:broader <http://www.wikidata.org/entity/Q42979>,
     <http://www.wikidata.org/entity/Q9135> .
 
-<http://www.wikidata.org/entity/Q7294750> skos:broader <http://www.wikidata.org/entity/Q341>,
+<http://www.wikidata.org/entity/Q7294750> skos:broader
     <http://www.wikidata.org/entity/Q176165>, <http://www.wikidata.org/entity/Q1130645> .
 
 <http://www.wikidata.org/entity/Q3924253> skos:broader <http://www.wikidata.org/entity/Q9143> .
@@ -11508,8 +11491,7 @@
 
 <http://www.wikidata.org/entity/Q795929> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
-<http://www.wikidata.org/entity/Q3570358> skos:broader <http://www.wikidata.org/entity/Q187432>,
-    <http://www.wikidata.org/entity/Q341> .
+<http://www.wikidata.org/entity/Q3570358> skos:broader <http://www.wikidata.org/entity/Q187432> .
 
 <http://www.wikidata.org/entity/Q28416477> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
@@ -11549,12 +11531,12 @@
 <http://www.wikidata.org/entity/Q2063791> skos:broader <http://www.wikidata.org/entity/Q55771109>,
     <http://www.wikidata.org/entity/Q47607> .
 
-<http://www.wikidata.org/entity/Q1356671> skos:broader <http://www.wikidata.org/entity/Q341>,
+<http://www.wikidata.org/entity/Q1356671> skos:broader
     <http://www.wikidata.org/entity/Q47506>, <http://www.wikidata.org/entity/Q9143>, <http://www.wikidata.org/entity/Q20706915>,
     <http://www.wikidata.org/entity/Q312466> .
 
 <http://www.wikidata.org/entity/Q334879> skos:broader <http://www.wikidata.org/entity/Q9143>,
-    <http://www.wikidata.org/entity/Q1130645>, <http://www.wikidata.org/entity/Q341>,
+    <http://www.wikidata.org/entity/Q1130645>,
     <http://www.wikidata.org/entity/Q1144882>, <http://www.wikidata.org/entity/Q205961>,
     <http://www.wikidata.org/entity/Q12772052>, <http://www.wikidata.org/entity/Q3839507>,
     <http://www.wikidata.org/entity/Q28919943> .
@@ -11566,7 +11548,7 @@
 <http://www.wikidata.org/entity/Q4544975> skos:broader <http://www.wikidata.org/entity/Q9143>,
     <http://www.wikidata.org/entity/Q132874> .
 
-<http://www.wikidata.org/entity/Q1029086> skos:broader <http://www.wikidata.org/entity/Q341>,
+<http://www.wikidata.org/entity/Q1029086> skos:broader
     <http://www.wikidata.org/entity/Q20706915> .
 
 <http://www.wikidata.org/entity/Q6931851> skos:broader <http://www.wikidata.org/entity/Q9143> .
@@ -11620,7 +11602,7 @@
     <http://www.wikidata.org/entity/Q629206> .
 
 <http://www.wikidata.org/entity/Q25462748> skos:broader <http://www.wikidata.org/entity/Q21562092>,
-    <http://www.wikidata.org/entity/Q187432>, <http://www.wikidata.org/entity/Q341>, <http://www.wikidata.org/entity/Q899523>,
+    <http://www.wikidata.org/entity/Q187432>,  <http://www.wikidata.org/entity/Q899523>,
     <http://www.wikidata.org/entity/Q9143>, <http://www.wikidata.org/entity/Q1993334>,
     <http://www.wikidata.org/entity/Q12772052>, <http://www.wikidata.org/entity/Q3839507> .
 
@@ -11647,7 +11629,7 @@
 <http://www.wikidata.org/entity/Q12976130> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
 <http://www.wikidata.org/entity/Q2566342> skos:broader <http://www.wikidata.org/entity/Q176165>,
-    <http://www.wikidata.org/entity/Q341>, <http://www.wikidata.org/entity/Q3932296> .
+     <http://www.wikidata.org/entity/Q3932296> .
 
 <http://www.wikidata.org/entity/Q11227761> skos:broader <http://www.wikidata.org/entity/Q610140> .
 
@@ -11655,8 +11637,7 @@
 
 <http://www.wikidata.org/entity/Q2132780> skos:broader <http://www.wikidata.org/entity/Q29032808> .
 
-<http://www.wikidata.org/entity/Q3353125> skos:broader <http://www.wikidata.org/entity/Q176165>,
-    <http://www.wikidata.org/entity/Q218616> .
+<http://www.wikidata.org/entity/Q3353125> skos:broader <http://www.wikidata.org/entity/Q176165>.
 
 <http://www.wikidata.org/entity/Q12847068> skos:broader <http://www.wikidata.org/entity/Q176165>,
     <http://www.wikidata.org/entity/Q3932296>, <http://www.wikidata.org/entity/Q17155032> .
@@ -11666,7 +11647,7 @@
 <http://www.wikidata.org/entity/Q96378980> skos:broader <http://www.wikidata.org/entity/Q60551191> .
 
 <http://www.wikidata.org/entity/Q12235804> skos:broader <http://www.wikidata.org/entity/Q9143>,
-    <http://www.wikidata.org/entity/Q29068718>, <http://www.wikidata.org/entity/Q341>,
+    <http://www.wikidata.org/entity/Q29068718>,
     <http://www.wikidata.org/entity/Q28919943> .
 
 <http://www.wikidata.org/entity/Q98961732> skos:broader <http://www.wikidata.org/entity/Q9143> .
@@ -11690,8 +11671,7 @@
 <http://www.wikidata.org/entity/Q5492884> skos:broader <http://www.wikidata.org/entity/Q9143>,
     <http://www.wikidata.org/entity/Q7397> .
 
-<http://www.wikidata.org/entity/Q65233440> skos:broader <http://www.wikidata.org/entity/Q14663>,
-    <http://www.wikidata.org/entity/Q341> .
+<http://www.wikidata.org/entity/Q65233440> skos:broader <http://www.wikidata.org/entity/Q14663> .
 
 <http://www.wikidata.org/entity/Q21562092> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
@@ -11708,7 +11688,7 @@
 
 <http://www.wikidata.org/entity/Q275131> skos:broader <http://www.wikidata.org/entity/Q29068718>,
     <http://www.wikidata.org/entity/Q1068473>, <http://www.wikidata.org/entity/Q32566>,
-    <http://www.wikidata.org/entity/Q9143>, <http://www.wikidata.org/entity/Q341> .
+    <http://www.wikidata.org/entity/Q9143> .
 
 <http://www.wikidata.org/entity/Q25304718> skos:broader <http://www.wikidata.org/entity/Q9143>,
     <http://www.wikidata.org/entity/Q610140> .
@@ -11718,8 +11698,7 @@
 <http://www.wikidata.org/entity/Q1852616> skos:broader <http://www.wikidata.org/entity/Q28920142>,
     <http://www.wikidata.org/entity/Q9143>, <http://www.wikidata.org/entity/Q28920121> .
 
-<http://www.wikidata.org/entity/Q105813780> skos:broader <http://www.wikidata.org/entity/Q1186723>,
-    <http://www.wikidata.org/entity/Q341> .
+<http://www.wikidata.org/entity/Q105813780> skos:broader <http://www.wikidata.org/entity/Q1186723> .
 
 <http://www.wikidata.org/entity/Q7122935> skos:broader <http://www.wikidata.org/entity/Q24451526> .
 
@@ -11738,7 +11717,7 @@
 
 <http://www.wikidata.org/entity/Q7028507> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
-<http://www.wikidata.org/entity/Q616580> skos:broader <http://www.wikidata.org/entity/Q341>,
+<http://www.wikidata.org/entity/Q616580> skos:broader
     <http://www.wikidata.org/entity/Q24451526> .
 
 <http://www.wikidata.org/entity/Q219959> skos:broader <http://www.wikidata.org/entity/Q9143> .
@@ -11792,7 +11771,7 @@
 
 <http://www.wikidata.org/entity/Q2665141> skos:broader <http://www.wikidata.org/entity/Q131212>,
     <http://www.wikidata.org/entity/Q47506>, <http://www.wikidata.org/entity/Q183065>,
-    <http://www.wikidata.org/entity/Q28920164>, <http://www.wikidata.org/entity/Q341>,
+    <http://www.wikidata.org/entity/Q28920164>,
     <http://www.wikidata.org/entity/Q189722> .
 
 <http://www.wikidata.org/entity/Q5164373> skos:broader <http://www.wikidata.org/entity/Q28920160>,
@@ -11964,7 +11943,7 @@
 
 <http://www.wikidata.org/entity/Q5397186> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
-<http://www.wikidata.org/entity/Q929932> skos:broader <http://www.wikidata.org/entity/Q341>,
+<http://www.wikidata.org/entity/Q929932> skos:broader
     <http://www.wikidata.org/entity/Q166142>, <http://www.wikidata.org/entity/Q9143> .
 
 <http://www.wikidata.org/entity/Q163468> skos:broader <http://www.wikidata.org/entity/Q1144882>,
@@ -12029,7 +12008,7 @@
 <http://www.wikidata.org/entity/Q28923022> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
 <http://www.wikidata.org/entity/Q56375088> skos:broader <http://www.wikidata.org/entity/Q7005136>,
-    <http://www.wikidata.org/entity/Q341>, <http://www.wikidata.org/entity/Q3932296> .
+     <http://www.wikidata.org/entity/Q3932296> .
 
 <http://www.wikidata.org/entity/Q28955096> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
@@ -12046,7 +12025,7 @@
 
 <http://www.wikidata.org/entity/Q45341807> skos:broader <http://www.wikidata.org/entity/Q9143>,
     <http://www.wikidata.org/entity/Q1068473>, <http://www.wikidata.org/entity/Q506883>,
-    <http://www.wikidata.org/entity/Q683111>, <http://www.wikidata.org/entity/Q341> .
+    <http://www.wikidata.org/entity/Q683111> .
 
 <http://www.wikidata.org/entity/Q1485336> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
@@ -12091,8 +12070,7 @@
 
 <http://www.wikidata.org/entity/Q28923031> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
-<http://www.wikidata.org/entity/Q266257> skos:broader <http://www.wikidata.org/entity/Q24451526>,
-    <http://www.wikidata.org/entity/Q341> .
+<http://www.wikidata.org/entity/Q266257> skos:broader <http://www.wikidata.org/entity/Q24451526> .
 
 <http://www.wikidata.org/entity/Q4657151> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
@@ -12111,8 +12089,7 @@
     <http://www.wikidata.org/entity/Q165194> .
 
 <http://www.wikidata.org/entity/Q3813425> skos:broader <http://www.wikidata.org/entity/Q537993>,
-    <http://www.wikidata.org/entity/Q176165>, <http://www.wikidata.org/entity/Q218616>,
-    <http://www.wikidata.org/entity/Q341> .
+    <http://www.wikidata.org/entity/Q176165> .
 
 <http://www.wikidata.org/entity/Q5156377> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
@@ -12125,7 +12102,7 @@
 <http://www.wikidata.org/entity/Q11253634> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
 <http://www.wikidata.org/entity/Q18377772> skos:broader <http://www.wikidata.org/entity/Q176165>,
-    <http://www.wikidata.org/entity/Q341>, <http://www.wikidata.org/entity/Q339678> .
+     <http://www.wikidata.org/entity/Q339678> .
 
 <http://www.wikidata.org/entity/Q369096> skos:broader <http://www.wikidata.org/entity/Q9143>,
     <http://www.wikidata.org/entity/Q7397> .
@@ -12237,7 +12214,7 @@
 <http://www.wikidata.org/entity/Q504453> skos:broader <http://www.wikidata.org/entity/Q21562092>,
     <http://www.wikidata.org/entity/Q12772052>, <http://www.wikidata.org/entity/Q3839507>,
     <http://www.wikidata.org/entity/Q1993334>, <http://www.wikidata.org/entity/Q1130645>,
-    <http://www.wikidata.org/entity/Q56062429>, <http://www.wikidata.org/entity/Q341>,
+    <http://www.wikidata.org/entity/Q56062429>,
     <http://www.wikidata.org/entity/Q899523>, <http://www.wikidata.org/entity/Q187432> .
 
 <http://www.wikidata.org/entity/Q7475904> skos:broader <http://www.wikidata.org/entity/Q9143> .
@@ -12247,7 +12224,7 @@
 
 <http://www.wikidata.org/entity/Q16863097> skos:broader <http://www.wikidata.org/entity/Q24789150>,
     <http://www.wikidata.org/entity/Q783866>, <http://www.wikidata.org/entity/Q1130645>,
-    <http://www.wikidata.org/entity/Q47506>, <http://www.wikidata.org/entity/Q341>, <http://www.wikidata.org/entity/Q9143>,
+    <http://www.wikidata.org/entity/Q47506>,  <http://www.wikidata.org/entity/Q9143>,
     <http://www.wikidata.org/entity/Q1330336> .
 
 <http://www.wikidata.org/entity/Q22695923> skos:broader <http://www.wikidata.org/entity/Q9143> .
@@ -12305,7 +12282,7 @@
 
 <http://www.wikidata.org/entity/Q20479> skos:broader <http://www.wikidata.org/entity/Q56223375>,
     <http://www.wikidata.org/entity/Q28920201>, <http://www.wikidata.org/entity/Q3839507>,
-    <http://www.wikidata.org/entity/Q9143>, <http://www.wikidata.org/entity/Q341> .
+    <http://www.wikidata.org/entity/Q9143> .
 
 <http://www.wikidata.org/entity/Q99522573> skos:broader <http://www.wikidata.org/entity/Q610140> .
 
@@ -12314,7 +12291,7 @@
 <http://www.wikidata.org/entity/Q32103144> skos:broader <http://www.wikidata.org/entity/Q1204300>,
     <http://www.wikidata.org/entity/Q7397> .
 
-<http://www.wikidata.org/entity/Q56062435> skos:broader <http://www.wikidata.org/entity/Q341>,
+<http://www.wikidata.org/entity/Q56062435> skos:broader
     <http://www.wikidata.org/entity/Q77916592>, <http://www.wikidata.org/entity/Q24789150>,
     <http://www.wikidata.org/entity/Q2005> .
 
@@ -12326,7 +12303,7 @@
 <http://www.wikidata.org/entity/Q5322692> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
 <http://www.wikidata.org/entity/Q215819> skos:broader <http://www.wikidata.org/entity/Q43229>,
-    <http://www.wikidata.org/entity/Q218616>, <http://www.wikidata.org/entity/Q132364>,
+     <http://www.wikidata.org/entity/Q132364>,
     <http://www.wikidata.org/entity/Q3932296> .
 
 <http://www.wikidata.org/entity/Q5322691> skos:broader <http://www.wikidata.org/entity/Q9143>,
@@ -12335,7 +12312,7 @@
 <http://www.wikidata.org/entity/Q18700335> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
 <http://www.wikidata.org/entity/Q5014778> skos:broader <http://www.wikidata.org/entity/Q3257930>,
-    <http://www.wikidata.org/entity/Q341>, <http://www.wikidata.org/entity/Q166142> .
+     <http://www.wikidata.org/entity/Q166142> .
 
 <http://www.wikidata.org/entity/Q28342360> skos:broader <http://www.wikidata.org/entity/Q28342104> .
 
@@ -12344,7 +12321,7 @@
     <http://www.wikidata.org/entity/Q187432> .
 
 <http://www.wikidata.org/entity/Q20722921> skos:broader <http://www.wikidata.org/entity/Q1444922>,
-    <http://www.wikidata.org/entity/Q341>, <http://www.wikidata.org/entity/Q188531> .
+     <http://www.wikidata.org/entity/Q188531> .
 
 <http://www.wikidata.org/entity/Q51160093> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
@@ -12401,7 +12378,7 @@
     <http://www.wikidata.org/entity/Q1028939>, <http://www.wikidata.org/entity/Q336705>,
     <http://www.wikidata.org/entity/Q37045> .
 
-<http://www.wikidata.org/entity/Q188104> skos:broader <http://www.wikidata.org/entity/Q341>,
+<http://www.wikidata.org/entity/Q188104> skos:broader
     <http://www.wikidata.org/entity/Q176165> .
 
 <http://www.wikidata.org/entity/Q1418686> skos:broader <http://www.wikidata.org/entity/Q9143> .
@@ -12468,7 +12445,7 @@
 <http://www.wikidata.org/entity/Q2063> skos:broader <http://www.wikidata.org/entity/Q235557>,
     <http://www.wikidata.org/entity/Q24451526>, <http://www.wikidata.org/entity/Q681263> .
 
-<http://www.wikidata.org/entity/Q4778968> skos:broader <http://www.wikidata.org/entity/Q341>,
+<http://www.wikidata.org/entity/Q4778968> skos:broader
     <http://www.wikidata.org/entity/Q39999225>, <http://www.wikidata.org/entity/Q20706915> .
 
 <http://www.wikidata.org/entity/Q28126633> skos:broader <http://www.wikidata.org/entity/Q21562092> .
@@ -12485,7 +12462,7 @@
 <http://www.wikidata.org/entity/Q7102251> skos:broader <http://www.wikidata.org/entity/Q9143>,
     <http://www.wikidata.org/entity/Q1993334> .
 
-<http://www.wikidata.org/entity/Q57016392> skos:broader <http://www.wikidata.org/entity/Q341>,
+<http://www.wikidata.org/entity/Q57016392> skos:broader
     <http://www.wikidata.org/entity/Q9143>, <http://www.wikidata.org/entity/Q683111> .
 
 <http://www.wikidata.org/entity/Q972868> skos:broader <http://www.wikidata.org/entity/Q9143> .
@@ -12530,7 +12507,7 @@
 
 <http://www.wikidata.org/entity/Q5965507> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
-<http://www.wikidata.org/entity/Q4043482> skos:broader <http://www.wikidata.org/entity/Q341>,
+<http://www.wikidata.org/entity/Q4043482> skos:broader
     <http://www.wikidata.org/entity/Q176165>, <http://www.wikidata.org/entity/Q1033951> .
 
 <http://www.wikidata.org/entity/Q1942241> skos:broader <http://www.wikidata.org/entity/Q9143> .
@@ -12547,8 +12524,7 @@
 <http://www.wikidata.org/entity/Q169411> skos:broader <http://www.wikidata.org/entity/Q29077376>,
     <http://www.wikidata.org/entity/Q9143> .
 
-<http://www.wikidata.org/entity/Q978185> skos:broader <http://www.wikidata.org/entity/Q9143>,
-    <http://www.wikidata.org/entity/Q341> .
+<http://www.wikidata.org/entity/Q978185> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
 <http://www.wikidata.org/entity/Q6862049> skos:broader <http://www.wikidata.org/entity/Q3932296> .
 
@@ -12560,9 +12536,9 @@
     <http://www.wikidata.org/entity/Q1197154> .
 
 <http://www.wikidata.org/entity/Q220399> skos:broader <http://www.wikidata.org/entity/Q176165>,
-    <http://www.wikidata.org/entity/Q118171>, <http://www.wikidata.org/entity/Q341> .
+    <http://www.wikidata.org/entity/Q118171> .
 
-<http://www.wikidata.org/entity/Q600450> skos:broader <http://www.wikidata.org/entity/Q341>,
+<http://www.wikidata.org/entity/Q600450> skos:broader
     <http://www.wikidata.org/entity/Q1074158>, <http://www.wikidata.org/entity/Q9143> .
 
 <http://www.wikidata.org/entity/Q4734969> skos:broader <http://www.wikidata.org/entity/Q9143> .
@@ -12592,7 +12568,7 @@
 <http://www.wikidata.org/entity/Q11235870> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
 <http://www.wikidata.org/entity/Q99443250> skos:broader <http://www.wikidata.org/entity/Q1044749>,
-    <http://www.wikidata.org/entity/Q341>, <http://www.wikidata.org/entity/Q24451526> .
+     <http://www.wikidata.org/entity/Q24451526> .
 
 <http://www.wikidata.org/entity/Q1335388> skos:broader <http://www.wikidata.org/entity/Q9143>,
     <http://www.wikidata.org/entity/Q7397> .
@@ -12604,8 +12580,7 @@
 
 <http://www.wikidata.org/entity/Q4653815> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
-<http://www.wikidata.org/entity/Q1123786> skos:broader <http://www.wikidata.org/entity/Q176165>,
-    <http://www.wikidata.org/entity/Q341> .
+<http://www.wikidata.org/entity/Q1123786> skos:broader <http://www.wikidata.org/entity/Q176165> .
 
 <http://www.wikidata.org/entity/Q1572823> skos:broader <http://www.wikidata.org/entity/Q176165> .
 
@@ -12636,7 +12611,7 @@
     <http://www.wikidata.org/entity/Q9143> .
 
 <http://www.wikidata.org/entity/Q385970> skos:broader <http://www.wikidata.org/entity/Q2727468>,
-    <http://www.wikidata.org/entity/Q21127166>, <http://www.wikidata.org/entity/Q341>,
+    <http://www.wikidata.org/entity/Q21127166>,
     <http://www.wikidata.org/entity/Q1993334>, <http://www.wikidata.org/entity/Q20155966> .
 
 <http://www.wikidata.org/entity/Q20155677> skos:broader <http://www.wikidata.org/entity/Q235557>,
@@ -12647,7 +12622,7 @@
 <http://www.wikidata.org/entity/Q297730> skos:broader <http://www.wikidata.org/entity/Q7397>,
     <http://www.wikidata.org/entity/Q9143> .
 
-<http://www.wikidata.org/entity/Q5527588> skos:broader <http://www.wikidata.org/entity/Q341>,
+<http://www.wikidata.org/entity/Q5527588> skos:broader
     <http://www.wikidata.org/entity/Q9143> .
 
 <http://www.wikidata.org/entity/Q10375031> skos:broader <http://www.wikidata.org/entity/Q9143> .
@@ -12660,7 +12635,7 @@
 <http://www.wikidata.org/entity/Q56277125> skos:broader <http://www.wikidata.org/entity/Q55771109>,
     <http://www.wikidata.org/entity/Q15777> .
 
-<http://www.wikidata.org/entity/Q107015664> skos:broader <http://www.wikidata.org/entity/Q341>,
+<http://www.wikidata.org/entity/Q107015664> skos:broader
     <http://www.wikidata.org/entity/Q2005>, <http://www.wikidata.org/entity/Q24789150> .
 
 <http://www.wikidata.org/entity/Q1461054> skos:broader <http://www.wikidata.org/entity/Q741303> .
@@ -12677,7 +12652,7 @@
 
 <http://www.wikidata.org/entity/Q5426833> skos:broader <http://www.wikidata.org/entity/Q238137> .
 
-<http://www.wikidata.org/entity/Q52534999> skos:broader <http://www.wikidata.org/entity/Q341>,
+<http://www.wikidata.org/entity/Q52534999> skos:broader
     <http://www.wikidata.org/entity/Q13224353>, <http://www.wikidata.org/entity/Q39998995>,
     <http://www.wikidata.org/entity/Q7805429> .
 
@@ -12747,7 +12722,7 @@
 
 <http://www.wikidata.org/entity/Q5153329> skos:broader <http://www.wikidata.org/entity/Q24451526> .
 
-<http://www.wikidata.org/entity/Q18387805> skos:broader <http://www.wikidata.org/entity/Q341>,
+<http://www.wikidata.org/entity/Q18387805> skos:broader
     <http://www.wikidata.org/entity/Q176165> .
 
 <http://www.wikidata.org/entity/Q16002899> skos:broader <http://www.wikidata.org/entity/Q9143> .
@@ -12886,7 +12861,7 @@
     <http://www.wikidata.org/entity/Q9143> .
 
 <http://www.wikidata.org/entity/Q955854> skos:broader <http://www.wikidata.org/entity/Q339678>,
-    <http://www.wikidata.org/entity/Q20706915>, <http://www.wikidata.org/entity/Q218616> .
+    <http://www.wikidata.org/entity/Q20706915> .
 
 <http://www.wikidata.org/entity/Q25394435> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
@@ -12931,7 +12906,7 @@
     <http://www.wikidata.org/entity/Q235557>, <http://www.wikidata.org/entity/Q21562092>,
     <http://www.wikidata.org/entity/Q28922885>, <http://www.wikidata.org/entity/Q187432>,
     <http://www.wikidata.org/entity/Q3839507>, <http://www.wikidata.org/entity/Q651794>,
-    <http://www.wikidata.org/entity/Q341>, <http://www.wikidata.org/entity/Q12772052> .
+     <http://www.wikidata.org/entity/Q12772052> .
 
 <http://www.wikidata.org/entity/Q5005846> skos:broader <http://www.wikidata.org/entity/Q2407>,
     <http://www.wikidata.org/entity/Q55771109> .
@@ -12973,7 +12948,7 @@
 <http://www.wikidata.org/entity/Q25245640> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
 <http://www.wikidata.org/entity/Q5607337> skos:broader <http://www.wikidata.org/entity/Q60551191>,
-    <http://www.wikidata.org/entity/Q9143>, <http://www.wikidata.org/entity/Q341>, <http://www.wikidata.org/entity/Q845739>,
+    <http://www.wikidata.org/entity/Q9143>,  <http://www.wikidata.org/entity/Q845739>,
     <http://www.wikidata.org/entity/Q691358> .
 
 <http://www.wikidata.org/entity/Q32129715> skos:broader <http://www.wikidata.org/entity/Q1204300>,
@@ -13030,7 +13005,7 @@
     <http://www.wikidata.org/entity/Q9143>, <http://www.wikidata.org/entity/Q28922885>,
     <http://www.wikidata.org/entity/Q14663>, <http://www.wikidata.org/entity/Q18109> .
 
-<http://www.wikidata.org/entity/Q107291842> skos:broader <http://www.wikidata.org/entity/Q341>,
+<http://www.wikidata.org/entity/Q107291842> skos:broader
     <http://www.wikidata.org/entity/Q176165> .
 
 <http://www.wikidata.org/entity/Q57165562> skos:broader <http://www.wikidata.org/entity/Q275131>,
@@ -13065,7 +13040,7 @@
 <http://www.wikidata.org/entity/Q2463067> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
 <http://www.wikidata.org/entity/Q783086> skos:broader <http://www.wikidata.org/entity/Q1130645>,
-    <http://www.wikidata.org/entity/Q341>, <http://www.wikidata.org/entity/Q176165> .
+     <http://www.wikidata.org/entity/Q176165> .
 
 <http://www.wikidata.org/entity/Q4979883> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
@@ -13083,10 +13058,9 @@
 <http://www.wikidata.org/entity/Q204377> skos:broader <http://www.wikidata.org/entity/Q1186723> .
 
 <http://www.wikidata.org/entity/Q9026437> skos:broader <http://www.wikidata.org/entity/Q1130645>,
-    <http://www.wikidata.org/entity/Q341>, <http://www.wikidata.org/entity/Q176165> .
+     <http://www.wikidata.org/entity/Q176165> .
 
-<http://www.wikidata.org/entity/Q68592990> skos:broader <http://www.wikidata.org/entity/Q14663>,
-    <http://www.wikidata.org/entity/Q341> .
+<http://www.wikidata.org/entity/Q68592990> skos:broader <http://www.wikidata.org/entity/Q14663> .
 
 <http://www.wikidata.org/entity/Q1562670> skos:broader <http://www.wikidata.org/entity/Q176165>,
     <http://www.wikidata.org/entity/Q1130645> .
@@ -13134,7 +13108,7 @@
 <http://www.wikidata.org/entity/Q4051864> skos:broader <http://www.wikidata.org/entity/Q899523>,
     <http://www.wikidata.org/entity/Q9143>, <http://www.wikidata.org/entity/Q47506> .
 
-<http://www.wikidata.org/entity/Q1494770> skos:broader <http://www.wikidata.org/entity/Q341>,
+<http://www.wikidata.org/entity/Q1494770> skos:broader
     <http://www.wikidata.org/entity/Q9143>, <http://www.wikidata.org/entity/Q899523> .
 
 <http://www.wikidata.org/entity/Q300971> skos:broader <http://www.wikidata.org/entity/Q9143>,
@@ -13143,7 +13117,7 @@
 <http://www.wikidata.org/entity/Q3411311> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
 <http://www.wikidata.org/entity/Q1023897> skos:broader <http://www.wikidata.org/entity/Q47506>,
-    <http://www.wikidata.org/entity/Q341>, <http://www.wikidata.org/entity/Q9143> .
+     <http://www.wikidata.org/entity/Q9143> .
 
 <http://www.wikidata.org/entity/Q292803> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
@@ -13176,8 +13150,7 @@
 
 <http://www.wikidata.org/entity/Q263490> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
-<http://www.wikidata.org/entity/Q431195> skos:broader <http://www.wikidata.org/entity/Q3932296>,
-    <http://www.wikidata.org/entity/Q218616> .
+<http://www.wikidata.org/entity/Q431195> skos:broader <http://www.wikidata.org/entity/Q3932296>.
 
 <http://www.wikidata.org/entity/Q2143563> skos:broader <http://www.wikidata.org/entity/Q9143>,
     <http://www.wikidata.org/entity/Q238137>, <http://www.wikidata.org/entity/Q13741> .
@@ -13212,7 +13185,7 @@
 <http://www.wikidata.org/entity/Q104094003> skos:broader <http://www.wikidata.org/entity/Q629206>,
     <http://www.wikidata.org/entity/Q28923017>, <http://www.wikidata.org/entity/Q187432> .
 
-<http://www.wikidata.org/entity/Q505877> skos:broader <http://www.wikidata.org/entity/Q341>,
+<http://www.wikidata.org/entity/Q505877> skos:broader
     <http://www.wikidata.org/entity/Q9143>, <http://www.wikidata.org/entity/Q29032804> .
 
 <http://www.wikidata.org/entity/Q3094826> skos:broader <http://www.wikidata.org/entity/Q9143> .
@@ -13228,7 +13201,7 @@
     <http://www.wikidata.org/entity/Q28922885> .
 
 <http://www.wikidata.org/entity/Q103667767> skos:broader <http://www.wikidata.org/entity/Q483130>,
-    <http://www.wikidata.org/entity/Q341>, <http://www.wikidata.org/entity/Q176165> .
+     <http://www.wikidata.org/entity/Q176165> .
 
 <http://www.wikidata.org/entity/Q4927494> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
@@ -13240,7 +13213,7 @@
     <http://www.wikidata.org/entity/Q683111> .
 
 <http://www.wikidata.org/entity/Q1456066> skos:broader <http://www.wikidata.org/entity/Q183065>,
-    <http://www.wikidata.org/entity/Q4117406>, <http://www.wikidata.org/entity/Q341>,
+    <http://www.wikidata.org/entity/Q4117406>,
     <http://www.wikidata.org/entity/Q2458742> .
 
 <http://www.wikidata.org/entity/Q238106> skos:broader <http://www.wikidata.org/entity/Q28937412>,
@@ -13259,7 +13232,7 @@
     <http://www.wikidata.org/entity/Q9143> .
 
 <http://www.wikidata.org/entity/Q16354758> skos:broader <http://www.wikidata.org/entity/Q6686945>,
-    <http://www.wikidata.org/entity/Q341>, <http://www.wikidata.org/entity/Q15618637>,
+     <http://www.wikidata.org/entity/Q15618637>,
     <http://www.wikidata.org/entity/Q595971>, <http://www.wikidata.org/entity/Q1427675> .
 
 <http://www.wikidata.org/entity/Q34280> skos:broader <http://www.wikidata.org/entity/Q28922885>,
@@ -13268,11 +13241,11 @@
 <http://www.wikidata.org/entity/Q22908852> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
 <http://www.wikidata.org/entity/Q484935> skos:broader <http://www.wikidata.org/entity/Q3932296>,
-    <http://www.wikidata.org/entity/Q176165>, <http://www.wikidata.org/entity/Q341> .
+    <http://www.wikidata.org/entity/Q176165> .
 
 <http://www.wikidata.org/entity/Q63243349> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
-<http://www.wikidata.org/entity/Q110427108> skos:broader <http://www.wikidata.org/entity/Q341>,
+<http://www.wikidata.org/entity/Q110427108> skos:broader
     <http://www.wikidata.org/entity/Q3257930> .
 
 <http://www.wikidata.org/entity/Q2566011> skos:broader <http://www.wikidata.org/entity/Q28922885>,
@@ -13329,13 +13302,13 @@
 
 <http://www.wikidata.org/entity/Q28922885> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
-<http://www.wikidata.org/entity/Q5055658> skos:broader <http://www.wikidata.org/entity/Q341>,
+<http://www.wikidata.org/entity/Q5055658> skos:broader
     <http://www.wikidata.org/entity/Q176165> .
 
 <http://www.wikidata.org/entity/Q7395256> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
 <http://www.wikidata.org/entity/Q1002996> skos:broader <http://www.wikidata.org/entity/Q9143>,
-    <http://www.wikidata.org/entity/Q683111>, <http://www.wikidata.org/entity/Q341>, <http://www.wikidata.org/entity/Q1130645> .
+    <http://www.wikidata.org/entity/Q683111>,  <http://www.wikidata.org/entity/Q1130645> .
 
 <http://www.wikidata.org/entity/Q3294091> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
@@ -13364,7 +13337,7 @@
 
 <http://www.wikidata.org/entity/Q1777233> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
-<http://www.wikidata.org/entity/Q779317> skos:broader <http://www.wikidata.org/entity/Q341>,
+<http://www.wikidata.org/entity/Q779317> skos:broader
     <http://www.wikidata.org/entity/Q9143>, <http://www.wikidata.org/entity/Q166142> .
 
 <http://www.wikidata.org/entity/Q4040754> skos:broader <http://www.wikidata.org/entity/Q3839507>,
@@ -13405,19 +13378,19 @@
 <http://www.wikidata.org/entity/Q5971386> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
 <http://www.wikidata.org/entity/Q30100408> skos:broader <http://www.wikidata.org/entity/Q3932296>,
-    <http://www.wikidata.org/entity/Q28057052>, <http://www.wikidata.org/entity/Q341> .
+    <http://www.wikidata.org/entity/Q28057052> .
 
 <http://www.wikidata.org/entity/Q32107462> skos:broader <http://www.wikidata.org/entity/Q1204300>,
     <http://www.wikidata.org/entity/Q7397> .
 
-<http://www.wikidata.org/entity/Q7170774> skos:broader <http://www.wikidata.org/entity/Q341>,
+<http://www.wikidata.org/entity/Q7170774> skos:broader
     <http://www.wikidata.org/entity/Q176165>, <http://www.wikidata.org/entity/Q1130645> .
 
 <http://www.wikidata.org/entity/Q16616746> skos:broader <http://www.wikidata.org/entity/Q187432>,
     <http://www.wikidata.org/entity/Q12772052>, <http://www.wikidata.org/entity/Q21562092>,
     <http://www.wikidata.org/entity/Q28920813>, <http://www.wikidata.org/entity/Q899523> .
 
-<http://www.wikidata.org/entity/Q4778914> skos:broader <http://www.wikidata.org/entity/Q341>,
+<http://www.wikidata.org/entity/Q4778914> skos:broader
     <http://www.wikidata.org/entity/Q3932296> .
 
 <http://www.wikidata.org/entity/Q7023815> skos:broader <http://www.wikidata.org/entity/Q28920142>,
@@ -13489,7 +13462,7 @@
 <http://www.wikidata.org/entity/Q32130225> skos:broader <http://www.wikidata.org/entity/Q7397>,
     <http://www.wikidata.org/entity/Q1204300> .
 
-<http://www.wikidata.org/entity/Q178817> skos:broader <http://www.wikidata.org/entity/Q341>,
+<http://www.wikidata.org/entity/Q178817> skos:broader
     <http://www.wikidata.org/entity/Q1209289>, <http://www.wikidata.org/entity/Q1330336>,
     <http://www.wikidata.org/entity/Q9143> .
 
@@ -13499,8 +13472,7 @@
 
 <http://www.wikidata.org/entity/Q28924231> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
-<http://www.wikidata.org/entity/Q108039409> skos:broader <http://www.wikidata.org/entity/Q9143>,
-    <http://www.wikidata.org/entity/Q341> .
+<http://www.wikidata.org/entity/Q108039409> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
 <http://www.wikidata.org/entity/Q5986860> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
@@ -13545,7 +13517,7 @@
 <http://www.wikidata.org/entity/Q7263936> skos:broader <http://www.wikidata.org/entity/Q9143>,
     <http://www.wikidata.org/entity/Q4117406>, <http://www.wikidata.org/entity/Q899523> .
 
-<http://www.wikidata.org/entity/Q3277979> skos:broader <http://www.wikidata.org/entity/Q341>,
+<http://www.wikidata.org/entity/Q3277979> skos:broader
     <http://www.wikidata.org/entity/Q51160764> .
 
 <http://www.wikidata.org/entity/Q7074990> skos:broader <http://www.wikidata.org/entity/Q9143> .
@@ -13561,16 +13533,14 @@
 <http://www.wikidata.org/entity/Q6559085> skos:broader <http://www.wikidata.org/entity/Q7397>,
     <http://www.wikidata.org/entity/Q9143> .
 
-<http://www.wikidata.org/entity/Q5627844> skos:broader <http://www.wikidata.org/entity/Q3932296>,
-    <http://www.wikidata.org/entity/Q341> .
+<http://www.wikidata.org/entity/Q5627844> skos:broader <http://www.wikidata.org/entity/Q3932296> .
 
 <http://www.wikidata.org/entity/Q6559081> skos:broader <http://www.wikidata.org/entity/Q1341685>,
     <http://www.wikidata.org/entity/Q110946204> .
 
 <http://www.wikidata.org/entity/Q5969023> skos:broader <http://www.wikidata.org/entity/Q3257930> .
 
-<http://www.wikidata.org/entity/Q961733> skos:broader <http://www.wikidata.org/entity/Q20706915>,
-    <http://www.wikidata.org/entity/Q341> .
+<http://www.wikidata.org/entity/Q961733> skos:broader <http://www.wikidata.org/entity/Q20706915> .
 
 <http://www.wikidata.org/entity/Q4165150> skos:broader <http://www.wikidata.org/entity/Q2652378> .
 
@@ -13606,7 +13576,7 @@
 <http://www.wikidata.org/entity/Q1160312> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
 <http://www.wikidata.org/entity/Q93482> skos:broader <http://www.wikidata.org/entity/Q3839507>,
-    <http://www.wikidata.org/entity/Q341>, <http://www.wikidata.org/entity/Q12772052>,
+     <http://www.wikidata.org/entity/Q12772052>,
     <http://www.wikidata.org/entity/Q9143>, <http://www.wikidata.org/entity/Q21562092>,
     <http://www.wikidata.org/entity/Q899523>, <http://www.wikidata.org/entity/Q56062429> .
 
@@ -13614,7 +13584,7 @@
 
 <http://www.wikidata.org/entity/Q17009745> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
-<http://www.wikidata.org/entity/Q63313646> skos:broader <http://www.wikidata.org/entity/Q341>,
+<http://www.wikidata.org/entity/Q63313646> skos:broader
     <http://www.wikidata.org/entity/Q1186723> .
 
 <http://www.wikidata.org/entity/Q5969010> skos:broader <http://www.wikidata.org/entity/Q3932296> .
@@ -13623,7 +13593,7 @@
     <http://www.wikidata.org/entity/Q7397> .
 
 <http://www.wikidata.org/entity/Q28915769> skos:broader <http://www.wikidata.org/entity/Q3539533>,
-    <http://www.wikidata.org/entity/Q39999225>, <http://www.wikidata.org/entity/Q341> .
+    <http://www.wikidata.org/entity/Q39999225> .
 
 <http://www.wikidata.org/entity/Q55642732> skos:broader <http://www.wikidata.org/entity/Q28922871>,
     <http://www.wikidata.org/entity/Q683111> .
@@ -13637,7 +13607,7 @@
     <http://www.wikidata.org/entity/Q43229>, <http://www.wikidata.org/entity/Q30589910>,
     <http://www.wikidata.org/entity/Q683111>, <http://www.wikidata.org/entity/Q40056>,
     <http://www.wikidata.org/entity/Q166142>, <http://www.wikidata.org/entity/Q9143>,
-    <http://www.wikidata.org/entity/Q341>, <http://www.wikidata.org/entity/Q4830453> .
+     <http://www.wikidata.org/entity/Q4830453> .
 
 <http://www.wikidata.org/entity/Q25345930> skos:broader <http://www.wikidata.org/entity/Q9143>,
     <http://www.wikidata.org/entity/Q28922885>, <http://www.wikidata.org/entity/Q235557> .
@@ -13664,7 +13634,7 @@
 <http://www.wikidata.org/entity/Q2613697> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
 <http://www.wikidata.org/entity/Q362361> skos:broader <http://www.wikidata.org/entity/Q188860>,
-    <http://www.wikidata.org/entity/Q341>, <http://www.wikidata.org/entity/Q183065>, <http://www.wikidata.org/entity/Q9143> .
+     <http://www.wikidata.org/entity/Q183065>, <http://www.wikidata.org/entity/Q9143> .
 
 <http://www.wikidata.org/entity/Q88506733> skos:broader <http://www.wikidata.org/entity/Q14663> .
 
@@ -13685,7 +13655,7 @@
 
 <http://www.wikidata.org/entity/Q7506340> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
-<http://www.wikidata.org/entity/Q7339173> skos:broader <http://www.wikidata.org/entity/Q341>,
+<http://www.wikidata.org/entity/Q7339173> skos:broader
     <http://www.wikidata.org/entity/Q9143> .
 
 <http://www.wikidata.org/entity/Q1427564> skos:broader <http://www.wikidata.org/entity/Q9143> .
@@ -13746,7 +13716,7 @@
 <http://www.wikidata.org/entity/Q1886145> skos:broader <http://www.wikidata.org/entity/Q9143>,
     <http://www.wikidata.org/entity/Q610140>, <http://www.wikidata.org/entity/Q683111> .
 
-<http://www.wikidata.org/entity/Q4650692> skos:broader <http://www.wikidata.org/entity/Q341>,
+<http://www.wikidata.org/entity/Q4650692> skos:broader
     <http://www.wikidata.org/entity/Q9143> .
 
 <http://www.wikidata.org/entity/Q7388480> skos:broader <http://www.wikidata.org/entity/Q3839507>,
@@ -13763,7 +13733,7 @@
 <http://www.wikidata.org/entity/Q681360> skos:broader <http://www.wikidata.org/entity/Q271680>,
     <http://www.wikidata.org/entity/Q17111997>, <http://www.wikidata.org/entity/Q9143> .
 
-<http://www.wikidata.org/entity/Q616706> skos:broader <http://www.wikidata.org/entity/Q341>,
+<http://www.wikidata.org/entity/Q616706> skos:broader
     <http://www.wikidata.org/entity/Q1130645>, <http://www.wikidata.org/entity/Q176165> .
 
 <http://www.wikidata.org/entity/Q7839826> skos:broader <http://www.wikidata.org/entity/Q235557>,
@@ -13785,7 +13755,7 @@
 <http://www.wikidata.org/entity/Q296704> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
 <http://www.wikidata.org/entity/Q2351180> skos:broader <http://www.wikidata.org/entity/Q28920164>,
-    <http://www.wikidata.org/entity/Q4117406>, <http://www.wikidata.org/entity/Q341>,
+    <http://www.wikidata.org/entity/Q4117406>,
     <http://www.wikidata.org/entity/Q20825628>, <http://www.wikidata.org/entity/Q47506> .
 
 <http://www.wikidata.org/entity/Q20707889> skos:broader <http://www.wikidata.org/entity/Q1235236>,
@@ -13799,7 +13769,7 @@
 <http://www.wikidata.org/entity/Q4386338> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
 <http://www.wikidata.org/entity/Q28915683> skos:broader <http://www.wikidata.org/entity/Q235557>,
-    <http://www.wikidata.org/entity/Q39999225>, <http://www.wikidata.org/entity/Q341>,
+    <http://www.wikidata.org/entity/Q39999225>,
     <http://www.wikidata.org/entity/Q24451526> .
 
 <http://www.wikidata.org/entity/Q476543> skos:broader <http://www.wikidata.org/entity/Q1186723> .
@@ -13811,7 +13781,7 @@
 
 <http://www.wikidata.org/entity/Q165372> skos:broader <http://www.wikidata.org/entity/Q9143>,
     <http://www.wikidata.org/entity/Q110946204>, <http://www.wikidata.org/entity/Q899523>,
-    <http://www.wikidata.org/entity/Q341>, <http://www.wikidata.org/entity/Q1037852> .
+     <http://www.wikidata.org/entity/Q1037852> .
 
 <http://www.wikidata.org/entity/Q6716698> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
@@ -13823,7 +13793,7 @@
 
 <http://www.wikidata.org/entity/Q3459179> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
-<http://www.wikidata.org/entity/Q19646047> skos:broader <http://www.wikidata.org/entity/Q341>,
+<http://www.wikidata.org/entity/Q19646047> skos:broader
     <http://www.wikidata.org/entity/Q3932296> .
 
 <http://www.wikidata.org/entity/Q4834657> skos:broader <http://www.wikidata.org/entity/Q42979>,
@@ -13849,7 +13819,7 @@
     <http://www.wikidata.org/entity/Q102314626>, <http://www.wikidata.org/entity/Q62057790>,
     <http://www.wikidata.org/entity/Q19967801> .
 
-<http://www.wikidata.org/entity/Q3359573> skos:broader <http://www.wikidata.org/entity/Q341>,
+<http://www.wikidata.org/entity/Q3359573> skos:broader
     <http://www.wikidata.org/entity/Q9143>, <http://www.wikidata.org/entity/Q188860>,
     <http://www.wikidata.org/entity/Q830340> .
 
@@ -13926,7 +13896,7 @@
 <http://www.wikidata.org/entity/Q80426> skos:broader <http://www.wikidata.org/entity/Q3932296> .
 
 <http://www.wikidata.org/entity/Q5227383> skos:broader <http://www.wikidata.org/entity/Q312466>,
-    <http://www.wikidata.org/entity/Q341>, <http://www.wikidata.org/entity/Q176165> .
+     <http://www.wikidata.org/entity/Q176165> .
 
 <http://www.wikidata.org/entity/Q890976> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
@@ -13962,7 +13932,7 @@
     <http://www.wikidata.org/entity/Q235557> .
 
 <http://www.wikidata.org/entity/Q30645399> skos:broader <http://www.wikidata.org/entity/Q24451526>,
-    <http://www.wikidata.org/entity/Q188860>, <http://www.wikidata.org/entity/Q341> .
+    <http://www.wikidata.org/entity/Q188860> .
 
 <http://www.wikidata.org/entity/Q104870483> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
@@ -14042,7 +14012,7 @@
 
 <http://www.wikidata.org/entity/Q610140> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
-<http://www.wikidata.org/entity/Q283456> skos:broader <http://www.wikidata.org/entity/Q341>,
+<http://www.wikidata.org/entity/Q283456> skos:broader
     <http://www.wikidata.org/entity/Q9143> .
 
 <http://www.wikidata.org/entity/Q32105026> skos:broader <http://www.wikidata.org/entity/Q1204300>,
@@ -14055,7 +14025,7 @@
 
 <http://www.wikidata.org/entity/Q808716> skos:broader <http://www.wikidata.org/entity/Q595971>,
     <http://www.wikidata.org/entity/Q176165>, <http://www.wikidata.org/entity/Q82231>,
-    <http://www.wikidata.org/entity/Q341>, <http://www.wikidata.org/entity/Q1130645>,
+     <http://www.wikidata.org/entity/Q1130645>,
     <http://www.wikidata.org/entity/Q22907102> .
 
 <http://www.wikidata.org/entity/Q6778754> skos:broader <http://www.wikidata.org/entity/Q9143> .
@@ -14068,10 +14038,10 @@
 <http://www.wikidata.org/entity/Q11233335> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
 <http://www.wikidata.org/entity/Q2141501> skos:broader <http://www.wikidata.org/entity/Q3257930>,
-    <http://www.wikidata.org/entity/Q18343316>, <http://www.wikidata.org/entity/Q341> .
+    <http://www.wikidata.org/entity/Q18343316> .
 
 <http://www.wikidata.org/entity/Q1064516> skos:broader <http://www.wikidata.org/entity/Q28937412>,
-    <http://www.wikidata.org/entity/Q9143>, <http://www.wikidata.org/entity/Q14663>, <http://www.wikidata.org/entity/Q341> .
+    <http://www.wikidata.org/entity/Q9143>, <http://www.wikidata.org/entity/Q14663> .
 
 <http://www.wikidata.org/entity/Q5940583> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
@@ -14081,7 +14051,7 @@
 
 <http://www.wikidata.org/entity/Q3242457> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
-<http://www.wikidata.org/entity/Q17089542> skos:broader <http://www.wikidata.org/entity/Q341>,
+<http://www.wikidata.org/entity/Q17089542> skos:broader
     <http://www.wikidata.org/entity/Q176165>, <http://www.wikidata.org/entity/Q3932296> .
 
 <http://www.wikidata.org/entity/Q5013384> skos:broader <http://www.wikidata.org/entity/Q28922885>,
@@ -14112,15 +14082,14 @@
 <http://www.wikidata.org/entity/Q213970> skos:broader <http://www.wikidata.org/entity/Q18343316>,
     <http://www.wikidata.org/entity/Q187432>, <http://www.wikidata.org/entity/Q1418502> .
 
-<http://www.wikidata.org/entity/Q17052272> skos:broader <http://www.wikidata.org/entity/Q341>,
+<http://www.wikidata.org/entity/Q17052272> skos:broader
     <http://www.wikidata.org/entity/Q339678>, <http://www.wikidata.org/entity/Q176165> .
 
 <http://www.wikidata.org/entity/Q5001740> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
 <http://www.wikidata.org/entity/Q7293199> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
-<http://www.wikidata.org/entity/Q1954324> skos:broader <http://www.wikidata.org/entity/Q14663>,
-    <http://www.wikidata.org/entity/Q341> .
+<http://www.wikidata.org/entity/Q1954324> skos:broader <http://www.wikidata.org/entity/Q14663> .
 
 <http://www.wikidata.org/entity/Q3312016> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
@@ -14135,7 +14104,7 @@
 
 <http://www.wikidata.org/entity/Q23378244> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
-<http://www.wikidata.org/entity/Q28957065> skos:broader <http://www.wikidata.org/entity/Q341>,
+<http://www.wikidata.org/entity/Q28957065> skos:broader
     <http://www.wikidata.org/entity/Q989016>, <http://www.wikidata.org/entity/Q176165> .
 
 <http://www.wikidata.org/entity/Q18216034> skos:broader <http://www.wikidata.org/entity/Q683111>,
@@ -14159,7 +14128,7 @@
 
 <http://www.wikidata.org/entity/Q4653328> skos:broader <http://www.wikidata.org/entity/Q2458742> .
 
-<http://www.wikidata.org/entity/Q2932182> skos:broader <http://www.wikidata.org/entity/Q341>,
+<http://www.wikidata.org/entity/Q2932182> skos:broader
     <http://www.wikidata.org/entity/Q9143> .
 
 <http://www.wikidata.org/entity/Q2977773> skos:broader <http://www.wikidata.org/entity/Q55771109>,
@@ -14250,10 +14219,9 @@
 
 <http://www.wikidata.org/entity/Q7475390> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
-<http://www.wikidata.org/entity/Q67280318> skos:broader <http://www.wikidata.org/entity/Q595971>,
-    <http://www.wikidata.org/entity/Q341> .
+<http://www.wikidata.org/entity/Q67280318> skos:broader <http://www.wikidata.org/entity/Q595971> .
 
-<http://www.wikidata.org/entity/Q1686799> skos:broader <http://www.wikidata.org/entity/Q341>,
+<http://www.wikidata.org/entity/Q1686799> skos:broader
     <http://www.wikidata.org/entity/Q188860>, <http://www.wikidata.org/entity/Q3539533> .
 
 <http://www.wikidata.org/entity/Q2349274> skos:broader <http://www.wikidata.org/entity/Q9143> .
@@ -14282,8 +14250,7 @@
 
 <http://www.wikidata.org/entity/Q66944420> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
-<http://www.wikidata.org/entity/Q4035545> skos:broader <http://www.wikidata.org/entity/Q176165>,
-    <http://www.wikidata.org/entity/Q341> .
+<http://www.wikidata.org/entity/Q4035545> skos:broader <http://www.wikidata.org/entity/Q176165> .
 
 <http://www.wikidata.org/entity/Q7075036> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
@@ -14304,13 +14271,11 @@
     <http://www.wikidata.org/entity/Q9143> .
 
 <http://www.wikidata.org/entity/Q105836595> skos:broader <http://www.wikidata.org/entity/Q11311509>,
-    <http://www.wikidata.org/entity/Q218616>, <http://www.wikidata.org/entity/Q178285> .
+     <http://www.wikidata.org/entity/Q178285> .
 
-<http://www.wikidata.org/entity/Q2571898> skos:broader <http://www.wikidata.org/entity/Q176165>,
-    <http://www.wikidata.org/entity/Q341> .
+<http://www.wikidata.org/entity/Q2571898> skos:broader <http://www.wikidata.org/entity/Q176165> .
 
-<http://www.wikidata.org/entity/Q56526177> skos:broader <http://www.wikidata.org/entity/Q3539533>,
-    <http://www.wikidata.org/entity/Q341> .
+<http://www.wikidata.org/entity/Q56526177> skos:broader <http://www.wikidata.org/entity/Q3539533> .
 
 <http://www.wikidata.org/entity/Q460584> skos:broader <http://www.wikidata.org/entity/Q56062429>,
     <http://www.wikidata.org/entity/Q9143>, <http://www.wikidata.org/entity/Q3839507>,
@@ -14335,7 +14300,7 @@
 <http://www.wikidata.org/entity/Q6351981> skos:broader <http://www.wikidata.org/entity/Q28920160> .
 
 <http://www.wikidata.org/entity/Q1050734> skos:broader <http://www.wikidata.org/entity/Q3932296>,
-    <http://www.wikidata.org/entity/Q176165>, <http://www.wikidata.org/entity/Q218616> .
+    <http://www.wikidata.org/entity/Q176165> .
 
 <http://www.wikidata.org/entity/Q7475378> skos:broader <http://www.wikidata.org/entity/Q9143>,
     <http://www.wikidata.org/entity/Q28922885> .
@@ -14378,7 +14343,7 @@
     <http://www.wikidata.org/entity/Q9143> .
 
 <http://www.wikidata.org/entity/Q1131652> skos:broader <http://www.wikidata.org/entity/Q28920201>,
-    <http://www.wikidata.org/entity/Q341>, <http://www.wikidata.org/entity/Q11387554>,
+     <http://www.wikidata.org/entity/Q11387554>,
     <http://www.wikidata.org/entity/Q1130645> .
 
 <http://www.wikidata.org/entity/Q32103698> skos:broader <http://www.wikidata.org/entity/Q1204300>,
@@ -14401,7 +14366,7 @@
 <http://www.wikidata.org/entity/Q3799287> skos:broader <http://www.wikidata.org/entity/Q176165> .
 
 <http://www.wikidata.org/entity/Q7685462> skos:broader <http://www.wikidata.org/entity/Q1130645>,
-    <http://www.wikidata.org/entity/Q341>, <http://www.wikidata.org/entity/Q176165> .
+     <http://www.wikidata.org/entity/Q176165> .
 
 <http://www.wikidata.org/entity/Q7200622> skos:broader <http://www.wikidata.org/entity/Q2115> .
 
@@ -14418,13 +14383,12 @@
 <http://www.wikidata.org/entity/Q1306585> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
 <http://www.wikidata.org/entity/Q65079041> skos:broader <http://www.wikidata.org/entity/Q9143>,
-    <http://www.wikidata.org/entity/Q188860>, <http://www.wikidata.org/entity/Q341> .
+    <http://www.wikidata.org/entity/Q188860> .
 
 <http://www.wikidata.org/entity/Q7199700> skos:broader <http://www.wikidata.org/entity/Q46794> .
 
 <http://www.wikidata.org/entity/Q3884002> skos:broader <http://www.wikidata.org/entity/Q3932296>,
-    <http://www.wikidata.org/entity/Q218616>, <http://www.wikidata.org/entity/Q176165>,
-    <http://www.wikidata.org/entity/Q341> .
+     <http://www.wikidata.org/entity/Q176165> .
 
 <http://www.wikidata.org/entity/Q558937> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
@@ -14462,7 +14426,7 @@
     <http://www.wikidata.org/entity/Q47607> .
 
 <http://www.wikidata.org/entity/Q1684174> skos:broader <http://www.wikidata.org/entity/Q9143>,
-    <http://www.wikidata.org/entity/Q271680>, <http://www.wikidata.org/entity/Q341> .
+    <http://www.wikidata.org/entity/Q271680> .
 
 <http://www.wikidata.org/entity/Q7475348> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
@@ -14494,7 +14458,7 @@
 
 <http://www.wikidata.org/entity/Q17092771> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
-<http://www.wikidata.org/entity/Q722867> skos:broader <http://www.wikidata.org/entity/Q341>,
+<http://www.wikidata.org/entity/Q722867> skos:broader
     <http://www.wikidata.org/entity/Q9143>, <http://www.wikidata.org/entity/Q20825628> .
 
 <http://www.wikidata.org/entity/Q1653355> skos:broader <http://www.wikidata.org/entity/Q9143>,
@@ -14561,7 +14525,7 @@
 <http://www.wikidata.org/entity/Q108126686> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
 <http://www.wikidata.org/entity/Q5958689> skos:broader <http://www.wikidata.org/entity/Q1130645>,
-    <http://www.wikidata.org/entity/Q341>, <http://www.wikidata.org/entity/Q176165> .
+     <http://www.wikidata.org/entity/Q176165> .
 
 <http://www.wikidata.org/entity/Q333301> skos:broader <http://www.wikidata.org/entity/Q1044749>,
     <http://www.wikidata.org/entity/Q24451526> .
@@ -14664,7 +14628,7 @@
 
 <http://www.wikidata.org/entity/Q1251023> skos:broader <http://www.wikidata.org/entity/Q1235236>,
     <http://www.wikidata.org/entity/Q271680>, <http://www.wikidata.org/entity/Q13741>,
-    <http://www.wikidata.org/entity/Q218616>, <http://www.wikidata.org/entity/Q341>, <http://www.wikidata.org/entity/Q176165> .
+      <http://www.wikidata.org/entity/Q176165> .
 
 <http://www.wikidata.org/entity/Q1823021> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
@@ -14701,7 +14665,7 @@
     <http://www.wikidata.org/entity/Q899523> .
 
 <http://www.wikidata.org/entity/Q6898976> skos:broader <http://www.wikidata.org/entity/Q3932296>,
-    <http://www.wikidata.org/entity/Q341>, <http://www.wikidata.org/entity/Q1130645> .
+     <http://www.wikidata.org/entity/Q1130645> .
 
 <http://www.wikidata.org/entity/Q1926221> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
@@ -14710,7 +14674,7 @@
 
 <http://www.wikidata.org/entity/Q2210114> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
-<http://www.wikidata.org/entity/Q667967> skos:broader <http://www.wikidata.org/entity/Q341>,
+<http://www.wikidata.org/entity/Q667967> skos:broader
     <http://www.wikidata.org/entity/Q176165>, <http://www.wikidata.org/entity/Q1235236> .
 
 <http://www.wikidata.org/entity/Q467252> skos:broader <http://www.wikidata.org/entity/Q55680343> .
@@ -14747,8 +14711,7 @@
 <http://www.wikidata.org/entity/Q2818994> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
 <http://www.wikidata.org/entity/Q947171> skos:broader <http://www.wikidata.org/entity/Q188860>,
-    <http://www.wikidata.org/entity/Q9143>, <http://www.wikidata.org/entity/Q24451526>,
-    <http://www.wikidata.org/entity/Q341> .
+    <http://www.wikidata.org/entity/Q9143>, <http://www.wikidata.org/entity/Q24451526> .
 
 <http://www.wikidata.org/entity/Q28920164> skos:broader <http://www.wikidata.org/entity/Q28920209>,
     <http://www.wikidata.org/entity/Q28920160> .
@@ -14794,7 +14757,7 @@
     <http://www.wikidata.org/entity/Q3331189> .
 
 <http://www.wikidata.org/entity/Q311550> skos:broader <http://www.wikidata.org/entity/Q176165>,
-    <http://www.wikidata.org/entity/Q1235236>, <http://www.wikidata.org/entity/Q341> .
+    <http://www.wikidata.org/entity/Q1235236> .
 
 <http://www.wikidata.org/entity/Q1022268> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
@@ -14810,7 +14773,7 @@
 <http://www.wikidata.org/entity/Q1649380> skos:broader <http://www.wikidata.org/entity/Q187432> .
 
 <http://www.wikidata.org/entity/Q1571077> skos:broader <http://www.wikidata.org/entity/Q297868>,
-    <http://www.wikidata.org/entity/Q9143>, <http://www.wikidata.org/entity/Q341> .
+    <http://www.wikidata.org/entity/Q9143> .
 
 <http://www.wikidata.org/entity/Q2818982> skos:broader <http://www.wikidata.org/entity/Q28922885>,
     <http://www.wikidata.org/entity/Q9143>, <http://www.wikidata.org/entity/Q1144882> .
@@ -14837,8 +14800,8 @@
 
 <http://www.wikidata.org/entity/Q28942363> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
-<http://www.wikidata.org/entity/Q4688459> skos:broader <http://www.wikidata.org/entity/Q341>,
-    <http://www.wikidata.org/entity/Q218616>, <http://www.wikidata.org/entity/Q176165> .
+<http://www.wikidata.org/entity/Q4688459> skos:broader
+     <http://www.wikidata.org/entity/Q176165> .
 
 <http://www.wikidata.org/entity/Q3067103> skos:broader <http://www.wikidata.org/entity/Q863511> .
 
@@ -14864,7 +14827,7 @@
 <http://www.wikidata.org/entity/Q2437099> skos:broader <http://www.wikidata.org/entity/Q899523>,
     <http://www.wikidata.org/entity/Q9143> .
 
-<http://www.wikidata.org/entity/Q975594> skos:broader <http://www.wikidata.org/entity/Q341>,
+<http://www.wikidata.org/entity/Q975594> skos:broader
     <http://www.wikidata.org/entity/Q1130645>, <http://www.wikidata.org/entity/Q29642950>,
     <http://www.wikidata.org/entity/Q9143>, <http://www.wikidata.org/entity/Q2990416>,
     <http://www.wikidata.org/entity/Q4117406> .
@@ -14881,7 +14844,7 @@
 
 <http://www.wikidata.org/entity/Q28956990> skos:broader <http://www.wikidata.org/entity/Q12014419>,
     <http://www.wikidata.org/entity/Q3257930>, <http://www.wikidata.org/entity/Q339678>,
-    <http://www.wikidata.org/entity/Q15618637>, <http://www.wikidata.org/entity/Q341> .
+    <http://www.wikidata.org/entity/Q15618637> .
 
 <http://www.wikidata.org/entity/Q288682> skos:broader <http://www.wikidata.org/entity/Q2115>,
     <http://www.wikidata.org/entity/Q9143>, <http://www.wikidata.org/entity/Q20155966> .
@@ -14891,7 +14854,7 @@
 
 <http://www.wikidata.org/entity/Q22681958> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
-<http://www.wikidata.org/entity/Q1401466> skos:broader <http://www.wikidata.org/entity/Q341>,
+<http://www.wikidata.org/entity/Q1401466> skos:broader
     <http://www.wikidata.org/entity/Q683111>, <http://www.wikidata.org/entity/Q51160764> .
 
 <http://www.wikidata.org/entity/Q110885022> skos:broader <http://www.wikidata.org/entity/Q899523>,
@@ -14938,7 +14901,7 @@
 <http://www.wikidata.org/entity/Q5323921> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
 <http://www.wikidata.org/entity/Q1141970> skos:broader <http://www.wikidata.org/entity/Q178285>,
-    <http://www.wikidata.org/entity/Q218616>, <http://www.wikidata.org/entity/Q11311509> .
+     <http://www.wikidata.org/entity/Q11311509> .
 
 <http://www.wikidata.org/entity/Q3902685> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
@@ -14973,7 +14936,7 @@
 <http://www.wikidata.org/entity/Q2391267> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
 <http://www.wikidata.org/entity/Q25461692> skos:broader <http://www.wikidata.org/entity/Q187432>,
-    <http://www.wikidata.org/entity/Q9143>, <http://www.wikidata.org/entity/Q341>, <http://www.wikidata.org/entity/Q1993334> .
+    <http://www.wikidata.org/entity/Q9143>,  <http://www.wikidata.org/entity/Q1993334> .
 
 <http://www.wikidata.org/entity/Q91147741> skos:broader <http://www.wikidata.org/entity/Q595971> .
 
@@ -15055,7 +15018,7 @@
 <http://www.wikidata.org/entity/Q7170417> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
 <http://www.wikidata.org/entity/Q6696903> skos:broader <http://www.wikidata.org/entity/Q176165>,
-    <http://www.wikidata.org/entity/Q341>, <http://www.wikidata.org/entity/Q1130645> .
+     <http://www.wikidata.org/entity/Q1130645> .
 
 <http://www.wikidata.org/entity/Q4685824> skos:broader <http://www.wikidata.org/entity/Q37045>,
     <http://www.wikidata.org/entity/Q2115> .
@@ -15094,7 +15057,7 @@
 
 <http://www.wikidata.org/entity/Q110424384> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
-<http://www.wikidata.org/entity/Q104521934> skos:broader <http://www.wikidata.org/entity/Q218616>,
+<http://www.wikidata.org/entity/Q104521934> skos:broader
     <http://www.wikidata.org/entity/Q6686945>, <http://www.wikidata.org/entity/Q33002955>,
     <http://www.wikidata.org/entity/Q167035>, <http://www.wikidata.org/entity/Q7691653>,
     <http://www.wikidata.org/entity/Q638153>, <http://www.wikidata.org/entity/Q595971>,
@@ -15109,7 +15072,7 @@
 <http://www.wikidata.org/entity/Q18029891> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
 <http://www.wikidata.org/entity/Q20072115> skos:broader <http://www.wikidata.org/entity/Q595971>,
-    <http://www.wikidata.org/entity/Q341>, <http://www.wikidata.org/entity/Q176165>, <http://www.wikidata.org/entity/Q22907102> .
+     <http://www.wikidata.org/entity/Q176165>, <http://www.wikidata.org/entity/Q22907102> .
 
 <http://www.wikidata.org/entity/Q5148548> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
@@ -15129,7 +15092,7 @@
 <http://www.wikidata.org/entity/Q725401> skos:broader <http://www.wikidata.org/entity/Q183197>,
     <http://www.wikidata.org/entity/Q9143> .
 
-<http://www.wikidata.org/entity/Q259347> skos:broader <http://www.wikidata.org/entity/Q341>,
+<http://www.wikidata.org/entity/Q259347> skos:broader
     <http://www.wikidata.org/entity/Q51160764>, <http://www.wikidata.org/entity/Q1897589> .
 
 <http://www.wikidata.org/entity/Q1065372> skos:broader <http://www.wikidata.org/entity/Q11311509> .
@@ -15167,7 +15130,7 @@
     <http://www.wikidata.org/entity/Q211496>, <http://www.wikidata.org/entity/Q9143> .
 
 <http://www.wikidata.org/entity/Q6927988> skos:broader <http://www.wikidata.org/entity/Q176165>,
-    <http://www.wikidata.org/entity/Q341>, <http://www.wikidata.org/entity/Q1130645> .
+     <http://www.wikidata.org/entity/Q1130645> .
 
 <http://www.wikidata.org/entity/Q667566> skos:broader <http://www.wikidata.org/entity/Q9143>,
     <http://www.wikidata.org/entity/Q2378>, <http://www.wikidata.org/entity/Q4117406> .
@@ -15188,7 +15151,7 @@
 <http://www.wikidata.org/entity/Q7190476> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
 <http://www.wikidata.org/entity/Q20127748> skos:broader <http://www.wikidata.org/entity/Q3539533>,
-    <http://www.wikidata.org/entity/Q341>, <http://www.wikidata.org/entity/Q26261192>,
+     <http://www.wikidata.org/entity/Q26261192>,
     <http://www.wikidata.org/entity/Q595971> .
 
 <http://www.wikidata.org/entity/Q6451756> skos:broader <http://www.wikidata.org/entity/Q683111>,
@@ -15209,7 +15172,7 @@
 <http://www.wikidata.org/entity/Q85845866> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
 <http://www.wikidata.org/entity/Q705851> skos:broader <http://www.wikidata.org/entity/Q55686778>,
-    <http://www.wikidata.org/entity/Q341>, <http://www.wikidata.org/entity/Q20825628> .
+     <http://www.wikidata.org/entity/Q20825628> .
 
 <http://www.wikidata.org/entity/Q3332038> skos:broader <http://www.wikidata.org/entity/Q9143>,
     <http://www.wikidata.org/entity/Q28920142> .
@@ -15256,16 +15219,15 @@
 <http://www.wikidata.org/entity/Q16340> skos:broader <http://www.wikidata.org/entity/Q9143>,
     <http://www.wikidata.org/entity/Q845739> .
 
-<http://www.wikidata.org/entity/Q2301321> skos:broader <http://www.wikidata.org/entity/Q218616>,
-    <http://www.wikidata.org/entity/Q341>, <http://www.wikidata.org/entity/Q176165>, <http://www.wikidata.org/entity/Q595971> .
+<http://www.wikidata.org/entity/Q2301321> skos:broader
+     <http://www.wikidata.org/entity/Q176165>, <http://www.wikidata.org/entity/Q595971> .
 
 <http://www.wikidata.org/entity/Q4053333> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
-<http://www.wikidata.org/entity/Q1007035> skos:broader <http://www.wikidata.org/entity/Q341>,
+<http://www.wikidata.org/entity/Q1007035> skos:broader
     <http://www.wikidata.org/entity/Q176165> .
 
-<http://www.wikidata.org/entity/Q30100559> skos:broader <http://www.wikidata.org/entity/Q3932296>,
-    <http://www.wikidata.org/entity/Q341> .
+<http://www.wikidata.org/entity/Q30100559> skos:broader <http://www.wikidata.org/entity/Q3932296> .
 
 <http://www.wikidata.org/entity/Q12050058> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
@@ -15313,7 +15275,7 @@
 
 <http://www.wikidata.org/entity/Q6108047> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
-<http://www.wikidata.org/entity/Q5571094> skos:broader <http://www.wikidata.org/entity/Q341>,
+<http://www.wikidata.org/entity/Q5571094> skos:broader
     <http://www.wikidata.org/entity/Q28922882> .
 
 <http://www.wikidata.org/entity/Q11274357> skos:broader <http://www.wikidata.org/entity/Q9143> .
@@ -15331,7 +15293,7 @@
 
 <http://www.wikidata.org/entity/Q104522843> skos:broader <http://www.wikidata.org/entity/Q14663> .
 
-<http://www.wikidata.org/entity/Q8039438> skos:broader <http://www.wikidata.org/entity/Q341>,
+<http://www.wikidata.org/entity/Q8039438> skos:broader
     <http://www.wikidata.org/entity/Q166142>, <http://www.wikidata.org/entity/Q3932296> .
 
 <http://www.wikidata.org/entity/Q28920193> skos:broader <http://www.wikidata.org/entity/Q9143> .
@@ -15341,7 +15303,7 @@
 <http://www.wikidata.org/entity/Q62078642> skos:broader <http://www.wikidata.org/entity/Q9143> .
 
 <http://www.wikidata.org/entity/Q7310670> skos:broader <http://www.wikidata.org/entity/Q176165>,
-    <http://www.wikidata.org/entity/Q341>, <http://www.wikidata.org/entity/Q1130645> .
+     <http://www.wikidata.org/entity/Q1130645> .
 
 <http://www.wikidata.org/entity/Q11715091> skos:broader <http://www.wikidata.org/entity/Q1993334>,
     <http://www.wikidata.org/entity/Q9143> .
