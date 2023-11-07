@@ -8,18 +8,11 @@
   a owl:Ontology ;
   rdfs:comment "This ontology describes some popular Software stacks."@en .
 
-
-sws:SoftwareStack
-  a owl:Class ;
-  skos:prefLabel "Software Stack" .
-
-
 #### GRAND Stack ####
 
 sws:GRANDstack
   a owl:Class ;
-  rdfs:subClassOf sws:SoftwareStack ;
-  skos:prefLabel "GRAND Stack" .
+  skos:prefLabel "GRAND Stack component" .
 
 wd:Q25104949
   a owl:Class ;
@@ -46,8 +39,7 @@ sws:Apollo
 
 sws:MEANstack
   a owl:Class ;
-  rdfs:subClassOf sws:SoftwareStack ;
-  skos:prefLabel "MEAN Stack" .
+  skos:prefLabel "MEAN Stack component" .
 
 wd:Q16878131
   a owl:Class ;
@@ -74,8 +66,7 @@ wd:Q756100
 
 sws:LAMPstack
   a owl:Class ;
-  rdfs:subClassOf sws:SoftwareStack ;
-  skos:prefLabel "LAMP Stack" .
+  skos:prefLabel "LAMP Stack component" .
 
 wd:Q388
   a owl:Class ;
