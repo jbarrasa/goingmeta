@@ -36,3 +36,5 @@ We will use this repo to share all resources used in the sessions. Give them a t
 | 19  | Aug 1 | Ontology Versioning in Neo4j |`Python` `Ontologies` `Protege`| [📺](https://www.youtube.com/watch?v=xK_07cqKwMk) | [💻](https://github.com/jbarrasa/goingmeta/tree/main/session19) |
 | 20  | Sep 12 | Going Meta: A recap |`All`| [📺](https://www.youtube.com/watch?v=Tx1zCnlc0_g) | [💻]([https://github.com/jbarrasa/goingmeta/tree/main/session19](https://medium.com/neo4j/20-episodes-of-going-meta-a-recap-5a0ccd689c6c)) |
 | 21  | Oct 6 | Vector-based and Graph-based semantic search |`Cypher` `Ontologies` `Embeddings`| [📺](https://www.youtube.com/watch?v=bRD09ndyJNs) | [💻](https://github.com/jbarrasa/goingmeta/tree/main/session21) |
+| 22  | Nov 7 | RAG with Knowledge Graphs  |`LLM` `Semantic Search` `Python` `Vector Index`| [📺](https://www.youtube.com/watch?v=9DxwgIKVSHY) | [💻](https://github.com/jbarrasa/goingmeta/tree/main/session22) |
+
