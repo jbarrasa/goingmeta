@@ -7,9 +7,9 @@ create (a:Artwork)
         a.catalogue_entry = value.catalogue_entry,
         a.subjects = value.subjects ;
 
-//loa rest of attributes for artworks
+//load rest of attributes for artworks
 load csv with headers from "https://raw.githubusercontent.com/jbarrasa/goingmeta/main/session23/data/the-tate-collection.csv" as row fieldterminator ";"
-match (a:Artwork { url: row.url }) set a+= row
+match (a:Artwork { url: row.url }) set a+= row ;
 
 //refactor subjects as separate nodes
 match (a:Artwork) unwind a.subjects as subj
@@ -28,4 +28,3 @@ load csv with headers from "https://raw.githubusercontent.com/jbarrasa/goingmeta
 match (parent:Subject { name: row.parent_subject })
 match (child:Subject { name: row.child_subject })
 merge (child)-[:broader]->(parent) ;
-   
