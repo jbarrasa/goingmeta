@@ -1,0 +1,2078 @@
+@prefix n4sch: <neo4j://graph.schema#> .
+@prefix n4ind: <neo4j://graph.individuals#> .
+
+n4ind:0 a n4sch:Legislation;
+  n4sch:name "S.I. No. 516/2015 - European Union (Deposit Guarantee Schemes) Regulations 2015." .
+
+n4ind:1 a n4sch:Part;
+  n4sch:name "Part 1";
+  n4sch:part_title "Preliminary and general" .
+
+n4ind:2 a n4sch:Section;
+  n4sch:id "1";
+  n4sch:content "Citation and commencement" .
+
+n4ind:3 a n4sch:Section;
+  n4sch:content "These Regulations may be cited as the European Union (Deposit Guarantee Schemes) Regulations 2015.";
+  n4sch:id "1.1" .
+
+n4ind:4 a n4sch:Section;
+  n4sch:content "These Regulations shall come into operation on 20 November 2015.";
+  n4sch:id "1.2" .
+
+n4ind:5 a n4sch:Section;
+  n4sch:id "2";
+  n4sch:content "Scope" .
+
+n4ind:6 a n4sch:Section;
+  n4sch:id "2.1";
+  n4sch:content "These Regulations shall apply to the following:" .
+
+n4ind:7 a n4sch:Section;
+  n4sch:id "2.1.a";
+  n4sch:content "statutory deposit guarantee schemes" .
+
+n4ind:8 a n4sch:Section;
+  n4sch:content "contractual deposit guarantee schemes that are officially recognised as deposit guarantee schemes in accordance with Regulation 8(1)";
+  n4sch:id "2.1.b" .
+
+n4ind:9 a n4sch:Section;
+  n4sch:content "institutional protection schemes that are officially recognised as deposit guarantee schemes in accordance with Regulation 8(2)";
+  n4sch:id "2.1.c" .
+
+n4ind:10 a n4sch:Section;
+  n4sch:content "credit institutions affiliated to the schemes referred to in subparagraph (a), (b) or (c)";
+  n4sch:id "2.1.d" .
+
+n4ind:11 a n4sch:Section;
+  n4sch:id "2.3";
+  n4sch:content "Without prejudice to Regulation 29(8), (9) and (12), the following schemes shall not be subject to these Regulations:" .
+
+n4ind:12 a n4sch:Section;
+  n4sch:content "contractual schemes that are not officially recognised as deposit guarantee schemes, including schemes that offer an additional protection to the coverage level laid down in Regulation 11(1)";
+  n4sch:id "2.3.a" .
+
+n4ind:13 a n4sch:Section;
+  n4sch:id "2.3.b";
+  n4sch:content "institutional protection schemes that are not officially recognised as deposit guarantee schemes" .
+
+n4ind:14 a n4sch:Section;
+  n4sch:id "8.1" .
+
+n4ind:15 a n4sch:Section;
+  n4sch:id "8.2" .
+
+n4ind:16 a n4sch:Section;
+  n4sch:id "29.8" .
+
+n4ind:17 a n4sch:Section;
+  n4sch:id "29.9" .
+
+n4ind:18 a n4sch:Section;
+  n4sch:id "29.12" .
+
+n4ind:19 a n4sch:Section;
+  n4sch:id "11.1" .
+
+n4ind:20 a n4sch:Section;
+  n4sch:content "Interpretation";
+  n4sch:id "3" .
+
+n4ind:21 a n4sch:Section;
+  n4sch:content "In these Regulations—";
+  n4sch:id "3.1" .
+
+n4ind:22 a n4sch:Section;
+  n4sch:id "3.2";
+  n4sch:content "Shares in building societies or credit unions apart from those of a capital nature mentioned in subparagraph (b) of Regulation 10(1) shall be treated as deposits." .
+
+n4ind:23 a n4sch:Embeddable, n4sch:Definition;
+  n4sch:term "Act of 1971";
+  n4sch:definition "Central Bank Act 1971 (No. 24 of 1971)";
+  n4sch:link "/1971/en/act/pub/0024/index.html" .
+
+n4ind:24 a n4sch:Embeddable, n4sch:Definition;
+  n4sch:term "Act of 2010";
+  n4sch:definition "Criminal Justice (Money Laundering and Terrorist Financing) Act 2010 (No. 6 of 2010)";
+  n4sch:link "/2010/en/act/pub/0006/index.html" .
+
+n4ind:25 a n4sch:Embeddable, n4sch:Definition;
+  n4sch:definition "in relation to a credit institution, means—";
+  n4sch:term "authorised" .
+
+n4ind:26 a n4sch:Embeddable, n4sch:Definition;
+  n4sch:term "available financial means";
+  n4sch:definition "means cash, deposits and low-risk assets which can be liquidated within a period not exceeding that referred to in Regulation 13(1) and payment commitments up to the limit set out in Regulation 20(6)" .
+
+n4ind:27 a n4sch:Definition, n4sch:Embeddable;
+  n4sch:definition "means the Central Bank of Ireland";
+  n4sch:term "Bank" .
+
+n4ind:28 a n4sch:Embeddable, n4sch:Definition;
+  n4sch:link "/2015/en/si/0289.html";
+  n4sch:definition "means the European Union (Bank Recovery and Resolution) Regulations (S.I. No. 289 of 2015)";
+  n4sch:term "Bank Recovery and Resolution Regulations" .
+
+n4ind:29 a n4sch:Embeddable, n4sch:Definition;
+  n4sch:term "branch";
+  n4sch:definition "means a place of business in the Member State concerned which forms a legally dependent part of a credit institution and which carries out directly all or some of the transactions inherent in the business of credit institutions" .
+
+n4ind:30 a n4sch:Definition, n4sch:Embeddable;
+  n4sch:term "competent authority";
+  n4sch:definition "means, as the case may be—" .
+
+n4ind:31 a n4sch:Embeddable, n4sch:Definition;
+  n4sch:term "Court";
+  n4sch:definition "means the High Court" .
+
+n4ind:32 a n4sch:Embeddable, n4sch:Definition;
+  n4sch:definition "means the part of eligible deposits that does not exceed the coverage level laid down in Regulation 11";
+  n4sch:term "covered deposits" .
+
+n4ind:33 a n4sch:Embeddable, n4sch:Definition;
+  n4sch:definition "means a credit institution as defined in point (1) of Article 4(1) of the Union Capital Requirements Regulation";
+  n4sch:term "credit institution" .
+
+n4ind:34 a n4sch:Embeddable, n4sch:Definition;
+  n4sch:definition "means the date on which—";
+  n4sch:term "decision date" .
+
+n4ind:35 a n4sch:Embeddable, n4sch:Definition;
+  n4sch:term "deposit";
+  n4sch:definition "means a credit balance which results from funds left in an account or from temporary situations deriving from normal banking transactions and which a credit institution is required to repay, or may be required to repay at a future date, under the legal and contractual conditions applicable, including a fixed-term deposit or a savings deposit, but excluding a credit balance where—" .
+
+n4ind:36 a n4sch:Embeddable, n4sch:Definition;
+  n4sch:term "depositor";
+  n4sch:definition "means the holder or, in the case of a joint account, each of the holders, of a deposit" .
+
+n4ind:37 a n4sch:Embeddable, n4sch:Definition;
+  n4sch:term "deposit guarantee scheme";
+  n4sch:definition "means a scheme referred to in Regulation 2(1)(a), (b) or (c)" .
+
+n4ind:38 a n4sch:Embeddable, n4sch:Definition;
+  n4sch:term "designated authority";
+  n4sch:definition "means the authority designated under Regulation 4" .
+
+n4ind:39 a n4sch:Definition, n4sch:Embeddable;
+  n4sch:term "eligible deposit";
+  n4sch:definition "means a deposit that is not excluded from protection pursuant to Regulation 10" .
+
+n4ind:40 a n4sch:Definition, n4sch:Embeddable;
+  n4sch:definition "means the authority established pursuant to Regulation (EU) No 1093/2010";
+  n4sch:term "European Banking Authority" .
+
+n4ind:41 a n4sch:Definition, n4sch:Embeddable;
+  n4sch:term "financial institution";
+  n4sch:definition "means a financial institution as defined in point (26) of Article 4(1) of the Union Capital Requirements Regulation" .
+
+n4ind:42 a n4sch:Embeddable, n4sch:Definition;
+  n4sch:term "Fund";
+  n4sch:definition "means the fund established under Regulation 17(1)" .
+
+n4ind:43 a n4sch:Embeddable, n4sch:Definition;
+  n4sch:definition "means a home Member State as defined in point (43) of Article 4(1) of the Union Capital Requirements Regulation";
+  n4sch:term "home Member State" .
+
+n4ind:44 a n4sch:Embeddable, n4sch:Definition;
+  n4sch:term "host Member State";
+  n4sch:definition "means a host Member State as defined in point (44) of Article 4(1) of the Union Capital Requirements Regulation" .
+
+n4ind:45 a n4sch:Embeddable, n4sch:Definition;
+  n4sch:definition "means an institutional protection scheme referred to in Article 113(7) of the Union Capital Requirements Regulation";
+  n4sch:term "institutional protection scheme" .
+
+n4ind:46 a n4sch:Embeddable, n4sch:Definition;
+  n4sch:term "joint account";
+  n4sch:definition "means an account—" .
+
+n4ind:47 a n4sch:Embeddable, n4sch:Definition;
+  n4sch:definition "means items falling into the first or second category referred to in Table 1 of Article 336 of the Union Capital Requirements Regulation, cash or any assets which are considered to be similarly safe and liquid by the competent or designated authority";
+  n4sch:term "low-risk assets" .
+
+n4ind:48 a n4sch:Definition, n4sch:Embeddable;
+  n4sch:definition "means a state that is a contracting party to the Agreement on the European Economic Area signed at Oporto on 2 May 1992, as amended for the time being";
+  n4sch:term "member state of the EEA" .
+
+n4ind:49 a n4sch:Definition, n4sch:Embeddable;
+  n4sch:definition "means the Minister for Finance";
+  n4sch:term "Minister" .
+
+n4ind:50 a n4sch:Embeddable, n4sch:Definition;
+  n4sch:definition "means payment commitments of a credit institution towards a deposit guarantee scheme which are fully collateralised providing that the collateral—";
+  n4sch:term "payment commitments" .
+
+n4ind:51 a n4sch:Definition, n4sch:Embeddable;
+  n4sch:term "Regulation (EU) No 1093/2010";
+  n4sch:definition "means Regulation (EU) No 1093/2010 of the European Parliament and of the Council of 24 November 2010 establishing a European Supervisory Authority (European Banking Authority), amending Decision No 716/2009/EC and repealing Commission Decision 2009/78/EC" .
+
+n4ind:52 a n4sch:Definition, n4sch:Embeddable;
+  n4sch:definition "means the authority designated under Regulation 4(1) of the Bank Recovery and Resolution Regulations";
+  n4sch:term "resolution authority" .
+
+n4ind:53 a n4sch:Embeddable, n4sch:Definition;
+  n4sch:term "target level";
+  n4sch:definition "means the amount of available financial means which the deposit guarantee scheme is required to reach in accordance with Regulation 19 expressed as a percentage of covered deposits of its members" .
+
+n4ind:54 a n4sch:Embeddable, n4sch:Definition;
+  n4sch:term "unavailable deposit";
+  n4sch:definition "means a deposit that is due and payable but that has not been paid by a credit institution under the legal or contractual conditions applicable thereto, where either—" .
+
+n4ind:55 a n4sch:Definition, n4sch:Embeddable;
+  n4sch:definition "means Regulation (EU) No 575/2013 of the European Parliament and of the Council of 26 June 2013 on prudential requirements for credit institutions and investment firms and amending Regulation (EU) No 648/2012";
+  n4sch:term "Union Capital Requirements Regulation" .
+
+n4ind:56 a n4sch:Embeddable, n4sch:Definition;
+  n4sch:term "working day";
+  n4sch:definition "means a day which is not a Saturday, Sunday or a public holiday in the State" .
+
+n4ind:57 a n4sch:Clause, n4sch:Embeddable;
+  n4sch:content "in the case of a bank, a bank authorised, or deemed to be authorised, by the European Central Bank on application therefor under section 9 of the Act of 1971";
+  n4sch:clause "a" .
+
+n4ind:58 a n4sch:Clause, n4sch:Embeddable;
+  n4sch:clause "b";
+  n4sch:content "in the case of a building society, a building society authorised, or deemed to be authorised, by the European Central Bank on application therefor under section 17 of the Building Societies Act (No. 17 of 1989), or" .
+
+n4ind:59 a n4sch:Embeddable, n4sch:Clause;
+  n4sch:clause "c";
+  n4sch:content "in the case of a credit union, a credit union registered within the meaning of the Credit Union Act 1997 (No. 15 of 1997) or deemed to be so registered by virtue of section 5(3) of that Act" .
+
+n4ind:60 a n4sch:Embeddable, n4sch:Clause;
+  n4sch:clause "a";
+  n4sch:content "the authority designated under Regulation 4 of the European Union (Capital Requirements) Regulations 2014 (S.I. No. 158 of 2014), or" .
+
+n4ind:61 a n4sch:Embeddable, n4sch:Clause;
+  n4sch:content "the European Central Bank, with regard to specific tasks conferred on it by Council Regulation (EU) No 1024/2013 of 15 October 2013";
+  n4sch:clause "b" .
+
+n4ind:62 a n4sch:Clause, n4sch:Embeddable;
+  n4sch:clause "a";
+  n4sch:content "the competent authority makes a determination mentioned in paragraph (a), or" .
+
+n4ind:63 a n4sch:Clause, n4sch:Embeddable;
+  n4sch:content "the Court makes a ruling mentioned in paragraph (b) or (c),";
+  n4sch:clause "b" .
+
+n4ind:64 a n4sch:Clause, n4sch:Embeddable;
+  n4sch:content "its existence can only be proven by a financial instrument (as defined in Article 4(17) of Directive 2004/39/EC of the European Parliament and of the Council of 21 April 2004) other than where it is a savings product which is evidenced by a certificate of deposit made out to a named person and which existed in the Member State concerned on 2 July 2014";
+  n4sch:clause "a" .
+
+n4ind:65 a n4sch:Clause, n4sch:Embeddable;
+  n4sch:clause "b";
+  n4sch:content "its principal is not repayable at par, or" .
+
+n4ind:66 a n4sch:Clause, n4sch:Embeddable;
+  n4sch:content "its principal is only repayable at par under a particular guarantee or agreement provided by the credit institution or a third party";
+  n4sch:clause "c" .
+
+n4ind:67 a n4sch:Clause, n4sch:Embeddable;
+  n4sch:content "opened in the name of 2 or more persons, or";
+  n4sch:clause "a" .
+
+n4ind:68 a n4sch:Clause, n4sch:Embeddable;
+  n4sch:content "over which 2 or more persons have rights that are exercised by means of the signature of one or more of those persons";
+  n4sch:clause "b" .
+
+n4ind:69 a n4sch:Clause, n4sch:Embeddable;
+  n4sch:content "consists of low-risk assets, and";
+  n4sch:clause "a" .
+
+n4ind:70 a n4sch:Embeddable, n4sch:Clause;
+  n4sch:content "is unencumbered by any third-party rights and is at the disposal of the deposit guarantee scheme";
+  n4sch:clause "b" .
+
+n4ind:71 a n4sch:Embeddable, n4sch:Clause;
+  n4sch:content "the competent authority has determined that, for the time being, the credit institution concerned appears to be unable, for reasons which are directly related to its financial circumstances, to repay the deposit and has no current prospect of being able to do so";
+  n4sch:clause "a" .
+
+n4ind:72 a n4sch:Embeddable, n4sch:Clause;
+  n4sch:content "a court has appointed a liquidator or examiner to the credit institution, or";
+  n4sch:clause "b" .
+
+n4ind:73 a n4sch:Clause, n4sch:Embeddable;
+  n4sch:content "a court has made, for reasons which are directly related to the credit institution's financial circumstances, any other ruling that has the effect of suspending depositors' ability to make claims against it";
+  n4sch:clause "c" .
+
+n4ind:74 a n4sch:Section;
+  n4sch:id "9" .
+
+n4ind:75 a n4sch:Section;
+  n4sch:id "17" .
+
+n4ind:76 a n4sch:Section;
+  n4sch:id "5.3" .
+
+n4ind:77 a n4sch:Section;
+  n4sch:id "13.1" .
+
+n4ind:78 a n4sch:Section;
+  n4sch:id "20.6" .
+
+n4ind:79 a n4sch:Section;
+  n4sch:id "4" .
+
+n4ind:80 a n4sch:Legislation;
+  n4sch:name "Council Regulation (EU) No 1024/2013" .
+
+n4ind:81 a n4sch:Embeddable, n4sch:Definition;
+  n4sch:term "a" .
+
+n4ind:82 a n4sch:Definition, n4sch:Embeddable;
+  n4sch:term "b" .
+
+n4ind:83 a n4sch:Definition, n4sch:Embeddable;
+  n4sch:term "c" .
+
+n4ind:84 a n4sch:Legislation;
+  n4sch:name "Directive 2004/39/EC - 4.17" .
+
+n4ind:85 a n4sch:Section;
+  n4sch:id "11" .
+
+n4ind:86 a n4sch:Legislation;
+  n4sch:name "Union Capital Requirements Regulation - 4.1.1" .
+
+n4ind:87 a n4sch:Section;
+  n4sch:id "2.1.a" .
+
+n4ind:88 a n4sch:Section;
+  n4sch:id "2.1.b" .
+
+n4ind:89 a n4sch:Section;
+  n4sch:id "2.1.c" .
+
+n4ind:90 a n4sch:Section;
+  n4sch:id "4" .
+
+n4ind:91 a n4sch:Section;
+  n4sch:id "10" .
+
+n4ind:92 a n4sch:Legislation;
+  n4sch:name "Regulation (EU) No 1093/2010" .
+
+n4ind:93 a n4sch:Legislation;
+  n4sch:name "Union Capital Requirements Regulation - 4.1.26" .
+
+n4ind:94 a n4sch:Section;
+  n4sch:id "17.1" .
+
+n4ind:95 a n4sch:Legislation;
+  n4sch:name "Union Capital Requirements Regulation - 4.1.43" .
+
+n4ind:96 a n4sch:Legislation;
+  n4sch:name "Union Capital Requirements Regulation - 4.1.44" .
+
+n4ind:97 a n4sch:Legislation;
+  n4sch:name "Union Capital Requirements Regulation - 113.7" .
+
+n4ind:98 a n4sch:Legislation;
+  n4sch:name "Union Capital Requirements Regulation - 336.T1" .
+
+n4ind:99 a n4sch:Legislation;
+  n4sch:name "Regulation (EU) No 1093/2010" .
+
+n4ind:100 a n4sch:Section;
+  n4sch:id "4.1" .
+
+n4ind:101 a n4sch:Section;
+  n4sch:id "19" .
+
+n4ind:102 a n4sch:Legislation;
+  n4sch:name "Regulation (EU) No 575/2013" .
+
+n4ind:103 a n4sch:Section;
+  n4sch:id "10.1.b" .
+
+n4ind:104 a n4sch:Part;
+  n4sch:name "Part 2";
+  n4sch:part_title "Designated authority" .
+
+n4ind:105 a n4sch:Section;
+  n4sch:id "4";
+  n4sch:content "Designated authority" .
+
+n4ind:106 a n4sch:Section;
+  n4sch:content "The Bank is designated as the authority in the State that carries out the functions and duties of a designated authority for the purposes of Directive 2014/49/EU of the European Parliament and of the Council of 16 April 2014.";
+  n4sch:id "4.1" .
+
+n4ind:107 a n4sch:Section;
+  n4sch:content "The designated authority shall supervise deposit guarantee schemes on an ongoing basis as to their compliance with these Regulations.";
+  n4sch:id "4.2" .
+
+n4ind:108 a n4sch:Section;
+  n4sch:id "4.3";
+  n4sch:content "The designated authority may require, at any time and upon its request, from credit institutions all the information necessary to prepare for a repayment of depositors, including markings under Regulation 10(2) and, where required, the credit institutions shall comply with any such requirement." .
+
+n4ind:109 a n4sch:Section;
+  n4sch:content "The designated authority shall ensure the confidentiality, and protection, of data pertaining to depositors’ accounts.";
+  n4sch:id "4.4" .
+
+n4ind:110 a n4sch:Section;
+  n4sch:id "4.5";
+  n4sch:content "The processing of the data referred to in paragraph (4) shall be carried out in accordance with the Data Protection Acts 1988 and 2003." .
+
+n4ind:111 a n4sch:Section;
+  n4sch:id "4.6";
+  n4sch:content "The designated authority shall be subject to the requirements of professional secrecy in accordance with Article 70 of Regulation (EU) No 1093/2010 when exchanging information with the European Banking Authority." .
+
+n4ind:112 a n4sch:Section;
+  n4sch:id "4.7";
+  n4sch:content "The designated authority shall ensure that its deposit guarantee scheme has in place sound and transparent governance practices and shall produce an annual report on its activities." .
+
+n4ind:113 a n4sch:Section;
+  n4sch:id "Directive 2014/49/EU" .
+
+n4ind:114 a n4sch:Section;
+  n4sch:id "10.2" .
+
+n4ind:115 a n4sch:Section;
+  n4sch:id "Regulation (EU) No 1093/2010 - 70" .
+
+n4ind:116 a n4sch:Section;
+  n4sch:id "5";
+  n4sch:content "Stress tests" .
+
+n4ind:117 a n4sch:Section;
+  n4sch:content "The designated authority shall perform stress tests of their systems.";
+  n4sch:id "5.1" .
+
+n4ind:118 a n4sch:Section;
+  n4sch:id "5.2";
+  n4sch:content "Subject to paragraph (3), the stress tests referred to in paragraph (1) shall take place at least every 3 years and more frequently where considered appropriate by the designated authority." .
+
+n4ind:119 a n4sch:Section;
+  n4sch:id "5.3";
+  n4sch:content "The first stress test under this Regulation shall take place not later than 3 July 2017." .
+
+n4ind:120 a n4sch:Section;
+  n4sch:id "5.4";
+  n4sch:content "The competent authority or resolution authority shall ensure that the designated authority is informed as soon as possible in the event that either becomes aware of matters in a credit institution that are likely to give rise to the intervention of the designated authority." .
+
+n4ind:121 a n4sch:Section;
+  n4sch:content "The designated authority shall use the information necessary to perform stress tests of their systems only for the performance of those tests and shall keep such information no longer than is necessary for that purpose.";
+  n4sch:id "5.5" .
+
+n4ind:122 a n4sch:Section;
+  n4sch:id "6";
+  n4sch:content "Relevant administrative authorities" .
+
+n4ind:123 a n4sch:Section;
+  n4sch:id "6.1";
+  n4sch:content "The competent authority shall be the relevant administrative authority for the purposes of paragraph (a) of the definition of “unavailable deposit”." .
+
+n4ind:124 a n4sch:Section;
+  n4sch:content "The competent authority, the designated authority and the resolution authority shall cooperate with each other and exercise their powers in accordance with these Regulations.";
+  n4sch:id "6.2" .
+
+n4ind:125 a n4sch:Section;
+  n4sch:id "6.3";
+  n4sch:content "The competent authority shall make the determination referred to in the definition of “unavailable deposit” as soon as possible and, in any event, not later than 5 working days after first becoming satisfied that a credit institution has failed to repay deposits which are due and payable." .
+
+n4ind:127 a n4sch:Part;
+  n4sch:part_title "Deposit guarantee scheme";
+  n4sch:name "Part 3" .
+
+n4ind:128 a n4sch:Section;
+  n4sch:id "7";
+  n4sch:content "Deposit guarantee scheme" .
+
+n4ind:129 a n4sch:Section;
+  n4sch:id "7.1";
+  n4sch:content "The designated authority shall maintain a deposit guarantee scheme in the State." .
+
+n4ind:130 a n4sch:Section;
+  n4sch:id "7.2";
+  n4sch:content "Paragraph (1) shall not preclude the merger of deposit guarantee schemes in the State and other Member States or the establishment of a cross-border deposit guarantee scheme." .
+
+n4ind:131 a n4sch:Section;
+  n4sch:id "7.3";
+  n4sch:content "Prior to a merger referred to in paragraph (2) taking place, the written approval of the competent authority and the designated authority is required." .
+
+n4ind:132 a n4sch:Section;
+  n4sch:id "7.4";
+  n4sch:content "Cross-border deposit guarantee schemes shall be supervised by representatives of the designated authorities of the Member States where the affiliated credit institutions are authorised or registered, as the case may be." .
+
+n4ind:133 a n4sch:Section;
+  n4sch:id "8";
+  n4sch:content "Recognition of other schemes" .
+
+n4ind:134 a n4sch:Section;
+  n4sch:id "8.1";
+  n4sch:content "The designated authority may recognise a contractual scheme, as referred to in Regulation 2(1)(b), as a deposit guarantee scheme where that contractual scheme complies with this Part." .
+
+n4ind:135 a n4sch:Section;
+  n4sch:id "8.2";
+  n4sch:content "The designated authority may recognise an institutional protection scheme as a deposit guarantee scheme where that institutional protection scheme fulfils the criteria laid down in Article 113(7) of the Union Capital Requirements Regulation and complies with these Regulations." .
+
+n4ind:136 a n4sch:Section;
+  n4sch:id "Union Capital Requirements Regulation - 113.7" .
+
+n4ind:137 a n4sch:Section;
+  n4sch:content "Membership of deposit guarantee scheme";
+  n4sch:id "9" .
+
+n4ind:138 a n4sch:Section;
+  n4sch:id "9.1";
+  n4sch:content "An authorised credit institution shall not take deposits unless it is a member of a scheme maintained in the State pursuant to Regulation 7(1)." .
+
+n4ind:139 a n4sch:Section;
+  n4sch:id "9.2";
+  n4sch:content "Where a credit institution does not comply with the obligations incumbent on it as a member of a deposit guarantee scheme, that credit institution or the designated authority, where it becomes aware of the non-compliance, shall without delay notify the competent authority and, in cooperation with the designated authority, the competent authority, upon notification being made to it under this paragraph, shall promptly take all appropriate measures including the imposition of penalties to ensure that the credit institution complies with its obligations." .
+
+n4ind:140 a n4sch:Section;
+  n4sch:id "9.3";
+  n4sch:content "Where the measures taken under paragraph (2) fail to secure compliance on the part of the credit institution concerned, the designated authority may, subject to national law and the express consent of the competent authority, give not less than one month’s notice in writing to the credit institution concerned of its intention to exclude the credit institution from membership of the deposit guarantee scheme." .
+
+n4ind:141 a n4sch:Section;
+  n4sch:id "9.4";
+  n4sch:content "Deposits made before the expiry of the notice period referred to in paragraph (3) shall continue to be fully covered by the deposit guarantee scheme." .
+
+n4ind:142 a n4sch:Section;
+  n4sch:content "Where, on expiry of the notice period referred to in paragraph (3), the credit institution has not complied with its obligations, the designated authority shall exclude the credit institution from membership of the deposit guarantee scheme.";
+  n4sch:id "9.5" .
+
+n4ind:143 a n4sch:Section;
+  n4sch:id "9.6";
+  n4sch:content "Deposits held on the date on which a credit institution is excluded from membership of the deposit guarantee scheme pursuant to paragraph (5) shall continue to be covered by the deposit guarantee scheme." .
+
+n4ind:144 a n4sch:Part;
+  n4sch:part_title "Deposits";
+  n4sch:name "Part 4" .
+
+n4ind:145 a n4sch:Section;
+  n4sch:id "10";
+  n4sch:content "Eligibility of deposits" .
+
+n4ind:146 a n4sch:Section;
+  n4sch:id "10.1";
+  n4sch:content "The following shall be excluded from any repayment by the designated authority under a deposit guarantee scheme:" .
+
+n4ind:147 a n4sch:Section;
+  n4sch:id "10.1.a";
+  n4sch:content "subject to Regulation 12(4) and (5), deposits made by other credit institutions on their own behalf and for their own account;" .
+
+n4ind:148 a n4sch:Section;
+  n4sch:id "10.1.b";
+  n4sch:content "own funds, as defined in point (118) of Article 4(1) of the Union Capital Requirements Regulation;" .
+
+n4ind:149 a n4sch:Section;
+  n4sch:content "deposits arising out of transactions in connection with which there has been a criminal conviction for money laundering, as defined in section 2(1) of the Act of 2010;";
+  n4sch:id "10.1.c" .
+
+n4ind:150 a n4sch:Section;
+  n4sch:content "deposits by financial institutions;";
+  n4sch:id "10.1.d" .
+
+n4ind:151 a n4sch:Section;
+  n4sch:id "10.1.e";
+  n4sch:content "deposits by investment firms, as defined in Regulation 3(1) of the European Communities (Markets in Financial Instruments) Regulations 2007 (S.I. No. 60 of 2007);";
+  n4sch:link "/2007/en/si/0060.html" .
+
+n4ind:152 a n4sch:Section;
+  n4sch:id "10.1.f";
+  n4sch:content "deposits the holder of which has never been identified pursuant to Part 4 of the Act of 2010, when they have become unavailable;" .
+
+n4ind:153 a n4sch:Section;
+  n4sch:id "10.1.g";
+  n4sch:content "deposits by insurance undertakings and by reinsurance undertakings as referred to in Article 13(1) to (6) of Directive 2009/138/EC of the European Parliament and of the Council of 25 November 2009;" .
+
+n4ind:154 a n4sch:Section;
+  n4sch:id "10.1.h";
+  n4sch:content "deposits by collective investment undertakings;" .
+
+n4ind:155 a n4sch:Section;
+  n4sch:id "10.1.i";
+  n4sch:content "deposits by public authorities;" .
+
+n4ind:156 a n4sch:Section;
+  n4sch:content "debt securities issued by a credit institution and liabilities arising out of own acceptances and promissory notes;";
+  n4sch:id "10.1.j" .
+
+n4ind:157 a n4sch:Section;
+  n4sch:content "deposits by a pension scheme or retirement fund (other than a small self-administered pension scheme).";
+  n4sch:id "10.1.k" .
+
+n4ind:158 a n4sch:Section;
+  n4sch:id "10.2";
+  n4sch:content "Credit institutions shall mark eligible deposits in a way that allows the immediate identification of such deposits." .
+
+n4ind:159 a n4sch:Section;
+  n4sch:id "12.4" .
+
+n4ind:160 a n4sch:Section;
+  n4sch:id "12.5" .
+
+n4ind:161 a n4sch:Section;
+  n4sch:id "Union Capital Requirements Regulation - 4.1.118" .
+
+n4ind:162 a n4sch:Section;
+  n4sch:id "European Communities (Markets in Financial Instruments) Regulations 2007 - 3.1" .
+
+n4ind:163 a n4sch:Section;
+  n4sch:id "Directive 2009/138/EC - 13.1-6" .
+
+n4ind:164 a n4sch:Section;
+  n4sch:id "11";
+  n4sch:content "Coverage level of deposits" .
+
+n4ind:165 a n4sch:Section;
+  n4sch:content "In the event of deposits being unavailable, the coverage level for the aggregate deposits of each depositor is €100,000.";
+  n4sch:id "11.1" .
+
+n4ind:166 a n4sch:Section;
+  n4sch:id "11.2";
+  n4sch:content "Without limitation to paragraph (1) and subject to paragraph (3), certain deposits specified in paragraph (4) are protected above the coverage level mentioned in paragraph (1) (in this Regulation referred to as a “temporary high balance”) up to a limit of €1 million for 6 months after that amount has been credited or from the moment when such deposits become legally transferable." .
+
+n4ind:167 a n4sch:Section;
+  n4sch:content "Deposits protected in the circumstances mentioned in paragraph (4)(b)(ii) shall not be subject to the limits set out in paragraph (2) during the 6 month period referred to in paragraph (2).";
+  n4sch:id "11.3" .
+
+n4ind:168 a n4sch:Section;
+  n4sch:id "11.4";
+  n4sch:content "In order to qualify as a temporary high balance, a part of an eligible deposit in excess of the coverage limit provided for in paragraph (1) must meet at least one of the following criteria:" .
+
+n4ind:169 a n4sch:Section;
+  n4sch:content "it comprises—";
+  n4sch:id "11.4.a" .
+
+n4ind:170 a n4sch:Section;
+  n4sch:id "11.4.a.i";
+  n4sch:content "monies deposited in preparation for the purchase of a private residential property (or an interest in a private residential property) by the depositor" .
+
+n4ind:171 a n4sch:Section;
+  n4sch:id "11.4.a.ii";
+  n4sch:content "monies which represent the proceeds of sale of a private residential property (or an interest in a private residential property) of the depositor, or" .
+
+n4ind:172 a n4sch:Section;
+  n4sch:content "monies which represent the proceeds of an equity release by the depositor in a private residential property;";
+  n4sch:id "11.4.a.iii" .
+
+n4ind:173 a n4sch:Section;
+  n4sch:content "it comprises sums paid to the depositor in respect of—";
+  n4sch:id "11.4.b" .
+
+n4ind:174 a n4sch:Section;
+  n4sch:content "benefits payable under an insurance policy";
+  n4sch:id "11.4.b.i" .
+
+n4ind:175 a n4sch:Section;
+  n4sch:content "a claim for compensation for personal (including criminal) injury";
+  n4sch:id "11.4.b.ii" .
+
+n4ind:176 a n4sch:Section;
+  n4sch:content "State benefits paid in respect of a disability or incapacity";
+  n4sch:id "11.4.b.iii" .
+
+n4ind:177 a n4sch:Section;
+  n4sch:content "a claim for compensation for wrongful conviction";
+  n4sch:id "11.4.b.iv" .
+
+n4ind:178 a n4sch:Section;
+  n4sch:id "11.4.b.v";
+  n4sch:content "a claim for compensation for unfair dismissal" .
+
+n4ind:179 a n4sch:Section;
+  n4sch:id "11.4.b.vi";
+  n4sch:content "redundancy (whether voluntary or compulsory)" .
+
+n4ind:180 a n4sch:Section;
+  n4sch:content "the depositor’s marriage, judicial separation or civil partnership";
+  n4sch:id "11.4.b.vii" .
+
+n4ind:181 a n4sch:Section;
+  n4sch:content "the depositor’s divorce or dissolution of his or her civil partnership, or";
+  n4sch:id "11.4.b.viii" .
+
+n4ind:182 a n4sch:Section;
+  n4sch:id "11.4.b.ix";
+  n4sch:content "benefits payable on retirement" .
+
+n4ind:183 a n4sch:Section;
+  n4sch:content "it comprises sums paid to the depositor in respect of—";
+  n4sch:id "11.4.c" .
+
+n4ind:184 a n4sch:Section;
+  n4sch:id "11.4.c.i";
+  n4sch:content "benefits payable on death" .
+
+n4ind:185 a n4sch:Section;
+  n4sch:id "11.4.c.ii";
+  n4sch:content "a claim for compensation in respect of a person’s death, or" .
+
+n4ind:186 a n4sch:Section;
+  n4sch:id "11.4.c.iii";
+  n4sch:content "a legacy or other distribution from the estate of a deceased person" .
+
+n4ind:187 a n4sch:Section;
+  n4sch:id "11.4.d";
+  n4sch:content "it is held in an account on behalf of a depositor in his or her capacity as personal representative of a deceased person for the purpose of realising and administering the deceased’s estate" .
+
+n4ind:188 a n4sch:Section;
+  n4sch:content "The designated authority may decide to make repayments in euro or the currency of the Member State where the account is located.";
+  n4sch:id "11.5" .
+
+n4ind:189 a n4sch:Section;
+  n4sch:content "The designated authority shall notify the currency of repayment to depositors concerned.";
+  n4sch:id "11.6" .
+
+n4ind:190 a n4sch:Section;
+  n4sch:id "11.7";
+  n4sch:content "Where accounts were maintained in a currency different from that of a repayment, the exchange rate used shall be the exchange rate on the decision date." .
+
+n4ind:191 a n4sch:Section;
+  n4sch:id "2.1.d";
+  n4sch:content "credit institutions affiliated to the schemes referred to in subparagraph (a), (b) or (c)." .
+
+n4ind:192 a n4sch:Embeddable, n4sch:Clause;
+  n4sch:definition "in the case of a bank, a bank authorised, or deemed to be authorised, by the European Central Bank on application therefor under section 9 of the Act of 1971";
+  n4sch:clause "a" .
+
+n4ind:193 a n4sch:Embeddable, n4sch:Clause;
+  n4sch:definition "in the case of a building society, a building society authorised, or deemed to be authorised, by the European Central Bank on application therefor under section 17 of the Building Societies Act (No. 17 of 1989), or";
+  n4sch:clause "b" .
+
+n4ind:194 a n4sch:Embeddable, n4sch:Clause;
+  n4sch:definition "in the case of a credit union, a credit union registered within the meaning of the Credit Union Act 1997 (No. 15 of 1997) or deemed to be so registered by virtue of section 5(3) of that Act";
+  n4sch:clause "c";
+  n4sch:link "/1997/en/act/pub/0015/index.html" .
+
+n4ind:195 a n4sch:Embeddable, n4sch:Clause;
+  n4sch:clause "a";
+  n4sch:definition "the competent authority makes a determination mentioned in paragraph (a), or" .
+
+n4ind:196 a n4sch:Clause, n4sch:Embeddable;
+  n4sch:definition "the Court makes a ruling mentioned in paragraph (b) or (c),";
+  n4sch:clause "b" .
+
+n4ind:197 a n4sch:Clause, n4sch:Embeddable;
+  n4sch:clause "a";
+  n4sch:definition "its existence can only be proven by a financial instrument (as defined in Article 4(17) of Directive 2004/39/EC of the European Parliament and of the Council of 21 April 2004) other than where it is a savings product which is evidenced by a certificate of deposit made out to a named person and which existed in the Member State concerned on 2 July 2014" .
+
+n4ind:198 a n4sch:Clause, n4sch:Embeddable;
+  n4sch:clause "b";
+  n4sch:definition "its principal is not repayable at par, or" .
+
+n4ind:199 a n4sch:Clause, n4sch:Embeddable;
+  n4sch:definition "its principal is only repayable at par under a particular guarantee or agreement provided by the credit institution or a third party";
+  n4sch:clause "c" .
+
+n4ind:200 a n4sch:Clause, n4sch:Embeddable;
+  n4sch:clause "a";
+  n4sch:definition "the authority designated under Regulation 4 of the European Union (Capital Requirements) Regulations 2014 (S.I. No. 158 of 2014), or";
+  n4sch:link "/2014/en/si/0158.html" .
+
+n4ind:201 a n4sch:Clause, n4sch:Embeddable;
+  n4sch:clause "b";
+  n4sch:definition "the European Central Bank, with regard to specific tasks conferred on it by Council Regulation (EU) No 1024/2013 of 15 October 2013" .
+
+n4ind:202 a n4sch:Clause, n4sch:Embeddable;
+  n4sch:definition "opened in the name of 2 or more persons, or";
+  n4sch:clause "a" .
+
+n4ind:203 a n4sch:Clause, n4sch:Embeddable;
+  n4sch:clause "b";
+  n4sch:definition "over which 2 or more persons have rights that are exercised by means of the signature of one or more of those persons" .
+
+n4ind:204 a n4sch:Clause, n4sch:Embeddable;
+  n4sch:definition "consists of low-risk assets, and";
+  n4sch:clause "a" .
+
+n4ind:205 a n4sch:Clause, n4sch:Embeddable;
+  n4sch:definition "is unencumbered by any third-party rights and is at the disposal of the deposit guarantee scheme";
+  n4sch:clause "b" .
+
+n4ind:206 a n4sch:Clause, n4sch:Embeddable;
+  n4sch:definition "the competent authority has determined that, for the time being, the credit institution concerned appears to be unable, for reasons which are directly related to its financial circumstances, to repay the deposit and has no current prospect of being able to do so";
+  n4sch:clause "a" .
+
+n4ind:207 a n4sch:Clause, n4sch:Embeddable;
+  n4sch:definition "a court has appointed a liquidator or examiner to the credit institution, or";
+  n4sch:clause "b" .
+
+n4ind:208 a n4sch:Clause, n4sch:Embeddable;
+  n4sch:clause "c";
+  n4sch:definition "a court has made, for reasons which are directly related to the credit institution's financial circumstances, any other ruling that has the effect of suspending depositors' ability to make claims against it" .
+
+n4ind:215 a n4sch:Embeddable, n4sch:Clause;
+  n4sch:clase "a" .
+
+n4ind:216 a n4sch:Part;
+  n4sch:part_title "Repayment";
+  n4sch:name "Part 5" .
+
+n4ind:217 a n4sch:Section;
+  n4sch:content "Determination of the repayable amount";
+  n4sch:id "12" .
+
+n4ind:218 a n4sch:Section;
+  n4sch:id "12.1";
+  n4sch:content "The limit referred to in Regulation 11(1) shall apply to the aggregate deposits placed with the same credit institution irrespective of—" .
+
+n4ind:219 a n4sch:Section;
+  n4sch:id "12.1.a";
+  n4sch:content "the number of deposits," .
+
+n4ind:220 a n4sch:Section;
+  n4sch:id "12.1.b";
+  n4sch:content "the currency of the deposits, and" .
+
+n4ind:221 a n4sch:Section;
+  n4sch:content "the location of the deposits within the Union.";
+  n4sch:id "12.1.c" .
+
+n4ind:222 a n4sch:Section;
+  n4sch:id "12.2";
+  n4sch:content "The share of each depositor in a joint account shall be taken into account in calculating the limit referred to in Regulation 11(1) but, in the absence of special provisions that override the standard arrangement of splitting equally, a joint account shall be divided equally among the depositors." .
+
+n4ind:223 a n4sch:Section;
+  n4sch:content "A deposit to which 2 or more persons are entitled (whether or not in equal shares) as members of a partnership, association or grouping of a similar nature, without legal personality, shall be treated as a single deposit.";
+  n4sch:id "12.3" .
+
+n4ind:224 a n4sch:Section;
+  n4sch:content "Where a depositor is not absolutely entitled to the sums held in an account, the person that is absolutely entitled shall be covered by the guarantee, provided that he or she has been identified or is identifiable before the decision date.";
+  n4sch:id "12.4" .
+
+n4ind:225 a n4sch:Section;
+  n4sch:id "12.5";
+  n4sch:content "Where several persons are absolutely entitled to the sums held in an account, the share of each under the arrangements subject to which the sums are managed shall be taken into account when the limit provided for in Regulation 11(1) is calculated." .
+
+n4ind:226 a n4sch:Section;
+  n4sch:content "The reference date for the calculation of the repayable amount shall be the decision date.";
+  n4sch:id "12.6" .
+
+n4ind:227 a n4sch:Section;
+  n4sch:content "Subject to paragraph (8), liabilities of a depositor against the credit institution concerned shall not be taken into account when calculating the repayable amount.";
+  n4sch:id "12.7" .
+
+n4ind:228 a n4sch:Section;
+  n4sch:content "To the extent that set-off is possible under the statutory and contractual provisions governing the contract between a credit institution and a depositor, liabilities of the depositor to the credit institution may be taken into account when calculating the repayable amount where they have fallen due on or before the decision date.";
+  n4sch:id "12.8" .
+
+n4ind:229 a n4sch:Section;
+  n4sch:content "Credit institutions shall inform depositors in writing prior to the conclusion of any contract where any liabilities towards the credit institution are taken into account when calculating the repayable amount.";
+  n4sch:id "12.9" .
+
+n4ind:230 a n4sch:Section;
+  n4sch:id "12.10";
+  n4sch:content "The designated authority may at any time, require credit institutions to inform them in writing of the aggregated amount of eligible deposits for every depositor." .
+
+n4ind:231 a n4sch:Section;
+  n4sch:content "Subject to the limit referred to in Regulation 11(1), interest on deposits which has accrued until, but has not been credited at, the decision date shall be included in the repayable amount.";
+  n4sch:id "12.11" .
+
+n4ind:232 a n4sch:Section;
+  n4sch:id "12.12";
+  n4sch:content "Where a credit institution operates under different trademarks, as defined in Article 2 of Directive 2008/95/EC of the European Parliament and of the Council of 22 October 2008, that credit institution shall inform depositors that a connected credit institution operates under such trademarks and that the coverage level laid down in Regulation 11(1) and (2) applies to the aggregated deposits that the depositor holds with the credit institution." .
+
+n4ind:233 a n4sch:Section;
+  n4sch:id "12.13";
+  n4sch:content "The information required under paragraph (12) shall be included in the depositor information referred to in Regulation 29 and the Schedule." .
+
+n4ind:234 a n4sch:Section;
+  n4sch:id "12.14";
+  n4sch:content "The designated authority or, where necessary for the purposes of calculating the amount of a person’s eligible deposits (if any), a liquidator may require any person maintaining a deposit to which this Regulation may relate to supply sufficient information to enable a determination to be made as to whether the provisions of this Regulation apply to such a deposit and the person shall comply with such a requirement." .
+
+n4ind:235 a n4sch:Section;
+  n4sch:id "29" .
+
+n4ind:236 a n4sch:Section;
+  n4sch:id "Directive 2008/95/EC - Article 2" .
+
+n4ind:237 a n4sch:Section;
+  n4sch:id "13";
+  n4sch:content "Repayment" .
+
+n4ind:238 a n4sch:Section;
+  n4sch:content "Subject to paragraph (2), the designated authority shall ensure that a duly-verified repayable amount is available within 7 working days of the decision date.";
+  n4sch:id "13.1" .
+
+n4ind:239 a n4sch:Section;
+  n4sch:content "A transitional period shall apply until 31 December 2023 and shall establish the following repayment periods in respect of duly-verified eligible deposits:";
+  n4sch:id "13.2" .
+
+n4ind:240 a n4sch:Section;
+  n4sch:content "not more than 20 working days until 31 December 2018;";
+  n4sch:id "13.2.a" .
+
+n4ind:241 a n4sch:Section;
+  n4sch:id "13.2.b";
+  n4sch:content "not more than 15 working days from 1 January 2019 until 31 December 2020;" .
+
+n4ind:242 a n4sch:Section;
+  n4sch:content "not more than 10 working days from 1 January 2021 until 31 December 2023.";
+  n4sch:id "13.2.c" .
+
+n4ind:243 a n4sch:Section;
+  n4sch:content "Deposits referred to in Regulation 12(4) and (5) that are duly verified are subject to a longer repayment period, which does not exceed 3 months from the decision date.";
+  n4sch:id "13.3" .
+
+n4ind:244 a n4sch:Section;
+  n4sch:id "13.4";
+  n4sch:content "Where, during the transitional period until 31 December 2023 referred to in paragraph (2), the designated authority cannot make a repayable amount available within 7 working days, it shall ensure that depositors have access to an appropriate amount of their covered deposits to cover the cost of living within 5 working days of a request from the depositor concerned." .
+
+n4ind:245 a n4sch:Section;
+  n4sch:content "The designated authority shall only grant access to the appropriate amount referred to in paragraph (4) on the basis of its own data or that provided by the credit institution concerned.";
+  n4sch:id "13.5" .
+
+n4ind:246 a n4sch:Section;
+  n4sch:id "13.6";
+  n4sch:content "The appropriate amount referred to in paragraph (4) shall be deducted from the repayable amount as referred to in Regulation 12." .
+
+n4ind:247 a n4sch:Section;
+  n4sch:id "13.7";
+  n4sch:content "Repayment as referred to in paragraphs (1) and (4) may be deferred where—" .
+
+n4ind:248 a n4sch:Section;
+  n4sch:id "13.7.a";
+  n4sch:content "it is uncertain whether a person is entitled to receive repayment or the deposit is subject to legal dispute," .
+
+n4ind:249 a n4sch:Section;
+  n4sch:id "13.7.b";
+  n4sch:content "the deposit is subject to restrictive measures imposed by the State or an international body," .
+
+n4ind:250 a n4sch:Section;
+  n4sch:id "13.7.c";
+  n4sch:content "by way of derogation from paragraph (12), there has been no transaction relating to the deposit within the previous 24 months," .
+
+n4ind:251 a n4sch:Section;
+  n4sch:content "the amount to be repaid is deemed to be part of a temporary high balance as defined in Regulation 11(2),";
+  n4sch:id "13.7.d" .
+
+n4ind:252 a n4sch:Section;
+  n4sch:content "the amount to be repaid is to be paid out by the designated authority of a host Member State in accordance with Regulation 26(2) and (3).";
+  n4sch:id "13.7.e" .
+
+n4ind:253 a n4sch:Section;
+  n4sch:content "The repayable amount shall be made available without a request to the designated authority being necessary and, for that purpose, the credit institution shall transmit the necessary information on deposits and depositors on request without delay to that authority.";
+  n4sch:id "13.8" .
+
+n4ind:254 a n4sch:Section;
+  n4sch:content "Any correspondence between the designated authority and the depositor shall be drawn up in an official language or languages of the Member State in which the covered deposit is located.";
+  n4sch:id "13.9" .
+
+n4ind:255 a n4sch:Section;
+  n4sch:id "13.10";
+  n4sch:content "Where a credit institution operates directly in another Member State without having established branches, any correspondence between the designated authority and the depositor shall be in the language that was chosen by the depositor when the account was opened." .
+
+n4ind:256 a n4sch:Section;
+  n4sch:id "13.11";
+  n4sch:content "Notwithstanding the time limit laid down in paragraph (1), where a depositor or any person entitled to or interested in sums held in an account has been charged with an offence arising out of or in relation to money laundering within the meaning of the Act of 2010, the designated authority may suspend any payment relating to the depositor concerned, pending the judgment of the court." .
+
+n4ind:257 a n4sch:Section;
+  n4sch:content "No repayment shall be made where there has been no transaction relating to the deposit within the previous 24 months and the value of the deposit is lower than the administrative costs that would be incurred by the designated authority in making such a repayment.";
+  n4sch:id "13.12" .
+
+n4ind:258 a n4sch:Section;
+  n4sch:content "A person maintaining eligible deposits in excess of the coverage level laid down in Regulation 11 may, subject to Regulation 14, claim as an ordinary creditor of the credit institution in respect of these deposits.";
+  n4sch:id "13.13" .
+
+n4ind:259 a n4sch:Section;
+  n4sch:id "26.2" .
+
+n4ind:260 a n4sch:Section;
+  n4sch:id "26.3" .
+
+n4ind:261 a n4sch:Section;
+  n4sch:id "14" .
+
+n4ind:262 a n4sch:Section;
+  n4sch:id "14";
+  n4sch:content "Claims against deposit guarantee schemes" .
+
+n4ind:263 a n4sch:Section;
+  n4sch:content "A depositor’s right to compensation may be the subject of an action against the designated authority.";
+  n4sch:id "14.1" .
+
+n4ind:264 a n4sch:Section;
+  n4sch:id "14.2";
+  n4sch:content "Without prejudice to rights which it may have under national law, the designated authority that makes payments under guarantee within a national framework shall have the right of subrogation to the rights of depositors in winding up or reorganisation proceedings for an amount equal to their payments made to depositors." .
+
+n4ind:265 a n4sch:Section;
+  n4sch:content "Where a designated authority makes payments in the context of resolution proceedings, including the application of resolution tools or the exercise of resolution powers in accordance with Regulation 25, the designated authority may claim for an amount equal to its payments as a simple contract debt in a court of competent jurisdiction against the relevant credit institution.";
+  n4sch:id "14.3" .
+
+n4ind:266 a n4sch:Section;
+  n4sch:content "The claim referred to in paragraph (3) shall rank at the same level as covered deposits under national law governing normal insolvency proceedings under Chapter 7 of Part 11 of the Companies Act 2014 (No. 38 of 2014).";
+  n4sch:id "14.4" .
+
+n4ind:267 a n4sch:Section;
+  n4sch:id "25" .
+
+n4ind:268 a n4sch:Section;
+  n4sch:id "15";
+  n4sch:content "Administration of payments" .
+
+n4ind:269 a n4sch:Section;
+  n4sch:id "15.1";
+  n4sch:content "The designated authority may administer repayments to persons through the systems and facilities of the credit institution concerned." .
+
+n4ind:270 a n4sch:Section;
+  n4sch:id "15.2";
+  n4sch:content "The designated authority may make a repayment without an application." .
+
+n4ind:271 a n4sch:Section;
+  n4sch:content "The designated authority may make a repayment directly into an account maintained by another credit institution.";
+  n4sch:id "15.3" .
+
+n4ind:272 a n4sch:Section;
+  n4sch:content "The designated authority may make a repayment without fully, or at all, investigating the merits or amount of the relevant claim where, in its opinion—";
+  n4sch:id "15.4" .
+
+n4ind:273 a n4sch:Section;
+  n4sch:content "the costs of such an investigation would be reasonably likely to exceed the amount of the repayment";
+  n4sch:id "15.4.a" .
+
+n4ind:274 a n4sch:Section;
+  n4sch:content "it is reasonable to make the payment without any such investigation in the interests of the proper and orderly administration of these Regulations";
+  n4sch:id "15.4.b" .
+
+n4ind:275 a n4sch:Section;
+  n4sch:id "15.4.c";
+  n4sch:content "the claim is an eligible deposit." .
+
+n4ind:276 a n4sch:Section;
+  n4sch:id "15.5";
+  n4sch:content "Where the designated authority provides funds to pay persons maintaining eligible deposits, the person to whom the funds are provided shall furnish the Bank with evidence that those payments have been made." .
+
+n4ind:277 a n4sch:Section;
+  n4sch:id "16";
+  n4sch:content "Powers of the designated authority" .
+
+n4ind:278 a n4sch:Section;
+  n4sch:content "The designated authority may take such action, or direct a person to whom these Regulations apply to take such action, as it considers necessary to ensure compliance with these Regulations.";
+  n4sch:id "16.1" .
+
+n4ind:279 a n4sch:Section;
+  n4sch:content "Without limiting the generality of paragraph (1), the designated authority may—";
+  n4sch:id "16.2" .
+
+n4ind:280 a n4sch:Section;
+  n4sch:id "16.2.a";
+  n4sch:content "engage the services of any person to assist in the administration of repayments after the decision date, or" .
+
+n4ind:281 a n4sch:Section;
+  n4sch:id "16.2.b";
+  n4sch:content "enter into any agreement with any person for the provision of services to the designated authority to assist it in carrying out the functions under these Regulations." .
+
+n4ind:282 a n4sch:Section;
+  n4sch:id "16.3";
+  n4sch:content "The designated authority may direct, in writing, a liquidator appointed to a credit institution to do all or any of the following:" .
+
+n4ind:283 a n4sch:Section;
+  n4sch:content "provide specified information to the designated authority within a specified period;";
+  n4sch:id "16.3.a" .
+
+n4ind:284 a n4sch:Section;
+  n4sch:id "16.3.b";
+  n4sch:content "make payments to any person maintaining an eligible deposit in the manner that the designated authority directs;" .
+
+n4ind:285 a n4sch:Section;
+  n4sch:id "16.3.c";
+  n4sch:content "cooperate with officers or agents of the designated authority;" .
+
+n4ind:286 a n4sch:Section;
+  n4sch:content "take any other specified action for the purpose of ensuring that repayments are made by the designated authority.";
+  n4sch:id "16.3.d" .
+
+n4ind:287 a n4sch:Part;
+  n4sch:name "Part 6";
+  n4sch:part_title "Financing of deposit guarantee scheme" .
+
+n4ind:288 a n4sch:Section;
+  n4sch:content "Establishment of Fund";
+  n4sch:id "17" .
+
+n4ind:289 a n4sch:Section;
+  n4sch:id "17.1";
+  n4sch:content "A fund to be known as the deposit guarantee contributory fund (in these Regulations referred to as the “Fund”) is established for the purpose of ensuring the effective application of the deposit guarantee scheme maintained under Regulation 7(1)." .
+
+n4ind:290 a n4sch:Section;
+  n4sch:content "The designated authority shall ensure that it has adequate systems in place to determine the potential liabilities of the Fund.";
+  n4sch:id "17.2" .
+
+n4ind:291 a n4sch:Section;
+  n4sch:id "17.3";
+  n4sch:content "The Fund shall be used only in accordance with these Regulations." .
+
+n4ind:292 a n4sch:Section;
+  n4sch:id "18";
+  n4sch:content "Financing of Fund" .
+
+n4ind:293 a n4sch:Section;
+  n4sch:id "18.1";
+  n4sch:content "The Fund shall, subject to paragraph (2), be managed and administered by the designated authority and where money standing to the credit of the Fund is placed on deposit with the Bank, the Bank shall determine the rate of interest payable from time to time on such money." .
+
+n4ind:294 a n4sch:Section;
+  n4sch:id "18.2";
+  n4sch:content "The designated authority shall invest the Fund in a low-risk and sufficiently diversified manner." .
+
+n4ind:295 a n4sch:Section;
+  n4sch:id "18.3";
+  n4sch:content "For the purposes of these Regulations, the designated authority shall have the power to—" .
+
+n4ind:296 a n4sch:Section;
+  n4sch:id "18.3.a";
+  n4sch:content "raise ex-ante contributions as referred to in Regulation 20 for the purpose of reaching the target level specified in Regulation 19" .
+
+n4ind:297 a n4sch:Section;
+  n4sch:content "where the contributions specified in subparagraph (a) are insufficient, raise extraordinary ex-post contributions as referred to in Regulation 21";
+  n4sch:id "18.3.b" .
+
+n4ind:298 a n4sch:Section;
+  n4sch:id "18.3.c";
+  n4sch:content "contract borrowings and other forms of support, in accordance with Regulation 22" .
+
+n4ind:299 a n4sch:Section;
+  n4sch:id "20" .
+
+n4ind:300 a n4sch:Section;
+  n4sch:id "21" .
+
+n4ind:301 a n4sch:Section;
+  n4sch:id "22" .
+
+n4ind:302 a n4sch:Section;
+  n4sch:content "Target level";
+  n4sch:id "19" .
+
+n4ind:303 a n4sch:Section;
+  n4sch:content "In this Regulation—";
+  n4sch:id "19.1" .
+
+n4ind:304 a n4sch:Section;
+  n4sch:content "The designated authority shall ensure that during the initial period the available financial means of the Fund reaches at least 0.8% of the amount of covered deposits of all credit institutions authorised in the State.";
+  n4sch:id "19.2" .
+
+n4ind:305 a n4sch:Section;
+  n4sch:content "The available financial means of the Fund shall consist of the following:";
+  n4sch:id "19.3" .
+
+n4ind:306 a n4sch:Section;
+  n4sch:id "19.3.a";
+  n4sch:content "contributory payments raised from credit institutions in accordance with Regulations 20 and 21" .
+
+n4ind:307 a n4sch:Section;
+  n4sch:id "19.3.b";
+  n4sch:content "irrevocable payment commitments pledged in accordance with Regulation 20" .
+
+n4ind:308 a n4sch:Section;
+  n4sch:id "19.3.c";
+  n4sch:content "monies recovered from credit institutions for amounts payable to depositors under the deposit guarantee scheme" .
+
+n4ind:309 a n4sch:Section;
+  n4sch:id "19.3.d";
+  n4sch:content "any interest due to, or earnings on investments made in respect of monies held in, the Fund" .
+
+n4ind:310 a n4sch:Section;
+  n4sch:content "During the initial period, contributions to the Fund raised in accordance with Regulation 20 shall, as far as practicable and as nearly as may be, taking one year with another be charged each year on a pro rata basis until the target level is reached.";
+  n4sch:id "19.4" .
+
+n4ind:311 a n4sch:Section;
+  n4sch:id "19.5";
+  n4sch:content "The regular contributions to the Fund shall take due account of—" .
+
+n4ind:312 a n4sch:Section;
+  n4sch:id "19.5.a";
+  n4sch:content "the phase of the business cycle of the institutions concerned, and" .
+
+n4ind:313 a n4sch:Section;
+  n4sch:id "19.5.b";
+  n4sch:content "the impact that pro-cyclical contributions may have when setting annual contributions under this Regulation." .
+
+n4ind:314 a n4sch:Section;
+  n4sch:id "19.6";
+  n4sch:content "The initial period may be extended for a maximum of 4 years where the Fund has made cumulative disbursements in excess of 0.8% of covered deposits." .
+
+n4ind:315 a n4sch:Section;
+  n4sch:content "Where the financing capacity of the Fund falls short of the target level, the payment of contributions shall continue or resume, as the case may be, until the target level is met.";
+  n4sch:id "19.7" .
+
+n4ind:316 a n4sch:Section;
+  n4sch:id "19.8";
+  n4sch:content "Where, at any time after the target level has been met on the first occasion, the available financial means have reduced to less than two-thirds of the target level, the regular contribution shall be set at a level allowing the target level to be met again within the next 6 years." .
+
+n4ind:317 a n4sch:Embeddable, n4sch:Definition;
+  n4sch:definition "means the period from the coming into operation of these Regulations to 3 July 2024";
+  n4sch:term "initial period" .
+
+n4ind:318 a n4sch:Definition, n4sch:Embeddable;
+  n4sch:term "target level";
+  n4sch:definition "means the level required under paragraph (2)" .
+
+n4ind:319 a n4sch:Section;
+  n4sch:id "20" .
+
+n4ind:320 a n4sch:Section;
+  n4sch:id "21" .
+
+n4ind:321 a n4sch:Section;
+  n4sch:id "20";
+  n4sch:content "Ex-ante contributions" .
+
+n4ind:322 a n4sch:Section;
+  n4sch:id "20.1";
+  n4sch:content "All authorised credit institutions that hold covered deposits shall pay contributions to the Fund in accordance with this Regulation at least annually—" .
+
+n4ind:323 a n4sch:Section;
+  n4sch:content "until the target level required under Regulation 19(2) is reached, and";
+  n4sch:id "20.1.a" .
+
+n4ind:324 a n4sch:Section;
+  n4sch:content "that are sufficient to ensure that that target level is maintained thereafter.";
+  n4sch:id "20.1.b" .
+
+n4ind:325 a n4sch:Section;
+  n4sch:content "The designated authority shall determine an aggregate annual target for contributions referred to in paragraph (1) in order to reach and maintain the target level required under Regulation 19(2) and the relevant credit institutions shall comply with any such determination under paragraph (3).";
+  n4sch:id "20.2" .
+
+n4ind:326 a n4sch:Section;
+  n4sch:id "20.3";
+  n4sch:content "For each credit institution, the designated authority, having had regard to the requirements of Regulation 19, shall determine an annual contribution under paragraph (1) based on—" .
+
+n4ind:327 a n4sch:Section;
+  n4sch:id "20.3.a";
+  n4sch:content "the aggregate annual target determined under paragraph (2)," .
+
+n4ind:328 a n4sch:Section;
+  n4sch:id "20.3.b";
+  n4sch:content "the amount of covered deposits that the credit institution holds relative to the aggregate covered deposits held by all authorised credit institutions in the State," .
+
+n4ind:329 a n4sch:Section;
+  n4sch:content "the risk incurred by the credit institution as determined under Regulation 23,";
+  n4sch:id "20.3.c" .
+
+n4ind:330 a n4sch:Section;
+  n4sch:id "20.3.d";
+  n4sch:content "the impact of any order made under Regulation 23." .
+
+n4ind:331 a n4sch:Section;
+  n4sch:id "20.4";
+  n4sch:content "Each credit institution shall meet its annual contribution level through—" .
+
+n4ind:332 a n4sch:Section;
+  n4sch:id "20.4.a";
+  n4sch:content "payments as determined by the designated authority in accordance with paragraphs (2) and (3)," .
+
+n4ind:333 a n4sch:Section;
+  n4sch:id "20.4.b";
+  n4sch:content "payment commitments, to the extent permitted by the designated authority in accordance with paragraph (6)." .
+
+n4ind:334 a n4sch:Section;
+  n4sch:content "The designated authority shall determine the timing and method for contributory payments and payment commitments.";
+  n4sch:id "20.5" .
+
+n4ind:335 a n4sch:Section;
+  n4sch:content "The designated authority may permit institutions to meet up to 30% of their contributory obligations to the Fund through payment commitments, provided that—";
+  n4sch:id "20.6";
+  n4sch:CONTAINS n4ind:336, n4ind:337, n4ind:338, n4ind:339 .
+
+n4ind:336 a n4sch:Section;
+  n4sch:content "those payment commitments are irrevocable,";
+  n4sch:id "20.6.a" .
+
+n4ind:337 a n4sch:Section;
+  n4sch:content "those payment commitments are backed by collateral considered adequate by the designated authority,";
+  n4sch:id "20.6.b" .
+
+n4ind:338 a n4sch:Section;
+  n4sch:content "there is no more than 30% of an institution’s contributory obligations held as payment committments at any time,";
+  n4sch:id "20.6.c" .
+
+n4ind:339 a n4sch:Section;
+  n4sch:id "20.6.d";
+  n4sch:content "any relevant guidelines of the European Banking Authority are complied with." .
+
+n4ind:340 a n4sch:Section;
+  n4sch:id "20.7";
+  n4sch:content "The designated authority shall verify that required annual contributions have been made and shall take appropriate measures to prevent evasion and avoidance of payment obligations." .
+
+n4ind:341 a n4sch:Section;
+  n4sch:content "The designated authority may recover as a simple contract debt in any court of competent jurisdiction, from any person by whom the contribution is payable, any amount due and owing to the designated authority in respect of annual contributions under this Regulation.";
+  n4sch:id "20.8" .
+
+n4ind:342 a n4sch:Section;
+  n4sch:id "23" .
+
+n4ind:343 a n4sch:Section;
+  n4sch:content "Extraordinary ex-post contributions";
+  n4sch:id "21";
+  n4sch:CONTAINS n4ind:344, n4ind:345, n4ind:346, n4ind:347, n4ind:348, n4ind:349, n4ind:350,
+    n4ind:351, n4ind:352, n4ind:353 .
+
+n4ind:344 a n4sch:Section;
+  n4sch:id "21.1";
+  n4sch:content "Where the available financial means of the Fund are not sufficient to cover losses, costs or other expenses incurred by the Fund, the designated authority shall raise extraordinary ex-post contributions from authorised credit institutions to cover such losses, costs or other expenses in excess of the available financial means." .
+
+n4ind:345 a n4sch:Section;
+  n4sch:id "21.2";
+  n4sch:content "Extraordinary ex-post contributions shall be set at a level not exceeding 0.5% of the covered deposits of the credit institutions in the calendar year in which they are paid." .
+
+n4ind:346 a n4sch:Section;
+  n4sch:content "Subject to paragraphs (4) and (5), the designated authority may in exceptional circumstances and with the consent of the competent authority require higher contributions than those contempated under paragraph (2).";
+  n4sch:id "21.3";
+  n4sch:RELATED_TO n4ind:347, n4ind:348 .
+
+n4ind:347 a n4sch:Section;
+  n4sch:content "The maximum extraordinary ex-post contributions that can be required in the extraordinary circumstances referred to in paragraph (3) is twice the level set out in paragraph (2).";
+  n4sch:id "21.4";
+  n4sch:RELATED_TO n4ind:346 .
+
+n4ind:348 a n4sch:Section;
+  n4sch:content "The exceptional circumstances under paragraph (3) shall only apply where a higher contribution is necessary in order to repay a loan to the Fund which has been advanced in order to cover a shortfall within a prescribed period of time.";
+  n4sch:id "21.5";
+  n4sch:RELATED_TO n4ind:346 .
+
+n4ind:349 a n4sch:Section;
+  n4sch:content "The competent authority may defer, in whole or in part, a credit institution’s payment of extraordinary ex-post contributions to the deposit guarantee scheme where the contributions would jeopardise the liquidity or solvency of the credit institution concerned.";
+  n4sch:id "21.6" .
+
+n4ind:350 a n4sch:Section;
+  n4sch:id "21.7";
+  n4sch:content "A deferral under paragraph (6) shall not be granted for a period longer than 6 months but may be renewed upon the written request of the credit institution concerned.";
+  n4sch:RELATED_TO n4ind:349 .
+
+n4ind:351 a n4sch:Section;
+  n4sch:content "The contributions deferred under paragraph (6) shall be paid when, in the opinion of the competent authority, such payment no longer jeopardises the liquidity or solvency of the credit institution concerned.";
+  n4sch:id "21.8";
+  n4sch:RELATED_TO n4ind:349 .
+
+n4ind:352 a n4sch:Section;
+  n4sch:content "The designated authority shall verify that required contributions under this Regulation have been made and shall take appropriate measures to prevent evasion and avoidance of payment obligations.";
+  n4sch:id "21.9" .
+
+n4ind:353 a n4sch:Section;
+  n4sch:content "The designated authority may recover as a simple contract debt in any court of competent jurisdiction, from any person by whom the contribution is payable, any amount due and owing to the designated authority in respect of contributions under this Regulation.";
+  n4sch:id "21.10" .
+
+n4ind:354 a n4sch:Section;
+  n4sch:id "22.1";
+  n4sch:content "The designated authority may, on behalf of the Fund, contract borrowings or other forms of support from credit institutions, financial institutions or other third parties where—";
+  n4sch:CONTAINS n4ind:355, n4ind:356 .
+
+n4ind:355 a n4sch:Section;
+  n4sch:id "22.1.a";
+  n4sch:content "the amounts raised in accordance with Regulation 20 are not sufficient to cover the losses, costs or other expenses incurred by the Fund, and";
+  n4sch:RELATED_TO n4ind:299, n4ind:319, n4ind:321 .
+
+n4ind:356 a n4sch:Section;
+  n4sch:content "the extraordinary ex-post contributions provided for in Regulation 21 are not immediately accessible or sufficient.";
+  n4sch:id "22.1.b";
+  n4sch:RELATED_TO n4ind:300, n4ind:320, n4ind:343 .
+
+n4ind:357 a n4sch:Section;
+  n4sch:id "22.2";
+  n4sch:content "The Bank may, subject to the existance of the circumstances set out in section 8 of the Financial Services (Deposit Guarantee Scheme) Act 2009 (No. 13 of 2009), when the Bank considers it appropriate and to such extent it thinks proper from time to time necessary for safeguarding systemic stability having had regard to the need to—";
+  n4sch:CONTAINS n4ind:358, n4ind:359;
+  n4sch:RELATED_TO n4ind:372 .
+
+n4ind:358 a n4sch:Section;
+  n4sch:id "22.2.a";
+  n4sch:content "protect the interest of persons or any class of persons maintaining deposits with one or more credit institutions authorised or formerly authorised by the Bank, or" .
+
+n4ind:359 a n4sch:Section;
+  n4sch:content "promote the orderly and proper regulation of banking,";
+  n4sch:id "22.2.b" .
+
+n4ind:360 a n4sch:Section;
+  n4sch:content "provide finance to the Fund on a short-term and urgent basis in order to meet the financing requirements of the Fund under these Regulations.";
+  n4sch:id "22" .
+
+n4ind:361 a n4sch:Section;
+  n4sch:content "Subject to Regulation 36, the Minister may designate by order those sectors regulated under the law of the State considered to be low risk that may pay a lower contribution than that which would otherwise be payable under this Part.";
+  n4sch:id "23.1";
+  n4sch:RELATED_TO n4ind:370 .
+
+n4ind:362 a n4sch:Section;
+  n4sch:id "23.2";
+  n4sch:content "Members of an institutional protection scheme may pay lower contributions to the deposit guarantee scheme than that which would otherwise be payable under this Part." .
+
+n4ind:363 a n4sch:Section;
+  n4sch:id "23.3";
+  n4sch:content "A central body and all credit institutions permanently affiliated to a central body as referred to in Article 10(1) of the Union Capital Requirements Regulation may be subject as a whole to the risk weight determined for the central body and its affiliated institutions on a consolidated basis.";
+  n4sch:RELATED_TO n4ind:371 .
+
+n4ind:364 a n4sch:Section;
+  n4sch:content "Subject to Regulation 36, the Minister may designate by order that credit institutions pay a minimum contribution, irrespective of the amount of their covered deposits.";
+  n4sch:id "23.4";
+  n4sch:RELATED_TO n4ind:370 .
+
+n4ind:365 a n4sch:Section;
+  n4sch:content "Subject to paragraph (8), the designated authority may use its own risk-based methods for determining and calculating the risk-based contributions by credit institutions.";
+  n4sch:id "23.5" .
+
+n4ind:366 a n4sch:Section;
+  n4sch:id "23.6";
+  n4sch:content "The calculation of contributions under paragraph (5) shall be proportional to the risk of the members and shall take due account of the risk profiles of various business models." .
+
+n4ind:367 a n4sch:Section;
+  n4sch:id "23.7";
+  n4sch:content "The methods referred to in paragraph (5) may, in relation to the credit institutions concerned, take into account the asset side of the balance sheet and risk indicators, such as capital adequacy, asset quality and liquidity." .
+
+n4ind:368 a n4sch:Section;
+  n4sch:id "23.8";
+  n4sch:content "Each method employed under paragraph (5) shall be approved by the competent authority in cooperation with the designated authority." .
+
+n4ind:369 a n4sch:Section;
+  n4sch:id "23.9";
+  n4sch:content "The European Banking Authority shall be informed regarding the methods approved under paragraph (8)." .
+
+n4ind:370 a n4sch:Section;
+  n4sch:id "36" .
+
+n4ind:371 a n4sch:Section;
+  n4sch:id "Union Capital Requirements Regulation - 10.1" .
+
+n4ind:372 a n4sch:Section;
+  n4sch:id "8" .
+
+n4ind:373 a n4sch:Section;
+  n4sch:content "The designated authority shall, not later than on the 31st day of March of each year, inform the European Banking Authority of—";
+  n4sch:id "24";
+  n4sch:CONTAINS n4ind:374, n4ind:375;
+  n4sch:RELATED_TO n4ind:376 .
+
+n4ind:374 a n4sch:Section;
+  n4sch:content "the amount of covered deposits in the State, and";
+  n4sch:id "24.a" .
+
+n4ind:375 a n4sch:Section;
+  n4sch:id "24.b";
+  n4sch:content "the amount of the available financial means in the Fund" .
+
+n4ind:376 a n4sch:Section;
+  n4sch:id "European Banking Authority" .
+
+n4ind:377 a n4sch:Section;
+  n4sch:id "25";
+  n4sch:content "Use of funds";
+  n4sch:CONTAINS n4ind:378, n4ind:379, n4ind:380, n4ind:381, n4ind:388, n4ind:389, n4ind:390,
+    n4ind:393 .
+
+n4ind:378 a n4sch:Section;
+  n4sch:id "25.1";
+  n4sch:content "The financial means referred to in this Part shall be primarily used in order to repay depositors pursuant to this Regulation." .
+
+n4ind:379 a n4sch:Section;
+  n4sch:id "25.2";
+  n4sch:content "The financial means referred to in this Part shall be used in order to finance the resolution of credit institutions in accordance with Regulation 173 of the Bank Recovery and Resolution Regulations.";
+  n4sch:RELATED_TO n4ind:394 .
+
+n4ind:380 a n4sch:Section;
+  n4sch:id "25.3";
+  n4sch:content "The resolution authority shall determine, after consulting the designated authority, the amount by which the deposit guarantee scheme is liable under paragraph (2).";
+  n4sch:RELATED_TO n4ind:379 .
+
+n4ind:381 a n4sch:Section;
+  n4sch:content "The designated authority may use the available financial means for alternative measures in order to prevent the failure of a credit institution provided that the following conditions are met:";
+  n4sch:id "25.4";
+  n4sch:CONTAINS n4ind:382, n4ind:383, n4ind:384, n4ind:385, n4ind:386, n4ind:387 .
+
+n4ind:382 a n4sch:Section;
+  n4sch:id "25.4.a";
+  n4sch:content "the resolution authority has not taken any resolution action under Regulation 62 of the Bank Recovery and Resolution Regulations.";
+  n4sch:RELATED_TO n4ind:395 .
+
+n4ind:383 a n4sch:Section;
+  n4sch:id "25.4.b";
+  n4sch:content "it has appropriate systems and procedures in place for selecting and implementing alternative measures and monitoring affiliated risks;" .
+
+n4ind:384 a n4sch:Section;
+  n4sch:id "25.4.c";
+  n4sch:content "the costs of the measures do not exceed the cost of fulfilling its statutory mandate;" .
+
+n4ind:385 a n4sch:Section;
+  n4sch:id "25.4.d";
+  n4sch:content "the use of alternative measures is linked to conditions imposed on the credit institution that is being supported, involving at least more stringent risk monitoring and greater verification rights by the authority;" .
+
+n4ind:386 a n4sch:Section;
+  n4sch:id "25.4.e";
+  n4sch:content "the use of alternative measures is linked to commitments by the credit institution being supported with a view to securing access to covered deposits;" .
+
+n4ind:387 a n4sch:Section;
+  n4sch:id "25.4.f";
+  n4sch:content "the ability of the affiliated credit institutions to pay the extraordinary contributions in accordance with paragraph (7) is confirmed in the assessment of the competent authority.";
+  n4sch:RELATED_TO n4ind:390 .
+
+n4ind:388 a n4sch:Section;
+  n4sch:content "The designated authority shall consult the resolution authority and the competent authority on the measures and conditions that it is considering imposing on any credit institution under this Regulation.";
+  n4sch:id "25.5" .
+
+n4ind:389 a n4sch:Section;
+  n4sch:id "25.6";
+  n4sch:content "The alternative measures referred to in paragraph (4) shall not be applied where the competent authority, after consulting the resolution authority, considers that the conditions for resolution action under Regulation 39(1) to (4) of the Bank Recovery and Resolution Regulations are met.";
+  n4sch:RELATED_TO n4ind:396, n4ind:397, n4ind:398, n4ind:399, n4ind:381 .
+
+n4ind:390 a n4sch:Section;
+  n4sch:id "25.7";
+  n4sch:content "Where available financial means are used in accordance with paragraph (4), the affiliated credit institutions concerned shall immediately provide the designated authority with the means used for alternative measures, where necessary in the form of extraordinary contributions, where—";
+  n4sch:CONTAINS n4ind:391, n4ind:392;
+  n4sch:RELATED_TO n4ind:381 .
+
+n4ind:391 a n4sch:Section;
+  n4sch:id "25.7.a";
+  n4sch:content "the need to reimburse depositors arises and the available financial means of the Fund amounts to less than two-thirds of the target level, or" .
+
+n4ind:392 a n4sch:Section;
+  n4sch:id "25.7.b";
+  n4sch:content "the available financial means of the Fund falls below 25% of the target level." .
+
+n4ind:393 a n4sch:Section;
+  n4sch:id "25.8";
+  n4sch:content "The designated authority may use the available financial means to finance measures to preserve the access of depositors to covered deposits, including transfer of assets and liabilities and deposit book transfer, in the context of insolvency proceedings provided that the costs borne by the deposit guarantee scheme do not exceed the net cost of compensating covered depositors at the credit institution concerned." .
+
+n4ind:394 a n4sch:Section;
+  n4sch:id "173" .
+
+n4ind:395 a n4sch:Section;
+  n4sch:id "62" .
+
+n4ind:396 a n4sch:Section;
+  n4sch:id "39.1" .
+
+n4ind:397 a n4sch:Section;
+  n4sch:id "39.2" .
+
+n4ind:398 a n4sch:Section;
+  n4sch:id "39.3" .
+
+n4ind:399 a n4sch:Section;
+  n4sch:id "39.4" .
+
+n4ind:400 a n4sch:Part;
+  n4sch:part_title "Union cooperation";
+  n4sch:name "Part 7";
+  n4sch:CONTAINS n4ind:401, n4ind:415 .
+
+n4ind:401 a n4sch:Section;
+  n4sch:id "26";
+  n4sch:content "Cooperation within the Union";
+  n4sch:CONTAINS n4ind:402, n4ind:403, n4ind:404, n4ind:405, n4ind:406, n4ind:407, n4ind:408,
+    n4ind:409, n4ind:410, n4ind:411, n4ind:412, n4ind:413, n4ind:414 .
+
+n4ind:402 a n4sch:Section;
+  n4sch:content "The deposit guarantee scheme maintained under Regulation 7(1) shall cover depositors at branches set up by its member credit institutions in other Member States.";
+  n4sch:id "26.1";
+  n4sch:RELATED_TO n4ind:129 .
+
+n4ind:403 a n4sch:Section;
+  n4sch:content "Depositors at branches of such credit institutions referred to in paragraph (1) shall be repaid by the deposit guarantee scheme of the host Member State on behalf of the designated authority and the designated authority shall provide instructions to the deposit guarantee scheme of the host Member State as to how to make such repayments.";
+  n4sch:id "26.2";
+  n4sch:RELATED_TO n4ind:402 .
+
+n4ind:404 a n4sch:Section;
+  n4sch:id "26.3";
+  n4sch:content "The designated authority shall provide the necessary funding prior to repayment and shall compensate the deposit guarantee scheme of the host Member State for the costs incurred." .
+
+n4ind:405 a n4sch:Section;
+  n4sch:id "26.4";
+  n4sch:content "Where depositors in the State of branches of a credit institution established in another Member State require repayment under Directive 2014/49/EU of the European Parliament and of the Council of 16 April 2014, the designated authority shall make the repayments in accordance with the instructions given to it by the relevant deposit guarantee scheme of the home Member State." .
+
+n4ind:406 a n4sch:Section;
+  n4sch:id "26.5";
+  n4sch:content "The designated authority shall not bear any liability with regard to acts done in accordance with instructions given by a deposit guarantee scheme of the home Member State." .
+
+n4ind:407 a n4sch:Section;
+  n4sch:content "In the circumstances referred to in paragraph (4), the designated authority shall also inform the depositors concerned on behalf of the deposit guarantee scheme of the home Member State and shall be also be entitled to receive correspondence from those depositors on its behalf.";
+  n4sch:id "26.6";
+  n4sch:RELATED_TO n4ind:405 .
+
+n4ind:408 a n4sch:Section;
+  n4sch:id "26.7";
+  n4sch:content "Where a credit institution ceases to be a member of the deposit guarantee scheme maintained under Regulation 7(1) and joins another deposit guarantee scheme, the contributions paid during the 12 months preceding the end of the membership of the first-mentioned deposit guarantee scheme, with the exception of the extraordinary contributions under Regulation 21, shall be transferred to the other deposit guarantee scheme fund.";
+  n4sch:RELATED_TO n4ind:129, n4ind:300, n4ind:320, n4ind:343 .
+
+n4ind:409 a n4sch:Section;
+  n4sch:content "Paragraph (7) shall not apply where a credit institution has been excluded from the deposit guarantee scheme pursuant to Regulation 9(3) to (5).";
+  n4sch:id "26.8";
+  n4sch:RELATED_TO n4ind:408, n4ind:140, n4ind:141, n4ind:142 .
+
+n4ind:410 a n4sch:Section;
+  n4sch:content "Where some of the activities of an authorised credit institution are transferred to another Member State and thus become subject to another deposit guarantee scheme, the contributions of that credit institution paid during the 12 months preceding the transfer, with the exception of the extraordinary contributions in accordance with Regulation 21, shall be transferred to the other deposit guarantee scheme in proportion to the amount of covered deposits transferred.";
+  n4sch:id "26.9";
+  n4sch:RELATED_TO n4ind:300, n4ind:320, n4ind:343 .
+
+n4ind:411 a n4sch:Section;
+  n4sch:content "The designated authority shall exchange information referred to under Regulations 4, 5 and 7 with the equivalent authorities in Member States where branches of credit institutions authorised in the State are located.";
+  n4sch:id "26.10";
+  n4sch:RELATED_TO n4ind:79, n4ind:90, n4ind:105, n4ind:116, n4ind:128 .
+
+n4ind:412 a n4sch:Section;
+  n4sch:id "26.11";
+  n4sch:content "The requirements of Regulations 4, 5, 7, 8 and 9 shall apply in respect of member credit institutions in other Member States.";
+  n4sch:RELATED_TO n4ind:79, n4ind:90, n4ind:105, n4ind:116, n4ind:128, n4ind:133, n4ind:372,
+    n4ind:74, n4ind:137 .
+
+n4ind:413 a n4sch:Section;
+  n4sch:content "Where an authorised credit institution intends to transfer from one deposit guarantee scheme to another in accordance with these Regulations, it shall give not less than 6 months’ notice to the designated authority of its intention to do so.";
+  n4sch:id "26.12" .
+
+n4ind:414 a n4sch:Section;
+  n4sch:content "During the 6-month period referred to in paragraph (12), the credit institution shall remain under the obligation to contribute to the deposit guarantee scheme in accordance with Regulations 20 and 21 both in terms of ex-ante and ex-post financing.";
+  n4sch:id "26.13";
+  n4sch:RELATED_TO n4ind:413, n4ind:299, n4ind:319, n4ind:321, n4ind:300, n4ind:320,
+    n4ind:343 .
+
+n4ind:415 a n4sch:Section;
+  n4sch:content "Cooperation agreements";
+  n4sch:id "27";
+  n4sch:CONTAINS n4ind:416, n4ind:417, n4ind:418, n4ind:419, n4ind:420, n4ind:421, n4ind:422 .
+
+n4ind:416 a n4sch:Section;
+  n4sch:id "27.1";
+  n4sch:content "In order to facilitate effective cooperation with the designated authorities or deposit guarantee schemes in other Member States, with particular regard to this Regulation, the designated authority shall put in place written cooperation agreements with relevant authorities and schemes and such agreements shall take into account the requirements laid down in Regulation 4(4) and (5).";
+  n4sch:RELATED_TO n4ind:109, n4ind:110 .
+
+n4ind:417 a n4sch:Section;
+  n4sch:id "27.2";
+  n4sch:content "The designated authority shall notify the European Banking Authority of the existence and the content of the agreements (if any) under paragraph (1).";
+  n4sch:RELATED_TO n4ind:416 .
+
+n4ind:418 a n4sch:Section;
+  n4sch:id "27.3";
+  n4sch:content "Where the designated authority cannot reach an agreement or where there is a dispute about the interpretation of an agreement, it may refer the matter to the European Banking Authority in accordance with Article 19 of Regulation (EU) No 1093/2010.";
+  n4sch:RELATED_TO n4ind:423 .
+
+n4ind:419 a n4sch:Section;
+  n4sch:id "27.4";
+  n4sch:content "The absence of an agreement under paragraph (1) shall not affect the claims of depositors under Regulation 14(1) or of credit institutions under Regulation 26(7) to (9).";
+  n4sch:RELATED_TO n4ind:263, n4ind:408, n4ind:409, n4ind:410 .
+
+n4ind:420 a n4sch:Section;
+  n4sch:content "The designated authority shall put in place appropriate procedures to enable it to share information and communicate effectively with other equivalent Member State authorities and deposit guarantee schemes, their competent authorities, their affiliated credit institutions and with other agencies on a cross-border basis, where appropriate.";
+  n4sch:id "27.5" .
+
+n4ind:421 a n4sch:Section;
+  n4sch:id "27.6";
+  n4sch:content "The competent authority and the designated authority shall cooperate with the European Banking Authority and shall exercise their powers in accordance with the provisions of these Regulations and Regulation (EU) No 1093/2010.";
+  n4sch:RELATED_TO n4ind:424 .
+
+n4ind:422 a n4sch:Section;
+  n4sch:content "The Minister shall inform the European Commission and the European Banking Authority of the designation of the Bank as the designated authority under Regulation 4.";
+  n4sch:id "27.7";
+  n4sch:RELATED_TO n4ind:79, n4ind:90, n4ind:105 .
+
+n4ind:423 a n4sch:Section;
+  n4sch:id "Regulation (EU) No 1093/2010 - 19" .
+
+n4ind:424 a n4sch:Section;
+  n4sch:id "Regulation (EU) No 1093/2010" .
+
+n4ind:425 a n4sch:Part;
+  n4sch:name "Part 8";
+  n4sch:part_title "Third countries";
+  n4sch:CONTAINS n4ind:426 .
+
+n4ind:426 a n4sch:Section;
+  n4sch:id "28";
+  n4sch:content "Branches of credit institutions established in third countries";
+  n4sch:CONTAINS n4ind:427, n4ind:428, n4ind:429, n4ind:430, n4ind:431, n4ind:432 .
+
+n4ind:427 a n4sch:Section;
+  n4sch:id "28.1";
+  n4sch:content "The designated authority shall check that branches established in the State by a credit institution which has its head office outside the Union have protection equivalent to that prescribed in these Regulations." .
+
+n4ind:428 a n4sch:Section;
+  n4sch:id "28.2";
+  n4sch:content "Where the protection referred to in paragraph (1) is not equivalent, the designated authority may, subject to section 9A of the Act of 1971, require that such branches shall join the deposit guarantee scheme and contribute to the Fund, in respect of covered deposits held at the branch which are not covered by a scheme in a third country, such amounts in accordance with Regulation 20(3), as may be determined by the designated authority from time to time.";
+  n4sch:RELATED_TO n4ind:326, n4ind:433 .
+
+n4ind:429 a n4sch:Section;
+  n4sch:id "28.3";
+  n4sch:content "When performing the check under paragraph (1) the designated authority shall at least check that depositors benefit from the same coverage level and scope of protection as provided for in these Regulations." .
+
+n4ind:430 a n4sch:Section;
+  n4sch:content "A branch established in the State by a credit institution which has its head office outside the Union and which is not a member of a deposit guarantee scheme maintained the State shall provide to the designated authority all relevant information concerning the guarantee arrangements for the deposits of actual and intending depositors at that branch.";
+  n4sch:id "28.4" .
+
+n4ind:431 a n4sch:Section;
+  n4sch:id "28.5";
+  n4sch:content "The information referred to in paragraph (4) shall be made available in one of the official languages of the State and shall be clear and comprehensible." .
+
+n4ind:432 a n4sch:Section;
+  n4sch:content "In this Regulation, “Union” means the European Union.";
+  n4sch:id "28.6" .
+
+n4ind:433 a n4sch:Section;
+  n4sch:id "Act of 1971 - 9A" .
+
+n4ind:434 a n4sch:Part;
+  n4sch:name "Part 9";
+  n4sch:part_title "Depositor information";
+  n4sch:CONTAINS n4ind:435, n4ind:436, n4ind:437, n4ind:440, n4ind:441, n4ind:442, n4ind:443,
+    n4ind:444, n4ind:445, n4ind:446, n4ind:447, n4ind:448, n4ind:449, n4ind:450 .
+
+n4ind:435 a n4sch:Section;
+  n4sch:id "29.1";
+  n4sch:content "Credit institutions established in the State shall make available to actual and intending depositors the information necessary for the identification of the deposit guarantee scheme maintained under Regulation 7(1).";
+  n4sch:RELATED_TO n4ind:129 .
+
+n4ind:436 a n4sch:Section;
+  n4sch:id "29.2";
+  n4sch:content "Credit institutions shall inform actual and intending depositors of the applicable exclusions from deposit guarantee scheme protection." .
+
+n4ind:437 a n4sch:Section;
+  n4sch:id "29.3";
+  n4sch:content "Credit institutions shall, in the form set out in the Schedule—";
+  n4sch:CONTAINS n4ind:438, n4ind:439 .
+
+n4ind:438 a n4sch:Section;
+  n4sch:content "provide depositors with the information referred to in paragraphs (1) and (2), and";
+  n4sch:id "29.3.a";
+  n4sch:RELATED_TO n4ind:435, n4ind:436 .
+
+n4ind:439 a n4sch:Section;
+  n4sch:id "29.3.b";
+  n4sch:content "have an acknowledgement of the receipt of that information" .
+
+n4ind:440 a n4sch:Section;
+  n4sch:id "29.4";
+  n4sch:content "Confirmation that deposits are eligible deposits shall be provided to depositors on their statements of account including a reference to the form set out in the Schedule." .
+
+n4ind:441 a n4sch:Section;
+  n4sch:id "29.5";
+  n4sch:content "The website address of the deposit guarantee scheme shall be indicated on the form in the Schedule and shall be provided in writing to the depositor at least annually." .
+
+n4ind:442 a n4sch:Section;
+  n4sch:content "The website of the deposit guarantee scheme shall contain the necessary information for depositors, in particular information concerning the provisions regarding the process for, and conditions of, deposit guarantees as envisaged under these Regulations.";
+  n4sch:id "29.6" .
+
+n4ind:443 a n4sch:Section;
+  n4sch:content "The information referred to in paragraphs (1) and (2) shall be made available by the credit institution concerned in the manner set out in these Regulations in the language that was agreed by the depositor and the credit institution when the account was opened or in an official language of the State.";
+  n4sch:id "29.7";
+  n4sch:RELATED_TO n4ind:435, n4ind:436 .
+
+n4ind:444 a n4sch:Section;
+  n4sch:content "The use in advertising of the information referred to in paragraphs (1) to (6) shall be limited to a factual reference to the deposit guarantee scheme guaranteeing the product to which the advertisement refers and to any additional information required by the law of the State.";
+  n4sch:id "29.8";
+  n4sch:RELATED_TO n4ind:435, n4ind:436, n4ind:437, n4ind:440, n4ind:441, n4ind:442 .
+
+n4ind:445 a n4sch:Section;
+  n4sch:content "Notwithstanding paragraph (8), the information in advertising referred to in that paragraph may extend to the factual description of the functioning of the deposit guarantee scheme but shall not contain a reference to unlimited coverage of deposits.";
+  n4sch:id "29.9";
+  n4sch:RELATED_TO n4ind:444 .
+
+n4ind:446 a n4sch:Section;
+  n4sch:content "In the case of a merger, conversion of subsidiaries into branches or similar operations, depositors shall be informed in writing at least one month before the operation takes legal effect unless the competent authority allows a shorter deadline on the grounds of commercial secrecy or financial stability.";
+  n4sch:id "29.10" .
+
+n4ind:447 a n4sch:Section;
+  n4sch:content "Depositors shall be given a period of not less than 3 months following notification to them of a merger, conversion or similar operation to withdraw or transfer to another credit institution, without incurring any penalty, their eligible deposits including all accrued interest and benefits in so far as they exceed the coverage level pursuant to Regulation 11 at the time of the operation.";
+  n4sch:id "29.11";
+  n4sch:RELATED_TO n4ind:85, n4ind:164 .
+
+n4ind:448 a n4sch:Section;
+  n4sch:id "29.12";
+  n4sch:content "Where a credit institution withdraws or is excluded from a deposit guarantee scheme, it shall inform its depositors in writing not later than one month after such withdrawal or exclusion." .
+
+n4ind:449 a n4sch:Section;
+  n4sch:id "29.13";
+  n4sch:content "Where a depositor uses a particular means of banking, the information required to be disclosed by its credit institution under these Regulations may be communicated by those same means other than where the depositor so requests, in which case, it shall be communicated on paper." .
+
+n4ind:450 a n4sch:Section;
+  n4sch:id "30";
+  n4sch:content "The competent authority shall, when notifying the European Banking Authority of an authorisation in accordance with Article 20(1) of Directive 2013/36/EU of the European Parliament and of the Council of 26 June 2013, also inform that authority of the deposit guarantee scheme of which the credit institution is a member.";
+  n4sch:RELATED_TO n4ind:451 .
+
+n4ind:451 a n4sch:Section;
+  n4sch:id "Directive 2013/36/EU - 20.1" .
+
+n4ind:0 n4sch:CONTAINS n4ind:1, n4ind:104, n4ind:127, n4ind:144, n4ind:216, n4ind:287,
+    n4ind:400, n4ind:425, n4ind:434 .
+
+n4ind:1 n4sch:CONTAINS n4ind:2, n4ind:5, n4ind:20 .
+
+n4ind:2 n4sch:CONTAINS n4ind:3, n4ind:4 .
+
+n4ind:5 n4sch:CONTAINS n4ind:6, n4ind:11 .
+
+n4ind:6 n4sch:CONTAINS n4ind:7, n4ind:8, n4ind:9, n4ind:10, n4ind:191 .
+
+n4ind:11 n4sch:CONTAINS n4ind:12, n4ind:13;
+  n4sch:RELATED_TO n4ind:16, n4ind:17, n4ind:18 .
+
+n4ind:8 n4sch:RELATED_TO n4ind:14, n4ind:134 .
+
+n4ind:9 n4sch:RELATED_TO n4ind:15, n4ind:135 .
+
+n4ind:10 n4sch:RELATED_TO n4ind:7, n4ind:8, n4ind:9 .
+
+n4ind:12 n4sch:RELATED_TO n4ind:19, n4ind:165 .
+
+n4ind:20 n4sch:CONTAINS n4ind:21, n4ind:22 .
+
+n4ind:21 n4sch:CONTAINS n4ind:23, n4ind:24, n4ind:25, n4ind:26, n4ind:27, n4ind:28,
+    n4ind:29, n4ind:30, n4ind:31, n4ind:32, n4ind:33, n4ind:34, n4ind:35, n4ind:36, n4ind:37,
+    n4ind:38, n4ind:39, n4ind:40, n4ind:41, n4ind:42, n4ind:43, n4ind:44, n4ind:45, n4ind:46,
+    n4ind:47, n4ind:48, n4ind:49, n4ind:50, n4ind:51, n4ind:52, n4ind:53, n4ind:54, n4ind:55,
+    n4ind:56 .
+
+n4ind:25 n4sch:CONTAINS n4ind:57, n4ind:58, n4ind:59, n4ind:192, n4ind:193, n4ind:194 .
+
+n4ind:30 n4sch:CONTAINS n4ind:60, n4ind:61, n4ind:200, n4ind:201 .
+
+n4ind:34 n4sch:CONTAINS n4ind:62, n4ind:63, n4ind:195, n4ind:196 .
+
+n4ind:35 n4sch:CONTAINS n4ind:64, n4ind:65, n4ind:66, n4ind:197, n4ind:198, n4ind:199 .
+
+n4ind:46 n4sch:CONTAINS n4ind:67, n4ind:68, n4ind:202, n4ind:203 .
+
+n4ind:50 n4sch:CONTAINS n4ind:69, n4ind:70, n4ind:204, n4ind:205 .
+
+n4ind:54 n4sch:CONTAINS n4ind:71, n4ind:72, n4ind:73, n4ind:206, n4ind:207, n4ind:208 .
+
+n4ind:57 n4sch:RELATED_TO n4ind:74 .
+
+n4ind:58 n4sch:RELATED_TO n4ind:75 .
+
+n4ind:59 n4sch:RELATED_TO n4ind:76 .
+
+n4ind:26 n4sch:RELATED_TO n4ind:77, n4ind:78 .
+
+n4ind:60 n4sch:RELATED_TO n4ind:79 .
+
+n4ind:61 n4sch:RELATED_TO n4ind:80 .
+
+n4ind:62 n4sch:RELATED_TO n4ind:81 .
+
+n4ind:63 n4sch:RELATED_TO n4ind:82, n4ind:83 .
+
+n4ind:64 n4sch:RELATED_TO n4ind:84 .
+
+n4ind:32 n4sch:RELATED_TO n4ind:85 .
+
+n4ind:33 n4sch:RELATED_TO n4ind:86 .
+
+n4ind:37 n4sch:RELATED_TO n4ind:87, n4ind:88, n4ind:89 .
+
+n4ind:38 n4sch:RELATED_TO n4ind:90, n4ind:213 .
+
+n4ind:39 n4sch:RELATED_TO n4ind:91 .
+
+n4ind:40 n4sch:RELATED_TO n4ind:92 .
+
+n4ind:41 n4sch:RELATED_TO n4ind:93 .
+
+n4ind:42 n4sch:RELATED_TO n4ind:94 .
+
+n4ind:43 n4sch:RELATED_TO n4ind:95 .
+
+n4ind:44 n4sch:RELATED_TO n4ind:96 .
+
+n4ind:45 n4sch:RELATED_TO n4ind:97 .
+
+n4ind:47 n4sch:RELATED_TO n4ind:98 .
+
+n4ind:51 n4sch:RELATED_TO n4ind:99, n4ind:92 .
+
+n4ind:52 n4sch:RELATED_TO n4ind:100 .
+
+n4ind:53 n4sch:RELATED_TO n4ind:101 .
+
+n4ind:55 n4sch:RELATED_TO n4ind:102 .
+
+n4ind:22 n4sch:RELATED_TO n4ind:103 .
+
+n4ind:104 n4sch:CONTAINS n4ind:105, n4ind:116, n4ind:122 .
+
+n4ind:105 n4sch:CONTAINS n4ind:106, n4ind:107, n4ind:108, n4ind:109, n4ind:110, n4ind:111,
+    n4ind:112 .
+
+n4ind:106 n4sch:RELATED_TO n4ind:113 .
+
+n4ind:108 n4sch:RELATED_TO n4ind:114, n4ind:158 .
+
+n4ind:111 n4sch:RELATED_TO n4ind:115 .
+
+n4ind:116 n4sch:CONTAINS n4ind:117, n4ind:118, n4ind:119, n4ind:120, n4ind:121 .
+
+n4ind:118 n4sch:RELATED_TO n4ind:117, n4ind:119 .
+
+n4ind:122 n4sch:CONTAINS n4ind:123, n4ind:124, n4ind:125 .
+
+n4ind:127 n4sch:CONTAINS n4ind:128, n4ind:133, n4ind:137 .
+
+n4ind:128 n4sch:CONTAINS n4ind:129, n4ind:130, n4ind:131, n4ind:132 .
+
+n4ind:130 n4sch:RELATED_TO n4ind:129 .
+
+n4ind:131 n4sch:RELATED_TO n4ind:130 .
+
+n4ind:133 n4sch:CONTAINS n4ind:134, n4ind:135 .
+
+n4ind:134 n4sch:RELATED_TO n4ind:8, n4ind:88 .
+
+n4ind:135 n4sch:RELATED_TO n4ind:136 .
+
+n4ind:137 n4sch:CONTAINS n4ind:138, n4ind:139, n4ind:140, n4ind:141, n4ind:142, n4ind:143 .
+
+n4ind:138 n4sch:RELATED_TO n4ind:129 .
+
+n4ind:140 n4sch:RELATED_TO n4ind:139 .
+
+n4ind:141 n4sch:RELATED_TO n4ind:140 .
+
+n4ind:142 n4sch:RELATED_TO n4ind:140 .
+
+n4ind:143 n4sch:RELATED_TO n4ind:142 .
+
+n4ind:144 n4sch:CONTAINS n4ind:145, n4ind:164 .
+
+n4ind:145 n4sch:CONTAINS n4ind:146, n4ind:158 .
+
+n4ind:146 n4sch:CONTAINS n4ind:147, n4ind:148, n4ind:149, n4ind:150, n4ind:151, n4ind:152,
+    n4ind:153, n4ind:154, n4ind:155, n4ind:156, n4ind:157 .
+
+n4ind:147 n4sch:RELATED_TO n4ind:159, n4ind:160 .
+
+n4ind:148 n4sch:RELATED_TO n4ind:161 .
+
+n4ind:151 n4sch:RELATED_TO n4ind:162, n4ind:21 .
+
+n4ind:153 n4sch:RELATED_TO n4ind:163 .
+
+n4ind:164 n4sch:CONTAINS n4ind:165, n4ind:166, n4ind:167, n4ind:168, n4ind:188, n4ind:189,
+    n4ind:190 .
+
+n4ind:168 n4sch:CONTAINS n4ind:169, n4ind:173, n4ind:183, n4ind:187;
+  n4sch:RELATED_TO n4ind:165 .
+
+n4ind:169 n4sch:CONTAINS n4ind:170, n4ind:171, n4ind:172 .
+
+n4ind:173 n4sch:CONTAINS n4ind:174, n4ind:175, n4ind:176, n4ind:177, n4ind:178, n4ind:179,
+    n4ind:180, n4ind:181, n4ind:182 .
+
+n4ind:183 n4sch:CONTAINS n4ind:184, n4ind:185, n4ind:186 .
+
+n4ind:166 n4sch:RELATED_TO n4ind:165, n4ind:167, n4ind:168 .
+
+n4ind:167 n4sch:RELATED_TO n4ind:168, n4ind:166, n4ind:175 .
+
+n4ind:191 n4sch:RELATED_TO n4ind:7, n4ind:8, n4ind:9 .
+
+n4ind:192 n4sch:RELATED_TO n4ind:209 .
+
+n4ind:193 n4sch:RELATED_TO n4ind:210 .
+
+n4ind:194 n4sch:RELATED_TO n4ind:211 .
+
+n4ind:195 n4sch:RELATED_TO n4ind:192 .
+
+n4ind:196 n4sch:RELATED_TO n4ind:193, n4ind:194 .
+
+n4ind:197 n4sch:RELATED_TO n4ind:212 .
+
+n4ind:200 n4sch:RELATED_TO n4ind:213 .
+
+n4ind:201 n4sch:RELATED_TO n4ind:214 .
+
+n4ind:123 n4sch:RELATED_TO n4ind:215 .
+
+n4ind:125 n4sch:RELATED_TO n4ind:54 .
+
+n4ind:216 n4sch:CONTAINS n4ind:217, n4ind:237, n4ind:262, n4ind:268, n4ind:277 .
+
+n4ind:217 n4sch:CONTAINS n4ind:218, n4ind:222, n4ind:223, n4ind:224, n4ind:225, n4ind:226,
+    n4ind:227, n4ind:228, n4ind:229, n4ind:230, n4ind:231, n4ind:232, n4ind:233, n4ind:234 .
+
+n4ind:218 n4sch:CONTAINS n4ind:219, n4ind:220, n4ind:221;
+  n4sch:RELATED_TO n4ind:19, n4ind:165 .
+
+n4ind:222 n4sch:RELATED_TO n4ind:19, n4ind:165 .
+
+n4ind:225 n4sch:RELATED_TO n4ind:19, n4ind:165 .
+
+n4ind:231 n4sch:RELATED_TO n4ind:19, n4ind:165 .
+
+n4ind:232 n4sch:RELATED_TO n4ind:19, n4ind:165, n4ind:166, n4ind:236 .
+
+n4ind:233 n4sch:RELATED_TO n4ind:235 .
+
+n4ind:237 n4sch:CONTAINS n4ind:238, n4ind:239, n4ind:243, n4ind:244, n4ind:245, n4ind:246,
+    n4ind:247, n4ind:253, n4ind:254, n4ind:255, n4ind:256, n4ind:257, n4ind:258 .
+
+n4ind:239 n4sch:CONTAINS n4ind:240, n4ind:241, n4ind:242 .
+
+n4ind:247 n4sch:CONTAINS n4ind:248, n4ind:249, n4ind:250, n4ind:251, n4ind:252;
+  n4sch:RELATED_TO n4ind:238, n4ind:244 .
+
+n4ind:243 n4sch:RELATED_TO n4ind:159, n4ind:224, n4ind:160, n4ind:225 .
+
+n4ind:244 n4sch:RELATED_TO n4ind:239 .
+
+n4ind:245 n4sch:RELATED_TO n4ind:244 .
+
+n4ind:246 n4sch:RELATED_TO n4ind:244, n4ind:217 .
+
+n4ind:251 n4sch:RELATED_TO n4ind:166 .
+
+n4ind:252 n4sch:RELATED_TO n4ind:259, n4ind:260 .
+
+n4ind:258 n4sch:RELATED_TO n4ind:85, n4ind:164, n4ind:261 .
+
+n4ind:262 n4sch:CONTAINS n4ind:263, n4ind:264, n4ind:265, n4ind:266 .
+
+n4ind:265 n4sch:RELATED_TO n4ind:267 .
+
+n4ind:266 n4sch:RELATED_TO n4ind:265 .
+
+n4ind:268 n4sch:CONTAINS n4ind:269, n4ind:270, n4ind:271, n4ind:272, n4ind:276 .
+
+n4ind:272 n4sch:CONTAINS n4ind:273, n4ind:274, n4ind:275 .
+
+n4ind:277 n4sch:CONTAINS n4ind:278, n4ind:279, n4ind:282 .
+
+n4ind:279 n4sch:CONTAINS n4ind:280, n4ind:281;
+  n4sch:RELATED_TO n4ind:278 .
+
+n4ind:282 n4sch:CONTAINS n4ind:283, n4ind:284, n4ind:285, n4ind:286 .
+
+n4ind:287 n4sch:CONTAINS n4ind:288, n4ind:292, n4ind:302, n4ind:321, n4ind:343, n4ind:354,
+    n4ind:357, n4ind:360, n4ind:361, n4ind:362, n4ind:363, n4ind:364, n4ind:365, n4ind:366,
+    n4ind:367, n4ind:368, n4ind:369, n4ind:373, n4ind:377 .
+
+n4ind:288 n4sch:CONTAINS n4ind:289, n4ind:290, n4ind:291 .
+
+n4ind:289 n4sch:RELATED_TO n4ind:129 .
+
+n4ind:292 n4sch:CONTAINS n4ind:293, n4ind:294, n4ind:295 .
+
+n4ind:295 n4sch:CONTAINS n4ind:296, n4ind:297, n4ind:298 .
+
+n4ind:296 n4sch:RELATED_TO n4ind:299, n4ind:101 .
+
+n4ind:297 n4sch:RELATED_TO n4ind:300, n4ind:296 .
+
+n4ind:298 n4sch:RELATED_TO n4ind:301 .
+
+n4ind:302 n4sch:CONTAINS n4ind:303, n4ind:304, n4ind:305, n4ind:310, n4ind:311, n4ind:314,
+    n4ind:315, n4ind:316 .
+
+n4ind:303 n4sch:CONTAINS n4ind:317, n4ind:318 .
+
+n4ind:305 n4sch:CONTAINS n4ind:306, n4ind:307, n4ind:308, n4ind:309 .
+
+n4ind:311 n4sch:CONTAINS n4ind:312, n4ind:313 .
+
+n4ind:318 n4sch:RELATED_TO n4ind:304 .
+
+n4ind:306 n4sch:RELATED_TO n4ind:319, n4ind:320 .
+
+n4ind:307 n4sch:RELATED_TO n4ind:319 .
+
+n4ind:321 n4sch:CONTAINS n4ind:322, n4ind:325, n4ind:326, n4ind:331, n4ind:334, n4ind:335,
+    n4ind:340, n4ind:341 .
+
+n4ind:322 n4sch:CONTAINS n4ind:323, n4ind:324 .
+
+n4ind:326 n4sch:CONTAINS n4ind:327, n4ind:328, n4ind:329, n4ind:330;
+  n4sch:RELATED_TO n4ind:101, n4ind:302 .
+
+n4ind:331 n4sch:CONTAINS n4ind:332, n4ind:333 .
+
+n4ind:323 n4sch:RELATED_TO n4ind:304 .
+
+n4ind:325 n4sch:RELATED_TO n4ind:304 .
+
+n4ind:329 n4sch:RELATED_TO n4ind:342 .
+
+n4ind:330 n4sch:RELATED_TO n4ind:342 .
