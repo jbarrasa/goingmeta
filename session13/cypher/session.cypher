@@ -2,14 +2,14 @@
 // Populate the db with the network topology dataset (in data folder)
 
 // Create devices
-load csv with headers from "file:///data/devices.csv" as row
+load csv with headers from "https://raw.githubusercontent.com/jbarrasa/goingmeta/main/session13/data/devices.csv" as row
 create (d:Device) set d = row
 
 // add references to link with telemetry data in time series DB
 MATCH (d:Device) set d.external_id = tointeger(substring(d.neId,1))
 
 // Create links
-load csv with headers from "file:///data/links.csv" as row
+load csv with headers from "https://raw.githubusercontent.com/jbarrasa/goingmeta/main/session13/data/links.csv" as row
 match (from:Device { neId : row.from })
 match (to:Device { neId : row.to })
 merge (from)-[l:link]->(to) set l.capacity = row.capacity, l.linkId = row.linkId
