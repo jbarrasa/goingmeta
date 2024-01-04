@@ -269,18 +269,6 @@ n4ind:70 a n4sch:Embeddable, n4sch:Clause;
   n4sch:content "is unencumbered by any third-party rights and is at the disposal of the deposit guarantee scheme";
   n4sch:clause "b" .
 
-n4ind:71 a n4sch:Embeddable, n4sch:Clause;
-  n4sch:content "the competent authority has determined that, for the time being, the credit institution concerned appears to be unable, for reasons which are directly related to its financial circumstances, to repay the deposit and has no current prospect of being able to do so";
-  n4sch:clause "a" .
-
-n4ind:72 a n4sch:Embeddable, n4sch:Clause;
-  n4sch:content "a court has appointed a liquidator or examiner to the credit institution, or";
-  n4sch:clause "b" .
-
-n4ind:73 a n4sch:Clause, n4sch:Embeddable;
-  n4sch:content "a court has made, for reasons which are directly related to the credit institution's financial circumstances, any other ruling that has the effect of suspending depositors' ability to make claims against it";
-  n4sch:clause "c" .
-
 n4ind:74 a n4sch:Section;
   n4sch:id "9" .
 
@@ -1806,7 +1794,7 @@ n4ind:46 n4sch:CONTAINS n4ind:67, n4ind:68, n4ind:202, n4ind:203 .
 
 n4ind:50 n4sch:CONTAINS n4ind:69, n4ind:70, n4ind:204, n4ind:205 .
 
-n4ind:54 n4sch:CONTAINS n4ind:71, n4ind:72, n4ind:73, n4ind:206, n4ind:207, n4ind:208 .
+n4ind:54 n4sch:CONTAINS n4ind:206, n4ind:207, n4ind:208 .
 
 n4ind:57 n4sch:RELATED_TO n4ind:74 .
 
