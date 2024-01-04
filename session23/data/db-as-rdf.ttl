@@ -225,18 +225,6 @@ n4ind:56 a n4sch:Embeddable, n4sch:Definition;
   n4sch:term "working day";
   n4sch:definition "means a day which is not a Saturday, Sunday or a public holiday in the State" .
 
-n4ind:57 a n4sch:Clause, n4sch:Embeddable;
-  n4sch:content "in the case of a bank, a bank authorised, or deemed to be authorised, by the European Central Bank on application therefor under section 9 of the Act of 1971";
-  n4sch:clause "a" .
-
-n4ind:58 a n4sch:Clause, n4sch:Embeddable;
-  n4sch:clause "b";
-  n4sch:content "in the case of a building society, a building society authorised, or deemed to be authorised, by the European Central Bank on application therefor under section 17 of the Building Societies Act (No. 17 of 1989), or" .
-
-n4ind:59 a n4sch:Embeddable, n4sch:Clause;
-  n4sch:clause "c";
-  n4sch:content "in the case of a credit union, a credit union registered within the meaning of the Credit Union Act 1997 (No. 15 of 1997) or deemed to be so registered by virtue of section 5(3) of that Act" .
-
 n4ind:60 a n4sch:Embeddable, n4sch:Clause;
   n4sch:clause "a";
   n4sch:content "the authority designated under Regulation 4 of the European Union (Capital Requirements) Regulations 2014 (S.I. No. 158 of 2014), or" .
@@ -1806,7 +1794,7 @@ n4ind:21 n4sch:CONTAINS n4ind:23, n4ind:24, n4ind:25, n4ind:26, n4ind:27, n4ind:
     n4ind:47, n4ind:48, n4ind:49, n4ind:50, n4ind:51, n4ind:52, n4ind:53, n4ind:54, n4ind:55,
     n4ind:56 .
 
-n4ind:25 n4sch:CONTAINS n4ind:57, n4ind:58, n4ind:59, n4ind:192, n4ind:193, n4ind:194 .
+n4ind:25 n4sch:CONTAINS n4ind:192, n4ind:193, n4ind:194 .
 
 n4ind:30 n4sch:CONTAINS n4ind:60, n4ind:61, n4ind:200, n4ind:201 .
 
