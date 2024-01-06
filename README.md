@@ -39,3 +39,8 @@ We will use this repo to share all resources used in the sessions. Give them a t
 | 22  | Nov 7 | RAG with Knowledge Graphs  |`LLM` `Semantic Search` `Python` `Vector Index`| [📺](https://www.youtube.com/watch?v=9DxwgIKVSHY) | [💻](https://github.com/jbarrasa/goingmeta/tree/main/session22) |
 | 23  | Dec 6 | Advanced RAG patterns with Knowledge Graphs  |`LLM` `Semantic Search` `Python` `Vector Index` `Streamlit`| [📺](https://www.youtube.com/watch?v=E_JO4-2D5Xs) | [💻](https://github.com/jbarrasa/goingmeta/tree/main/session23) |
 
+## 2024 sessions
+
+| #  | broadcast | title |tags| recording  | code |
+|---:|:-----:| -----:|:---------:|:--------------------------:|:---:|
+| 24  | Jan 4 | KG+LLM: Ontology-driven RAG patterns |`Python` `Ontology` `Langchain`| [📺](https://www.youtube.com/watch?v=5_WXr0GtVas) | [💻](https://github.com/jbarrasa/goingmeta/tree/main/session24) |
