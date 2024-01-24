@@ -27,15 +27,15 @@ def cat_instances(cat_info):
     print(','.join(query_parts))
     return neo.run_cypher(','.join(query_parts), params={ "name": cat_info['category']['name'] })
 
-with st.expander("DB details"):
-    url = st.text_input('neo4j', 'neo4j://ip_address:7687')
-    usr = st.text_input('user', 'your_user')
-    pwd = st.text_input('password', 'your_password')
-    dbname = st.text_input('database', 'database_name')
+with st.expander("DB connection details"):
+    url = st.text_input('neo4j', '')
+    usr = st.text_input('user', '')
+    pwd = st.text_input('password', '')
+    dbname = st.text_input('database', '')
 
 st.header('Semantic Explorer')
 
-if (url and usr and pwd and dbname):
+if (url!='' and usr!='' and pwd!='' and dbname!=''):
     neo = connect(url, usr, pwd, dbname)
 
     cats = list_categories()
