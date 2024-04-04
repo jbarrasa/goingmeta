@@ -1,0 +1,177 @@
+{
+  "dataModel" : {
+    "graphModel" : {
+      "relationshipSchemas" : {
+        "http://data.world/schema/insurance/Policyhttp://data.world/schema/insurance/hasPolicyHolderhttp://data.world/schema/insurance/PolicyHolder" : {
+          "sourceNodeSchema" : "http://data.world/schema/insurance/Policy",
+          "targetNodeSchema" : "http://data.world/schema/insurance/PolicyHolder",
+          "type" : "hasPolicyHolder",
+          "properties" : [ ]
+        },
+        "http://data.world/schema/insurance/Policyhttp://data.world/schema/insurance/soldByAgenthttp://data.world/schema/insurance/Agent" : {
+          "sourceNodeSchema" : "http://data.world/schema/insurance/Policy",
+          "targetNodeSchema" : "http://data.world/schema/insurance/Agent",
+          "type" : "soldByAgent",
+          "properties" : [ ]
+        }
+      },
+      "nodeSchemas" : {
+        "http://data.world/schema/insurance/Agent" : {
+          "labelProperties" : [ ],
+          "label" : "Agent",
+          "additionLabels" : [ ],
+          "properties" : [ {
+            "identifier" : "neo4j://graph.schema#uri",
+            "property" : "uri",
+            "type" : "string"
+          }, {
+            "identifier" : "http://data.world/schema/insurance/agentId",
+            "property" : "agentId",
+            "type" : "string"
+          }, {
+            "identifier" : "http://www.w3.org/2000/01/rdf-schema#comment",
+            "property" : "comment",
+            "type" : "string"
+          }, {
+            "identifier" : "http://www.w3.org/2000/01/rdf-schema#label",
+            "property" : "label",
+            "type" : "string"
+          } ],
+          "key" : {
+            "name" : "",
+            "properties" : [ ]
+          }
+        },
+        "http://data.world/schema/insurance/Policy" : {
+          "labelProperties" : [ ],
+          "label" : "Policy",
+          "additionLabels" : [ ],
+          "properties" : [ {
+            "identifier" : "neo4j://graph.schema#uri",
+            "property" : "uri",
+            "type" : "string"
+          }, {
+            "identifier" : "http://www.w3.org/2000/01/rdf-schema#comment",
+            "property" : "comment",
+            "type" : "string"
+          }, {
+            "identifier" : "http://www.w3.org/2000/01/rdf-schema#label",
+            "property" : "label",
+            "type" : "string"
+          }, {
+            "identifier" : "http://data.world/schema/insurance/policyEffectiveDate",
+            "property" : "policyEffectiveDate",
+            "type" : "string"
+          }, {
+            "identifier" : "http://data.world/schema/insurance/policyExpirationDate",
+            "property" : "policyExpirationDate",
+            "type" : "string"
+          }, {
+            "identifier" : "http://data.world/schema/insurance/policyNumber",
+            "property" : "policyNumber",
+            "type" : "string"
+          } ],
+          "key" : {
+            "name" : "",
+            "properties" : [ ]
+          }
+        },
+        "http://data.world/schema/insurance/PolicyHolder" : {
+          "labelProperties" : [ ],
+          "label" : "PolicyHolder",
+          "additionLabels" : [ ],
+          "properties" : [ {
+            "identifier" : "http://data.world/schema/insurance/policyHolderId",
+            "property" : "policyHolderId",
+            "type" : "string"
+          }, {
+            "identifier" : "neo4j://graph.schema#uri",
+            "property" : "uri",
+            "type" : "string"
+          }, {
+            "identifier" : "http://www.w3.org/2000/01/rdf-schema#comment",
+            "property" : "comment",
+            "type" : "string"
+          }, {
+            "identifier" : "http://www.w3.org/2000/01/rdf-schema#label",
+            "property" : "label",
+            "type" : "string"
+          } ],
+          "key" : {
+            "name" : "",
+            "properties" : [ ]
+          }
+        }
+      }
+    },
+    "mappingModel" : {
+      "relationshipMappings" : {
+        "http://data.world/schema/insurance/Policyhttp://data.world/schema/insurance/hasPolicyHolderhttp://data.world/schema/insurance/PolicyHolder" : {
+          "sourceMappings" : [ ],
+          "mappings" : [ ],
+          "targetMappings" : [ ],
+          "relationshipSchema" : "http://data.world/schema/insurance/Policyhttp://data.world/schema/insurance/hasPolicyHolderhttp://data.world/schema/insurance/PolicyHolder"
+        },
+        "http://data.world/schema/insurance/Policyhttp://data.world/schema/insurance/soldByAgenthttp://data.world/schema/insurance/Agent" : {
+          "sourceMappings" : [ ],
+          "mappings" : [ ],
+          "targetMappings" : [ ],
+          "relationshipSchema" : "http://data.world/schema/insurance/Policyhttp://data.world/schema/insurance/soldByAgenthttp://data.world/schema/insurance/Agent"
+        }
+      },
+      "nodeMappings" : {
+        "http://data.world/schema/insurance/Agent" : {
+          "mappings" : [ ],
+          "nodeSchema" : "http://data.world/schema/insurance/Agent"
+        },
+        "http://data.world/schema/insurance/Policy" : {
+          "mappings" : [ ],
+          "nodeSchema" : "http://data.world/schema/insurance/Policy"
+        },
+        "http://data.world/schema/insurance/PolicyHolder" : {
+          "mappings" : [ ],
+          "nodeSchema" : "http://data.world/schema/insurance/PolicyHolder"
+        }
+      }
+    },
+    "fileModel" : {
+      "fileSchemas" : { }
+    }
+  },
+  "version" : "0.1.1-beta.0",
+  "graph" : {
+    "relationships" : [ {
+      "toId" : "http://data.world/schema/insurance/PolicyHolder",
+      "id" : "http://data.world/schema/insurance/Policyhttp://data.world/schema/insurance/hasPolicyHolderhttp://data.world/schema/insurance/PolicyHolder",
+      "type" : "hasPolicyHolder",
+      "fromId" : "http://data.world/schema/insurance/Policy"
+    }, {
+      "toId" : "http://data.world/schema/insurance/Agent",
+      "id" : "http://data.world/schema/insurance/Policyhttp://data.world/schema/insurance/soldByAgenthttp://data.world/schema/insurance/Agent",
+      "type" : "soldByAgent",
+      "fromId" : "http://data.world/schema/insurance/Policy"
+    } ],
+    "nodes" : [ {
+      "caption" : "Agent",
+      "id" : "http://data.world/schema/insurance/Agent",
+      "position" : {
+        "x" : -400,
+        "y" : 600
+      }
+    }, {
+      "caption" : "Policy",
+      "id" : "http://data.world/schema/insurance/Policy",
+      "position" : {
+        "x" : 800,
+        "y" : 600
+      }
+    }, {
+      "caption" : "PolicyHolder",
+      "id" : "http://data.world/schema/insurance/PolicyHolder",
+      "position" : {
+        "x" : -400,
+        "y" : 1800
+      }
+    } ]
+  }
+}
