@@ -46,4 +46,5 @@ We will use this repo to share all resources used in the sessions. Give them a t
 | 24  | Jan 4 | KG+LLM: Ontology-driven RAG patterns |`Python` `Ontology` `Langchain` `Vector Index` `Cypher`| [📺](https://www.youtube.com/watch?v=5_WXr0GtVas) | [💻](https://github.com/jbarrasa/goingmeta/tree/main/session24) |
 | 25  | Feb 5 | LLMs for automated KG construction | `LLM` `Python` `OpenAI` `CompletionsAPI` `Kaggle` `Modelling`| [📺](https://www.youtube.com/watch?v=ViHV16ly-qs) | [💻](https://github.com/jbarrasa/goingmeta/tree/main/session25) |
 | 26  | Mar 5 | Unpicking the data.world Benchmark on the Role of KGs in LLM QA over relational data|`Benchmark` `SPARQL` `OWL` `LLM` `Python` `R2RML` `Semantic Layer` | [📺](https://www.youtube.com/watch?v=ReRH53amZ4M) | [💻](https://github.com/jbarrasa/goingmeta/tree/main/session26) |
-| 27  | Apr 2 | TBD | | [📺](#) | [💻](#) |
+| 27  | Apr 2 | Building a Reflection Agent with LangGraph |`LangChain` `LangGraph` `Python` `LLM` `Modelling` | [📺](https://www.youtube.com/watch?v=Sra-1xhNn28) | [💻](https://github.com/jbarrasa/goingmeta/tree/main/session27) |
+| 28  | May 7 | TBD | | [📺](#) | [💻](#) |
