@@ -176,7 +176,7 @@ is explicit and part of our data, as it lives in the graph.
 
 Semantics means "meaning". Meaning can be implicit in the head of the developers or we can try to make bits of it
 explicit and use it both programmatically for inference but also for describing our data
-and if we get to aggree with a community of users... (at the department or at
+and if we get to agree with a community of users... (at the department or at
 the enterprise level...) to facilitate interoperability by creating canonical models. Data contracts.
 
 
