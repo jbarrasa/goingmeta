@@ -6,7 +6,9 @@ Streaming on Twitch and Youtube Live.
 
 We will use this repo to share all resources used in the sessions. Give them a try and give us your feedback!
 
-## 2022 sessions
+## SEASON 1
+
+### 2022 sessions
 
 | #  | broadcast | title |tags| recording  | code |
 |---:|:-----:| -----:|:---------:|:--------------------------:|:---:|
@@ -22,7 +24,7 @@ We will use this repo to share all resources used in the sessions. Give them a t
 | 10  | Nov 1 | SPARQL based integrations |`DBPedia` `Cypher` `SPARQL`| [📺](https://www.youtube.com/watch?v=nG62SzxOBJc) | [💻](https://github.com/jbarrasa/goingmeta/tree/main/session10) |
 | 11  | Dec 6 | Graph data quality with graph expectations |`Python` `Data Quality` `SHACL`| [📺](https://www.youtube.com/watch?v=JrBOvdVkjU4) | [💻](https://github.com/jbarrasa/goingmeta/tree/main/session11) |
 
-## 2023 sessions
+### 2023 sessions
 
 | #  | broadcast | title |tags| recording  | code |
 |---:|:-----:| -----:|:---------:|:--------------------------:|:---:|
@@ -39,7 +41,7 @@ We will use this repo to share all resources used in the sessions. Give them a t
 | 22  | Nov 7 | RAG with Knowledge Graphs  |`LLM` `Semantic Search` `Python` `Vector Index`| [📺](https://www.youtube.com/watch?v=9DxwgIKVSHY) | [💻](https://github.com/jbarrasa/goingmeta/tree/main/session22) |
 | 23  | Dec 6 | Advanced RAG patterns with Knowledge Graphs  |`LLM` `Semantic Search` `Python` `Vector Index` `Streamlit`| [📺](https://www.youtube.com/watch?v=E_JO4-2D5Xs) | [💻](https://github.com/jbarrasa/goingmeta/tree/main/session23) |
 
-## 2024 sessions
+### 2024 sessions
 
 | #  | broadcast | title |tags| recording  | code |
 |---:|:-----:| -----:|:---------:|:--------------------------:|:---:|
@@ -47,4 +49,13 @@ We will use this repo to share all resources used in the sessions. Give them a t
 | 25  | Feb 5 | LLMs for automated KG construction | `LLM` `Python` `OpenAI` `CompletionsAPI` `Kaggle` `Modelling`| [📺](https://www.youtube.com/watch?v=ViHV16ly-qs) | [💻](https://github.com/jbarrasa/goingmeta/tree/main/session25) |
 | 26  | Mar 5 | Unpicking the data.world Benchmark on the Role of KGs in LLM QA over relational data|`Benchmark` `SPARQL` `OWL` `LLM` `Python` `R2RML` `Semantic Layer` | [📺](https://www.youtube.com/watch?v=ReRH53amZ4M) | [💻](https://github.com/jbarrasa/goingmeta/tree/main/session26) |
 | 27  | Apr 2 | Building a Reflection Agent with LangGraph |`LangChain` `LangGraph` `Python` `LLM` `Modelling` | [📺](https://www.youtube.com/watch?v=Sra-1xhNn28) | [💻](https://github.com/jbarrasa/goingmeta/tree/main/session27) |
-| 28  | Sep 1 | TBD | | [📺](#) | [💻](#) |
+
+
+## SEASON 2
+
+### 2024 sessions
+
+| #  | broadcast | title |tags| recording  | code |
+|---:|:-----:| -----:|:---------:|:--------------------------:|:---:|
+| 1  | Sep 3 | Using Ontologies to Guide Knowledge Graph Creation from Unstructured Data |`LLM` `Ontology` `Knowledge Garph Builder` `Cypher` `SHACL`| [📺](https://www.youtube.com/watch?v=RYuw4oq0G84) | [💻](https://github.com/jbarrasa/goingmeta/tree/main/session28) |
+| 2  | Oct 1 | TBD | | [📺](#) | [💻](#) |
