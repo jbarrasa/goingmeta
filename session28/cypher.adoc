@@ -1,0 +1,102 @@
+## The dataset: 
+
+We loaded a bunch of pages from the Blue Plaques website (https://www.english-heritage.org.uk/visit/blue-plaques/) using the KG Builder app (https://llm-graph-builder.neo4jlabs.com/).
+----
+https://www.english-heritage.org.uk/visit/blue-plaques/george-frideric-handel/
+https://www.english-heritage.org.uk/visit/blue-plaques/frederic-chopin/
+https://www.english-heritage.org.uk/visit/blue-plaques/felix-mendelssohn/
+https://www.english-heritage.org.uk/visit/blue-plaques/wolfgang-amadeus-mozart/
+https://www.english-heritage.org.uk/visit/blue-plaques/hector-berlioz/
+https://www.english-heritage.org.uk/visit/blue-plaques/jimi-hendrix/
+https://www.english-heritage.org.uk/visit/blue-plaques/john-lennon/
+----
+
+## The Ontology (schema.org)
+
+We manually entered the ontology elements (classes and object properties from schema.org) in the "Graph Enhancement" section of the KG Builder app.
+The following terms were used:
+
+* Labels: `GovernmentOrganization`, `PostalAddress`, `MusicComposition`, `Person`
+* Relationships: `erected_plaque_at`, `author`
+
+## The guardrails (SHACL)
+
+The generated KG will not be perfect so we'll need to add some constraints to ensure the result is as expected.
+
+### SHACL
+[source, Turtle]
+----
+@prefix ex: <http://example.neo4j.com/graphvalidation#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix neo4j: <neo4j://graph.schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+ex:PersShape a sh:NodeShape ;
+  sh:targetClass neo4j:Person ;
+  sh:property [
+    sh:path neo4j:AUTHOR ;
+    sh:class neo4j:Musiccomposition ;
+  ];
+.
+
+ex:govShape a sh:NodeShape ;
+  sh:targetClass neo4j:Governmentorganization ;
+  sh:property [
+    sh:path neo4j:ERECTED_PLAQUE_AT ;
+    sh:class neo4j:Postaladdress ;
+  ];
+.
+----
+We can load the SHACL shapes using the `n10s.validation.shacl.import.inline` procedure
+
+[source,python]
+----
+call n10s.validation.shacl.import.inline(' ...the SHACL here...','Turtle')
+----
+
+The violations of the constraints are detected by calling `n10s.validation.shacl.validate`
+
+[source, python]
+----
+call n10s.validation.shacl.validate()
+----
+
+And then we can fix the errors with the relevant cypher
+
+[source,python]
+----
+match (n)-[r:AUTHOR]->(a) 
+where id(n) = 135 and not a:Musiccomposition
+delete r
+----
+
+## Exporting the graph as RDF
+
+In order to do that, we need to define for each Neo4j schema element the mappings to the corresponding schema.org vocabulary element (Class, Property, etc).
+
+[source,python]
+----
+CALL n10s.nsprefixes.add("sch","http://schema.org/");
+CALL n10s.nsprefixes.add("jbext","http://jbextensions.schema/");
+CALL n10s.nsprefixes.add("rdfs","http://www.w3.org/2000/01/rdf-schema#");
+
+CALL n10s.mapping.add("http://schema.org/GovernmentOrganization", "Governmentorganization");
+CALL n10s.mapping.add("http://schema.org/PostalAddress", "Postaladdress");
+CALL n10s.mapping.add("http://schema.org/MusicComposition", "Musiccomposition");
+CALL n10s.mapping.add("http://schema.org/Person", "Person");
+
+CALL n10s.mapping.add("http://www.w3.org/2000/01/rdf-schema#label", "id");
+CALL n10s.mapping.add("http://www.w3.org/2000/01/rdf-schema#comment", "description");
+
+CALL n10s.mapping.add("http://schema.org/author", "AUTHOR");
+CALL n10s.mapping.add("http://jbextensions.schema/erectedPlaqueAt", "ERECTED_PLAQUE_AT");
+----
+
+And once that's done we get an RDF serialisation through the RDF endpoint
+
+[source,python]
+----
+:post /rdf/neo4j/cypher
+{ "cypher" : "match subgraph = (n)-[:AUTHOR]->() where id(n) = 135 return subgraph", "format" :  "N-Triples"}
+----
