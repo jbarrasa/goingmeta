@@ -1,4 +1,4 @@
-## The dataset: 
+## The dataset 
 
 We loaded a bunch of pages from the Blue Plaques website (https://www.english-heritage.org.uk/visit/blue-plaques/) using the KG Builder app (https://llm-graph-builder.neo4jlabs.com/).
 ----
