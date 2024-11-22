@@ -1,0 +1,138 @@
+@prefix : <http://voc.neo4j.com/contract#/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://voc.neo4j.com/contract#/> .
+
+<http://voc.neo4j.com/contract#> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://voc.neo4j.com/contract#GOVERNED_BY_LAW
+:GOVERNED_BY_LAW rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Agreement ;
+                 rdfs:range :Country .
+
+
+###  http://voc.neo4j.com/contract#HAS_CLAUSE
+:HAS_CLAUSE rdf:type owl:ObjectProperty ;
+            rdfs:domain :Agreement ;
+            rdfs:range :ContractClause .
+
+
+###  http://voc.neo4j.com/contract#HAS_EXCERPT
+:HAS_EXCERPT rdf:type owl:ObjectProperty ;
+             rdfs:domain :ContractClause ;
+             rdfs:range :Excerpt .
+
+
+###  http://voc.neo4j.com/contract#HAS_TYPE
+:HAS_TYPE rdf:type owl:ObjectProperty ;
+          rdfs:domain :ContractClause ;
+          rdfs:range :ClauseType .
+
+
+###  http://voc.neo4j.com/contract#INCORPORATED_IN
+:INCORPORATED_IN rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Organization ;
+                 rdfs:range :Country .
+
+
+###  http://voc.neo4j.com/contract#IS_PARTY_TO
+:IS_PARTY_TO rdf:type owl:ObjectProperty ;
+             rdfs:domain :Organization ;
+             rdfs:range :Agreement .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://voc.neo4j.com/contract#agreement_type
+:agreement_type rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Agreement ;
+                rdfs:range xsd:string .
+
+
+###  http://voc.neo4j.com/contract#contract_id
+:contract_id rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Agreement ;
+             rdfs:range xsd:string .
+
+
+###  http://voc.neo4j.com/contract#effective_date
+:effective_date rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Agreement ;
+                rdfs:range xsd:dateTime .
+
+
+###  http://voc.neo4j.com/contract#expiration_date
+:expiration_date rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Agreement ;
+                 rdfs:range xsd:dateTime .
+
+
+###  http://voc.neo4j.com/contract#name
+:name rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Agreement ;
+      rdfs:range xsd:string .
+
+
+###  http://voc.neo4j.com/contract#renewal_term
+:renewal_term rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Agreement ;
+              rdfs:range xsd:string .
+
+
+###  http://voc.neo4j.com/contract#text
+:text rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Excerpt ;
+      rdfs:range xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://voc.neo4j.com/contract#Agreement
+:Agreement rdf:type owl:Class ;
+           rdfs:comment "Represents a formalized contract or understanding between parties that outlines terms and conditions" .
+
+
+###  http://voc.neo4j.com/contract#ClauseType
+:ClauseType rdf:type owl:Class ;
+            rdfs:comment """Defines the classification or category of a clause within an agreement. 
+The only Contract Clause types are: Competitive Restriction Exception, Non-Compete, Exclusivity, No-Solicit Of Customers,
+No-Solicit Of Employees, Non-Disparagement, Termination For Convenience, Rofr/Rofo/Rofn, Change Of Control, 
+Anti-Assignment, Revenue/Profit Sharing, Price Restrictions, Minimum Commitment,Volume Restriction, 
+IP Ownership Assignment, Joint IP Ownership, License grant, Non-Transferable License, 
+Affiliate License-Licensor, Affiliate License-Licensee,Unlimited/All-You-Can-Eat-License,Irrevocable Or Perpetual License, 
+Source Code Escrow, Post-Termination Services, Audit Rights, Uncapped Liability, Cap On Liability, Liquidated Damages, 
+Warranty Duration, Insurance, Covenant Not To Sue, Third Party Beneficiary.""" .
+
+
+###  http://voc.neo4j.com/contract#ContractClause
+:ContractClause rdf:type owl:Class ;
+                rdfs:comment "Specifies a particular provision or section in an agreement detailing specific terms, rights, or obligations" .
+
+
+###  http://voc.neo4j.com/contract#Country
+:Country rdf:type owl:Class ;
+         rdfs:comment "Represents a sovereign state or region, often used to indicate jurisdiction or incorporation location" .
+
+
+###  http://voc.neo4j.com/contract#Excerpt
+:Excerpt rdf:type owl:Class ;
+         rdfs:comment "Contains a specific textual segment or passage taken from a larger clause or document for reference" .
+
+
+###  http://voc.neo4j.com/contract#Organization
+:Organization rdf:type owl:Class ;
+              rdfs:comment "Denotes a legal entity, such as a company or institution, involved in agreements or other interactions" .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
