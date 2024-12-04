@@ -1,7 +1,7 @@
 :params key => ("<insert-key-here>")
 
 // Load articles from CSV file
-LOAD CSV WITH HEADERS FROM 'https://raw.githubusercontent.com/jbarrasa/goingmeta/main/session2/resources/devto-articles.csv' AS row
+LOAD CSV WITH HEADERS FROM 'https://raw.githubusercontent.com/jbarrasa/goingmeta/main/session02/resources/devto-articles.csv' AS row
 CREATE (a:Article { uri: row.uri})
 SET a.title = row.title, a.body = row.body, a.datetime = datetime(row.date);
 
@@ -11,7 +11,7 @@ CREATE CONSTRAINT n10s_unique_uri ON (r:Resource) ASSERT r.uri IS UNIQUE;
 
 call n10s.graphconfig.init({ handleVocabUris: "IGNORE", classLabel: "Concept", subClassOfRel: "broader"});
 
-call n10s.skos.import.fetch("https://raw.githubusercontent.com/jbarrasa/goingmeta/main/session2/resources/goingmeta-skos.ttl","Turtle");
+call n10s.skos.import.fetch("https://raw.githubusercontent.com/jbarrasa/goingmeta/main/session02/resources/goingmeta-skos.ttl","Turtle");
 
 // Remove redundant 'broader' relationships (from Wikidata extract)
 match (s:Concept)-[shortcut:broader]->(:Concept)<-[:broader*2..]-(s)

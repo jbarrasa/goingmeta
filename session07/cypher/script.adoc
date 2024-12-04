@@ -62,7 +62,7 @@ call n10s.graphconfig.init({ handleVocabUris: "IGNORE" , keepLangTag: true , han
 
 [source, python]
 ----
-call n10s.rdf.import.fetch('https://raw.githubusercontent.com/jbarrasa/goingmeta/main/session7/ontos/movies-annotated.ttl','Turtle');
+call n10s.rdf.import.fetch('https://raw.githubusercontent.com/jbarrasa/goingmeta/main/session07/ontos/movies-annotated.ttl','Turtle');
 ----
 
 ### Let's have a look at the onto and see how patterns are stored with their speech style tag
