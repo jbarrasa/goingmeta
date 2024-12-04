@@ -65,4 +65,6 @@ We will use this repo to share all resources used in the sessions. Give them a t
 
 ### 2025 sessions
 
+| #  | broadcast | title |tags| recording  | code |
+|---:|:-----:| -----:|:---------:|:--------------------------:|:---:|
 | 5  | Jan 7 | tbd | | [📺](#) | [💻](#) |
