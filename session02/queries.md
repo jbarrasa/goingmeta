@@ -5,7 +5,7 @@
 
 Or you can do it manually following the [instructions in the manual](https://neo4j.com/labs/neosemantics/4.0/install/)
 
-1. Build the KG with the script in [build-kg.cypher](https://github.com/jbarrasa/goingmeta/blob/main/session2/build-kg.cypher)
+1. Build the KG with the script in [build-kg.cypher](https://github.com/jbarrasa/goingmeta/blob/main/session02/build-kg.cypher)
 2. Semantic search on the KG
   * Articles on _"NoSQL database management system"_: Directly or indirectly connected to that category.
 ```

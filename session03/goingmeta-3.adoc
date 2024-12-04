@@ -47,7 +47,7 @@ call n10s.validation.shacl.validate()
 ### Load the complete set of SHACL shapes
 [source, python]
 ----
-call n10s.validation.shacl.import.fetch("https://raw.githubusercontent.com/jbarrasa/goingmeta/main/session3/shapes/northwind-shacl.ttl","Turtle")
+call n10s.validation.shacl.import.fetch("https://raw.githubusercontent.com/jbarrasa/goingmeta/main/session03/shapes/northwind-shacl.ttl","Turtle")
 ----
 
 ### list the shapes that are active for a given node type (`Supplier`)
@@ -77,7 +77,7 @@ return focusNode, nodeType, shapeId, propertyShape, offendingValue, resultPath, 
 ### Use the severity of a shape to define property based status
 [source, python]
 ----
-call n10s.validation.shacl.import.fetch("https://raw.githubusercontent.com/jbarrasa/goingmeta/main/session3/shapes/northwind-custom-sev-shacl.ttl","Turtle")
+call n10s.validation.shacl.import.fetch("https://raw.githubusercontent.com/jbarrasa/goingmeta/main/session03/shapes/northwind-custom-sev-shacl.ttl","Turtle")
 ----
 
 ### Run the validation and aggregate by severity

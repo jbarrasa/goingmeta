@@ -5,7 +5,7 @@ CREATE INDEX ON :Genre(name);
 
 
 // import from csv
-LOAD CSV WITH HEADERS FROM "https://github.com/jbarrasa/goingmeta/raw/main/session6/data/books-2000.csv" AS row
+LOAD CSV WITH HEADERS FROM "https://github.com/jbarrasa/goingmeta/raw/main/session06/data/books-2000.csv" AS row
 MERGE (b:Book { id : row.itemUrl})
 SET b.description = row.description, b.title = row.itemTitle
 WITH b, row

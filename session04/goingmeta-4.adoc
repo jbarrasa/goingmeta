@@ -15,7 +15,7 @@ Search for a person named Clint Eastwood that directed something... then expand
 other relationships for Clint, then for the movie Unforgiven... expand the relationships
 for Gene Hackman...
 
-image::https://github.com/jbarrasa/goingmeta/raw/main/session4/img/bloom.gif[]
+image::https://github.com/jbarrasa/goingmeta/raw/main/session04/img/bloom.gif[]
 
 == Queries to surface entities: Find me all directors
 
@@ -56,7 +56,7 @@ Let's try it:
 First let's describe our data: We describe our data in terms of nodes and rels.
 And we can agree that the meaning of from and to is as follows...
 
-image::https://github.com/jbarrasa/goingmeta/raw/main/session4/img/onto-1.gif[]
+image::https://github.com/jbarrasa/goingmeta/raw/main/session04/img/onto-1.gif[]
 
 Directors are connected to movies through 'directed' relationships. Or in other words
 if something is related to something else through a 'directed' relationship then
@@ -82,7 +82,7 @@ return x ,  " is a " + from.name, y, " is a " + to.name
 That is interesting... because if we extend our model description with a definition of
 what an actor is...
 
-image::https://github.com/jbarrasa/goingmeta/raw/main/session4/img/onto-2.gif[]
+image::https://github.com/jbarrasa/goingmeta/raw/main/session04/img/onto-2.gif[]
 
 [source, python]
 ----

@@ -46,7 +46,7 @@ call n10s.onto.import.inline('
 match (n:Resource) detach delete n
 
 // and we load the new taxonomy
-call n10s.skos.import.fetch("https://github.com/jbarrasa/goingmeta/raw/main/session2/resources/goingmeta-skos.ttl","Turtle")
+call n10s.skos.import.fetch("https://github.com/jbarrasa/goingmeta/raw/main/session02/resources/goingmeta-skos.ttl","Turtle")
 
 // Look up items by "name" (wikidata identifier) to compare Neo4j (wikidata name: Q1628290) and MongoDB (wikidata name: Q1165204)
 match (a:Class { name : "Q1628290"}), (b:Class { name: "Q1165204"})

@@ -1,4 +1,4 @@
-**[Note: For instructions on how to import the British Library catalog into Neo4j https://github.com/jbarrasa/goingmeta/blob/main/session1/data_import.md[check here].]**
+**[Note: For instructions on how to import the British Library catalog into Neo4j https://github.com/jbarrasa/goingmeta/blob/main/session01/data_import.md[check here].]**
 
 
 ## How do I search for a book with ISBN 9780729412261?
