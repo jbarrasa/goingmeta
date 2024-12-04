@@ -60,5 +60,5 @@ We will use this repo to share all resources used in the sessions. Give them a t
 | 1  | Sep 3 | Using Ontologies to Guide Knowledge Graph Creation from Unstructured Data (no code) |`LLM` `Ontology` `Knowledge Garph Builder` `Cypher` `SHACL`| [📺](https://www.youtube.com/watch?v=RYuw4oq0G84) | [💻](https://github.com/jbarrasa/goingmeta/tree/main/session28) |
 | 2  | Oct 1 | Using Ontologies to Guide KG Creation from Unstructured Data (through code) |`LLM` `Ontology` `Python` `Cypher` `RDFLib`| [📺](https://www.youtube.com/watch?v=rde3ak_H70Y) | [💻](https://github.com/jbarrasa/goingmeta/tree/main/session29) |
 | 3  | Nov 20 | Blueprints for Knowledge Graph Construction from Unstructured Data | `LLM` `Ontology` `Python` `Cypher` `RDFLib` `Pydantic` `RDF`| [📺](https://youtube.com/live/cPzy61odKCg) | [💻](https://github.com/jbarrasa/goingmeta/tree/main/session30) |
-| 4  | Dec 3 | Ontology driven end-to-end GraphRAG | | [📺](https://youtube.com/live/UmP0pFFsMsE) | [💻]((https://github.com/jbarrasa/goingmeta/tree/main/session31) |
+| 4  | Dec 3 | Ontology driven end-to-end GraphRAG | | [📺](https://youtube.com/live/UmP0pFFsMsE) | [💻](https://github.com/jbarrasa/goingmeta/tree/main/session31) |
 | 5  | Jan 7 | tbd | | [📺](#) | [💻](#) |
