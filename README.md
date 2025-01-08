@@ -67,4 +67,5 @@ We will use this repo to share all resources used in the sessions. Give them a t
 
 | #  | broadcast | title |tags| recording  | code |
 |---:|:-----:| -----:|:---------:|:--------------------------:|:---:|
-| 5  | Jan 7 | One Ontology To Rule Them All: Building KG from Mixed Data | `LLM` `Ontology` `Knowledge Graph` `GraphRAG` | [📺](https://youtube.com/live/0c3WicsmLuo) | [💻](#) |
+| 5  | Jan 7 | One Ontology To Rule Them All: Building KG from Mixed Data | `LLM` `Ontology` `Knowledge Graph` `GraphRAG` | [📺](https://youtube.com/live/0c3WicsmLuo) | [💻](https://github.com/jbarrasa/goingmeta/tree/main/session32) |
+| 6  | Feb 4 | tbd | | [📺](#) | [💻](#) |
