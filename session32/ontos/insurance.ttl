@@ -1,0 +1,313 @@
+@prefix : <http://data.world/schema/insurance/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix in: <http://data.world/schema/insurance/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/spec/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@base <http://data.world/schema/insurance/> .
+
+<http://data.world/schema/insurance/> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://data.world/schema/insurance/against
+in:against rdf:type owl:ObjectProperty ;
+           rdfs:domain in:Claim ;
+           rdfs:range in:PolicyCoverageDetail ;
+           rdfs:isDefinedBy <http://data.world/schema/insurance/> ;
+           rdfs:label "against" .
+
+
+###  http://data.world/schema/insurance/hasCatastrophe
+in:hasCatastrophe rdf:type owl:ObjectProperty ;
+                  rdfs:domain in:Claim ;
+                  rdfs:range in:Catastrophe ;
+                  rdfs:isDefinedBy <http://data.world/schema/insurance/> ;
+                  rdfs:label "has catastrophe" .
+
+
+###  http://data.world/schema/insurance/hasExpensePayment
+in:hasExpensePayment rdf:type owl:ObjectProperty ;
+                     rdfs:domain in:Claim ;
+                     rdfs:range in:ExpensePayment ;
+                     rdfs:isDefinedBy <http://data.world/schema/insurance/> ;
+                     rdfs:label "has expense payment" .
+
+
+###  http://data.world/schema/insurance/hasExpenseReserve
+in:hasExpenseReserve rdf:type owl:ObjectProperty ;
+                     rdfs:domain in:Claim ;
+                     rdfs:range in:ExpenseReserve ;
+                     rdfs:isDefinedBy <http://data.world/schema/insurance/> ;
+                     rdfs:label "has expense reserve" .
+
+
+###  http://data.world/schema/insurance/hasLossPayment
+in:hasLossPayment rdf:type owl:ObjectProperty ;
+                  rdfs:domain in:Claim ;
+                  rdfs:range in:LossPayment ;
+                  rdfs:isDefinedBy <http://data.world/schema/insurance/> ;
+                  rdfs:label "has loss payment" .
+
+
+###  http://data.world/schema/insurance/hasLossReserve
+in:hasLossReserve rdf:type owl:ObjectProperty ;
+                  rdfs:domain in:Claim ;
+                  rdfs:range in:LossReserve ;
+                  rdfs:isDefinedBy <http://data.world/schema/insurance/> ;
+                  rdfs:label "has loss reserve" .
+
+
+###  http://data.world/schema/insurance/hasPolicy
+in:hasPolicy rdf:type owl:ObjectProperty ;
+             rdfs:domain in:PolicyCoverageDetail ;
+             rdfs:range in:Policy ;
+             rdfs:isDefinedBy <http://data.world/schema/insurance/> ;
+             rdfs:label "has policy" .
+
+
+###  http://data.world/schema/insurance/hasPolicyHolder
+in:hasPolicyHolder rdf:type owl:ObjectProperty ;
+                   rdfs:domain in:Policy ;
+                   rdfs:range in:PolicyHolder ;
+                   rdfs:isDefinedBy <http://data.world/schema/insurance/> ;
+                   rdfs:label "has policy holder" .
+
+
+###  http://data.world/schema/insurance/hasPremiumAmount
+in:hasPremiumAmount rdf:type owl:ObjectProperty ;
+                    rdfs:domain in:PolicyCoverageDetail ;
+                    rdfs:range in:Premium ;
+                    rdfs:isDefinedBy <http://data.world/schema/insurance/> ;
+                    rdfs:label "has premium amount" .
+
+
+###  http://data.world/schema/insurance/soldByAgent
+in:soldByAgent rdf:type owl:ObjectProperty ;
+               rdfs:domain in:Policy ;
+               rdfs:range in:Agent ;
+               rdfs:isDefinedBy <http://data.world/schema/insurance/> ;
+               rdfs:label "sold by agent" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://data.world/schema/insurance/agentId
+in:agentId rdf:type owl:DatatypeProperty ;
+           rdfs:domain in:Agent ;
+           rdfs:isDefinedBy <http://data.world/schema/insurance/> ;
+           rdfs:label "Agent ID" .
+
+
+###  http://data.world/schema/insurance/catastropheName
+in:catastropheName rdf:type owl:DatatypeProperty ;
+                   rdfs:domain in:Catastrophe ;
+                   rdfs:isDefinedBy <http://data.world/schema/insurance/> ;
+                   rdfs:label "Catastrophe Name" .
+
+
+###  http://data.world/schema/insurance/claimCloseDate
+in:claimCloseDate rdf:type owl:DatatypeProperty ;
+                  rdfs:domain in:Claim ;
+                  rdfs:range xsd:dateTime ;
+                  rdfs:isDefinedBy <http://data.world/schema/insurance/> ;
+                  rdfs:label "Claim Close Date" .
+
+
+###  http://data.world/schema/insurance/claimNumber
+in:claimNumber rdf:type owl:DatatypeProperty ;
+               rdfs:domain in:Claim ;
+               rdfs:isDefinedBy <http://data.world/schema/insurance/> ;
+               rdfs:label "Claim Number" .
+
+
+###  http://data.world/schema/insurance/claimOpenDate
+in:claimOpenDate rdf:type owl:DatatypeProperty ;
+                 rdfs:domain in:Claim ;
+                 rdfs:range xsd:dateTime ;
+                 rdfs:isDefinedBy <http://data.world/schema/insurance/> ;
+                 rdfs:label "Claim Open Date" .
+
+
+###  http://data.world/schema/insurance/expensePaymentAmount
+in:expensePaymentAmount rdf:type owl:DatatypeProperty ;
+                        rdfs:domain in:ExpensePayment ;
+                        rdfs:isDefinedBy <http://data.world/schema/insurance/> ;
+                        rdfs:label "Expense Payment Amount" .
+
+
+###  http://data.world/schema/insurance/expenseReserveAmount
+in:expenseReserveAmount rdf:type owl:DatatypeProperty ;
+                        rdfs:domain in:ExpenseReserve ;
+                        rdfs:isDefinedBy <http://data.world/schema/insurance/> ;
+                        rdfs:label "Expense Reserve Amount" .
+
+
+###  http://data.world/schema/insurance/lossPaymentAmount
+in:lossPaymentAmount rdf:type owl:DatatypeProperty ;
+                     rdfs:domain in:LossPayment ;
+                     rdfs:isDefinedBy <http://data.world/schema/insurance/> ;
+                     rdfs:label "Loss Payment Amount" .
+
+
+###  http://data.world/schema/insurance/lossReserveAmount
+in:lossReserveAmount rdf:type owl:DatatypeProperty ;
+                     rdfs:domain in:LossReserve ;
+                     rdfs:isDefinedBy <http://data.world/schema/insurance/> ;
+                     rdfs:label "Loss Reserve Amount" .
+
+
+###  http://data.world/schema/insurance/policyCoverageEffectiveDate
+in:policyCoverageEffectiveDate rdf:type owl:DatatypeProperty ;
+                               rdfs:domain in:PolicyCoverageDetail ;
+                               rdfs:range xsd:dateTime ;
+                               rdfs:isDefinedBy <http://data.world/schema/insurance/> ;
+                               rdfs:label "Policy Coverage Effective Date" .
+
+
+###  http://data.world/schema/insurance/policyCoverageExpirationDate
+in:policyCoverageExpirationDate rdf:type owl:DatatypeProperty ;
+                                rdfs:domain in:PolicyCoverageDetail ;
+                                rdfs:range xsd:dateTime ;
+                                rdfs:isDefinedBy <http://data.world/schema/insurance/> ;
+                                rdfs:label "Policy Coverage Expiration Date" .
+
+
+###  http://data.world/schema/insurance/policyEffectiveDate
+in:policyEffectiveDate rdf:type owl:DatatypeProperty ;
+                       rdfs:domain in:Policy ;
+                       rdfs:range xsd:dateTime ;
+                       rdfs:isDefinedBy <http://data.world/schema/insurance/> ;
+                       rdfs:label "Policy Effective Date" .
+
+
+###  http://data.world/schema/insurance/policyExpirationDate
+in:policyExpirationDate rdf:type owl:DatatypeProperty ;
+                        rdfs:domain in:Policy ;
+                        rdfs:range xsd:dateTime ;
+                        rdfs:isDefinedBy <http://data.world/schema/insurance/> ;
+                        rdfs:label "Policy Expiration Date" .
+
+
+###  http://data.world/schema/insurance/policyHolderId
+in:policyHolderId rdf:type owl:DatatypeProperty ;
+                  rdfs:domain in:PolicyHolder ;
+                  rdfs:isDefinedBy <http://data.world/schema/insurance/> ;
+                  rdfs:label "Policy Holder ID" .
+
+
+###  http://data.world/schema/insurance/policyNumber
+in:policyNumber rdf:type owl:DatatypeProperty ;
+                rdfs:domain in:Policy ;
+                rdfs:isDefinedBy <http://data.world/schema/insurance/> ;
+                rdfs:label "Policy Number" .
+
+
+###  http://data.world/schema/insurance/premiumAmount
+in:premiumAmount rdf:type owl:DatatypeProperty ;
+                 rdfs:domain in:Premium ;
+                 rdfs:isDefinedBy <http://data.world/schema/insurance/> ;
+                 rdfs:label "Premium Amount" .
+
+
+###  http://data.world/schema/insurance/premiumAmountMonthly
+in:premiumAmountMonthly rdf:type owl:DatatypeProperty ;
+                        rdfs:domain in:Premium ;
+                        rdfs:isDefinedBy <http://data.world/schema/insurance/> ;
+                        rdfs:label "Premium Amount Monthly" .
+
+
+###  http://data.world/schema/insurance/premiumPeriod
+in:premiumPeriod rdf:type owl:DatatypeProperty ;
+                 rdfs:domain in:Premium ;
+                 rdfs:isDefinedBy <http://data.world/schema/insurance/> ;
+                 rdfs:label "Premium Period" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://data.world/schema/insurance/Agent
+in:Agent rdf:type owl:Class ;
+         rdfs:isDefinedBy <http://data.world/schema/insurance/> ;
+         rdfs:label "Agent" .
+
+
+###  http://data.world/schema/insurance/Catastrophe
+in:Catastrophe rdf:type owl:Class ;
+               rdfs:isDefinedBy <http://data.world/schema/insurance/> ;
+               rdfs:label "Catastrophe" .
+
+
+###  http://data.world/schema/insurance/Claim
+in:Claim rdf:type owl:Class ;
+         rdfs:isDefinedBy <http://data.world/schema/insurance/> ;
+         rdfs:label "Claim" .
+
+
+###  http://data.world/schema/insurance/ExpensePayment
+in:ExpensePayment rdf:type owl:Class ;
+                  rdfs:isDefinedBy <http://data.world/schema/insurance/> ;
+                  rdfs:label "Expense Payment" .
+
+
+###  http://data.world/schema/insurance/ExpenseReserve
+in:ExpenseReserve rdf:type owl:Class ;
+                  rdfs:isDefinedBy <http://data.world/schema/insurance/> ;
+                  rdfs:label "Expense Reserve" .
+
+
+###  http://data.world/schema/insurance/LossPayment
+in:LossPayment rdf:type owl:Class ;
+               rdfs:isDefinedBy <http://data.world/schema/insurance/> ;
+               rdfs:label "Loss Payment" .
+
+
+###  http://data.world/schema/insurance/LossReserve
+in:LossReserve rdf:type owl:Class ;
+               rdfs:isDefinedBy <http://data.world/schema/insurance/> ;
+               rdfs:label "Loss Reserve" .
+
+
+###  http://data.world/schema/insurance/Policy
+in:Policy rdf:type owl:Class ;
+          rdfs:isDefinedBy <http://data.world/schema/insurance/> ;
+          rdfs:label "Policy" .
+
+
+###  http://data.world/schema/insurance/PolicyCoverageDetail
+in:PolicyCoverageDetail rdf:type owl:Class ;
+                        rdfs:isDefinedBy <http://data.world/schema/insurance/> ;
+                        rdfs:label "Policy Coverage Detail" .
+
+
+###  http://data.world/schema/insurance/PolicyHolder
+in:PolicyHolder rdf:type owl:Class ;
+                rdfs:isDefinedBy <http://data.world/schema/insurance/> ;
+                rdfs:label "Policy Holder" .
+
+
+###  http://data.world/schema/insurance/Premium
+in:Premium rdf:type owl:Class ;
+           rdfs:isDefinedBy <http://data.world/schema/insurance/> ;
+           rdfs:label "Premium" .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+<http://data.world/schema/insurance/> rdfs:comment "This ontology defines Business Concepts, Attributes, and Relationships in the insurance domain. It is inspired by OMG Property and Casualty Data Model." ;
+                                      rdfs:label "Insurance Ontology" .
+
+
+###  Generated by the OWL API (version 5.1.17) https://github.com/owlcs/owlapi/

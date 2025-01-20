@@ -1,0 +1,77 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://voc.neo4j.com/prop_1> a owl:DatatypeProperty ;
+    rdfs:label "firstName" ;
+    rdfs:domain <http://voc.neo4j.com/nl_1> ;
+    rdfs:range xsd:string .
+
+<http://voc.neo4j.com/prop_10> a owl:DatatypeProperty ;
+    rdfs:label "price" ;
+    rdfs:domain <http://voc.neo4j.com/nl_3> ;
+    rdfs:range xsd:decimal .
+
+<http://voc.neo4j.com/prop_2> a owl:DatatypeProperty ;
+    rdfs:label "familyName" ;
+    rdfs:domain <http://voc.neo4j.com/nl_1> ;
+    rdfs:range xsd:string .
+
+<http://voc.neo4j.com/prop_3> a owl:DatatypeProperty ;
+    rdfs:label "dob" ;
+    rdfs:domain <http://voc.neo4j.com/nl_1> ;
+    rdfs:range xsd:dateTime .
+
+<http://voc.neo4j.com/prop_4> a owl:DatatypeProperty ;
+    rdfs:label "title" ;
+    rdfs:domain <http://voc.neo4j.com/nl_1> ;
+    rdfs:range xsd:string .
+
+<http://voc.neo4j.com/prop_5> a owl:DatatypeProperty ;
+    rdfs:label "make" ;
+    rdfs:domain <http://voc.neo4j.com/nl_2> ;
+    rdfs:range xsd:string .
+
+<http://voc.neo4j.com/prop_6> a owl:DatatypeProperty ;
+    rdfs:label "model" ;
+    rdfs:domain <http://voc.neo4j.com/nl_2> ;
+    rdfs:range xsd:string .
+
+<http://voc.neo4j.com/prop_7> a owl:DatatypeProperty ;
+    rdfs:label "id" ;
+    rdfs:domain <http://voc.neo4j.com/nl_2> ;
+    rdfs:range xsd:string .
+
+<http://voc.neo4j.com/prop_8> a owl:DatatypeProperty ;
+    rdfs:label "cust_id" ;
+    rdfs:domain <http://voc.neo4j.com/nl_1> ;
+    rdfs:range xsd:string .
+
+<http://voc.neo4j.com/prop_9> a owl:DatatypeProperty ;
+    rdfs:label "date" ;
+    rdfs:domain <http://voc.neo4j.com/nl_3> ;
+    rdfs:range xsd:dateTime .
+
+<http://voc.neo4j.com/rt_1> a owl:ObjectProperty ;
+    rdfs:label "by_customer" ;
+    rdfs:domain <http://voc.neo4j.com/nl_3> ;
+    rdfs:range <http://voc.neo4j.com/nl_1> .
+
+<http://voc.neo4j.com/rt_2> a owl:ObjectProperty ;
+    rdfs:label "of_vehicle" ;
+    rdfs:domain <http://voc.neo4j.com/nl_3> ;
+    rdfs:range <http://voc.neo4j.com/nl_2> .
+
+<http://voc.neo4j.com/rt_3> a owl:ObjectProperty ;
+    rdfs:label "related to" ;
+    rdfs:domain <http://voc.neo4j.com/nl_3> ;
+    rdfs:range <http://voc.neo4j.com/nl_3> .
+
+<http://voc.neo4j.com/nl_2> a owl:Class ;
+    rdfs:label "Vehicle" .
+
+<http://voc.neo4j.com/nl_1> a owl:Class ;
+    rdfs:label "Customer" .
+
+<http://voc.neo4j.com/nl_3> a owl:Class ;
+    rdfs:label "Purchase" .

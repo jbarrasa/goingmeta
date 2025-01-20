@@ -1,0 +1,501 @@
+location_id,street_number,street_name,street_suffix,state,zip,city
+022beaaf-aee2-4e13-83e8-71b330d79970,2281,Jay,Point,Texas,79940,El Paso
+23a089f4-3d06-43d5-8270-30f987ba5956,657,Elgar,Junction,Maryland,20910,Silver Spring
+26798c71-5938-47e2-9f37-8c46927b665d,2,Scott,Place,California,91125,Pasadena
+4791f40b-18a7-44f8-9afd-b3062588c8d7,7,Bashford,Plaza,California,92555,Moreno Valley
+a024f1e7-962d-4077-97cd-f18f646a608c,456,Summit,Pass,Indiana,46015,Anderson
+aba40599-6ddb-410f-b3ac-2bc8c6eb30a0,6225,Birchwood,Place,California,95397,Modesto
+c75fb842-03f2-4332-b439-eeb86b54ab7e,953,Meadow Valley,Alley,Oregon,97211,Portland
+c899c3d9-f75f-4942-91e3-01e00a1e784b,8326,7th,Lane,Pennsylvania,17405,York
+41184024-4b97-4314-8ec3-5271e0ccf742,926,Lerdahl,Way,California,92405,San Bernardino
+ca94134c-1820-41c0-91a7-e9776c8bf369,814,Lukken,Point,Pennsylvania,18768,Wilkes Barre
+c5556711-2f1f-49d3-8b02-c04886712f71,8858,Jana,Hill,Oklahoma,73114,Oklahoma City
+59d8f174-f5ce-4f5c-9cec-95a4f41f0af9,549,Porter,Point,Montana,59105,Billings
+8b11c88c-2c19-4e33-836d-cdba540ad6b6,700,Jackson,Street,Virginia,23520,Norfolk
+d08c0dc2-2386-48e3-bc3d-9f4427c84855,230,Eggendart,Hill,Colorado,80525,Fort Collins
+b6cdfe58-c2cd-4880-9a66-4366a7363e7e,52,Mcbride,Way,District of Columbia,20029,Washington
+6f207368-f51d-4477-9e9f-3dc0e921d2f0,62936,Bunker Hill,Junction,Missouri,63167,Saint Louis
+e5a4d12e-cbc7-4388-a479-bb936542288a,57,Pleasure,Court,New York,10014,New York City
+ef6eba8b-c78f-4671-a7c7-2f8443799d8c,3304,Kedzie,Lane,Georgia,30130,Cumming
+6f13894e-6f03-4e64-9694-1a218aa13106,6,Grasskamp,Center,Indiana,46247,Indianapolis
+575e5f25-fde3-4982-a41c-177382b09a44,620,Rieder,Lane,Arizona,85260,Scottsdale
+9344626f-d7c8-4401-ad7f-d6c8cf8b2328,62,Butterfield,Alley,Massachusetts,2104,Boston
+a87efb24-882a-4bd1-9484-9d3e0d1144af,5,Ridgeview,Trail,Kansas,66617,Topeka
+a0338c76-da78-439e-80b8-0bdf2c47ed2f,82866,Barby,Parkway,Florida,32215,Jacksonville
+4059ec95-0dd7-4388-9be0-bda18fda411b,3868,Riverside,Lane,Virginia,23213,Richmond
+c2a26124-a7f4-40b5-8d79-103e038f603d,96,Mockingbird,Drive,Louisiana,70894,Baton Rouge
+b2318161-9db2-407b-b00e-abe660d28cb3,31389,Monterey,Circle,New York,12325,Schenectady
+f1fe05c9-6d80-4042-bc72-86f6f2e74d75,7,Hanson,Terrace,Virginia,22244,Arlington
+4bb03293-8ecb-4647-bf7c-84eaabe54d1b,6,Straubel,Avenue,Arkansas,72204,Little Rock
+f54d0563-597d-4a75-ad92-24fc0333dbd9,3041,Jackson,Center,Ohio,44310,Akron
+bd3d1cb2-c328-4607-89e9-07b464bd191b,52,Thierer,Court,Missouri,63110,Saint Louis
+0aea6627-4a5d-4e8b-9805-7d555d0e545e,87736,Lillian,Drive,Pennsylvania,19131,Philadelphia
+7c84e6cd-3760-4517-b5bf-c034d7d7aa4d,4678,Kingsford,Avenue,Georgia,30610,Athens
+deee7fb5-5fd1-4a8c-88ae-f69d8393f57b,4201,Golden Leaf,Trail,Georgia,31165,Atlanta
+227a2138-278d-4628-a0a0-f216aab055f7,783,Bartelt,Drive,Texas,78682,Round Rock
+f5fd110d-a8bf-443f-8c30-bfa5cc80178d,58,Ronald Regan,Junction,Georgia,30096,Duluth
+7a16845c-845c-484a-9619-736a550c9968,1484,Pine View,Road,Texas,78215,San Antonio
+5143e6f5-f118-4763-b82d-cd46e25f2ccb,4146,Sheridan,Pass,Georgia,30392,Atlanta
+40e9a3f8-6592-4fa3-8876-761c0e643f15,944,Tennyson,Street,New York,14652,Rochester
+3d3a8bd9-78c8-4d8a-abd3-dcb77b522d40,93,Menomonie,Plaza,Minnesota,56372,Saint Cloud
+1b59cc02-ab4b-4258-80da-d00fe70bb97c,94976,Ohio,Parkway,Washington,98175,Seattle
+dbd65620-0807-473a-899e-2f56cbfd92b4,74450,Meadow Valley,Point,Connecticut,6183,Hartford
+085f5cf7-d378-411e-9d8c-e82b6f0ef695,6699,Havey,Pass,South Carolina,29610,Greenville
+472bf93b-9814-4a86-8db5-0866ebb11567,63,Thierer,Avenue,California,91797,Pomona
+0a3c5e20-0e8e-4dca-abba-77b7660785f5,7686,Knutson,Center,New York,14263,Buffalo
+a73ca246-a8f2-4fe3-83a0-b3fc2f93df59,4536,Summerview,Drive,Nevada,89193,Las Vegas
+5f876b33-cf5b-4e6b-8cbb-c6ed32f494c3,43,Mitchell,Alley,Florida,32835,Orlando
+bfaecf0f-eddc-47d6-be32-64a06cf3e73c,691,Carberry,Street,Texas,78789,Austin
+b723e4e3-75b4-4bd2-a184-e55936b1e42f,4500,Portage,Drive,Virginia,20189,Dulles
+f9dd3c75-d2bd-48c5-bb35-d1ad6da85aaa,585,Clove,Hill,New York,14205,Buffalo
+ae2a1b7b-e15b-41a6-829f-e71f94e8a185,15125,Thierer,Way,Texas,78783,Austin
+b3cdfbf5-3625-49ea-87e5-470e65278233,8,Columbus,Alley,Florida,33731,Saint Petersburg
+1165b0d3-58d0-4f6d-bd48-ab7878658d48,834,Pankratz,Plaza,Minnesota,55103,Saint Paul
+696abd63-2a45-4c25-845d-6d780a60b2ed,6,Golden Leaf,Trail,Washington,98158,Seattle
+946f22c1-4e3f-40cd-84ae-f67fd0062677,23556,Florence,Terrace,Ohio,43231,Columbus
+d24a0cf1-ede5-4214-bfa0-6fa3debe598b,12,Corben,Lane,South Carolina,29424,Charleston
+ee3601a5-4ec3-4d26-a80e-4a3d18d424ab,863,Granby,Point,California,93907,Salinas
+cc35f7a6-56a3-4c84-a5ef-3daf272224ec,906,Brickson Park,Trail,New York,13224,Syracuse
+533924ef-084a-4859-9e46-4dd800810ec7,35,Raven,Hill,Iowa,52245,Iowa City
+c39570d3-0778-43b7-ab1a-22c1f7148dd7,4,Susan,Terrace,Texas,75037,Irving
+41e9156a-4c1a-4a64-93c4-ddc5e172adcf,32,Roth,Drive,Georgia,31217,Macon
+56a3a5bd-c49b-49ec-a401-3deece39c7d3,156,Tennessee,Hill,Virginia,23228,Richmond
+21388380-50c5-42c3-a3e2-3cff7bfe3d9f,42,Fordem,Place,Texas,88584,El Paso
+a83d54a0-5a4c-4061-8a7c-8f88f39b4fc3,4434,Messerschmidt,Road,Minnesota,56372,Saint Cloud
+8eac8fb2-e657-44d2-a030-58fca80e4710,5791,Anhalt,Street,Nebraska,68179,Omaha
+95df4c76-37c7-4a72-a191-6261e6c26567,985,Duke,Place,California,91131,Pasadena
+193c1b45-69c1-469a-b639-3fd99d541b50,58,Green Ridge,Crossing,Texas,79176,Amarillo
+849b686d-1c54-417c-8210-b58a1463e01d,4065,Cherokee,Drive,Maryland,20883,Gaithersburg
+802e798d-7966-4ecf-9920-82413b630134,7,Bobwhite,Plaza,Maryland,21747,Hagerstown
+c042aa68-f331-4474-be5b-3b7732a7520d,1402,Dahle,Circle,Texas,77075,Houston
+b66335d3-f4f8-423c-996c-99771e8ac3be,77,Weeping Birch,Point,Illinois,61614,Peoria
+6c497a5e-fe21-4c76-99cc-8b647f1e2e76,3961,Canary,Center,Florida,34981,Fort Pierce
+104ed596-c080-4149-8545-8d56a108f8ab,614,Bartelt,Point,District of Columbia,20551,Washington
+1cd2667b-322c-4fbb-9f83-9909e1503636,8765,Acker,Parkway,Texas,77346,Humble
+5afbb551-31b7-482f-9386-60452589fe47,4802,Johnson,Avenue,District of Columbia,20580,Washington
+5dd96982-b593-4d0d-9441-0a88d600545d,9,Declaration,Trail,Florida,33124,Miami
+12713adf-c8ab-4705-94fb-5fae335397ba,38,Boyd,Junction,Kentucky,40618,Frankfort
+8b08f626-5fd4-49bb-8934-831baf85bfca,6636,Warner,Terrace,District of Columbia,20016,Washington
+6f2ade49-bfb4-402d-8d8f-af8f4dee7831,4094,Bowman,Junction,Florida,33411,West Palm Beach
+1e08b3bf-9fb8-427e-a749-d52d245f4b9a,194,Tennessee,Street,Pennsylvania,15255,Pittsburgh
+02991aac-a6ce-49a0-815f-be58d614a3a0,75403,Lawn,Junction,Alabama,35815,Huntsville
+1dc3f8fd-8fd4-4a3d-a3f1-f8fe057b5a0d,20,Barnett,Crossing,Oklahoma,74141,Tulsa
+43a9e9a9-4838-4505-88f1-f016d7e93eae,11,Waywood,Way,North Dakota,58122,Fargo
+a4570fdb-26bd-4343-b3d4-73c5e0fc0a39,4,Claremont,Court,Illinois,60663,Chicago
+3c983dc0-055c-4767-a6b6-566839b236da,199,Petterle,Terrace,Minnesota,55441,Minneapolis
+81aa7ae1-56b7-4d29-9f9f-624641f7441e,4,High Crossing,Point,Connecticut,6859,Norwalk
+dace11a0-0596-44a2-b41f-69583d432b84,1,Sutherland,Road,Colorado,80126,Littleton
+df136d8e-495e-40be-b29d-7c1b5a88ff20,2433,Merrick,Park,California,94250,Sacramento
+5e3ea6d8-8d17-41bb-b0fc-caba1b83abbf,892,Dakota,Circle,California,95973,Chico
+193302a0-4e6d-46fa-bab5-e680d5e39d0f,49,Amoth,Lane,North Carolina,28225,Charlotte
+b3e27822-c083-4f24-9a4b-0f9c8d533ca8,43,Myrtle,Street,California,92424,San Bernardino
+091f3575-2c9d-4f75-ac19-029bab475a12,2836,Homewood,Road,New York,14269,Buffalo
+a7a6306b-94d5-46cd-b057-0cf58e7a1caa,56,Farragut,Drive,Iowa,50305,Des Moines
+013c45ab-16e5-4966-8b83-6ca287075783,3244,Haas,Road,Indiana,46614,South Bend
+c0ac224f-98a8-46eb-bbfe-856e9703579e,21,Summer Ridge,Junction,Illinois,60646,Chicago
+dd814bd5-f6cf-4760-b855-d4c567f1e93e,91,Scofield,Crossing,Tennessee,37205,Nashville
+50f1b3c2-2eef-4ac3-bef2-f81aa9f129fa,44,Hooker,Drive,Tennessee,38143,Memphis
+2e8ee6d2-19f4-4574-991c-d3bbbb819965,0,Shopko,Court,District of Columbia,20078,Washington
+3eaf8f56-2dee-456e-a086-50368db2e832,73,Crownhardt,Alley,Pennsylvania,17110,Harrisburg
+0e7251f9-1c35-452d-82a0-ec4db9d08896,83,Fairview,Court,Louisiana,70805,Baton Rouge
+a6c3894e-cee0-4be6-8a7a-dc8525249563,78093,Calypso,Terrace,Texas,77070,Houston
+1ba1026e-e141-47d5-bd0b-3c650126025a,932,Prentice,Parkway,Texas,78737,Austin
+e6d0bdb2-7b5d-418b-be90-0f2346711a0c,8606,Fieldstone,Road,Pennsylvania,15240,Pittsburgh
+64738e9b-328b-472a-a1b9-ff8f6d92c595,89000,Prairie Rose,Hill,New York,10160,New York City
+b0e20742-c152-45ef-a48f-a9dcc73b0677,8,Red Cloud,Pass,Connecticut,6606,Bridgeport
+85485b2b-cbb5-4f20-9fec-a840bb754e38,843,Calypso,Junction,South Carolina,29305,Spartanburg
+9922ead4-8868-4993-997f-1aee6de599ac,172,Prairie Rose,Point,Kansas,66629,Topeka
+6522487c-920c-4545-afc1-390c092fdbe6,2986,Sage,Center,Massachusetts,2203,Boston
+7ab13f6d-282f-4c7e-9fda-54ca7eb61481,74,Superior,Street,Florida,32885,Orlando
+6355c2ce-38b9-427e-b795-af7ceab6064d,1854,Ronald Regan,Plaza,Arkansas,72215,Little Rock
+3052133b-d26a-46c8-a2ca-ff7a107bfcac,7,Bowman,Point,Colorado,80951,Colorado Springs
+eb623481-df5e-41b7-8ca6-78d64ecaaeef,2,Ludington,Alley,Hawaii,96820,Honolulu
+6247f652-6923-4c8b-bb79-8e7f17e51e76,4,Maryland,Point,Pennsylvania,19120,Philadelphia
+cd928d14-fdfe-4541-804c-ee93fbecdd5c,47,South,Court,California,92662,Newport Beach
+05c06f7b-6bc0-4bd5-822e-7a16ca022c88,8382,Annamark,Pass,North Carolina,27705,Durham
+71bf748b-efd5-4ff2-af0c-c82c1d9b7b7c,33843,Bashford,Point,Alabama,35210,Birmingham
+004fb9c8-496a-45d7-8bee-1dff3175d82e,34563,Holy Cross,Park,California,94177,San Francisco
+5474d06e-2191-469a-9e12-8b790dfb1d7f,789,Anhalt,Plaza,Washington,98140,Seattle
+db7c1239-6f73-47d3-a5af-db9c6e37d73e,29,Jenna,Pass,California,93704,Fresno
+e842f7ae-4e84-49b1-a56f-42abed7498c6,0,Stang,Park,Virginia,22119,Merrifield
+864dbd98-0c71-4eb8-a0e7-074d293a78cb,3,Arizona,Crossing,California,91125,Pasadena
+3232e0db-832f-4db2-9f26-287036ac649e,7389,Springs,Avenue,Florida,32118,Daytona Beach
+66e86660-905e-4fb5-920b-1e3ecefa943b,8062,Forest,Court,Virginia,23551,Norfolk
+137cefa0-8af0-46e7-b675-62fbea72161e,52585,Washington,Hill,Alabama,36134,Montgomery
+24f9aeff-02e4-439b-8615-09a5aa0127dc,615,Petterle,Way,Michigan,48295,Detroit
+2f70370f-ac2a-4e69-acc4-16699a37be6c,90,Waywood,Lane,Tennessee,38197,Memphis
+33aa0e2f-61b3-4973-b080-6b242bc314a6,2136,Hansons,Park,California,92662,Newport Beach
+366b3687-fced-4e00-bfec-657547d8d2bb,576,Carioca,Place,Virginia,23237,Richmond
+1273b6c9-60d7-49c2-93d6-4558ee2b684b,97842,Ridgeview,Circle,Maryland,21229,Baltimore
+d5f841af-4658-4839-87b3-aa04d572b1b6,8,Green Ridge,Trail,Minnesota,55585,Monticello
+4b7ed3f2-f93a-46d3-8bb0-4074d60053f3,729,Everett,Crossing,Louisiana,71208,Monroe
+32009199-e54d-4817-a192-a023ee2fc98e,81630,Melvin,Center,Illinois,60686,Chicago
+a7bf27dd-8766-49da-a235-9695ec029ef7,637,Susan,Park,Montana,59806,Missoula
+d5d20d9b-027d-4ffa-a373-bd72f8dcfcde,45437,Ronald Regan,Parkway,Michigan,49505,Grand Rapids
+df7f77cf-873f-44db-80bd-3a8e7742c588,73,Mitchell,Drive,North Carolina,28230,Charlotte
+1f273bed-3d4c-4a39-b78c-9378325ae5d2,4,Mccormick,Court,California,95133,San Jose
+6a6344de-223e-4e78-b34f-8ec133981ee9,3,Judy,Junction,Florida,33028,Hollywood
+e60429f1-b5ba-4112-9383-9413e30c04ad,73744,Troy,Avenue,Ohio,45426,Dayton
+d231b029-9049-4f48-986e-af68a649f95c,980,Garrison,Circle,New York,11247,Brooklyn
+78b840de-42c1-4847-bdb6-4386463dde4e,414,Springview,Drive,South Carolina,29411,Charleston
+7b4ff6a8-783f-4416-a0a6-e58fc2600058,4311,Hauk,Pass,New York,10004,New York City
+b7800b72-0026-4785-b2c8-f3cc764b5a19,88,Delladonna,Circle,North Carolina,28220,Charlotte
+8daac947-8d44-4c50-b9b4-a80c67de8088,60,Loeprich,Drive,Kentucky,40215,Louisville
+fc2a6ce8-90b7-4432-88a4-a9828f64fe9c,23,Eastwood,Hill,Maryland,20883,Gaithersburg
+8f6d8f14-33de-4210-97f0-d25e1adc1a95,21,Dapin,Drive,Tennessee,37914,Knoxville
+30990712-2fd0-4119-920e-11c6a809d5a5,8360,Kropf,Terrace,Alaska,99709,Fairbanks
+575446bc-e260-44b1-af44-10ee147f77ca,839,Leroy,Lane,Ohio,45020,Hamilton
+3aa50014-816f-49d9-a74f-0c067f0e1b55,2,Banding,Trail,New York,14652,Rochester
+010f3f31-ffde-48fa-982b-10d590a90e0b,3016,Mcbride,Terrace,Alabama,35279,Birmingham
+25bf8332-8ea7-4372-9c06-b3e469d34aff,6934,Longview,Junction,Washington,98008,Bellevue
+2a45c805-5f01-4326-a476-061b0fb57f60,68,6th,Circle,Ohio,43226,Columbus
+e07909dc-2604-4b42-8847-51efb4c81ee2,68637,High Crossing,Park,Texas,78721,Austin
+70f5624f-94c7-4ab2-994d-823d18bc05b3,51038,Spenser,Court,Florida,33448,Delray Beach
+f7ba5980-b2c9-4fba-9923-9268a02bed9e,18,Southridge,Place,California,93907,Salinas
+a6931404-e157-47df-9890-e59b1cd12381,576,Bluestem,Lane,New York,13217,Syracuse
+4689a64d-3f7a-4152-a243-d712320a098e,6520,Homewood,Circle,Missouri,64082,Lees Summit
+c3064344-78f9-45a6-9c60-b3cabb63d5df,686,Fair Oaks,Place,Arizona,85035,Phoenix
+77e7f53d-436a-4c8f-bdd9-45b80d2e1149,361,Charing Cross,Court,Illinois,60078,Palatine
+e239d109-486c-4409-b2f5-7d82e6dabfa6,20528,International,Circle,Texas,76210,Denton
+4e4b1742-071b-43ef-b1df-35d76217a895,36581,Valley Edge,Hill,Georgia,30130,Cumming
+94c30b61-a045-4823-a6b8-036ccf6ba841,6,Bartelt,Place,Ohio,45228,Cincinnati
+7a0c3496-d6a2-4933-a0ad-45fd5a4f0fb9,4,Marquette,Lane,Georgia,30245,Lawrenceville
+926396f4-60e3-4a6f-9dad-f214daf59e5c,8,Talmadge,Place,Illinois,62718,Springfield
+eea7cf97-d6a3-4d11-9c5b-83f5fa2b0c72,6,Grim,Plaza,North Carolina,27157,Winston Salem
+d7433e98-f77a-47ef-8d66-f84a5329b304,546,Anniversary,Circle,Texas,78744,Austin
+8d564582-3821-462b-91cc-80bcc36244ea,66281,Melrose,Crossing,Pennsylvania,19125,Philadelphia
+ac06292e-6fb9-4805-b412-a07690c76f39,57523,Mcguire,Terrace,District of Columbia,20456,Washington
+f6565eee-909a-466d-be35-d6439999b419,10,Luster,Crossing,New York,10105,New York City
+36d8c6c2-f596-48ea-9f79-941e6ad14e8c,63378,Sugar,Parkway,New Jersey,8603,Trenton
+ee014a6f-4ddf-415d-880a-2bb8493fc6af,72,Colorado,Lane,Texas,77201,Houston
+d069c846-dd6c-4fdc-8fad-aa8fecf9a08a,55,Manley,Way,New York,12222,Albany
+20686f70-45d1-446d-95c2-5ee791ed92cc,518,Delaware,Alley,Florida,32230,Jacksonville
+c1a49c3b-a9ee-4b8c-bf28-4750b7ceb3d3,237,Glacier Hill,Hill,Texas,77386,Spring
+cbdb21fc-fbd1-44a2-8a94-7f1cd6944b2a,17,Fairfield,Trail,Arkansas,72204,Little Rock
+74cedfce-a464-483d-8e55-29de3b378ea9,94923,Magdeline,Circle,Michigan,49018,Battle Creek
+c077be06-65c6-4ca2-9faa-0bf8fd1c8b02,5,Fordem,Center,Texas,78250,San Antonio
+b43ae897-a636-482b-8e25-b9639e716925,33,Golf View,Terrace,California,95128,San Jose
+590a5c5d-d5c8-4833-a70b-8fbecafd4f19,5176,Fordem,Trail,Louisiana,70142,New Orleans
+34e65aa5-a5f3-4e41-bce9-f93d000b1ccc,7,Petterle,Parkway,Texas,76110,Fort Worth
+5a6c341a-01c8-43e1-9174-9ee5a85e3405,44,Crest Line,Center,Ohio,43210,Columbus
+10089ef0-c9e5-4be1-a738-8a8654b45495,6,Heath,Way,Texas,78754,Austin
+63f5151b-17a0-4914-b12f-19063761f7bd,349,Charing Cross,Junction,Alabama,35215,Birmingham
+1ca489b0-8126-402a-864f-008a9ad17ac6,3,Anniversary,Road,Wisconsin,54305,Green Bay
+4392f3ea-c7f7-4e7a-86ec-1fb9d223ae78,95867,Forest Run,Junction,California,90410,Santa Monica
+3bd85a73-f0eb-4a16-ab8d-b33df76fe80f,70266,Birchwood,Parkway,Ohio,44191,Cleveland
+0e342b31-6573-47c4-8512-4d7bc9510c83,3,Muir,Court,Texas,77245,Houston
+47bacb8d-fbfa-4ad9-aedf-32ecc61682dc,390,Hanson,Plaza,District of Columbia,20540,Washington
+9dcaa94f-37e9-480d-b768-7576e4a51062,37744,Brown,Terrace,Pennsylvania,19178,Philadelphia
+7a6ecfae-3c20-4f47-b1dd-eea9fa3dea27,3,Bashford,Crossing,Washington,98175,Seattle
+c38fa49f-392a-4603-b65c-2eacfdd57896,4,Melby,Drive,Nebraska,68505,Lincoln
+6ad8feb5-659b-47c3-970a-1f34a4659bc8,7206,Mayfield,Point,New York,14639,Rochester
+3d78d75e-b20a-4688-a222-b3c40c0040b3,6,Thierer,Hill,Pennsylvania,15240,Pittsburgh
+23515604-e034-4e74-b1b9-2bb7dcf92a36,50,Hauk,Road,California,95210,Stockton
+a22890c0-db71-40fa-951d-dbc7c79162f4,12455,Texas,Circle,Virginia,23504,Norfolk
+e997dc6f-1528-4be7-be34-f4b79a556125,710,Fuller,Drive,North Carolina,28405,Wilmington
+2789af93-3567-44e2-b484-acfa7b5bb830,5,Surrey,Lane,Maryland,21229,Baltimore
+f99e03bc-af67-425b-952d-909c172c92c0,8913,Westridge,Point,California,94164,San Francisco
+835a6539-9968-485d-a4a4-f09b50dcbc33,7,Debra,Terrace,Kentucky,41905,Migrate
+e14254e5-04fe-421d-9684-0896dba4a1c8,51,Roth,Alley,Ohio,44710,Canton
+2326e2e9-fad1-44b2-a716-2a594507613d,3,Manley,Lane,District of Columbia,20226,Washington
+0b7b4a8e-b0bb-42f2-a085-37c8e8190199,895,Pierstorff,Way,Texas,78769,Austin
+2b70a998-94d7-44ec-91f4-5a5e7d50b6c8,4358,School,Plaza,California,95194,San Jose
+1d631bfa-aeea-4c3c-ab52-3c6a629467f6,1,Grim,Place,California,90035,Los Angeles
+7b7684ce-6e89-440f-81cc-0b06579aa34d,46687,Ridgeview,Center,Florida,34135,Bonita Springs
+d94e2afe-4b80-4e22-a2c4-bf52408eff7b,274,Division,Avenue,Minnesota,55448,Minneapolis
+36ea1ea0-f321-49cb-b512-f5ab9e670931,38,Bluejay,Street,Ohio,45203,Cincinnati
+86a23152-a00d-41e4-96d0-92e13622edb2,259,Kipling,Place,California,90081,Los Angeles
+2c560038-c4e6-4234-821f-656fbd92d8dc,621,Valley Edge,Drive,North Carolina,27404,Greensboro
+728821a3-351e-4256-a2cc-6c4cb7a674bc,312,Kennedy,Parkway,California,92110,San Diego
+c37c5ab2-72ea-421c-8225-c638f5e0423d,6827,Mariners Cove,Junction,Louisiana,70607,Lake Charles
+a501f7a7-122b-408c-858b-82a5886e776e,29,Tennyson,Road,Missouri,63169,Saint Louis
+b61c763d-af6a-4dd5-a701-28ca3b75cc01,51756,Trailsway,Way,Texas,78410,Corpus Christi
+3f018fab-b4ab-43aa-84a6-83e59ca77ac3,26,Bunker Hill,Parkway,California,94159,San Francisco
+aeaa7066-8cca-48ca-84a9-dad58808b481,7608,Forest,Trail,Tennessee,37931,Knoxville
+b42e9af8-501f-4a4e-b507-ababde29420e,29,Sullivan,Road,Alabama,36134,Montgomery
+3b00edf2-72e3-4a08-8228-568cb5f11836,548,Coolidge,Pass,Louisiana,70183,New Orleans
+731fd662-9525-49b8-8690-4e8fd8bab00f,6779,Milwaukee,Parkway,Nevada,89166,Las Vegas
+00577963-6411-444a-8959-31c37ad21b9e,4,Summer Ridge,Center,Texas,77386,Spring
+172e5d76-2c5c-4c41-88e8-560e53d5c035,44096,Barby,Circle,Texas,75226,Dallas
+38c0e0bb-4e73-476c-894a-afd6ae96899e,12,Kenwood,Pass,California,92132,San Diego
+24f0273d-ac9e-4503-8e7c-14c1f43e9582,651,Pawling,Avenue,Connecticut,6140,Hartford
+5ca80b84-441f-4bb7-b9a7-494ceb8a7d5e,2,Nova,Center,Pennsylvania,19610,Reading
+2c74c468-7f0e-4bc6-a027-6c430390b718,51228,Fairfield,Park,Texas,77228,Houston
+20125d6d-0987-43bc-a982-18961967b1ca,6,Dixon,Pass,Florida,32520,Pensacola
+95ea159f-3e63-4561-975b-04abefb7f30c,5,Cardinal,Parkway,Texas,78710,Austin
+731fc5a7-e2b1-4c11-90fd-f4e71c2e46e6,16794,Talisman,Circle,Washington,98687,Vancouver
+c177a111-371a-4188-9d73-3d7b4bbf5d51,727,Clemons,Lane,New York,11215,Brooklyn
+ea567e46-4faf-460f-ac00-4e6cefae5347,374,Kensington,Center,New York,10024,New York City
+d5188f9a-f65d-4c22-a87c-1d86948e744b,4,Annamark,Trail,Georgia,30195,Duluth
+c6e5336c-1f04-4e97-ae58-3c96e641abba,53796,Buena Vista,Court,Arizona,85077,Phoenix
+95fb9723-32a4-4c82-ad85-32c3aaa4e4d8,9,Onsgard,Parkway,Oklahoma,73129,Oklahoma City
+3773f6c4-dc20-4a5a-b4c9-e3da68c70b98,57,Northridge,Terrace,South Dakota,57193,Sioux Falls
+ebf69515-a7d1-4c60-aeb3-8825d0c9e144,7289,Goodland,Junction,Iowa,50936,Des Moines
+381069b5-28b3-4e24-b165-21418fbc3685,594,Namekagon,Lane,New York,10099,New York City
+a4d8154f-73a7-45de-b277-235baf1556ca,4,Transport,Pass,South Carolina,29579,Myrtle Beach
+76324e9a-edac-4a63-b958-02b0b1feff3b,9697,Dakota,Point,Texas,79705,Midland
+3c2e7f4d-6734-4d7f-a0b5-e3ac677a5b5d,45321,Ludington,Alley,Massachusetts,2162,Newton
+f0978256-6814-4c33-b5ce-b22b3f77d1cf,14592,Moland,Court,Kansas,67220,Wichita
+423c716c-6e2d-42f0-b91e-61b84bb56a25,82,Debs,Point,Texas,75236,Dallas
+7debeef7-c663-40f6-b255-4ec69c007109,44404,Chive,Park,New York,10090,New York City
+4da41c57-fac7-4bf8-b528-f24eeb8b3f9d,711,Cambridge,Crossing,Indiana,47805,Terre Haute
+04a8dbe2-8fc4-48ad-be5f-9edf6bfb0862,55755,Kensington,Alley,Washington,98140,Seattle
+51577f21-451d-461f-9d98-f717f7f5682d,57,Walton,Court,New York,11470,Jamaica
+a1f4c4dd-696e-4736-b835-79a3660dab19,7915,Washington,Court,Minnesota,55441,Minneapolis
+fd474fb7-09b0-4289-9d5b-0726ee34fc12,23,Monica,Terrace,California,95828,Sacramento
+2af70a9c-1132-464b-857d-17ba98f06b51,60,Bunker Hill,Drive,Texas,78470,Corpus Christi
+ac481d15-113c-4571-9f53-cc505535e69a,2,Declaration,Avenue,Connecticut,6705,Waterbury
+1eceffbf-ac86-459a-bbf4-d6a4ecf424b4,1224,Scott,Circle,California,91199,Pasadena
+2207b1f1-481b-48c2-a26f-08cf9e8022c0,87933,Mcbride,Alley,Texas,78764,Austin
+38880987-9c69-4057-b4a5-64da70bc646c,3,New Castle,Parkway,Texas,77806,Bryan
+6bf6d31f-6697-40b2-8c37-7db2dd0cd0c3,1,Montana,Parkway,District of Columbia,20520,Washington
+03c0d773-13dd-49a1-94e9-f688998db22d,454,Lakewood,Street,Mississippi,39236,Jackson
+619d01f3-6d76-4261-a017-8da8078c0514,652,Homewood,Place,Georgia,30919,Augusta
+880dff90-df16-426a-8a84-351f4886c50d,5526,Barby,Terrace,California,92191,San Diego
+3aac58a6-218b-4458-9ee8-2176126aa85a,937,Warbler,Pass,Wisconsin,54313,Green Bay
+3294ff07-8a79-4636-86ac-915972e9d046,9,Roth,Road,Florida,34135,Bonita Springs
+cb6b6b92-ab63-44f9-82d7-44df6bcab0ab,18641,Golf,Trail,Iowa,50362,Des Moines
+73e90e79-1f2c-4ea5-a467-17f9c6efd1c9,9552,Mandrake,Road,Florida,33405,West Palm Beach
+181dcbc5-d66a-44d9-9b42-ceaaaad2ea23,70,Jackson,Way,Virginia,22036,Fairfax
+411d95df-cf99-4c90-82cf-005d82cb9fc6,4,Clarendon,Parkway,Missouri,64190,Kansas City
+95fe11de-13d8-475e-af18-33e6c26593cf,9566,Hazelcrest,Drive,Minnesota,55811,Duluth
+1eaf4cf3-1eb1-48b6-b671-7afcccaa58a9,334,Granby,Road,New York,12232,Albany
+7fbe0658-3ff5-418e-a809-fcc5060f0703,5437,Bellgrove,Street,Illinois,60435,Joliet
+79692d99-74e7-4a70-b252-237051a81c6f,94040,Shoshone,Circle,Arizona,85025,Phoenix
+cbeb080c-4f6d-4317-a2b8-ec7aa4b481c0,95504,Monument,Place,California,90087,Los Angeles
+5e3e051a-0689-4ab3-bf09-527925b65eef,21,Sunbrook,Parkway,South Dakota,57110,Sioux Falls
+55ed1c58-f0a4-4dd1-98ac-cf866fc2dd11,416,8th,Way,Missouri,63143,Saint Louis
+01e5f9ee-113d-4ca9-b30f-45bbcba70971,95,Lien,Place,Massachusetts,2208,Boston
+217853e2-ab42-45ee-8769-85c66f9ed60c,5763,Pawling,Drive,Florida,33737,Saint Petersburg
+86ef0f16-fce0-4a96-8df1-03e7d8bbb4d6,422,Ludington,Point,Virginia,23464,Virginia Beach
+53f6e845-725d-4f51-97a1-1d9b2cef900d,9863,Debs,Court,Texas,78240,San Antonio
+eb0fc8cb-d6e3-47f8-990d-f1aa73907b32,554,Butterfield,Avenue,Georgia,30610,Athens
+bc457ce7-1b3b-4580-ae0b-2c941fe045ec,38619,Lakeland,Point,New Jersey,8638,Trenton
+77a4351a-3298-49c3-927e-aa6ceb8075d7,74895,Green Ridge,Point,New York,11431,Jamaica
+53150a76-6230-4f5b-a89c-04f7ce0ac96c,312,Fieldstone,Alley,Georgia,30610,Athens
+53a66bc5-8304-4004-b6bb-182691bc405d,80683,Garrison,Hill,Florida,32304,Tallahassee
+13d54314-ca8b-4ddb-84c2-7cdd734e1a46,41,Delladonna,Avenue,Connecticut,6160,Hartford
+e1404c17-7fcb-4ae1-9e8c-be7e403ba37e,13668,West,Park,Missouri,64101,Kansas City
+3aca390e-a1ca-45ab-8497-ff70b03b8b4d,85,Spohn,Avenue,New Jersey,7188,Newark
+e7be6a85-aec8-426d-9309-71e28ca646e7,364,Green Ridge,Drive,Arizona,85725,Tucson
+8d7f9a7a-3579-4be4-ade7-c4c74521e387,77,Lerdahl,Court,Missouri,64199,Kansas City
+f7e50350-1543-4c1a-ab6f-d82dd4abb61c,8754,Killdeer,Crossing,Illinois,61656,Peoria
+7eb426f2-a301-4b63-b17f-d94e0dad0aaf,1,Old Shore,Court,Ohio,44177,Cleveland
+f0588b4f-2e24-46e3-9406-de8838eec0e4,338,Fordem,Terrace,Louisiana,70187,New Orleans
+45695873-cd6b-402f-b054-11d7a43bc5e7,87653,Jana,Trail,Kansas,66112,Kansas City
+c89c1762-a463-4992-b750-e5a6832f5b87,8,Thackeray,Center,California,94660,Oakland
+e0a39fdc-69fb-4d39-8a40-77810b5c49c0,30903,Mayfield,Circle,Texas,77010,Houston
+7245889d-7501-4866-bcfd-1f2edbd9fd3d,0,Maywood,Center,Texas,75710,Tyler
+217ec836-ee1b-4372-96c7-6548ba55a15f,9897,Rutledge,Avenue,Alabama,35815,Huntsville
+8c9a0d07-ac84-4adb-a2c5-cc11878c93e7,88942,Thompson,Street,New Jersey,7208,Elizabeth
+e8144c29-a317-4b70-ab2b-84ddc384c2e5,64486,Stoughton,Center,New Jersey,7104,Newark
+ef52ea6b-4f20-413b-8c41-dc83d5fc7de9,8372,Green,Way,District of Columbia,20057,Washington
+be4a42b8-f3f0-4ce0-b291-5559963646f6,1986,Anthes,Drive,Arkansas,72204,Little Rock
+5f21d3b2-1d38-423f-adc9-93d1168e73c0,19,Mesta,Circle,Texas,88563,El Paso
+c1f13563-aacb-4e5e-b29b-18a606c5a4ce,79126,Melby,Point,Florida,34985,Port Saint Lucie
+a20e25ea-c715-4468-b157-845774c8e67e,99524,Lyons,Point,Alabama,36134,Montgomery
+94549558-745c-4232-9df4-d32b70ea2531,2,8th,Circle,Wisconsin,53263,Milwaukee
+53cd24df-35a9-4426-8d94-3cbae67697f1,2,Redwing,Parkway,Mississippi,39282,Jackson
+62c36a1b-8d07-4744-a79b-8ba59d7aa692,897,Westend,Park,Nebraska,68197,Omaha
+089d8394-2525-48d8-b6bd-89a520d95069,46,Beilfuss,Pass,Hawaii,96840,Honolulu
+d11d3238-857f-4a3a-b8eb-6e4f08aa6847,183,Aberg,Junction,Massachusetts,2305,Brockton
+794405bc-8f5b-4dd6-bcc8-bd57ebc81c5f,866,Melody,Pass,Alabama,36104,Montgomery
+af4bb0d3-3f80-4141-8c6b-b667f7456869,705,Sunnyside,Alley,Alabama,35236,Birmingham
+b13b14ac-a594-4973-9e17-91fc8055bd09,56,Sunbrook,Crossing,California,94245,Sacramento
+e8eba7a8-6585-4fd7-b529-fd79c20721c1,2,Mendota,Terrace,Louisiana,70810,Baton Rouge
+38032b48-fd4e-411d-864d-ecfeefd8510a,87889,Clyde Gallagher,Point,Georgia,30301,Atlanta
+b81c0120-4c13-4788-9c7c-231d1d11d883,4,Scofield,Alley,Texas,77040,Houston
+c677d2f4-0fc5-455a-b0df-d4f984723cf0,8,Doe Crossing,Trail,Pennsylvania,15210,Pittsburgh
+6590cbb7-36e9-4e77-9237-a3c78b0a525a,48514,Clove,Terrace,California,92176,San Diego
+e3bcc07c-b341-43b6-87e8-f31e7b7c17d0,99,Hooker,Point,Florida,33906,Fort Myers
+47d8adc2-9056-49df-828a-9a64d8784696,7452,Atwood,Way,California,95113,San Jose
+2eba984b-5f7d-4328-bda3-e2eb0f0f6d2e,1,Lerdahl,Parkway,Texas,78415,Corpus Christi
+5fc72f21-9ba1-4a1b-9784-5d10dbf61763,5,Johnson,Drive,Texas,76134,Fort Worth
+cd718515-3474-4388-8735-0fa096950dc5,52418,Miller,Parkway,Texas,79911,El Paso
+83de552f-63ac-4fda-902c-140499fe2111,41,Nobel,Center,California,94297,Sacramento
+03ab6be8-1014-4b9a-8cad-350df2c0f64d,89,Carey,Drive,California,94913,San Rafael
+3bcdd405-f915-40d0-8223-eda951d9f8d9,198,Carey,Crossing,Virginia,24029,Roanoke
+ebc5da4b-ae9e-4511-ad3f-4b8e0d6f869e,49,Haas,Way,Washington,98682,Vancouver
+e29f323e-ad88-4c9e-b48c-874f1cf5d7a7,26,Hooker,Court,Virginia,22301,Alexandria
+7b272113-d756-4c81-af49-81c1adbc4278,65882,Jay,Drive,Washington,98464,Tacoma
+a9196390-41e6-40e6-bed6-8a58896ec1f5,15,Pine View,Crossing,Texas,76178,Fort Worth
+fc300cde-a3e8-4350-bd46-ac72a966a3af,4384,Bobwhite,Court,Missouri,64187,Kansas City
+529adb57-1fe8-47ce-ab5a-25cf322e7ec1,4,Columbus,Junction,New York,10131,New York City
+9144f97f-bc58-4058-8aeb-8bd8e3842ff7,355,Waywood,Circle,Indiana,46295,Indianapolis
+d83c7fbe-3beb-4b15-81ae-4404ddd4af19,910,Laurel,Drive,Minnesota,55598,Loretto
+b70c1904-8e7a-4bea-9924-7023a2e878e3,737,Lukken,Point,New York,10165,New York City
+fc47c1c4-1581-45f2-9e2a-b29bf73ad1bb,641,Springs,Pass,Texas,79955,El Paso
+8bd16766-e338-4bb8-8e69-499b6ab4d074,14946,2nd,Junction,Michigan,48092,Warren
+a252ff69-b21b-4539-b50f-e7fcdae81c18,4,Schiller,Avenue,Georgia,31704,Albany
+b3eaa31b-0d46-497a-8906-532c6ae95b3f,329,Harper,Court,Ohio,44393,Akron
+26b32498-bb89-4495-8a10-e4c4c70bf5dd,1932,Wayridge,Court,Texas,78749,Austin
+9c5f3749-7c00-4477-8559-52e5bf8f2561,2238,Dunning,Trail,Virginia,23705,Portsmouth
+03e524ed-56d5-49f7-a5d5-109d20868446,1,Village Green,Way,District of Columbia,20016,Washington
+e9f4b0f8-0a77-462b-b17a-8616b9d3326f,96023,Victoria,Road,Alabama,35895,Huntsville
+17c3da64-900f-465a-a8b4-5ac1051ecd2e,47,Westport,Junction,District of Columbia,20414,Washington
+bf4e9778-d467-48ca-9812-7335ae146b51,18386,Mariners Cove,Center,Indiana,47705,Evansville
+275c0dd1-8d88-4e3b-9d75-7827849d2af1,176,Fair Oaks,Way,Kentucky,40596,Lexington
+c7868143-f428-49c1-ab87-792cb5250d37,1637,Columbus,Center,California,92619,Irvine
+9c0ecc7f-387f-4a39-8042-72f6b5af447b,721,Troy,Parkway,Missouri,63121,Saint Louis
+bd98017d-989d-43d2-a8f6-46aa0a43e8e2,15100,Autumn Leaf,Avenue,Arkansas,72231,Little Rock
+477ef177-2142-437d-98e7-429b35e8244c,7,Forster,Court,New Jersey,7104,Newark
+32086679-2ca7-44a7-9918-ffe081ce2b31,342,Manley,Park,Florida,33620,Tampa
+4bb93c55-adf7-4d4f-acb3-9cff32fa92da,35,Toban,Trail,Connecticut,6160,Hartford
+fb13e37e-b54f-44af-a979-1bb049bc0d8f,3712,Rigney,Lane,Colorado,80305,Boulder
+d322df0e-176c-40f3-a7c9-97440e8d7ca9,81479,Loeprich,Hill,Minnesota,55905,Rochester
+6a3d0e72-56a0-4545-814b-6d198682510f,566,Jenna,Hill,Georgia,31136,Atlanta
+1d72a80e-b2f4-4204-ba49-98c4c7c5a170,14,Canary,Place,California,95064,Santa Cruz
+041d4a25-fe63-4a73-9e96-d5b55a69f59b,2435,Beilfuss,Park,New York,10019,New York City
+a10b0f42-6e23-4eab-8251-4974fd7f8c71,541,Declaration,Plaza,North Carolina,27635,Raleigh
+ae0f29f5-4516-409a-acc0-6463f19d08e1,6300,Sheridan,Street,Utah,84130,Salt Lake City
+f0ddfef3-d4a1-4727-bf15-d0895f81c73a,4,Londonderry,Alley,North Carolina,27621,Raleigh
+59968750-edd4-4272-9722-f5580c37a7f7,12687,Burning Wood,Avenue,Florida,32230,Jacksonville
+d85ddfcd-6ee7-4a7c-8c30-ec2f3a0fb4e7,301,Heath,Center,Texas,75799,Tyler
+6455858d-bd20-4b89-b038-3adee75f0dd3,17837,Mcguire,Parkway,District of Columbia,20220,Washington
+ea1ed742-187e-4493-8b5e-67b9325e4e7b,2,Columbus,Point,Connecticut,6905,Stamford
+7ac612bd-3e89-44d9-bee3-39e6b60cf425,6355,6th,Center,Indiana,47306,Muncie
+f05ef1ef-a672-4787-b9c4-ec957d3d2cef,6289,Sunfield,Circle,Florida,33320,Fort Lauderdale
+1a6cc320-7535-40e9-a05a-784852cf5667,59928,Birchwood,Center,New York,11388,Flushing
+7d6b45f5-496a-4df3-82f4-d7b3370943fb,5707,Prentice,Point,New York,13210,Syracuse
+81cb5697-57f8-48f2-9d3a-d467779fe1d1,2496,Pine View,Plaza,Connecticut,6120,Hartford
+1ebd851d-488a-4ae5-b4df-9b2807ca92fa,48,Thompson,Hill,New York,10060,New York City
+54ca1cc7-5588-4efd-94f0-f17b2455fd49,5,Clarendon,Center,Florida,32412,Panama City
+90f340d1-345e-4991-b754-5e949a20ab57,928,Orin,Way,Texas,78285,San Antonio
+87d4e526-7c18-446f-991c-2c160fd7058b,22,Nelson,Terrace,New York,10115,New York City
+bf966831-754b-42d3-941a-46f1e0db768f,9432,Starling,Alley,District of Columbia,20503,Washington
+8853c6b0-8b09-4dd6-948f-bb257e2d8834,5,Kipling,Plaza,Nebraska,68179,Omaha
+2bc4022f-edd7-43c9-923c-5ae63cd4ce26,9,Blackbird,Center,Florida,32808,Orlando
+9b11a0f9-b700-4a25-83f7-1862a77eff36,52,Ilene,Way,North Carolina,28299,Charlotte
+4cc4730e-82e4-4a6e-97f6-a0f4b718d05e,5,Mcguire,Pass,Indiana,47732,Evansville
+230f3482-35b0-4825-88be-38ea54c17715,1,American,Center,North Carolina,28055,Gastonia
+f4ccbfe7-bdb7-4a72-87a7-fd8f853f0024,73,Myrtle,Way,Michigan,48956,Lansing
+eb92e18f-491e-47ce-b3b8-6f30f524e228,5,Colorado,Street,District of Columbia,20022,Washington
+b775603f-0535-468e-881d-0c2bedb46853,77,Reinke,Plaza,California,92105,San Diego
+46f24269-6eea-42ce-9d35-0506b9053678,86891,Cody,Trail,Tennessee,37235,Nashville
+33c5be64-e423-49ec-93f9-e09674b52738,16,Everett,Pass,Utah,84170,Salt Lake City
+4d9b0ffa-0fad-4b72-b816-3090621456d8,40116,Mcguire,Road,California,92519,Riverside
+46249aa6-fc71-46d4-a8c4-71fef9a52701,1430,Hoard,Court,Texas,78426,Corpus Christi
+33e26baa-84e2-4118-8f27-0cad804b6612,5966,Graceland,Hill,South Carolina,29220,Columbia
+f47d436f-c9c1-47c3-b58d-c836007e797d,149,Vermont,Point,Connecticut,6533,New Haven
+e65808f0-71e7-49f0-8722-a266a7f70051,57,Dayton,Drive,California,93750,Fresno
+e4056480-1157-457a-99ca-fbdd560412f1,2,Fulton,Junction,California,95818,Sacramento
+07b9095c-ca9b-44f6-a1ec-27bf1fa8dd73,232,Butternut,Alley,North Carolina,27605,Raleigh
+fae8e3f6-f299-400e-95d2-0d51c3a804a9,872,Nelson,Street,District of Columbia,20260,Washington
+d3c487a8-c0ee-4654-9419-b7c2bfd35db2,3,Texas,Park,Nevada,89105,Las Vegas
+31d7b37d-e877-4dfc-9fc2-84afa17b4df2,42978,Lien,Junction,Florida,32854,Orlando
+6059aee0-ba0c-4dc3-9955-ea28c3a67c20,5260,School,Plaza,Florida,32314,Tallahassee
+89b8534c-b9f1-4950-ac3f-e127bcf89f5e,846,Gale,Crossing,Virginia,23285,Richmond
+3dea5206-1db4-4d4e-a1fc-7b516a9d505d,1289,Bultman,Trail,Texas,75226,Dallas
+ffc4b6c4-b135-42cb-a15d-ea32f48a5e5e,849,Northwestern,Point,Indiana,47747,Evansville
+907ba6b7-c978-441c-bc82-4d5b5e7d1139,4,Gerald,Center,Idaho,83757,Boise
+47da118d-a6c4-45b9-b39d-7c459ffdfd35,7,Kipling,Place,Texas,79984,El Paso
+df4921c1-c1d8-4f16-9ef1-7f39e374b929,26,Coleman,Parkway,Texas,76178,Fort Worth
+09958cc1-49a2-427f-a8f9-39b0d5f3d496,245,Toban,Center,Virginia,24004,Roanoke
+1bc87220-79a8-4560-9ee7-d67a4b7badbf,2954,Forest Dale,Point,Washington,98405,Tacoma
+1be647f6-bdc5-4dbf-83ad-3521f625c510,67695,Heath,Drive,Missouri,64142,Kansas City
+aca99804-c54b-4e45-b0c0-63eed4c6e695,161,Stoughton,Parkway,Wisconsin,53716,Madison
+0b65bb13-a4c3-4993-a8e8-19b772c26894,993,Schlimgen,Road,Texas,78296,San Antonio
+c502a721-e8c3-4d30-bea1-6bb93fe65a81,3,Nobel,Alley,California,93740,Fresno
+d925351d-c3c6-4ea9-9044-28728bb0ef02,83,Kedzie,Drive,Florida,34949,Fort Pierce
+0d8bad52-843b-43c8-881d-c5bbc19f8973,3791,Mifflin,Junction,Maryland,21281,Baltimore
+7fe33f2a-057f-42d5-99eb-e9c4262c23fd,1784,Farragut,Plaza,Washington,99220,Spokane
+aaaefe26-7966-4c64-8139-509f36fa3488,6409,Ruskin,Court,Ohio,45233,Cincinnati
+61838d2d-faf2-4c0a-8afc-22f91b3e53a7,467,Mesta,Street,Texas,77343,Huntsville
+630cd998-5dcf-42b4-81e0-6ef82de6402b,8903,Haas,Way,Virginia,20189,Dulles
+aa33e409-592e-427a-b133-5de50b8b39b2,462,Cherokee,Avenue,Connecticut,6922,Stamford
+fc28427c-4d93-486c-ab66-02d8aa95d3af,57094,Pierstorff,Place,Georgia,30195,Duluth
+a7c5de94-d667-4bdd-a7dd-ee856daf7a9c,93,Gina,Alley,Massachusetts,1152,Springfield
+491eebe5-b0e8-4fd0-b3a4-51d7bbcd3fa2,86931,Mayfield,Parkway,California,92030,Escondido
+c5be3b95-dd54-46d5-9394-457e375dc4b7,60913,Acker,Court,Pennsylvania,18763,Wilkes Barre
+e5d6987e-a8f9-4f4b-80fb-083e670c660e,76064,Thompson,Circle,New York,12205,Albany
+6b89c2b6-5745-4de9-aae3-22567908f087,9,Toban,Circle,Oregon,97075,Beaverton
+6e256b9a-8495-42c1-9292-a6496edec2af,7,Londonderry,Circle,Michigan,48930,Lansing
+0f10f7e6-14ca-4518-9d36-c6b627327857,1264,Green,Street,Oklahoma,74184,Tulsa
+51c5576b-0a79-4a67-ae9e-8cd0e82d9147,3764,Dixon,Crossing,Colorado,80915,Colorado Springs
+50f1b33a-c0f8-42c3-a46d-60dc85f09109,35999,Fremont,Trail,Virginia,22096,Reston
+cdfe6995-09d3-4c34-a05e-c5312e56ad99,52336,Hovde,Junction,Florida,33963,Naples
+1b8b666d-1930-4757-a125-ce665fe3c239,63,Thackeray,Avenue,New York,11388,Flushing
+1af1692f-f855-4d47-9d4a-1f4c349ffc9b,0,Rockefeller,Parkway,Texas,77293,Houston
+3b981421-758a-4b31-a978-217538d7f3ee,512,Crescent Oaks,Drive,California,94286,Sacramento
+bfbfa52e-5dab-4276-85e2-6a68c211c896,75636,Ridgeview,Trail,Utah,84409,Ogden
+bc40d930-2b80-439c-b98e-8d7f00a57789,616,Dexter,Hill,North Dakota,58122,Fargo
+0e5423bf-745e-4fd8-9f4d-f66fd7f5d6d0,40669,Meadow Ridge,Place,Missouri,63131,Saint Louis
+14efd072-c10f-4f56-b199-9ebb480db551,52760,Packers,Plaza,Nevada,89193,Las Vegas
+847ee39a-be4a-4718-8681-00d8a5cbc1ea,57,Tennessee,Plaza,California,94116,San Francisco
+006042c1-e402-4c4e-bc33-21bee9fbaf81,6,Pennsylvania,Court,New York,10110,New York City
+9bd8b9a6-207b-4670-8cbc-8dc2aa0f7faf,4,Kropf,Court,Alabama,35805,Huntsville
+6e7cfa06-d35b-4240-ab94-f470d37c2245,5811,Coolidge,Pass,Florida,34108,Naples
+788020ab-3d51-49b7-8052-2107593fb1b8,910,Mccormick,Avenue,Pennsylvania,17622,Lancaster
+00bf7a51-afe2-411d-85f6-3d66f81defad,0,Warner,Plaza,District of Columbia,20456,Washington
+a58b87b5-52b0-447e-92d7-4718c596a09d,5477,Hudson,Road,Alabama,35225,Birmingham
+ad0d0a15-ba17-42d7-8c30-601be4e9fa12,97541,Lillian,Junction,California,92867,Orange
+43863f4f-07d0-43b0-bce0-95413f104517,0,Mifflin,Drive,Ohio,45414,Dayton
+c1955119-a342-4757-995d-fdba756a4d0c,30811,Havey,Point,Texas,79977,El Paso
+94ca5fe4-9b68-451e-b22c-fe6bb687309e,6382,Ramsey,Park,Ohio,43666,Toledo
+dad45ef3-b3a0-4ef7-adb4-e319aa64c0da,6491,North,Plaza,Georgia,30089,Decatur
+6218abf0-ff1b-4f49-bc36-da90073ae030,326,Myrtle,Park,Missouri,64142,Kansas City
+b73f32fd-1e58-4227-a86b-2d843929e1d3,4256,Monica,Pass,Florida,33805,Lakeland
+37eef26a-7bd8-493f-9be2-c4a44d3d46e3,272,Onsgard,Avenue,Pennsylvania,17105,Harrisburg
+3898352d-a95a-42eb-94f0-57fb623529f6,3,Logan,Lane,North Carolina,28410,Wilmington
+c747ee1d-55fe-4374-a234-f6368a1293ae,140,Warbler,Way,Texas,77299,Houston
+38d85d4a-8946-4868-9ed6-b8243e111a4a,36,Haas,Terrace,Michigan,48217,Detroit
+a1859c0d-836f-47ce-b6b7-52f7b6d3f45f,887,Blue Bill Park,Hill,Mississippi,39296,Jackson
+3153c62d-2aa4-4072-a1f5-b2bde178a095,7,Claremont,Lane,Texas,75605,Longview
+e6f60218-ff29-4241-8560-169bab790461,516,Little Fleur,Place,Oregon,97255,Portland
+eb934b6b-f3ef-4f9f-8cc3-65ba7c0b9d5a,10,Laurel,Street,Nevada,89706,Carson City
+52bc8440-354a-4da9-81a7-b70a24b417aa,59831,Brentwood,Crossing,Arizona,85020,Phoenix
+d15df038-e701-49b8-b62b-c512a855eb66,72,Muir,Parkway,West Virginia,25775,Huntington
+c9fb3b78-0641-4d89-903f-b2429128e609,2750,Macpherson,Point,Ohio,45454,Dayton
+d1002fcf-65ff-4819-9c92-c500a87bc2ea,79684,Hintze,Point,California,94273,Sacramento
+6cbbe812-8978-43f5-b222-6e67d56ad8fc,3,Ridgeway,Crossing,Washington,98481,Tacoma
+1ff080f7-84f9-459d-8349-4195ffc05d91,3894,Hanson,Circle,Wisconsin,53705,Madison
+b752c273-66d2-4b23-aac0-498d50dbc119,9398,Fordem,Terrace,Florida,32225,Jacksonville
+4df80248-35ea-4dd9-8e64-aaf6295931fe,677,Barnett,Drive,California,95405,Santa Rosa
+bb173663-c5b2-4f41-9b3b-efc9f030572e,7528,Becker,Terrace,Texas,78682,Round Rock
+ebd00fe9-7f78-4833-b28e-b33b610904f8,1,Gulseth,Parkway,New York,14210,Buffalo
+bc97bf3d-fad0-4975-b6da-c2534696cdbd,8352,Butternut,Trail,South Carolina,29615,Greenville
+7508b9ec-0e5a-4291-bdb1-42fd3f11c601,598,Hallows,Alley,California,93399,Bakersfield
+2f4c924f-9322-45b2-b4b5-1b010b74d203,5,Rowland,Drive,Connecticut,6726,Waterbury
+47ec5755-ea64-4949-817f-def7d311a129,352,Graceland,Way,North Carolina,27409,Greensboro
+275e8562-7f29-4ebf-a80a-21ffb69b052a,0,Randy,Road,Louisiana,70826,Baton Rouge
+1fd59072-330e-406f-8063-93dfa1c968d9,50,Londonderry,Way,Ohio,45505,Springfield
+34f94e4e-895f-436e-aaca-777ffaace866,51051,Vera,Junction,New York,10110,New York City
+7f42e57b-3891-41ea-b9a9-01847be44f8b,95,East,Park,California,90025,Los Angeles
+21faba4c-502a-4145-a3c4-d4151d66eb7e,6,Hagan,Junction,Florida,34745,Kissimmee
+c804b815-a591-4862-8305-b78738999abd,6452,Transport,Crossing,Oklahoma,74149,Tulsa
+316d9ddf-c2b5-4a90-9ea1-705d2e3df217,33,Vera,Parkway,Ohio,43231,Columbus
+2e3bf66d-9345-42af-a434-f8d920f963c0,54,Melody,Park,Alabama,36125,Montgomery
+d7bdbd2b-8f99-4839-b873-d0bcd14c2bbc,72165,Thackeray,Place,Alabama,35242,Birmingham
+bdb55cc4-cedc-4840-afb6-356bde2df37f,44707,Jenna,Junction,District of Columbia,20238,Washington
+c6dbb58c-1f66-4177-9d89-37e700f35d1d,8735,Hauk,Lane,California,94126,San Francisco
+6b3d845e-b970-4907-8d95-40654bf076e3,87,Norway Maple,Avenue,New York,10474,Bronx
+ce6b36f6-2c3d-4e20-9483-96f5949a6f45,2295,Doe Crossing,Trail,Kentucky,40596,Lexington
+a0a8dad9-6965-4c6e-ad9c-34b8febd262c,494,Forest Dale,Crossing,Florida,34102,Naples
+01d3c5c8-0ce8-4970-b5aa-e1f2102a90af,8364,School,Parkway,Minnesota,55557,Young America
+1e30927d-8755-498f-88a3-639084a885dd,78,Mockingbird,Place,New York,11254,Brooklyn
+18965dbd-87b7-4a85-8fb7-1e703909e241,89276,Dakota,Place,California,90101,Los Angeles
+d44c7feb-9c25-4020-a976-ef6fcf455902,43,Cherokee,Plaza,Tennessee,37914,Knoxville
+d7f9bee5-c9fc-46f3-9fda-4765d1870388,27,Clemons,Pass,Arkansas,72222,Little Rock
+793b4e38-ff40-4d79-92d0-2e40f5277c23,475,Fremont,Court,California,95113,San Jose
+03bc0da3-04a5-41a4-b620-06780ff5cb05,578,Eastlawn,Street,Ohio,44125,Cleveland
+ea09df45-1a93-47bc-86df-e774e9f73926,9,Northfield,Way,California,93704,Fresno
+c2daacbe-3388-4e40-95e2-2f10d09f5c45,429,Sauthoff,Center,California,94154,San Francisco
+38ebf5d7-a894-4288-9835-844feabad317,2191,Eastwood,Pass,Ohio,44130,Cleveland
+19ac8d00-5c8a-49e1-9558-db518f806762,73,Lillian,Way,Alabama,35815,Huntsville
+9ddd876c-ca79-405f-8337-cd9c2401290e,349,Hanover,Pass,Arizona,85743,Tucson
+ab59c630-2b5a-43b3-958a-f9287b32e0c8,544,Dayton,Park,New York,10009,New York City
+10ca9bc0-3d61-476b-9ce6-466e07b802f2,9865,Lien,Avenue,Washington,98127,Seattle
+b7355276-b6c4-4d66-87f6-48dd543634f5,7,David,Pass,Ohio,44485,Warren
+ef1cd9e5-2340-4e9a-adeb-37e85ab6232b,69,Main,Road,Oklahoma,73190,Oklahoma City
+26054061-b662-4072-9626-d62edb82dda3,10742,Dwight,Lane,Florida,32859,Orlando
+40e895f1-9527-4f1a-bc0e-87fb4f25f5b6,8359,Golden Leaf,Circle,Texas,78285,San Antonio
+e29b7e50-6176-4674-95c4-cc33287900cd,57,Towne,Place,Ohio,44191,Cleveland
+190fbfdc-7e41-4baa-9707-be0f768cd92f,96938,Thompson,Avenue,Ohio,44105,Cleveland
+721c9856-9859-4a01-9cbe-5325ccc6362d,2251,Hazelcrest,Way,California,95833,Sacramento
+b600fd63-4f22-4785-85bb-457f62f1cd5f,9,Twin Pines,Alley,North Carolina,27635,Raleigh
+2d07a895-c59e-4b29-bdda-44fec5c139d0,923,Shoshone,Plaza,California,92883,Corona
+d21d5220-7225-4f06-98cc-e24e54caaea4,6,Arrowood,Avenue,Georgia,30336,Atlanta
+74eb6725-4026-49f9-89d4-e103f16f337b,4,Randy,Hill,California,90040,Los Angeles
+fff93f9a-d495-495d-adb0-4ad22ddeb2c4,590,Southridge,Center,Utah,84130,Salt Lake City
+db7c774e-e900-401a-86f7-767520f13a20,1434,Luster,Point,Nevada,89135,Las Vegas
+131fa8cd-4d63-43b0-98a8-d5472dc40203,407,Eagan,Trail,Pennsylvania,16107,New Castle
