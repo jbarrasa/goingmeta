@@ -1,0 +1,14 @@
+[project]
+name = "Neo4j-Model-Generator"
+authors = [
+    {name = "Jesus Barrasa", email = "jesus.barrasa@neo4j.com"}
+]
+description = "Creates Neo4j models from ontologies"
+version = "0.0.1"
+requires-python = ">=3.8.1"
+dependencies = [
+    "streamlit",
+    "rdflib",
+    "requests",
+    "neo4j-graphrag"
+]
