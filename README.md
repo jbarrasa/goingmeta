@@ -69,4 +69,5 @@ We will use this repo to share all resources used in the sessions. Give them a t
 |---:|:-----:| -----:|:---------:|:--------------------------:|:---:|
 | 5  | Jan 7 | One Ontology To Rule Them All: Building KG from Mixed Data | `LLM` `Ontology` `Knowledge Graph` `GraphRAG` | [📺](https://youtube.com/live/0c3WicsmLuo) | [💻](https://github.com/jbarrasa/goingmeta/tree/main/session32) |
 | 6  | Feb 4 | Retrieval Methods Compared | `LLM` `Ontology` `Knowledge Graph` `GraphRAG` | [📺](https://youtube.com/live/GPmHpp3QEWc) | [💻](https://github.com/jbarrasa/goingmeta/tree/main/session33) |
-| 7  | Mar 4 | tbd | | [📺](#) | [💻](#) |
+| 7  | Mar 4 | Enhancing LLM Tool Calling with Ontologies | `LLM` `Ontology` `Knowledge Graph` `GraphRAG` `Agents` | [📺](https://youtube.com/live/WOyb7XW7ppQ) | [💻](https://github.com/jbarrasa/goingmeta/tree/main/session34) |
+| 8  | Apr 1 | tbd | | [📺](#) | [💻](#) |
