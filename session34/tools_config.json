@@ -1,0 +1,16 @@
+{
+    "tools": [
+      {
+        "name": "get_artist_works",
+        "description": "Retrieve all artwork titles for a given artist_name.",
+        "cypher_query": "MATCH (a:Artist {name: $input})<-[:created_by]-(aw:Artwork) RETURN aw.title as artwork_title, aw.dateText as creation_date"
+      },
+      {
+        "name": "get_artist_by_subject",
+        "description": "Retrieve artist that most frequently use a topic in their work.",
+        "cypher_query": "MATCH (a:Artist)<-[:created_by]-(aw:Artwork)-[:has_subject]->(:Subject { name: $input } ) RETURN a.name as artist_name , count(aw) as number_of_artworks order by count(aw) desc limit 5"
+      }
+    ]
+  }
+  
+  

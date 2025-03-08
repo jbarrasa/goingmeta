@@ -1,0 +1,1 @@
+The ontology can be created also by importing the annotated ontology art-plus-tools.ttl in the ontos directory.
