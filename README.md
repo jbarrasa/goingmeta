@@ -71,4 +71,5 @@ We will use this repo to share all resources used in the sessions. Give them a t
 | 6  | Feb 4 | Retrieval Methods Compared | `LLM` `Ontology` `Knowledge Graph` `GraphRAG` | [📺](https://youtube.com/live/GPmHpp3QEWc) | [💻](https://github.com/jbarrasa/goingmeta/tree/main/session33) |
 | 7  | Mar 4 | Enhancing LLM Tool Calling with Ontologies | `LLM` `Ontology` `Knowledge Graph` `GraphRAG` `Agents` | [📺](https://youtube.com/live/WOyb7XW7ppQ) | [💻](https://github.com/jbarrasa/goingmeta/tree/main/session34) |
 | 8  | Apr 8 | Agentic Workflows for Dynamic Ontology Selection in KG Construction | `LLM` `Ontology` `Knowledge Graph` `GraphRAG` `Agents` | [📺](https://youtube.com/live/OhsfdRxcTqQ) | [💻](https://github.com/jbarrasa/goingmeta/tree/main/session35) |
-| 9  | May 6 | tbd | | [📺](#) | [💻](#) |
+| 9  | May 6 | Structural Patterns for Ontology Reconciliation | 'Ontology' 'RDFLib' 'RDF' 'Knowledge Graph' | [📺](https://youtube.com/live/xuyJTHBbf0U) | [💻](https://github.com/jbarrasa/goingmeta/tree/main/session36) |
+| 10  | July 2 | tbd | | [📺](#) | [💻](#) |
