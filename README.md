@@ -72,4 +72,5 @@ We will use this repo to share all resources used in the sessions. Give them a t
 | 7  | Mar 4 | Enhancing LLM Tool Calling with Ontologies | `LLM` `Ontology` `Knowledge Graph` `GraphRAG` `Agents` | [📺](https://youtube.com/live/WOyb7XW7ppQ) | [💻](https://github.com/jbarrasa/goingmeta/tree/main/session34) |
 | 8  | Apr 8 | Agentic Workflows for Dynamic Ontology Selection in KG Construction | `LLM` `Ontology` `Knowledge Graph` `GraphRAG` `Agents` | [📺](https://youtube.com/live/OhsfdRxcTqQ) | [💻](https://github.com/jbarrasa/goingmeta/tree/main/session35) |
 | 9  | May 6 | Structural Patterns for Ontology Reconciliation | `Ontology` `RDFLib` `RDF` `Knowledge Graph` | [📺](https://youtube.com/live/xuyJTHBbf0U) | [💻](https://github.com/jbarrasa/goingmeta/tree/main/session36) |
-| 10  | July 2 | tbd | | [📺](#) | [💻](#) |
+| 10  | July 2 | Structuring Biomedical Noise: Graphs, AI and the Drug Discovery Dilemma | | [📺](https://youtube.com/live/J5aar9j9FWQ) | 
+| 11  | August 5 | tbd | | [📺](#) | [💻](#) |
