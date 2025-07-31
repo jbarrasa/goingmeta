@@ -91,8 +91,8 @@
          rdfs:comment "the country part in a node of type Location"@en .
 
 
-###  neo4j://graph.schema#locaton
-:locaton rdf:type owl:DatatypeProperty ;
+###  neo4j://graph.schema#location
+:location rdf:type owl:DatatypeProperty ;
          rdfs:domain :Place ;
          rdfs:range xsd:string ;
          rdfs:comment "the specific location (normally city) part in a node of type Location"@en .
