@@ -73,4 +73,11 @@ We will use this repo to share all resources used in the sessions. Give them a t
 | 8  | Apr 8 | Agentic Workflows for Dynamic Ontology Selection in KG Construction | `LLM` `Ontology` `Knowledge Graph` `GraphRAG` `Agents` | [📺](https://youtube.com/live/OhsfdRxcTqQ) | [💻](https://github.com/jbarrasa/goingmeta/tree/main/session35) |
 | 9  | May 6 | Structural Patterns for Ontology Reconciliation | `Ontology` `RDFLib` `RDF` `Knowledge Graph` | [📺](https://youtube.com/live/xuyJTHBbf0U) | [💻](https://github.com/jbarrasa/goingmeta/tree/main/session36) |
 | 10  | July 2 | Structuring Biomedical Noise: Graphs, AI and the Drug Discovery Dilemma | `LLM` `AI` `Pharma` `LifeScience` `Conversation` | [📺](https://youtube.com/live/J5aar9j9FWQ) | 
-| 11  | August 5 | tbd | | [📺](#) | [💻](#) |
+| 11  | August 5 | 2 years of KGs and GenAI. A Recap | `LLM` `Knowledge Graph` `GraphRAG` `Agents` | [📺](https://youtube.com/live/IlI3uNjquKI) | [💻](#) |
+
+## SEASON 3
+
+### 2025 sessions
+
+| 1  | October 7 | tbd | | [📺](#) | [💻](#) |
+
