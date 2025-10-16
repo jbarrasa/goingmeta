@@ -81,5 +81,6 @@ We will use this repo to share all resources used in the sessions. Give them a t
 
 | #  | broadcast | title |tags| recording  | code |
 |---:|:-----:| -----:|:---------:|:--------------------------:|:---:|
-| 1  | October 7 | tbd | | [📺](#) | [💻](#) |
+| 1  | October 7 | Ontology Creation with the Neo4j MCP Server | `LLM` `Knowledge Graph` `GraphRAG` `Agents` `MCP` `Modelling` | [📺](https://youtube.com/live/lAg7ZweHhbI) | [💻](#) |
+| 2  | November 4 | tbd | | [📺](#) | [💻](#) |
 
