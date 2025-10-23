@@ -1,0 +1,31 @@
+graph TD
+%% Nodes
+Person["Person<br/>personId: STRING | KEY<br/>name: STRING<br/>birthYear: INTEGER<br/>deathYear: INTEGER<br/>nationality: STRING<br/>profession: STRING<br/>professionCategory: STRING"]
+Plaque["Plaque<br/>plaqueId: STRING | KEY<br/>inscription: STRING<br/>material: STRING<br/>erectionYear: INTEGER"]
+Organization["Organization<br/>name: STRING | KEY<br/>organizationType: STRING"]
+Address["Address<br/>addressId: STRING | KEY<br/>streetAddress: STRING<br/>area: STRING<br/>postcode: STRING<br/>borough: STRING"]
+MusicalComposition["MusicalComposition<br/>compositionId: STRING | KEY<br/>title: STRING<br/>genre: STRING<br/>yearComposed: INTEGER"]
+
+%% Relationships
+Person -->|HONORED_BY| Plaque
+Organization -->|ERECTED<br/>year: INTEGER| Plaque
+Plaque -->|LOCATED_AT| Address
+Person -->|LIVED_AT<br/>fromDate: DATE<br/>toDate: DATE| Address
+Person -->|COMPOSED| MusicalComposition
+
+
+%% Styling 
+classDef node_0_color fill:#e3f2fd,stroke:#1976d2,stroke-width:3px,color:#000,font-size:12px
+class Person node_0_color
+
+classDef node_1_color fill:#f3e5f5,stroke:#7b1fa2,stroke-width:3px,color:#000,font-size:12px
+class Plaque node_1_color
+
+classDef node_2_color fill:#e8f5e8,stroke:#388e3c,stroke-width:3px,color:#000,font-size:12px
+class Organization node_2_color
+
+classDef node_3_color fill:#fff3e0,stroke:#f57c00,stroke-width:3px,color:#000,font-size:12px
+class Address node_3_color
+
+classDef node_4_color fill:#fce4ec,stroke:#c2185b,stroke-width:3px,color:#000,font-size:12px
+class MusicalComposition node_4_color
