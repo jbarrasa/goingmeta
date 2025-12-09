@@ -1,6 +1,7 @@
 | Test Name | SPARQL Query |
 |-----------|--------------|
-| **All Jaguars** | ```sparql
+| **All Jaguars** |
+```sparql
 PREFIX onto: <http://example.org/ontology#>
 ASK {
 { SELECT (COUNT(DISTINCT ?needle) AS ?c) WHERE {
@@ -15,7 +16,8 @@ ASK {
 FILTER(?c = 16)
 }
 ``` |
-| **Jefe-props** | ```sparql
+| **Jefe-props** |
+```sparql
 PREFIX onto: <http://example.org/ontology#>
 ASK 
 { ?jefe a onto:Jaguar ; rdfs:label ?jname ; onto:hasGender "Male" ; 
@@ -24,7 +26,8 @@ ASK
   FILTER CONTAINS(LCASE(STR(?jname)), "el jefe")            
 }
 ``` |
-| **Jefe-obS** | ```sparql
+| **Jefe-obS** |
+```sparql
 PREFIX onto: <http://example.org/ontology#>
 ASK 
 { ?jefe a onto:Jaguar ; rdfs:label ?jname .  
@@ -39,7 +42,8 @@ ASK
   FILTER CONTAINS(LCASE(STR(?pf)), "profauna") .
 }
 ``` |
-| **Jefe-monitoring** | ```sparql
+| **Jefe-monitoring** |
+```sparql
 PREFIX onto: <http://example.org/ontology#>
 ASK 
 { ?jefe a onto:Jaguar ; rdfs:label ?jname .  
@@ -52,7 +56,8 @@ ASK
   FILTER CONTAINS(LCASE(STR(?orgName3)), "university of arizona") .
 }
 ``` |
-| **Jefe-named** | ```sparql
+| **Jefe-named** |
+```sparql
 PREFIX onto: <http://example.org/ontology#>
 ASK 
 { ?jefe a onto:Jaguar ; rdfs:label ?jname .  
@@ -62,14 +67,16 @@ ASK
           && CONTAINS(LCASE(STR(?pers)), "students"))
 }
 ``` |
-| **Llanos region found** | ```sparql
+| **Llanos region found** |
+```sparql
 PREFIX onto: <http://example.org/ontology#>
 ASK { 
   ?l a onto:Region ; rdfs:label ?lname . 
   FILTER CONTAINS(LCASE(STR(?lname)), "llanos")
 } 
 ``` |
-| **Llanos region linked to jaguar** | ```sparql
+| **Llanos region linked to jaguar** |
+```sparql
 PREFIX onto: <http://example.org/ontology#>
 ASK { 
   ?l a onto:Region ; rdfs:label ?lname . 
@@ -78,7 +85,8 @@ ASK {
   FILTER CONTAINS(LCASE(STR(?jname)), "mariposa")
 } 
 ``` |
-| **Llanos region linked to country** | ```sparql
+| **Llanos region linked to country** |
+```sparql
 PREFIX onto: <http://example.org/ontology#>
 ASK { 
   ?l a onto:Region ; rdfs:label ?lname . 
@@ -88,14 +96,16 @@ ASK {
   FILTER CONTAINS(LCASE(STR(?cname)), "colombia")
 } 
 ``` |
-| **Mariposa** | ```sparql
+| **Mariposa** |
+```sparql
 PREFIX onto: <http://example.org/ontology#>
 ASK 
 { [] a onto:Jaguar ; rdfs:label ?jname ; onto:hasGender "Female" .                
   FILTER CONTAINS(LCASE(STR(?jname)), "mariposa")
 }
 ``` |
-| **Mariposa-Cayenita** | ```sparql
+| **Mariposa-Cayenita** |
+```sparql
 PREFIX onto: <http://example.org/ontology#>
 ASK 
 { ?m a onto:Jaguar ; rdfs:label ?jname ; onto:occursIn ?p .
@@ -104,7 +114,8 @@ ASK
   FILTER CONTAINS(LCASE(STR(?oname)), "cayenita") .
 }
 ``` |
-| **offspring count** | ```sparql
+| **offspring count** |
+```sparql
 PREFIX onto: <http://example.org/ontology#>
 ASK {
     {
@@ -118,7 +129,8 @@ ASK {
     }
 }
 ``` |
-| **observation count** | ```sparql
+| **observation count** |
+```sparql
 PREFIX onto: <http://example.org/ontology#>
 ASK {
     {
