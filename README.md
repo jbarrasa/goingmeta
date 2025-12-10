@@ -83,5 +83,6 @@ We will use this repo to share all resources used in the sessions. Give them a t
 |---:|:-----:| -----:|:---------:|:--------------------------:|:---:|
 | 1  | Oct 7 | Ontology Creation with the Neo4j MCP Server | `LLM` `Ontology` `GraphRAG` `Agents` `MCP` `Modelling` | [📺](https://youtube.com/live/lAg7ZweHhbI) | [💻](https://github.com/jbarrasa/goingmeta/tree/main/session39) |
 | 2  | Nov 4 | Supercharging Neo4j Aura Agents with Ontologies | `LLM` `Ontology` `Agents` | [📺](https://youtube.com/live/wFfld2vrqkk) | [💻](https://github.com/jbarrasa/goingmeta/tree/main/session40) |
-| 3  | Dec 2 | tbd | | [📺](#) | [💻](#) |
+| 3  | Dec 9 | Ontologies, LLMs, Property Graphs - Do we really have a "Jaguar Problem"? | `LLM` `Ontology` `RDF` `Knowledge Graph` | [📺](https://youtube.com/live/TJI6XiHSYt4) | [💻](https://github.com/jbarrasa/goingmeta/tree/main/session41) |
+| 4  | Jan 6 | tbd | | [📺](#) | [💻](#) |
 
