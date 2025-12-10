@@ -86,7 +86,7 @@ We will use this repo to share all resources used in the sessions. Give them a t
 | 3  | Dec 9 | Ontologies, LLMs, Property Graphs - Do we really have a "Jaguar Problem"? | `LLM` `Ontology` `RDF` `Knowledge Graph` | [📺](https://youtube.com/live/TJI6XiHSYt4) | [💻](https://github.com/jbarrasa/goingmeta/tree/main/session41) |
 
 
-### 2025 sessions
+### 2026 sessions
 
 | #  | broadcast | title |tags| recording  | code |
 |---:|:-----:| -----:|:---------:|:--------------------------:|:---:|
