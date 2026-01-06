@@ -15,8 +15,16 @@ Properties Richness (PROnto): Number of properties defined in the ontology divid
 number of relationships and properties. 
 
 ```cypher
-MATCH (c:owl__Class)
-WITH count(c) as c_count
-MATCH (c:owl__Class) where c.rdfs__comment is not null or c.rdfs__label is not null
-RETURN c_count, count(c) as ac_count, count(c) * 100 /c_count as AN_Onto
+MATCH (p:owl__DatatypeProperty)
+WITH count(p) as p_count
+MATCH (r:owl__ObjectProperty) 
+RETURN p_count, count(r) as r_count, count(r) * 100 /(count(r) + p_count) as PR_Onto
+```
+
+JB's variant (class centric)
+```cypher
+MATCH (p:owl__DatatypeProperty)
+WITH count(p) as p_count
+MATCH (r:owl__ObjectProperty) 
+RETURN p_count, count(r) as r_count, count(r) * 100 /(count(r) + p_count) as PR_Onto
 ```
