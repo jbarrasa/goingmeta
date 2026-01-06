@@ -8,8 +8,8 @@ MATCH (c:owl__Class)
 with c.uri as c, 
      size([(c)-[:rdfs__domain|rdfs__range*2]-(connected) | connected]) as connected_count,
      size([(c)-[:rdfs__subClassOf*0..]->()-[:rdfs__domain|rdfs__range*2]-(connected) | connected]) as connected_count_extended
-return avg(ancestor_count + related_count) as CCC, 
-       avg(ancestor_count + related_count_extended) as CCC_ext
+return avg(connected_count) as CCC, 
+       avg(connected_count_extended) as CCC_ext
 ```
 
 ### ANOnto
