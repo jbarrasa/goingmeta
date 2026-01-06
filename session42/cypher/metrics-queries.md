@@ -45,3 +45,38 @@ where not ()-[:rdfs__subClassOf]->(leaf) and not (top)-[:rdfs__subClassOf]->()
 with length(path) + 1 as path_length
 return sum(path_length), count(*), sum(path_length)/count(*) as LCOMOnto
 ```
+
+
+### CBOOnto
+
+Coupling between Objects (CBOOnto): Number of related classes
+
+```
+MATCH (c:owl__Class)
+with c.uri as c, 
+     size([(c)-[:rdfs__subClassOf]->(parent) | parent]) as ancestor_count
+return avg(ancestor_count) as CBOOnto
+```
+
+```cypher
+MATCH (c:owl__Class)
+with c.uri as c, size([(c)-[:rdfs__subClassOf]->(parent) | parent]) as ancestor_count
+with c, 
+     CASE ancestor_count
+      WHEN 0 THEN 1
+      ELSE ancestor_count
+     END  as ancestor_count         
+return avg(ancestor_count) as CBOOnto
+```
+
+JB's variant (including non-taxonomic relations)
+```cypher
+MATCH (c:owl__Class)
+with c.uri as c, 
+     size([(c)-[:rdfs__subClassOf]->(parent) | parent]) as ancestor_count, 
+     size([(c)-[:rdfs__domain|rdfs__range*2]-(related) | related]) as related_count,
+     size([(c)-[:rdfs__subClassOf*0..]->()-[:rdfs__domain|rdfs__range*2]-(related) | related]) as related_count_extended
+return avg(ancestor_count) as CBOOnto,
+       avg(ancestor_count + related_count) as CBOOnto_1, 
+       avg(ancestor_count + related_count_extended) as CBOOnto_2
+```
