@@ -32,3 +32,15 @@ CASE p_count + r_count
 END  as local_pr_onto
 return avg(local_pr_onto) as PR_Onto
 ```
+
+
+### LCOMOnto
+
+Lack of Cohesion in Methods (LCOMOnto): Mean lenght of all paht from leaf classes to Thing.
+
+```cypher
+MATCH path = (leaf:owl__Class)-[:rdfs__subClassOf*0..]->(top)
+where not ()-[:rdfs__subClassOf]->(leaf) and not (top)-[:rdfs__subClassOf]->()
+with length(path) + 1 as path_length
+return sum(path_length), count(*), sum(path_length)/count(*) as LCOMOnto
+```
