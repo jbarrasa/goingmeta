@@ -23,8 +23,12 @@ RETURN p_count, count(r) as r_count, count(r) * 100 /(count(r) + p_count) as PR_
 
 JB's variant (class centric)
 ```cypher
-MATCH (p:owl__DatatypeProperty)
-WITH count(p) as p_count
-MATCH (r:owl__ObjectProperty) 
-RETURN p_count, count(r) as r_count, count(r) * 100 /(count(r) + p_count) as PR_Onto
+MATCH (c:owl__Class) 
+WITH c.uri as c, size([(c)<-[:rdfs__domain]-(dtp:owl__DatatypeProperty) | dtp]) as p_count, size([(c)<-[:rdfs__domain]-(op:owl__ObjectProperty) | op]) as r_count
+with c , p_count, r_count, 
+CASE p_count + r_count
+  WHEN 0 THEN 0
+  ELSE p_count * 100 / (p_count + r_count)
+END  as local_pr_onto
+return avg(local_pr_onto) as PR_Onto
 ```
