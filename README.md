@@ -90,6 +90,6 @@ We will use this repo to share all resources used in the sessions. Give them a t
 
 | #  | broadcast | title |tags| recording  | code |
 |---:|:-----:| -----:|:---------:|:--------------------------:|:---:|
-| 4  | Jan 6 | Evaluating the Quality of Ontologies | `Ontology` `RDF` `Knowledge Graph` | [📺](https://youtube.com/live/16oBgsWPX1o) | [💻](https://github.com/jbarrasa/goingmeta/tree/main/session41) |
+| 4  | Jan 6 | Evaluating the Quality of Ontologies | `Ontology` `OWL` `Knowledge Graph` | [📺](https://youtube.com/live/16oBgsWPX1o) | [💻](https://github.com/jbarrasa/goingmeta/tree/main/session42) |
 | 5  | Feb 3 | tbd | | [📺](#) | [💻](#) |
 
