@@ -1,0 +1,260 @@
+{
+  "version": 2,
+  "title": "Ontology Evaluation",
+  "description": "",
+  "pages": [
+    {
+      "version": 1,
+      "title": "Main page",
+      "widgets": [
+        {
+          "version": 1,
+          "title": "Properties Richness (PROnto) by Class",
+          "w": 4,
+          "h": 2,
+          "x": 4,
+          "y": 2,
+          "meta": {
+            "latestCypherQueries": [
+              {
+                "query": "MATCH (c:owl__Class)\nWITH c.uri as c, size([(c)<-[:rdfs__domain]-(dtp:owl__DatatypeProperty) | dtp]) as p_count,\n     size([(c)<-[:rdfs__domain]-(op:owl__ObjectProperty) | op]) as r_count\nwith c , p_count, r_count,\nCASE p_count + r_count\n  WHEN 0 THEN 0\n  ELSE p_count * 100 / (p_count + r_count)\nEND  as local_pr_onto\nreturn round(avg(local_pr_onto)) + \"%\" as PR_Onto",
+                "origin": "user"
+              },
+              {
+                "query": "MATCH (c:owl__Class)\nWITH c.uri as c, size([(c)<-[:rdfs__domain]-(dtp:owl__DatatypeProperty) | dtp]) as p_count,\n     size([(c)<-[:rdfs__domain]-(op:owl__ObjectProperty) | op]) as r_count\nwith c , p_count, r_count,\nCASE p_count + r_count\n  WHEN 0 THEN 0\n  ELSE p_count * 100 / (p_count + r_count)\nEND  as local_pr_onto\nreturn avg(local_pr_onto) + \"%\" as PR_Onto",
+                "origin": "user"
+              },
+              {
+                "query": "MATCH (c:owl__Class)\nWITH c.uri as c, size([(c)<-[:rdfs__domain]-(dtp:owl__DatatypeProperty) | dtp]) as p_count,\n     size([(c)<-[:rdfs__domain]-(op:owl__ObjectProperty) | op]) as r_count\nRETURN c ,\nCASE p_count + r_count\n  WHEN 0 THEN 0\n  ELSE p_count * 100 / (p_count + r_count)\nEND  as local_PR_Onto",
+                "origin": "user"
+              },
+              {
+                "query": "MATCH (c:owl__Class)\nWITH c.uri as c, size([(c)<-[:rdfs__domain]-(dtp:owl__DatatypeProperty) | dtp]) as p_count,\n     size([(c)<-[:rdfs__domain]-(op:owl__ObjectProperty) | op]) as r_count\nwith c ,\nCASE p_count + r_count\n  WHEN 0 THEN 0\n  ELSE p_count * 100 / (p_count + r_count)\nEND  as local_pr_onto\nreturn avg(local_pr_onto) as PR_Onto",
+                "origin": "user"
+              }
+            ]
+          },
+          "settings": {
+            "type": "singleValue",
+            "query": "MATCH (c:owl__Class) \nWITH c.uri as c, size([(c)<-[:rdfs__domain]-(dtp:owl__DatatypeProperty) | dtp]) as p_count,\n     size([(c)<-[:rdfs__domain]-(op:owl__ObjectProperty) | op]) as r_count\nwith c , p_count, r_count, \nCASE p_count + r_count\n  WHEN 0 THEN 0\n  ELSE p_count * 100 / (p_count + r_count)\nEND  as local_pr_onto\nreturn round(avg(local_pr_onto)) + \"%\" as PR_Onto",
+            "databaseName": "neo4j",
+            "version": 1,
+            "fontSize": null,
+            "textColor": null,
+            "align": 4
+          }
+        },
+        {
+          "version": 1,
+          "title": "Properties Richness (PROnto)",
+          "w": 4,
+          "h": 2,
+          "x": 4,
+          "y": 0,
+          "meta": {
+            "latestCypherQueries": [
+              {
+                "query": "MATCH (p:owl__DatatypeProperty)\nWITH count(p) as p_count\nMATCH (r:owl__ObjectProperty)\nRETURN count(r) * 100 /(count(r) + p_count) + \"%\" as PR_Onto, p_count, count(r) as r_count",
+                "origin": "user"
+              },
+              {
+                "query": "MATCH (p:owl__DatatypeProperty)\nWITH count(p) as p_count\nMATCH (r:owl__ObjectProperty)\nRETURN count(r) * 100 /(count(r) + p_count) as PR_Onto, p_count, count(r) + \"%\" as r_count",
+                "origin": "user"
+              },
+              {
+                "query": "MATCH (p:owl__DatatypeProperty)\nWITH count(p) as p_count\nMATCH (r:owl__ObjectProperty)\nRETURN count(r) * 100 /(count(r) + p_count) as PR_Onto, p_count, count(r) as r_count",
+                "origin": "user"
+              },
+              {
+                "query": "MATCH (p:owl__DatatypeProperty)\nWITH count(p) as p_count\nMATCH (r:owl__ObjectProperty)\nRETURN p_count, count(r) as r_count, count(r) * 100 /(count(r) + p_count) as PR_Onto",
+                "origin": "user"
+              }
+            ]
+          },
+          "settings": {
+            "type": "singleValue",
+            "query": "MATCH (p:owl__DatatypeProperty)\nWITH count(p) as p_count\nMATCH (r:owl__ObjectProperty) \nRETURN count(r) * 100 /(count(r) + p_count) + \"%\" as PR_Onto, p_count, count(r) as r_count",
+            "databaseName": "neo4j",
+            "version": 1,
+            "fontSize": null,
+            "textColor": null,
+            "align": 5
+          }
+        },
+        {
+          "version": 1,
+          "title": "Class Connectivity Coverage",
+          "w": 4,
+          "h": 4,
+          "x": 0,
+          "y": 0,
+          "meta": {
+            "latestCypherQueries": [
+              {
+                "query": "MATCH (c:owl__Class)\nRETURN c.uri as class,\n     size([(c)-[:rdfs__domain|rdfs__range*2]-(connected) | connected]) as connected_count,\n     size([(c)-[:rdfs__subClassOf*0..]->()-[:rdfs__domain|rdfs__range*2]-(connected) | connected]) as connected_count_extended",
+                "origin": "user"
+              },
+              {
+                "query": "MATCH (c:owl__Class)\nRETURN coalesce(c.rdfs__label, c.uri) as class,\n     size([(c)-[:rdfs__domain|rdfs__range*2]-(connected) | connected]) as connected_count,\n     size([(c)-[:rdfs__subClassOf*0..]->()-[:rdfs__domain|rdfs__range*2]-(connected) | connected]) as connected_count_extended",
+                "origin": "user"
+              },
+              {
+                "query": "MATCH (c:owl__Class)\nRETURN c.uri as c,\n     size([(c)-[:rdfs__domain|rdfs__range*2]-(connected) | connected]) as connected_count,\n     size([(c)-[:rdfs__subClassOf*0..]->()-[:rdfs__domain|rdfs__range*2]-(connected) | connected]) as connected_count_extended",
+                "origin": "user"
+              },
+              {
+                "query": "MATCH (c:owl__Class)\nwith c.uri as c,\n     size([(c)-[:rdfs__domain|rdfs__range*2]-(connected) | connected]) as connected_count,\n     size([(c)-[:rdfs__subClassOf*0..]->()-[:rdfs__domain|rdfs__range*2]-(connected) | connected]) as connected_count_extended",
+                "origin": "user"
+              }
+            ]
+          },
+          "settings": {
+            "type": "bar",
+            "query": "MATCH (c:owl__Class)\nRETURN c.uri as class, \n     size([(c)-[:rdfs__domain|rdfs__range*2]-(connected) | connected]) as connected_count,\n     size([(c)-[:rdfs__subClassOf*0..]->()-[:rdfs__domain|rdfs__range*2]-(connected) | connected]) as connected_count_extended\n",
+            "databaseName": "neo4j",
+            "valueKeys": [],
+            "orientation": "vertical",
+            "scaleType": "linear",
+            "showLegend": "auto",
+            "showDataZoom": "auto",
+            "version": 1,
+            "barArrangement": "grouped",
+            "enableDownloadImage": true
+          }
+        },
+        {
+          "version": 1,
+          "title": "Lack of Cohesion in Methods (LCOMOnto)",
+          "w": 4,
+          "h": 4,
+          "x": 0,
+          "y": 4,
+          "meta": {
+            "latestCypherQueries": [
+              {
+                "query": "MATCH path = shortestPath((leaf:owl__Class)-[:rdfs__subClassOf*0..]->(top))\nwhere not ()-[:rdfs__subClassOf]->(leaf) and not (top)-[:rdfs__subClassOf]->()\nRETURN leaf.uri, length(path) + 1 as path_length",
+                "origin": "user"
+              },
+              {
+                "query": "MATCH path = shortestPath((leaf:owl__Class)-[:rdfs__subClassOf*0..]->(top))\nwhere not ()-[:rdfs__subClassOf]->(leaf) and not (top)-[:rdfs__subClassOf]->()\nRETURN leaf, length(path) + 1 as path_length",
+                "origin": "user"
+              }
+            ]
+          },
+          "settings": {
+            "type": "bar",
+            "query": "MATCH path = shortestPath((leaf:owl__Class)-[:rdfs__subClassOf*0..]->(top))\nwhere not ()-[:rdfs__subClassOf]->(leaf) and not (top)-[:rdfs__subClassOf]->()\nRETURN leaf.uri, length(path) + 1 as path_length\n",
+            "databaseName": "neo4j",
+            "valueKeys": [],
+            "orientation": "vertical",
+            "scaleType": "linear",
+            "showLegend": "auto",
+            "showDataZoom": "auto",
+            "version": 1,
+            "barArrangement": "grouped",
+            "enableDownloadImage": true
+          }
+        },
+        {
+          "version": 1,
+          "title": "Properties Richness (PROnto) by Class",
+          "w": 4,
+          "h": 4,
+          "x": 8,
+          "y": 0,
+          "meta": {
+            "latestCypherQueries": [
+              {
+                "query": "MATCH (c:owl__Class)\nWITH c.uri as c, size([(c)<-[:rdfs__domain]-(dtp:owl__DatatypeProperty) | dtp]) as p_count,\n     size([(c)<-[:rdfs__domain]-(op:owl__ObjectProperty) | op]) as r_count\nRETURN c ,\nCASE p_count + r_count\n  WHEN 0 THEN 0\n  ELSE p_count * 100 / (p_count + r_count)\nEND  as local_PR_Onto",
+                "origin": "user"
+              }
+            ]
+          },
+          "settings": {
+            "type": "bar",
+            "query": "MATCH (c:owl__Class) \nWITH c.uri as c, size([(c)<-[:rdfs__domain]-(dtp:owl__DatatypeProperty) | dtp]) as p_count,\n     size([(c)<-[:rdfs__domain]-(op:owl__ObjectProperty) | op]) as r_count\nRETURN c ,  \nCASE p_count + r_count\n  WHEN 0 THEN 0\n  ELSE p_count * 100 / (p_count + r_count)\nEND  as local_PR_Onto",
+            "databaseName": "neo4j",
+            "valueKeys": [],
+            "orientation": "vertical",
+            "scaleType": "linear",
+            "showLegend": "auto",
+            "showDataZoom": "auto",
+            "version": 1,
+            "barArrangement": "grouped",
+            "enableDownloadImage": true
+          }
+        },
+        {
+          "version": 1,
+          "title": "Coupling between Objects (CBOOnto)",
+          "w": 4,
+          "h": 4,
+          "x": 8,
+          "y": 4,
+          "meta": {
+            "latestCypherQueries": [
+              {
+                "query": "MATCH (c:owl__Class)\nwith c.uri as c,\n     size([(c)-[:rdfs__subClassOf]->(parent) | parent]) as ancestor_count,\n     size([(c)-[:rdfs__domain|rdfs__range*2]-(related) | related]) as related_count,\n     size([(c)-[:rdfs__subClassOf*0..]->()-[:rdfs__domain|rdfs__range*2]-(related) | related]) as related_count_extended\nreturn avg(ancestor_count) as CBOOnto,\n       avg(ancestor_count + related_count) as CBOOnto_1,\n       avg(ancestor_count + related_count_extended) as CBOOnto_2",
+                "origin": "user"
+              },
+              {
+                "query": "MATCH (c:owl__Class)\nwith c.uri as c,\n     size([(c)-[:rdfs__subClassOf]->(parent) | parent]) as ancestor_count,\n     size([(c)-[:rdfs__domain|rdfs__range*2]-(related) | related]) as related_count,\n     size([(c)-[:rdfs__subClassOf*0..]->()-[:rdfs__domain|rdfs__range*2]-(related) | related]) as related_count_extended\nreturn round(avg(ancestor_count)) as CBOOnto,\n       round(avg(ancestor_count + related_count)) as CBOOnto_1,\n       round(avg(ancestor_count + related_count_extended)) as CBOOnto_2",
+                "origin": "user"
+              }
+            ]
+          },
+          "settings": {
+            "type": "table",
+            "query": "MATCH (c:owl__Class)\nwith c.uri as c, \n     size([(c)-[:rdfs__subClassOf]->(parent) | parent]) as ancestor_count, \n     size([(c)-[:rdfs__domain|rdfs__range*2]-(related) | related]) as related_count,\n     size([(c)-[:rdfs__subClassOf*0..]->()-[:rdfs__domain|rdfs__range*2]-(related) | related]) as related_count_extended\nreturn avg(ancestor_count) as CBOOnto,\n       avg(ancestor_count + related_count) as CBOOnto_1, \n       avg(ancestor_count + related_count_extended) as CBOOnto_2",
+            "databaseName": "neo4j",
+            "version": 1,
+            "richRenderCells": true,
+            "enableRecordsDownload": true
+          }
+        },
+        {
+          "version": 1,
+          "title": "Coupling between Objects (CBOOnto)",
+          "w": 4,
+          "h": 4,
+          "x": 4,
+          "y": 4,
+          "meta": {
+            "latestCypherQueries": [
+              {
+                "query": "MATCH (c:owl__Class)\nRETURN c.uri as c,\n     size([(c)-[:rdfs__subClassOf]->(parent) | parent]) as ancestor_count,\n     size([(c)-[:rdfs__domain|rdfs__range*2]-(related) | related]) as related_count,\n     size([(c)-[:rdfs__subClassOf*0..]->()-[:rdfs__domain|rdfs__range*2]-(related) | related]) as related_count_extended",
+                "origin": "user"
+              },
+              {
+                "query": "MATCH (c:owl__Class)\nwith c.uri as c, size([(c)-[:rdfs__subClassOf]->(parent) | parent]) as ancestor_count\nRETURN c as class ,\n     CASE ancestor_count\n      WHEN 0 THEN 1\n      ELSE ancestor_count\n     END  as ancestor_count",
+                "origin": "user"
+              },
+              {
+                "query": "MATCH (c:owl__Class)\nwith c.uri as c, size([(c)-[:rdfs__subClassOf]->(parent) | parent]) as ancestor_count\nRETURN c.uri as class ,\n     CASE ancestor_count\n      WHEN 0 THEN 1\n      ELSE ancestor_count\n     END  as ancestor_count",
+                "origin": "user"
+              },
+              {
+                "query": "MATCH (c:owl__Class)\nwith c.uri as c, size([(c)-[:rdfs__subClassOf]->(parent) | parent]) as ancestor_count\nRETURN c.uri,\n     CASE ancestor_count\n      WHEN 0 THEN 1\n      ELSE ancestor_count\n     END  as ancestor_count",
+                "origin": "user"
+              }
+            ]
+          },
+          "settings": {
+            "type": "bar",
+            "query": "MATCH (c:owl__Class)\nRETURN c.uri as c, \n     size([(c)-[:rdfs__subClassOf]->(parent) | parent]) as ancestor_count, \n     size([(c)-[:rdfs__domain|rdfs__range*2]-(related) | related]) as related_count,\n     size([(c)-[:rdfs__subClassOf*0..]->()-[:rdfs__domain|rdfs__range*2]-(related) | related]) as related_count_extended\n",
+            "databaseName": "neo4j",
+            "valueKeys": [],
+            "orientation": "vertical",
+            "scaleType": "linear",
+            "showLegend": "auto",
+            "showDataZoom": "auto",
+            "version": 1,
+            "barArrangement": "grouped",
+            "enableDownloadImage": true
+          }
+        }
+      ]
+    }
+  ],
+  "params": []
+}
