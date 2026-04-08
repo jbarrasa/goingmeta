@@ -1,0 +1,199 @@
+@prefix ccs:  <https://w3id.org/goingmeta/ccs#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+# ── Ontology declaration ───────────────────────────────────────────────────────
+
+ccs: a owl:Ontology ;
+    rdfs:label "Clinical Case Sheet Ontology" ;
+    rdfs:comment "A minimal ontology for extracting and querying structured information from plain-text clinical case sheets, designed for graph-based retrieval, text-to-Cypher, and SNOMED-mapped entity extraction." .
+
+
+# ── Top-level grounding classes (abstract, not used as NodeTypes) ──────────────
+
+ccs:Party a owl:Class ;
+    rdfs:label "Party" ;
+    rdfs:comment "An agent or person that participates in clinical events and interactions." .
+
+ccs:Event a owl:Class ;
+    rdfs:label "Event" ;
+    rdfs:comment "A temporal occurrence in a clinical context." .
+
+ccs:ClinicalFinding a owl:Class ;
+    rdfs:label "ClinicalFinding" ;
+    rdfs:comment "An observation, measurement, assessment, or finding made in a clinical context about a patient." .
+
+# Mutual disjointness of top-level classes
+[] a owl:AllDisjointClasses ;
+    owl:members ( ccs:Party ccs:Event ccs:ClinicalFinding ) .
+
+
+# ── Leaf classes (these become NodeTypes in the GraphSchema) ───────────────────
+
+ccs:Patient a owl:Class ;
+    rdfs:subClassOf ccs:Party ;
+    rdfs:label "Patient" ;
+    rdfs:comment "A Patient is a Party who is the subject of clinical care and documentation in a case sheet." ;
+    skos:example "example: 28-year-old male presenting with palpitations" ;
+    skos:example "example: 49-year-old woman admitted with right upper quadrant pain and weight loss" .
+
+ccs:Encounter a owl:Class ;
+    rdfs:subClassOf ccs:Event ;
+    rdfs:label "Encounter" ;
+    rdfs:comment "An Encounter is an Event that represents a clinical contact between a patient and a healthcare setting, such as an initial presentation, admission, follow-up visit, or repeat procedure session." ;
+    skos:example "example: initial presentation to cardiology with 6-week history of palpitations" ;
+    skos:example "example: 6-month post-ablation follow-up visit with no recurrence" .
+
+ccs:Procedure a owl:Class ;
+    rdfs:subClassOf ccs:Event ;
+    rdfs:label "Procedure" ;
+    rdfs:comment "A Procedure is an Event representing a clinical action performed on or for a patient, including diagnostic procedures (biopsy, CT scan, ECG, echocardiography) and therapeutic interventions (ablation, lobectomy, TACE, surgery)." ;
+    skos:example "example: radiofrequency ablation of right-sided accessory pathway" ;
+    skos:example "example: thoracoscopic lung biopsy from right upper lobe" ;
+    skos:example "example: transarterial chemoembolization (TACE) via right hepatic artery" ;
+    skos:example "example: laparotomy to excise ileo-cutaneous fistula" .
+
+ccs:Symptom a owl:Class ;
+    rdfs:subClassOf ccs:ClinicalFinding ;
+    rdfs:label "Symptom" ;
+    rdfs:comment "A Symptom is a ClinicalFinding representing a subjective complaint reported by the patient or a clinical sign observed during examination that may indicate disease." ;
+    skos:example "example: palpitations occurring 2-3 times per week lasting up to 30 minutes" ;
+    skos:example "example: fever with chronic cough" ;
+    skos:example "example: joint pain affecting shoulders, elbows, wrists, knees, and ankles" ;
+    skos:example "example: nuchal rigidity with headache" .
+
+ccs:Observation a owl:Class ;
+    rdfs:subClassOf ccs:ClinicalFinding ;
+    rdfs:label "Observation" ;
+    rdfs:comment "An Observation is a ClinicalFinding that records a measured or assessed result obtained through laboratory analysis, physical examination, imaging, or pathology, including a result value and optional measurement unit." ;
+    skos:example "example: haemoglobin 13.1 g/dL" ;
+    skos:example "example: alpha-fetoprotein 1185.3 ng/mL" ;
+    skos:example "example: ECG showing Wolff-Parkinson-White pre-excitation pattern" ;
+    skos:example "example: CT revealing 10-cm mass in posterior segments of right liver lobe" ;
+    skos:example "example: leukocyte count 21,000/mm3 with 16,400/mm3 neutrophils" .
+
+ccs:Diagnosis a owl:Class ;
+    rdfs:subClassOf ccs:ClinicalFinding ;
+    rdfs:label "Diagnosis" ;
+    rdfs:comment "A Diagnosis is a ClinicalFinding representing a clinician's assessment of a patient's condition or disease, qualified by its epistemic certainty to distinguish confirmed diagnoses from differentials, possibilities, or negations." ;
+    skos:example "example: Ebstein's anomaly of the tricuspid valve (confirmed)" ;
+    skos:example "example: possibility of a sarcoma (differential)" ;
+    skos:example "example: endocarditis ruled out — blood cultures sterile (negated)" ;
+    skos:example "example: inoperable HCC with Child-Pugh class A cirrhosis (confirmed)" .
+
+
+# ── Object properties ──────────────────────────────────────────────────────────
+
+ccs:hasPatient a owl:ObjectProperty ;
+    rdfs:label "hasPatient" ;
+    rdfs:comment "Links a ClinicalFinding, Procedure, or Encounter to the Patient it concerns." ;
+    rdfs:domain [
+        a owl:Class ;
+        owl:unionOf ( ccs:ClinicalFinding ccs:Encounter ccs:Procedure )
+    ] ;
+    rdfs:range ccs:Patient .
+
+ccs:hasEncounter a owl:ObjectProperty ;
+    rdfs:label "hasEncounter" ;
+    rdfs:comment "Links a Patient to an Encounter in which that patient participated." ;
+    rdfs:domain ccs:Patient ;
+    rdfs:range ccs:Encounter .
+
+
+# ── Datatype properties — Patient ──────────────────────────────────────────────
+
+ccs:age a owl:DatatypeProperty ;
+    rdfs:label "age" ;
+    rdfs:comment "The age of the patient at the time of presentation, in years." ;
+    rdfs:domain ccs:Patient ;
+    rdfs:range xsd:integer .
+
+ccs:sex a owl:DatatypeProperty ;
+    rdfs:label "sex" ;
+    rdfs:comment "The biological sex of the patient. Expected values: male, female, other." ;
+    rdfs:domain ccs:Patient ;
+    rdfs:range xsd:string .
+
+
+# ── Datatype properties — Symptom ─────────────────────────────────────────────
+
+ccs:symptomName a owl:DatatypeProperty ;
+    rdfs:label "symptomName" ;
+    rdfs:comment "The name of the symptom as extracted from the clinical text (e.g., 'palpitations', 'dyspnea', 'fever')." ;
+    rdfs:domain ccs:Symptom ;
+    rdfs:range xsd:string .
+
+ccs:onset a owl:DatatypeProperty ;
+    rdfs:label "onset" ;
+    rdfs:comment "A textual description of the duration or onset pattern of a symptom, as stated in the case text (e.g., '6-week history', 'acute two-day history', 'occurred 2-3 times per week')." ;
+    rdfs:domain ccs:Symptom ;
+    rdfs:range xsd:string .
+
+
+# ── Datatype properties — Observation ─────────────────────────────────────────
+
+ccs:observationName a owl:DatatypeProperty ;
+    rdfs:label "observationName" ;
+    rdfs:comment "The name of the test, examination, or measurement that produced the observation (e.g., 'haemoglobin', 'CT scan abdomen', 'ECG', 'leukocyte count')." ;
+    rdfs:domain ccs:Observation ;
+    rdfs:range xsd:string .
+
+ccs:value a owl:DatatypeProperty ;
+    rdfs:label "value" ;
+    rdfs:comment "The result or finding value of an Observation, stored as a string to accommodate both numeric results (e.g., '13.1') and descriptive findings (e.g., 'Wolff-Parkinson-White pattern')." ;
+    rdfs:domain ccs:Observation ;
+    rdfs:range xsd:string .
+
+ccs:unit a owl:DatatypeProperty ;
+    rdfs:label "unit" ;
+    rdfs:comment "The unit of measurement for a numeric Observation result (e.g., 'g/dL', 'ng/mL', 'mm/hr', '×10⁹/L'). Empty for descriptive findings." ;
+    rdfs:domain ccs:Observation ;
+    rdfs:range xsd:string .
+
+
+# ── Datatype properties — Procedure ───────────────────────────────────────────
+
+ccs:procedureName a owl:DatatypeProperty ;
+    rdfs:label "procedureName" ;
+    rdfs:comment "The name of the clinical procedure or intervention as extracted from the case text (e.g., 'radiofrequency ablation', 'thoracoscopic lung biopsy', 'TACE')." ;
+    rdfs:domain ccs:Procedure ;
+    rdfs:range xsd:string .
+
+
+# ── Datatype properties — Diagnosis ───────────────────────────────────────────
+
+ccs:diagnosisName a owl:DatatypeProperty ;
+    rdfs:label "diagnosisName" ;
+    rdfs:comment "The name of the diagnosed condition or disease as extracted from the clinical text (e.g., 'Ebstein anomaly', 'Crohn disease', 'hepatocellular carcinoma')." ;
+    rdfs:domain ccs:Diagnosis ;
+    rdfs:range xsd:string .
+
+ccs:certainty a owl:DatatypeProperty ;
+    rdfs:label "certainty" ;
+    rdfs:comment "The epistemic certainty of a Diagnosis as stated or implied in the clinical text. Controlled values: confirmed, differential, possible, ruled_out, negated." ;
+    rdfs:domain ccs:Diagnosis ;
+    rdfs:range xsd:string .
+
+
+# ── Shared datatype properties ─────────────────────────────────────────────────
+
+ccs:date a owl:DatatypeProperty ;
+    rdfs:label "date" ;
+    rdfs:comment "The date on which an Encounter, Observation, or Procedure occurred. Stored as a string to accommodate partial dates (e.g., 'October 2004') and relative descriptions when absolute dates are unavailable." ;
+    rdfs:domain [
+        a owl:Class ;
+        owl:unionOf ( ccs:Encounter ccs:Observation ccs:Procedure )
+    ] ;
+    rdfs:range xsd:string .
+
+ccs:snomedConceptId a owl:DatatypeProperty ;
+    rdfs:label "snomedConceptId" ;
+    rdfs:comment "The SNOMED CT concept identifier (SCT ID) for this clinical entity, populated during extraction or post-mapping to support interoperability and SNOMED-based retrieval." ;
+    rdfs:domain [
+        a owl:Class ;
+        owl:unionOf ( ccs:Symptom ccs:Observation ccs:Procedure ccs:Diagnosis )
+    ] ;
+    rdfs:range xsd:string .

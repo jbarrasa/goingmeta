@@ -1,0 +1,24 @@
+Here, we describe another case in a 60-year-old man from San Francisco who had consumed raw pork while traveling in the Philippines.
+In June 2003, this man became ill with fever, diaphoresis, headache, nausea, and anorexia.
+He had just returned from a 7-month vacation in the Philippines.
+Three days after symptoms onset, his physician prescribed doxycycline.
+Symptoms continued and he was admitted to a local hospital 5 days later with a fever of 38.9°C, nuchal rigidity, headache, and general malaise.
+The patient described no recent contact with sick persons; past medical history was unremarkable.
+On physical examination, he was somnolent but fully oriented, with no focal findings on neurologic examination and only slight nuchal rigidity.
+He had a leukocyte count of 21,000/mm3, including 16,400/mm3 neutrophils.
+Cerebrospinal fluid (CSF) showed leukocyte count of 487/μL with 80% polymorphonuclear cells and 18% lymphocytes, and glucose and protein levels <20 mg/dL and <167 mg/dL, respectively.
+Gram stain of CSF showed gram-positive cocci in pairs (Figure).
+Empiric therapy (ceftriaxone, vancomycin, and ampicillin) for bacterial meningitis was begun.
+Computed tomographic scan of the head showed only sinusitis; findings of chest radiograph and transesophageal echocardiogram were negative.
+On hospital day 2, blood cultures grew gram-positive cocci in pairs and chains.
+The organism was catalase-negative, bile esculin-negative, and pyrrolidonyl aminopeptidase-negative, consistent with Streptococcus spp.
+A latex agglutination test did not detect Streptococcus pneumoniae antigen.
+Antimicrobial susceptibility testing showed that the isolate was sensitive to penicillin (MIC = 0.03), ceftriaxone, and vancomycin but resistant to tetracycline and clindamycin.
+Antimicrobial therapy was changed to penicillin G, 24 million units intravenously per day.
+On hospital day 5, the patient complained of hearing loss in his left ear.
+Results of nasopharyngeal endoscopy were negative.
+By hospital day 7, the organism was identified by the API 20 Strep System (bioMerieux, Marcy l’Etoile, France), as S. suis serotype 2.
+The patient subsequently stated that he was a butcher with a culinary preference for partially cooked pork, which he had eaten in the Philippines until the week prior to onset of symptoms.
+On hospital day 9, a formal audiology evaluation showed severe bilateral sensorineural high-frequency hearing loss (–70 dB).
+The patient completed a 10-day course of parenteral antimicrobial drugs and was discharged on continued oral therapy with close followup.
+Two months after discharge, the patient reported much improved hearing without other sequelae.

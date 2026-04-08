@@ -1,0 +1,198 @@
+{
+  "node_types": [
+    {
+      "label": "Diagnosis",
+      "description": "A Diagnosis is a ClinicalFinding representing a clinician's assessment of a patient's condition or disease, qualified by its epistemic certainty to distinguish confirmed diagnoses from differentials, possibilities, or negations.",
+      "properties": [
+        {
+          "name": "certainty",
+          "type": "STRING",
+          "description": "The epistemic certainty of a Diagnosis as stated or implied in the clinical text. Controlled values: confirmed, differential, possible, ruled_out, negated.",
+          "required": false
+        },
+        {
+          "name": "diagnosisName",
+          "type": "STRING",
+          "description": "The name of the diagnosed condition or disease as extracted from the clinical text (e.g., 'Ebstein anomaly', 'Crohn disease', 'hepatocellular carcinoma').",
+          "required": false
+        },
+        {
+          "name": "snomedConceptId",
+          "type": "STRING",
+          "description": "The SNOMED CT concept identifier (SCT ID) for this clinical entity, populated during extraction or post-mapping to support interoperability and SNOMED-based retrieval.",
+          "required": false
+        }
+      ],
+      "additional_properties": false
+    },
+    {
+      "label": "Encounter",
+      "description": "An Encounter is an Event that represents a clinical contact between a patient and a healthcare setting, such as an initial presentation, admission, follow-up visit, or repeat procedure session.",
+      "properties": [
+        {
+          "name": "date",
+          "type": "STRING",
+          "description": "The date on which an Encounter, Observation, or Procedure occurred. Stored as a string to accommodate partial dates (e.g., 'October 2004') and relative descriptions when absolute dates are unavailable.",
+          "required": false
+        }
+      ],
+      "additional_properties": false
+    },
+    {
+      "label": "Observation",
+      "description": "An Observation is a ClinicalFinding that records a measured or assessed result obtained through laboratory analysis, physical examination, imaging, or pathology, including a result value and optional measurement unit.",
+      "properties": [
+        {
+          "name": "date",
+          "type": "STRING",
+          "description": "The date on which an Encounter, Observation, or Procedure occurred. Stored as a string to accommodate partial dates (e.g., 'October 2004') and relative descriptions when absolute dates are unavailable.",
+          "required": false
+        },
+        {
+          "name": "observationName",
+          "type": "STRING",
+          "description": "The name of the test, examination, or measurement that produced the observation (e.g., 'haemoglobin', 'CT scan abdomen', 'ECG', 'leukocyte count').",
+          "required": false
+        },
+        {
+          "name": "snomedConceptId",
+          "type": "STRING",
+          "description": "The SNOMED CT concept identifier (SCT ID) for this clinical entity, populated during extraction or post-mapping to support interoperability and SNOMED-based retrieval.",
+          "required": false
+        },
+        {
+          "name": "unit",
+          "type": "STRING",
+          "description": "The unit of measurement for a numeric Observation result (e.g., 'g/dL', 'ng/mL', 'mm/hr', '\u00d710\u2079/L'). Empty for descriptive findings.",
+          "required": false
+        },
+        {
+          "name": "value",
+          "type": "STRING",
+          "description": "The result or finding value of an Observation, stored as a string to accommodate both numeric results (e.g., '13.1') and descriptive findings (e.g., 'Wolff-Parkinson-White pattern').",
+          "required": false
+        }
+      ],
+      "additional_properties": false
+    },
+    {
+      "label": "Patient",
+      "description": "A Patient is a Party who is the subject of clinical care and documentation in a case sheet.",
+      "properties": [
+        {
+          "name": "age",
+          "type": "INTEGER",
+          "description": "The age of the patient at the time of presentation, in years.",
+          "required": false
+        },
+        {
+          "name": "sex",
+          "type": "STRING",
+          "description": "The biological sex of the patient. Expected values: male, female, other.",
+          "required": false
+        }
+      ],
+      "additional_properties": false
+    },
+    {
+      "label": "Procedure",
+      "description": "A Procedure is an Event representing a clinical action performed on or for a patient, including diagnostic procedures (biopsy, CT scan, ECG, echocardiography) and therapeutic interventions (ablation, lobectomy, TACE, surgery).",
+      "properties": [
+        {
+          "name": "date",
+          "type": "STRING",
+          "description": "The date on which an Encounter, Observation, or Procedure occurred. Stored as a string to accommodate partial dates (e.g., 'October 2004') and relative descriptions when absolute dates are unavailable.",
+          "required": false
+        },
+        {
+          "name": "procedureName",
+          "type": "STRING",
+          "description": "The name of the clinical procedure or intervention as extracted from the case text (e.g., 'radiofrequency ablation', 'thoracoscopic lung biopsy', 'TACE').",
+          "required": false
+        },
+        {
+          "name": "snomedConceptId",
+          "type": "STRING",
+          "description": "The SNOMED CT concept identifier (SCT ID) for this clinical entity, populated during extraction or post-mapping to support interoperability and SNOMED-based retrieval.",
+          "required": false
+        }
+      ],
+      "additional_properties": false
+    },
+    {
+      "label": "Symptom",
+      "description": "A Symptom is a ClinicalFinding representing a subjective complaint reported by the patient or a clinical sign observed during examination that may indicate disease.",
+      "properties": [
+        {
+          "name": "onset",
+          "type": "STRING",
+          "description": "A textual description of the duration or onset pattern of a symptom, as stated in the case text (e.g., '6-week history', 'acute two-day history', 'occurred 2-3 times per week').",
+          "required": false
+        },
+        {
+          "name": "snomedConceptId",
+          "type": "STRING",
+          "description": "The SNOMED CT concept identifier (SCT ID) for this clinical entity, populated during extraction or post-mapping to support interoperability and SNOMED-based retrieval.",
+          "required": false
+        },
+        {
+          "name": "symptomName",
+          "type": "STRING",
+          "description": "The name of the symptom as extracted from the clinical text (e.g., 'palpitations', 'dyspnea', 'fever').",
+          "required": false
+        }
+      ],
+      "additional_properties": false
+    }
+  ],
+  "relationship_types": [
+    {
+      "label": "hasEncounter",
+      "description": "Links a Patient to an Encounter in which that patient participated.",
+      "properties": [],
+      "additional_properties": true
+    },
+    {
+      "label": "hasPatient",
+      "description": "Links a ClinicalFinding, Procedure, or Encounter to the Patient it concerns.",
+      "properties": [],
+      "additional_properties": true
+    }
+  ],
+  "patterns": [
+    {
+      "source": "Patient",
+      "relationship": "hasEncounter",
+      "target": "Encounter"
+    },
+    {
+      "source": "Symptom",
+      "relationship": "hasPatient",
+      "target": "Patient"
+    },
+    {
+      "source": "Observation",
+      "relationship": "hasPatient",
+      "target": "Patient"
+    },
+    {
+      "source": "Diagnosis",
+      "relationship": "hasPatient",
+      "target": "Patient"
+    },
+    {
+      "source": "Encounter",
+      "relationship": "hasPatient",
+      "target": "Patient"
+    },
+    {
+      "source": "Procedure",
+      "relationship": "hasPatient",
+      "target": "Patient"
+    }
+  ],
+  "constraints": [],
+  "additional_node_types": false,
+  "additional_relationship_types": false,
+  "additional_patterns": false
+}

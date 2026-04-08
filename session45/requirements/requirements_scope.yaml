@@ -1,0 +1,46 @@
+requirements_scope:
+  purpose: "Provide a graph schema for clinical case sheets (plain-text case reports) to drive entity extraction, parameterized retrievers (agent tools), and text-to-Cypher."
+  intended_users:
+    - "Retriever services used by agents (parameterized queries + text-to-Cypher)"
+    - "Extraction / NER pipelines"
+    - "Data engineers and ontology maintainers"
+  use_cases:
+    - "Extract structured patient records (patient, encounters, diagnoses, symptoms, labs, procedures) from free-text case sheets"
+    - "Allow agents to run parameterized Cypher queries against the graph for decision support and retrieval"
+    - "When possible map free-text clinical terms to SNOMED concepts for interoperability and linking"
+  scope:
+    in_scope:
+      - "Plain-text clinical case sheets in natural language (English)"
+    out_of_scope:
+      - "Imaging binaries (DICOM), raw sensor feeds, or imaging-specific ontologies"
+      - "Full clinical decision support rules or automated treatment recommendations"
+      - "Legal/regulatory workflows beyond tagging that PHI exists (detailed compliance/consent models)"
+      - "Provenance metadata: source document id, text span, extractor confidence, timestamp"
+  competency_questions:
+    - id: CQ1
+      question: "Which patients have symptom X (or synonyms) mentioned?"
+      priority: high
+      rationale: "Supports retrieval and evidence-based answers; requires symptom entity + provenance."
+    - id: CQ2
+      question: "What observations/lab results and numeric values are recorded for patient Y between dates A and B?"
+      priority: high
+      rationale: "Enables time-bounded queries and analytics."
+    - id: CQ3
+      question: "Which procedures or interventions were performed for patient Y and when?"
+      priority: medium
+      rationale: "Important for clinical timeline and agent reasoning."
+    - id: CQ4
+      question: "Which mentions indicate differential diagnoses, uncertainty, or negation (e.g., 'rule out', 'possible')?"
+      priority: medium
+      rationale: "Critical for correct interpretation by agents."
+  stakeholders:
+    - "Clinical SMEs (for SNOMED mapping decisions)"
+    - "Data engineers (graph ingestion and Cypher tooling)"
+    - "NLP/extraction engineers"
+  assumptions:
+    - "Primary input are plain-text case sheets (not PDFs) in English."
+    - "Retriever tools can execute parameterized Cypher and accept provenance/context payloads."
+  constraints:
+    - "Design for compact extraction-friendly model (classes + a few core relations) to keep mappings simple."
+    - "Graph must focus on the domain and not include references to document structure like spans, sections or anything similar."
+  
