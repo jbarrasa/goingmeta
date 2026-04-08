@@ -93,5 +93,6 @@ We will use this repo to share all resources used in the sessions. Give them a t
 | 4  | Jan 6 | Evaluating the Quality of Ontologies | `Ontology` `OWL` `Knowledge Graph` | [📺](https://youtube.com/live/16oBgsWPX1o) | [💻](https://github.com/jbarrasa/goingmeta/tree/main/session42) |
 | 5  | Feb 3 | Neo4j Agent Memory | `Agents` `Memory` `LLM` | [📺](https://youtube.com/live/rnERHmj81VI) | [💻](https://github.com/jbarrasa/goingmeta/tree/main/session43) |
 | 6  | Mar 3 | Validating Neo4j Graphs with SHACL | `SHACL` `RDF` `Validation` | [📺](https://youtube.com/live/u7fsq5vEA3E) | [💻](https://github.com/jbarrasa/goingmeta/tree/main/session44) |
-| 7  | Apr 7 | tbd | | [📺](#) | [💻](#) |
+| 7  | Apr 7 | Agent Skills For Creating and Using Ontologies | `Agents` `Ontology` `Skills` `LLM` | [📺](https://youtube.com/live/6bIUwMrKDlk) | [💻](https://github.com/jbarrasa/goingmeta/tree/main/session45) |
+| 8  | May 5 | tbd | | [📺](#) | [💻](#) |
 
